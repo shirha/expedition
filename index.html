@@ -7,6 +7,7 @@
   <title>Leviathan Redux</title>
 <style> 
 @font-face {font-family: "NMS Glyphs"; src: url("NMS-Glyphs-Mono.ttf");}
+@font-face {font-family: Edwardian; src: url("ITCEDSCR.TTF");}
 body {background: url("screenshot.jpg") fixed no-repeat; background-size: cover; font-size: 18px;}
 div {padding-left: 10px;}
 img {height: 18px; vertical-align: middle; margin-left: 8px;}
@@ -35,6 +36,13 @@ span {font-family: "NMS Glyphs"; font-size: larger; font-weight: bold;}
 .sy:link {color: #0000ee;} .sy:visited {color: #0000ee !important;} .sy:hover {color: #551a8b;}
 .sy {font-family: Arial;}
 a {white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-decoration: none; margin-bottom: 5px; border: 1px solid #808080;}
+/*
+.cls_z {font-family: Arial; font-weight: normal; font-style: italic; font-size: 10.5px; display: inline-block; color: #551a8b; padding-left: 0; vertical-align: super; line-height: normal;}
+.cls_a {font-family: Arial; font-weight: normal; font-style: italic; font-size: 12px; display: inline-block; color: #551a8b; padding-left: 0; font-variant: small-caps;}
+.cls_x {font-family: Arial; font-weight: bold; font-style: italic; font-size: 18px; display: inline-block; color: #551a8b; padding-left: 0; font-variant: small-caps;}
+.cls {font-family: Arial; color: purple; font-weight: bold; font-style: italic; display: inline-block; padding-left: 0; font-size: 10px; position: relative; bottom: 4px;}
+.lt {display: inline-block; padding-left: 0; text-decoration: line-through purple 2px;}
+*/
 </style></head><body>
 <h2>Leviathan Redux System Summary</h2>
 <table><tr><th>Systems</th><th>Planets</th></tr>
@@ -76,19 +84,25 @@ Underwater Protection</div>
 Ammonia<br>
 Aronium<br>
 Autonomous Positioning Unit<br>
+<font color=purple>Banned Weapons</font><br>
 Carbon Nanotubes<br>
 Chromatic Metal<br>
 Copper<br>
+<font color=purple>Counterfeit Circuits</font><br>
 Decommissioned Circuits<br>
 Decrypted User Data<br>
 Di-hydrogen Jelly<br>
 Dioxite<br>
 Dirty Bronze<br>
 Gold<br>
+Hadal Core<br>
 Hermetic Seal<br>
+Hexite<br>
 Hydraulic Wiring<br>
+Hypnotic Eye<br>
 Industrial-Grade Battery<br>
 Ion Capacitor<br>
+Larval Core<br>
 Lemmium<br>
 Magnetic Resonator<br>
 Magnetised Ferrite<br>
@@ -99,14 +113,21 @@ Ohmic Gel<br>
 Paraffinium<br>
 Phosphorus<br>
 Platinum<br>
+Pugneum<br>
 Pure Ferrite<br>
 Pyrite<br>
 Quantum Computer<br>
+Repair Kit<br>
 Residual Goop<br>
 Rusted Metal<br>
 Silver<br>
 Solar Mirror<br>
 Spark Canister<br>
+Starshield Battery<br>
+<font color=purple>Stolen DNA Samples</font><br>
+Suspicious Packet (Arms)<br>
+Suspicious Packet (Goods)<br>
+Suspicious Packet (Tech)<br>
 Tritium<br>
 Unstable Plasma<br>
 Welding Soap<br>
@@ -445,8 +466,35 @@ Xeno-Colony</div>
     <div>POI: <div class="poi yl">Ms 4.4</div> Hot Pursuit - Smuggle contraband: 500,000 units</div>
   </div>
   <div>Technology
+    <div>Suspicious Boltcaster</div>
+    <div>Suspicious Geology Cannon</div>
+    <div>Suspicious Hyperdrive</div>
+    <div>Suspicious Infra-Knife</div>
+    <div>Suspicious Life Support</div>
+    <div>Suspicious Mining Beam</div>
+    <div>Suspicious Movement</div>
+    <div>Suspicious Photon Cannon</div>
+    <div>Suspicious Plasma Launcher</div>
+    <div>Suspicious Pulse Engine</div>
+    <div>Suspicious Pulse Spitter</div>
+    <div>Suspicious Scanner</div>
   </div>
   <div>Buy Sell
+      <div><font color=purple>Banned Weapons</font></div>
+      <div><font color=purple>Counterfeit Circuits</font></div>
+    <div>Hadal Core</div>
+    <div>Hexite</div>
+    <div>Hypnotic Eye</div>
+    <div>Larval Core</div>
+    <div>Pugneum</div>
+    <div>Repair Kit</div>
+    <div>Rusted Metal</div>
+    <div>Starshield Battery</div>
+      <div><font color=purple>Stolen DNA Samples</font></div>
+    <div>Suspicious Packet (Arms)</div>
+    <div>Suspicious Packet (Goods)</div>
+    <div>Suspicious Packet (Tech)</div>
+    <div>Tritium</div>
   </div>
   <div class=p id=Luxembl_VII><a class=pl href="javascript:window.scrollTo(0, 0);">Luxembl VII</a>
     <div>Planet Info
@@ -964,15 +1012,4 @@ Xeno-Colony</div>
     </div>
   </div>
 </div>
-
-<div style="margin-top: 500px;"></div>
-<script>
-b = document.querySelectorAll("button");
-for(let i = 0; i < b.length; i++){
-  if(b[i].parentNode.className == 's'){
-    b[i].addEventListener("click", () => window.scrollTo(0,0))
-  }else{
-    b[i].addEventListener("click", () => b[i+(b.length/2)].scrollIntoView())
-  }
-}
-</script></body></html>
+<div style="margin-top:700px;"></div></body></html>
