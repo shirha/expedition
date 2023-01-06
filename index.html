@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
-  <title>Leviathan Redux</title>
+  <title>Polestar Redux</title>
 <style> 
 @font-face {font-family: "NMS Glyphs"; src: url("NMS-Glyphs-Mono.ttf");}
 @font-face {font-family: Edwardian; src: url("ITCEDSCR.TTF");}
@@ -29,20 +29,13 @@ blockquote {margin: 0; padding: 0 10px; font-style: italic; color: navy}
 td {vertical-align: top;}
 button {width: 185px; font-size: 18px;}
 span {font-family: "NMS Glyphs"; font-size: larger; font-weight: bold;} 
-.dot {border: 1px solid black; height: 10px; width: 10px; border-radius: 50%; display: inline-block; margin-left: 8px;}
+.dot {border-radius: 50%; border: 1px solid black; height: 10px; width: 10px; display: inline-block; margin-left: 8px;}
 .fl td::first-letter {font-weight: normal;}
 .c {display: inline-block; vertical-align: top; padding-top: 8px;}
 .pl:link {color: #551a8b;} .pl:visited {color: #551a8b !important;} .pl:hover {color: #0000ee;}
 .sy:link {color: #0000ee;} .sy:visited {color: #0000ee !important;} .sy:hover {color: #551a8b;}
 .sy {font-family: Arial;}
 a {white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-decoration: none; margin-bottom: 5px; border: 1px solid #808080;}
-/*
-.cls_z {font-family: Arial; font-weight: normal; font-style: italic; font-size: 10.5px; display: inline-block; color: #551a8b; padding-left: 0; vertical-align: super; line-height: normal;}
-.cls_a {font-family: Arial; font-weight: normal; font-style: italic; font-size: 12px; display: inline-block; color: #551a8b; padding-left: 0; font-variant: small-caps;}
-.cls_x {font-family: Arial; font-weight: bold; font-style: italic; font-size: 18px; display: inline-block; color: #551a8b; padding-left: 0; font-variant: small-caps;}
-.cls {font-family: Arial; color: purple; font-weight: bold; font-style: italic; display: inline-block; padding-left: 0; font-size: 10px; position: relative; bottom: 4px;}
-.sc {display: inline-block; padding-left: 0; text-decoration: line-through purple 2px;}
-*/
 .scy {display: inline-block; padding-left: 0; color:yellow !important;}
 .scr {display: inline-block; padding-left: 0; color:red !important;}
 .scg {display: inline-block; padding-left: 0; color:limegreen !important;}
@@ -50,24 +43,63 @@ a {white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-decoration: n
 .sct {display: inline-block; padding-left: 0; color:teal !important;}
 .scp {display: inline-block; padding-left: 0; color:purple !important;}
 </style></head><body>
-<h2>Leviathan Redux System Summary</h2>
+<h2>Polestar Redux System Summary</h2>
 <table><tr><th>Systems</th><th>Planets</th></tr>
-<tr><td><a class=sy href=#Kusinst>Kusinst</a></td><td><a class=pl href=#Gisbrosp_XIV>Gisbrosp XIV</a> <a class=pl href=#Dolydine>Dolydine</a> <a class=pl href=#Loydon_K25>Loydon K25&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Abuj_Tau>Abuj Tau&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Atti>Atti</a> <a class=pl href=#Lowest_Mano>Lowest Mano&nbsp;<div class=scy>&#9679;</div></a></td></tr>
-<tr><td><a class=sy href=#Chater-Muk_X>Chater-Muk X&nbsp;<div class=scr>&#9679;</div></a></td><td><a class=pl href=#Wituryg_XVIII>Wituryg XVIII</a> <a class=pl href=#Hocae_Sigma>Hocae Sigma</a></td></tr>
-<tr><td><a class=sy href=#Neyang-Uga>Neyang-Uga <img src="pirate_icon.png"/>&nbsp;<div class=scy>&#9679;</div></a></td><td><a class=pl href=#Iami_B7>Iami B7</a> <a class=pl href=#Tiletchol_Dakas>Tiletchol Dakas</a> <a class=pl href=#Angdona_Y45>Angdona Y45</a> <a class=pl href=#Nita_75/E7>Nita 75/E7</a> <a class=pl href=#Irtinet>Irtinet</a> <a class=pl href=#Aphas_XVIII>Aphas XVIII</a></td></tr>
-<tr><td><a class=sy href=#Denayanov>Denayanov</a></td><td><a class=pl href=#Lottonia_Chofu>Lottonia Chofu</a> <a class=pl href=#Yilis_IV>Yilis IV&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Couverles_Yoha>Couverles Yoha</a> <a class=pl href=#Rinusc_XIX>Rinusc XIX</a> <a class=pl href=#Eynsihept_B35>Eynsihept B35&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Mebayasicis_Gatag>Mebayasicis Gatag&nbsp;<div class=scy>&#9679;</div></a></td></tr>
-<tr><td><a class=sy href=#Washeyu-Hebe>Washeyu-Hebe&nbsp;<div class=scg>&#9679;</div></a></td><td><a class=pl href=#Losa_Alpha>Losa Alpha</a> <a class=pl href=#Saderry_Unam>Saderry Unam</a> <a class=pl href=#Oger_Alpha>Oger Alpha&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Agjy_Beta>Agjy Beta</a> <a class=pl href=#Yornandac_Alpha>Yornandac Alpha</a></td></tr>
-<tr><td><a class=sy href=#Satands>Satands</a></td><td><a class=pl href=#Ninarb_S13>Ninarb S13&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Wilm>Wilm</a></td></tr>
-<tr><td><a class=sy href=#Yedneya>Yedneya</a></td><td><a class=pl href=#Geori>Geori</a> <a class=pl href=#Syrachu>Syrachu</a> <a class=pl href=#Bognorth_V>Bognorth V&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Tarv_X5>Tarv X5</a></td></tr>
-<tr><td><a class=sy href=#Hantury_VIII>Hantury VIII</a></td><td><a class=pl href=#Enporene>Enporene</a> <a class=pl href=#Yardogo_XVII>Yardogo XVII&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Hawesl_XI>Hawesl XI</a></td></tr>
-<tr><td><a class=sy href=#Oginic-Roran_II>Oginic-Roran II</a></td><td><a class=pl href=#Gaapo_VI>Gaapo VI&nbsp;<div class=scy>&#9679;</div></a> <a class=pl href=#Azaw_28/F2>Azaw 28/F2</a> <a class=pl href=#Sialatwhith_Izur>Sialatwhith Izur</a> <a class=pl href=#Hegoria>Hegoria</a></td></tr>
+<tr><td><a class=sy href=#Maniawus>Maniawus</a></td><td>
+  <a class=pl href=#Wuragenth>Wuragenth</a> 
+  <a class=pl href=#Ifrods_XVII>Ifrods XVII</a> 
+  <a class=pl href=#Douglas_Minor>Douglas Minor</a> 
+  <a class=pl href=#Itto_15/A5>Itto 15/A5</a> 
+  <a class=pl href=#Dasagonn>Dasagonn</a> 
+  <a class=pl href=#Rainfi>Rainfi</a></td></tr>
+<tr><td><a class=sy href=#Hazeles-Arudo>Hazeles-Arudo</a></td><td>
+  <a class=pl href=#Daura>Daura</a> 
+  <a class=pl href=#Iaue_Tau>Iaue Tau</a> 
+  <a class=pl href=#Egau_90/R4>Egau 90/R4</a> 
+  <a class=pl href=#Maccleetaw_Tami>Maccleetaw Tami&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Meies_H1>Meies H1</a></td></tr>
+<tr><td><a class=sy href=#Instas>Instas</a></td><td>
+  <a class=pl href=#Ammanue>Ammanue&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Kuda_92/E9>Kuda 92/E9</a> 
+  <a class=pl href=#Trossley>Trossley</a> 
+  <a class=pl href=#Nalde>Nalde</a> 
+  <a class=pl href=#Awsa_F18>Awsa F18</a></td></tr>
+<tr><td><a class=sy href=#Emnika_III>Emnika III</a></td><td>
+  <a class=pl href=#Matag_14/A5>Matag 14/A5</a> 
+  <a class=pl href=#Itby_II>Itby II</a> 
+  <a class=pl href=#Partlefa_P34>Partlefa P34&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Nemetis_Omega>Nemetis Omega</a></td></tr>
+<tr><td><a class=sy href=#Anggierfo>Anggierfo</a></td><td>
+  <a class=pl href=#Erylanaith_Otsu>Erylanaith Otsu&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Awlisaac>Awlisaac</a> 
+  <a class=pl href=#Teseyc_Tau>Teseyc Tau</a> 
+  <a class=pl href=#Yowoo>Yowoo&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Jarn_XII>Jarn XII&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Orfold_VI>Orfold VI</a></td></tr>
+<tr><td><a class=sy href=#Nomyussko>Nomyussko</a></td><td>
+  <a class=pl href=#Roezet_Tau>Roezet Tau</a> 
+  <a class=pl href=#Eotis>Eotis&nbsp;<div class=scy>&#9679;</div></a> 
+  <a class=pl href=#Dozoavid_Yosh>Dozoavid Yosh</a> 
+  <a class=pl href=#Mexborut_Minor>Mexborut Minor</a> 
+  <a class=pl href=#Itnew_W29>Itnew W29</a> 
+  <a class=pl href=#Owcestj>Owcestj</a></td></tr>
+<tr><td><a class=sy href=#Odvigal>Odvigal <img src="pirate_icon.png"/></a></td><td>
+  <a class=pl href=#Useiy_40/J5>Useiy 40/J5</a> 
+  <a class=pl href=#Stjo_Beta>Stjo Beta</a> 
+  <a class=pl href=#Adcaseiu_II>Adcaseiu II</a> 
+  <a class=pl href=#Letu_III>Letu III</a> 
+  <a class=pl href=#Pesterry>Pesterry</a></td></tr>
+<tr><td><a class=sy href=#Tekamy>Tekamy</a></td><td>
+  <a class=pl href=#Ayama_34/F6>Ayama 34/F6</a> 
+  <a class=pl href=#Uiseid>Uiseid</a> 
+  <a class=pl href=#Arasu_14/H3>Arasu 14/H3</a> 
+  <a class=pl href=#Myonker>Myonker</a></td></tr>
 </table>
-<div class=c><center><b>Technology</b></center>Blaze Javelin<br>
-Boltcaster<br>
+<div class=c><center><b>Technology</b></center>Boltcaster<br>
 Cold Protection<br>
 Cyclotron<br>
 Exocraft Boost<br>
-Exocraft Laser<br>
+Geology Cannon<br>
 Hot Protection<br>
 Hyperdrive<br>
 Infra-Knife<br>
@@ -75,7 +107,6 @@ Launch Thrusters<br>
 Life Support<br>
 Mining Beam<br>
 Minotaur Cannon<br>
-Minotaur Laser<br>
 Movement<br>
 Nautilon Cannon<br>
 Neutron Cannon<br>
@@ -83,85 +114,97 @@ Phase Beam<br>
 Photon Cannon<br>
 Plasma Launcher<br>
 Positron<br>
+Pulse Engine<br>
 Pulse Spitter<br>
 Radiation Protection<br>
 Scanner<br>
 Shield<br>
 Starship Shield<br>
+Toxic Protection<br>
 Underwater Protection</div>
 <div class=c><center><b>Buy Sell</b></center>Amino Chamber<br>
 Ammonia<br>
 Aronium<br>
-Autonomous Positioning Unit<br>
+<div class=scp>Blood Salt</div><br>
+Bromide Salt<br>
 Carbon Nanotubes<br>
+Chlorine<br>
 Chromatic Metal<br>
+Cobalt<br>
+Comet Droplets<br>
 Copper<br>
 <div class=scp>Counterfeit Circuits</div><br>
 Decommissioned Circuits<br>
 Decrypted User Data<br>
+Di-hydrogen<br>
 Di-hydrogen Jelly<br>
 Dioxite<br>
+Dirt<br>
 Dirty Bronze<br>
+Enormous Metal Cog<br>
+Ferrite Dust<br>
 Gold<br>
+Hadal Core<br>
 Hermetic Seal<br>
 Hydraulic Wiring<br>
 Hypnotic Eye<br>
 Industrial-Grade Battery<br>
-Ion Capacitor<br>
-Larval Core<br>
+Ion Sphere<br>
+Ionised Cobalt<br>
 Lemmium<br>
 Magnetic Resonator<br>
 Magnetised Ferrite<br>
 Magno-Gold<br>
+Mesh Decouplers<br>
 Metal Plating<br>
 Microprocessor<br>
 <div class=scp>Moon Ether</div><br>
-Nanotube Crate<br>
-<div class=scp>NipNip Buds</div><br>
+Non-Stick Piston<br>
 Ohmic Gel<br>
-Optical Solvent<br>
 Paraffinium<br>
 Phosphorus<br>
 Platinum<br>
+Polychromatic Zirconium<br>
+Pugneum<br>
 Pure Ferrite<br>
 Pyrite<br>
 Quantum Computer<br>
-Repair Kit<br>
 Residual Goop<br>
-Runaway Mould<br>
 Rusted Metal<br>
-Self-Repairing Heridium<br>
+Salt<br>
 Silver<br>
 Solar Mirror<br>
 Spark Canister<br>
+Star Silk<br>
 Starshield Battery<br>
 Suspicious Packet (Arms)<br>
 Suspicious Packet (Goods)<br>
 Suspicious Packet (Tech)<br>
 Tritium<br>
+Unrefined Pyrite Grease<br>
 Unstable Plasma<br>
+Uranium<br>
 Welding Soap<br>
 Wiring Loom</div>
-<div class=c><center><b>Resources</b></center>Activated Cadmiun<br>
+<div class=c><center><b>Resources</b></center><br>
 Activated Copper<br>
-Activated Emeril<br>
 Ammonia<br>
 Ancient Bones<br>
 Cactus Flesh<br>
-Cadmium<br>
 Cobalt<br>
 Copper<br>
 Dioxite<br>
-Emeril<br>
 Faecium<br>
 Frost Crystal<br>
 Fungal Mould<br>
 Gamma Root<br>
 Gold<br>
 Magnetised Ferrite<br>
+Mordite<br>
 Paraffinium<br>
 Phosphorus<br>
 Pyrite<br>
+Rusted Metal<br>
 Salt<br>
 Salvageable Scrap<br>
 Silver<br>
@@ -169,129 +212,104 @@ Sodium<br>
 Solanium<br>
 Star Bulb<br>
 Uranium</div>
-<div class=c><center><b>Biome</b></center>Acrid Planet<br>
-Arid Planet<br>
+<div class=c><center><b>Biome</b></center>Abandoned Planet<br>
+Acrid Planet<br>
+Airless Planet<br>
+Arctic Planet<br>
 Barren Planet<br>
-Bleak Planet<br>
-Bountiful Planet<br>
-Capped Planet<br>
-Caustic Nightmare<br>
+Boiling Doom<br>
 Caustic Planet<br>
-Desert Planet<br>
-Dusty Planet<br>
-Fiery Dreadworld<br>
+Contaminated Planet<br>
+Decaying Nuclear Planet<br>
+Desolate Planet<br>
+Endless Morass<br>
+Fiery Planet<br>
 Flourishing Planet<br>
-Foggy Planet<br>
-Freezing Planet<br>
-Frozen Planet<br>
-Fungal Planet<br>
+Foaming Planet<br>
 Glacial Planet<br>
-High Temperature Planet<br>
-Infected Dustbowl<br>
-Infested Paradise<br>
-Isotopic Planet<br>
+Humid Planet<br>
+Icy Abhorrence<br>
+Icy Planet<br>
+Incandescent Planet<br>
+Misty Planet<br>
+Mutated Planet<br>
 Noxious Planet<br>
 Nuclear Planet<br>
-Radioactive Abomination<br>
-Radioactive Planet<br>
-Rainy Planet<br>
-Scalding Planet<br>
-Scorched Planet<br>
+Overgrown Planet<br>
+Paradise Planet<br>
+Parched Planet<br>
+Poisonous Planet<br>
+Rotting Planet<br>
+Supercritical Planet<br>
 Temperate Planet<br>
 Torrid Planet<br>
-Vapour Planet<br>
+Tropical Planet<br>
 Verdant Planet<br>
-Viridescent Planet<br>
-Xeno-Colony</div>
-<h2>Leviathan Redux System Detail</h2>
-<div class=s id=Kusinst><a class=sy href="javascript:clr();">Kusinst</a>
+Viridescent Planet</div>
+<h2>Polestar Redux System Detail</h2>
+<div class=s id=Maniawus><a class=sy href="javascript:clr();">Maniawus</a>
   <div>System Info
-    <div>Celestial Bodies: 5 Planets // 1 Moon</div>
-    <div>Dominant Lifeform: Gek</div>
-    <div>Economy: Mercantile // Struggling</div>
+    <div>Celestial Bodies: 4 Planets // 2 Moons</div>
+    <div>Dominant Lifeform: Korvax</div>
+    <div>Economy: Mining // Comfortable</div>
     <div>Conflict level: Intermittent</div>
-    <div>Glyphs: <span>1012&nbsp;&nbsp;056e&nbsp;&nbsp;df93</span></div>
+    <div>Glyphs: <span>1121&nbsp;&nbsp;fc97&nbsp;&nbsp;826b</span></div>
   </div>
   <div>Technology
+    <div>Cyclotron</div>
     <div>Life Support</div>
     <div>Minotaur Cannon</div>
-    <div>Movement</div>
+    <div>Nautilon Cannon</div>
     <div>Neutron Cannon</div>
     <div>Scanner</div>
+    <div>Shield</div>
+    <div>Underwater Protection</div>
   </div>
   <div>Buy Sell
     <div>Amino Chamber</div>
-    <div>Chromatic Metal</div>
-    <div>Decrypted User Data</div>
-    <div>Gold</div>
-    <div>Hermetic Seal</div>
+    <div>Bromide Salt</div>
+    <div>Chlorine</div>
+    <div>Cobalt</div>
+    <div>Copper</div>
+    <div>Dirt</div>
+    <div>Ferrite Dust</div>
+    <div>Hydraulic Wiring</div>
     <div>Lemmium</div>
+    <div>Magnetic Resonator</div>
+    <div>Magnetised Ferrite</div>
     <div>Metal Plating</div>
     <div>Microprocessor</div>
     <div>Paraffinium</div>
-    <div>Phosphorus</div>
-    <div>Pure Ferrite</div>
-    <div>Pyrite</div>
-    <div>Quantum Computer</div>
+    <div>Platinum</div>
+    <div>Residual Goop</div>
     <div>Rusted Metal</div>
+    <div>Unrefined Pyrite Grease</div>
     <div>Unstable Plasma</div>
+    <div>Uranium</div>
     <div>Wiring Loom</div>
   </div>
-  <div class=p id=Gisbrosp_XIV><a class=pl href="javascript:clr();">Gisbrosp XIV</a>
+  <div class=p id=Wuragenth><a class=pl href="javascript:clr();">Wuragenth</a>
     <div>Planet Info
-      <div>Biome: Noxious Planet</div>
-      <div>Weather: Infrequent Toxic Drizzle</div>
-      <div>Sentinels: <div class="poi rd">Hostile Patrols</div></div>
+      <div>Biome: Parched Planet</div>
+      <div>Weather: <div class="poi rd">Billowing Dust Storms</div></div>
+      <div>Sentinels: Missing</div>
       <div>Flora: Abundant</div>
-      <div>Fauna: Copious</div>
+      <div>Fauna: Generous</div>
     </div>
     <div>Resources
-      <div>Fungal Mould</div>
-      <div>Cobalt</div>
-      <div>Ammonia</div>
-      <div>Copper</div>
+      <div>Cactus Flesh</div>
+      <div>Silver</div>
+      <div>Pyrite</div>
+      <div>Activated Copper</div>
     </div>
   </div>
-  <div class=p id=Dolydine><a class=pl href="javascript:clr();">Dolydine</a>
+  <div class=p id=Ifrods_XVII><a class=pl href="javascript:clr();">Ifrods XVII</a>
     <div>Planet Info
-      <div>Biome: Torrid Planet</div>
-      <div>Weather: Superheated Gas Pockets</div>
-      <div>Sentinels: Observant</div>
-      <div>Flora: Full</div>
-      <div>Fauna: Full</div>
-    </div>
-    <div>Resources
-      <div>Solanium</div>
-      <div>Cobalt</div>
-      <div>Phosphorus</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Loydon_K25><a class=pl href="javascript:clr();">Loydon K25</a>
-    <div>Planet Info
-      <div>Biome: Caustic Nightmare</div>
-      <div>Weather: Poison Flurries</div>
-      <div>Sentinels: Minimal</div>
-      <div>Flora: Diseased</div>
-      <div>Fauna: Rich</div>
-      <div>POI: Tamable non-aggressive predators <img src="predator_i_icon.png"/></div>
-      <div>POI: <div class="poi yl">Ms 2.2</div> The Anchor - Establish a base on an infested world</div>
-    </div>
-    <div>Resources
-      <div>Fungal Mould</div>
-      <div>Sodium</div>
-      <div>Ammonia</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Abuj_Tau><a class=pl href="javascript:clr();">Abuj Tau</a>
-    <div>Planet Info
-      <div>Biome: Nuclear Planet</div>
-      <div>Weather: Reactive Rain</div>
-      <div>Sentinels: Limited</div>
-      <div>Flora: Bountiful</div>
-      <div>Fauna: Copious</div>
-      <div>POI: <div class="poi yl">Ms 4.4</div> Banished Glass - Shut down Sentinel Pillar<blockquote><div class=sct>Base:</div> Pillar -16.20, +42.37<blockquote></div>
+      <div>Biome: Supercritical Planet</div>
+      <div>Weather: Volatile Windstorms</div>
+      <div>Sentinels: Require Obedience</div>
+      <div>Flora: Occasional</div>
+      <div>Fauna: Abundant</div>
     </div>
     <div>Resources
       <div>Gamma Root</div>
@@ -300,13 +318,279 @@ Xeno-Colony</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Atti><a class=pl href="javascript:clr();">Atti</a>
+  <div class=p id=Douglas_Minor><a class=pl href="javascript:clr();">Douglas Minor</a>
     <div>Planet Info
-      <div>Biome: Isotopic Planet</div>
-      <div>Weather: Contaminated Puddles</div>
-      <div>Sentinels: Enforcing</div>
-      <div>Flora: Common</div>
+      <div>Biome: Incandescent Planet</div>
+      <div>Weather: Wandering Hot Spots</div>
+      <div>Sentinels: Unwavering</div>
+      <div>Flora: Frequent</div>
+      <div>Fauna: Ample</div>
+    </div>
+    <div>Resources
+      <div>Solanium</div>
+      <div>Sodium</div>
+      <div>Phosphorus</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Itto_15/A5><a class=pl href="javascript:clr();">Itto 15/A5</a>
+    <div>Planet Info
+      <div>Biome: Temperate Planet</div>
+      <div>Weather: <div class="poi rd">Intense Heatbursts</div></div>
+      <div>Sentinels: None</div>
+      <div>Flora: Rich</div>
+      <div>Fauna: Intermittent</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Cobalt</div>
+      <div>Paraffinium</div>
+      <div>Activated Copper</div>
+    </div>
+  </div>
+  <div class=p id=Dasagonn><a class=pl href="javascript:clr();">Dasagonn</a>
+    <div>Planet Info
+      <div>Biome: Desolate Planet</div>
+      <div>Weather: No Atmosphere</div>
+      <div>Sentinels: Require Obedience</div>
+      <div>Flora: Not Present</div>
+      <div>Fauna: Undetected</div>
+    </div>
+    <div>Resources
+      <div></div>
+      <div>Rusted Metal</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Rainfi><a class=pl href="javascript:clr();">Rainfi</a>
+    <div>Planet Info
+      <div>Biome: Caustic Planet</div>
+      <div>Weather: Stinging Atmosphere</div>
+      <div>Sentinels: Observant</div>
+      <div>Flora: Frequent</div>
       <div>Fauna: Medium</div>
+    </div>
+    <div>Resources
+      <div>Fungal Mould</div>
+      <div>Sodium</div>
+      <div>Ammonia</div>
+      <div>Copper</div>
+    </div>
+  </div>
+</div>
+<div class=s id=Hazeles-Arudo><a class=sy href="javascript:clr();">Hazeles-Arudo</a>
+  <div>System Info
+    <div>Celestial Bodies: 5 Planets</div>
+    <div>Dominant Lifeform: Korvax</div>
+    <div>Economy: Power Generation // Comfortable</div>
+    <div>Conflict level: Peaceful</div>
+    <div>Glyphs: <span>1001&nbsp;&nbsp;fc97&nbsp;&nbsp;826b</span></div>
+  </div>
+  <div>Technology
+    <div>Hyperdrive</div>
+    <div>Neutron Cannon</div>
+    <div>Phase Beam</div>
+    <div>Pulse Spitter</div>
+    <div>Radiation Protection</div>
+    <div>Scanner</div>
+    <div>Starship Shield</div>
+  </div>
+  <div>Buy Sell
+    <div>Amino Chamber</div>
+    <div>Ammonia</div>
+    <div>Carbon Nanotubes</div>
+    <div>Chlorine</div>
+    <div>Cobalt</div>
+    <div>Copper</div>
+    <div>Di-hydrogen Jelly</div>
+    <div>Dioxite</div>
+    <div>Dirty Bronze</div>
+    <div>Ferrite Dust</div>
+    <div>Industrial-Grade Battery</div>
+    <div>Metal Plating</div>
+    <div>Microprocessor</div>
+    <div>Ohmic Gel</div>
+    <div>Platinum</div>
+    <div>Pugneum</div>
+    <div>Pure Ferrite</div>
+    <div>Quantum Computer</div>
+    <div>Rusted Metal</div>
+    <div>Salt</div>
+    <div>Spark Canister</div>
+    <div>Unstable Plasma</div>
+    <div>Wiring Loom</div>
+  </div>
+  <div class=p id=Daura><a class=pl href="javascript:clr();">Daura</a>
+    <div>Planet Info
+      <div>Biome: Verdant Planet</div>
+      <div>Weather: Blistering Damp</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Scarce</div>
+      <div>Fauna: Bountiful</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Salt</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Iaue_Tau><a class=pl href="javascript:clr();">Iaue Tau</a>
+    <div>Planet Info
+      <div>Biome: Misty Planet</div>
+      <div>Weather: Tropical Winds</div>
+      <div>Sentinels: Require Orthodoxy</div>
+      <div>Flora: Copious</div>
+      <div>Fauna: Frequent</div>
+    </div>
+    <div>Resources
+      <div></div>
+      <div>Faecium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Egau_90/R4><a class=pl href="javascript:clr();">Egau 90/R4</a>
+    <div>Planet Info
+      <div>Biome: Glacial Planet</div>
+      <div>Weather: Permafrost</div>
+      <div>Sentinels: Absent</div>
+      <div>Flora: Limited</div>
+      <div>Fauna: Regular</div>
+    </div>
+    <div>Resources
+      <div>Frost Crystal</div>
+      <div>Sodium</div>
+      <div>Dioxite</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Maccleetaw_Tami><a class=pl href="javascript:clr();">Maccleetaw Tami</a>
+    <div>Planet Info
+      <div>Biome: Overgrown Planet</div>
+      <div>Weather: Torrid Deluges</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Rare</div>
+      <div>Fauna: High</div>
+      <div>POI: <div class="poi yl">R1</div> Crashed Freighter</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Cobalt</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Meies_H1><a class=pl href="javascript:clr();">Meies H1</a>
+    <div>Planet Info
+      <div>Biome: Viridescent Planet</div>
+      <div>Weather: Choking Humidity</div>
+      <div>Sentinels: <div class="poi rd">Frenzied</div></div>
+      <div>Flora: High</div>
+      <div>Fauna: High</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Sodium</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+</div>
+<div class=s id=Instas><a class=sy href="javascript:clr();">Instas</a>
+  <div>System Info
+    <div>Celestial Bodies: 5 Planets</div>
+    <div>Dominant Lifeform: Gek</div>
+    <div>Economy: Ore Extraction // Satisfactory</div>
+    <div>Conflict level: Alarming</div>
+    <div>Glyphs: <span>100c&nbsp;&nbsp;fc97&nbsp;&nbsp;826b</span></div>
+  </div>
+  <div>Technology
+    <div>Hyperdrive</div>
+    <div>Life Support</div>
+    <div>Mining Beam</div>
+    <div>Minotaur Cannon</div>
+    <div>Neutron Cannon</div>
+    <div>Phase Beam</div>
+    <div>Positron</div>
+    <div>Underwater Protection</div>
+  </div>
+  <div>Buy Sell
+    <div>Bromide Salt</div>
+    <div>Chlorine</div>
+    <div>Cobalt</div>
+    <div>Dirt</div>
+    <div>Dirty Bronze</div>
+    <div>Ferrite Dust</div>
+    <div>Gold</div>
+    <div>Hermetic Seal</div>
+    <div>Hydraulic Wiring</div>
+    <div>Lemmium</div>
+    <div>Magno-Gold</div>
+    <div>Metal Plating</div>
+    <div>Microprocessor</div>
+    <div>Paraffinium</div>
+    <div>Phosphorus</div>
+    <div>Polychromatic Zirconium</div>
+    <div>Residual Goop</div>
+    <div>Rusted Metal</div>
+    <div>Tritium</div>
+    <div>Unrefined Pyrite Grease</div>
+    <div>Unstable Plasma</div>
+    <div>Wiring Loom</div>
+  </div>
+  <div class=p id=Ammanue><a class=pl href="javascript:clr();">Ammanue</a>
+    <div>Planet Info
+      <div>Biome: Decaying Nuclear Planet</div>
+      <div>Weather: Volatile Winds</div>
+      <div>Sentinels: Missing</div>
+      <div>Flora: Frequent</div>
+      <div>Fauna: Bountiful</div>
+      <div>POI: <div class="poi yl">R2</div> Crashed Freighter</div>
+    </div>
+    <div>Resources
+      <div>Gamma Root</div>
+      <div>Salt</div>
+      <div>Uranium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Kuda_92/E9><a class=pl href="javascript:clr();">Kuda 92/E9</a>
+    <div>Planet Info
+      <div>Biome: Flourishing Planet</div>
+      <div>Weather: <div class="poi rd">Painfully Hot Rain</div></div>
+      <div>Sentinels: Observant</div>
+      <div>Flora: Abundant</div>
+      <div>Fauna: Rich</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Magnetised Ferrite</div>
+      <div>Paraffinium</div>
+      <div>Activated Copper</div>
+    </div>
+  </div>
+  <div class=p id=Trossley><a class=pl href="javascript:clr();">Trossley</a>
+    <div>Planet Info
+      <div>Biome: Noxious Planet</div>
+      <div>Weather: <div class="poi rd">Dangerously Toxic Rain</div></div>
+      <div>Sentinels: Frequent</div>
+      <div>Flora: Full</div>
+      <div>Fauna: Rich</div>
+    </div>
+    <div>Resources
+      <div>Fungal Mould</div>
+      <div>Salt</div>
+      <div>Ammonia</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Nalde><a class=pl href="javascript:clr();">Nalde</a>
+    <div>Planet Info
+      <div>Biome: Nuclear Planet</div>
+      <div>Weather: Irradiated Winds</div>
+      <div>Sentinels: Require Orthodoxy</div>
+      <div>Flora: Typical</div>
+      <div>Fauna: Average</div>
     </div>
     <div>Resources
       <div>Gamma Root</div>
@@ -315,118 +599,434 @@ Xeno-Colony</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Lowest_Mano><a class=pl href="javascript:clr();">Lowest Mano</a>
+  <div class=p id=Awsa_F18><a class=pl href="javascript:clr();">Awsa F18</a>
     <div>Planet Info
-      <div>Biome: Vapour Planet</div>
-      <div>Weather: Infrequent Toxic Drizzle</div>
-      <div>Sentinels: Enforcing</div>
-      <div>Flora: Rich</div>
-      <div>Fauna: Generous</div>
-      <div>POI: <div class="poi yl">Starting Planet</div></div>
-      <div>POI: Tamable non-aggressive predators <img src="predator_i_icon.png"/></div>
-      <div>POI: <div class="poi yl">Ms 1.4</div> Iterate / Repeat - <div class="poi rd">Die</div></div>
-      <div>POI: <div class="poi yl">Ms 1.1</div> Remembrance - Absorb a memory fragment</div>
-      <div>POI: <div class="poi yl">Ms 1.2</div> A New Beginning - Locate your starship</div>
-      <div>POI: <div class="poi yl">Ms 1.3</div> Observing The Cycle - Repair your starship<blockquote><div class=sct>Reward:</div> Solar Ray plans<blockquote>Magnetised Ferrite &times;50<br>Cobalt &times;50</blockquote></blockquote></div>
-      <div>POI: <div class="poi yl">Ms 1.5</div> Bounds Testing - Help Polo collect "Patterns in the loop"<blockquote>1. 250 Liquid Sun<br>2. 200 Ancestral Memories<br>3. 100 Somnal Dust</blockquote></div>
-      <div>POI: <div class="poi yl">Ms 5.3</div> Partners In Time - Help Polo collect "Patterns in the loop": 5</div>
+      <div>Biome: Abandoned Planet</div>
+      <div>Weather: Infrequent Dust Storms</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Bountiful</div>
+      <div>Fauna: Rich</div>
     </div>
     <div>Resources
+      <div>Cactus Flesh</div>
       <div>Sodium</div>
-      <div>Faecium</div>
+      <div>Pyrite</div>
       <div>Copper</div>
     </div>
   </div>
 </div>
-<div class=s id=Chater-Muk_X><a class=sy href="javascript:clr();">Chater-Muk X</a>
+<div class=s id=Emnika_III><a class=sy href="javascript:clr();">Emnika III</a>
   <div>System Info
-    <div>Celestial Bodies: 2 Planets</div>
-    <div>Dominant Lifeform: Uncharted</div>
-    <div>Economy: - Data Unavailable -</div>
-    <div>Conflict level: - Data Unavailable -</div>
-    <div>Glyphs: <span>1130&nbsp;&nbsp;056e&nbsp;&nbsp;df93</span></div>
-    <div>Stellar Class: K9<span class='dot rd'></span></div>
-    <div>Distance: 98 ly &rarr; Kusinst<blockquote>Credit: <a href="https://youtu.be/PxOG_OcmqVo?t=746" target=_blank><img src=yt_icon.png> Xaine's World</a></blockquote></div>
+    <div>Celestial Bodies: 4 Planets</div>
+    <div>Dominant Lifeform: Gek</div>
+    <div>Economy: Nano-construction // Destitute</div>
+    <div>Conflict level: Alarming</div>
+    <div>Glyphs: <span>1005&nbsp;&nbsp;fc97&nbsp;&nbsp;926b</span></div>
   </div>
   <div>Technology
+    <div>Infra-Knife</div>
+    <div>Life Support</div>
+    <div>Neutron Cannon</div>
+    <div>Underwater Protection</div>
   </div>
   <div>Buy Sell
+    <div>Amino Chamber</div>
+    <div>Chromatic Metal</div>
+    <div>Cobalt</div>
+    <div>Copper</div>
+    <div>Decommissioned Circuits</div>
+    <div>Dioxite</div>
+    <div>Dirty Bronze</div>
+    <div>Ferrite Dust</div>
+    <div>Ionised Cobalt</div>
+    <div>Magnetic Resonator</div>
+    <div>Magno-Gold</div>
+    <div>Metal Plating</div>
+    <div>Microprocessor</div>
+    <div>Paraffinium</div>
+    <div>Pyrite</div>
+    <div>Rusted Metal</div>
+    <div>Silver</div>
+    <div>Solar Mirror</div>
+    <div>Unstable Plasma</div>
+    <div>Uranium</div>
+    <div>Welding Soap</div>
+    <div>Wiring Loom</div>
   </div>
-  <div class=p id=Wituryg_XVIII><a class=pl href="javascript:clr();">Wituryg XVIII</a>
+  <div class=p id=Matag_14/A5><a class=pl href="javascript:clr();">Matag 14/A5</a>
     <div>Planet Info
-      <div>Biome: Scorched Planet</div>
-      <div>Weather: Combustible Dust</div>
-      <div>Sentinels: Observant</div>
-      <div>Flora: High</div>
-      <div>Fauna: Frequent</div>
-    </div>
-    <div>Resources
-      <div>Solanium</div>
-      <div>Sodium</div>
-      <div>Phosphorus</div>
-      <div>Activated Cadmiun</div>
-    </div>
-  </div>
-  <div class=p id=Hocae_Sigma><a class=pl href="javascript:clr();">Hocae Sigma</a>
-    <div>Planet Info
-      <div>Biome: Radioactive Planet</div>
-      <div>Weather: <div class="poi rd">Particulate Winds</div></div>
-      <div>Sentinels: Infrequent</div>
-      <div>Flora: Common</div>
-      <div>Fauna: Limited</div>
+      <div>Biome: Nuclear Planet</div>
+      <div>Weather: Volatile Windstorms</div>
+      <div>Sentinels: Not Present</div>
+      <div>Flora: Frequent</div>
+      <div>Fauna: Abundant</div>
     </div>
     <div>Resources
       <div>Gamma Root</div>
       <div>Cobalt</div>
       <div>Uranium</div>
-      <div>Cadmium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Itby_II><a class=pl href="javascript:clr();">Itby II</a>
+    <div>Planet Info
+      <div>Biome: Acrid Planet</div>
+      <div>Weather: Choking Clouds</div>
+      <div>Sentinels: Require Obedience</div>
+      <div>Flora: Abundant</div>
+      <div>Fauna: Average</div>
+    </div>
+    <div>Resources
+      <div>Fungal Mould</div>
+      <div>Cobalt</div>
+      <div>Ammonia</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Partlefa_P34><a class=pl href="javascript:clr();">Partlefa P34</a>
+    <div>Planet Info
+      <div>Biome: Arctic Planet</div>
+      <div>Weather: Frost</div>
+      <div>Sentinels: Not Present</div>
+      <div>Flora: Full</div>
+      <div>Fauna: Bountiful</div>
+      <div>POI: <div class="poi yl">R3</div> Crashed Freighter</div>
+    </div>
+    <div>Resources
+      <div>Frost Crystal</div>
+      <div>Magnetised Ferrite</div>
+      <div>Dioxite</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Nemetis_Omega><a class=pl href="javascript:clr();">Nemetis Omega</a>
+    <div>Planet Info
+      <div>Biome: Humid Planet</div>
+      <div>Weather: Sweltering Damp</div>
+      <div>Sentinels: Frequent</div>
+      <div>Flora: Low</div>
+      <div>Fauna: Abundant</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Magnetised Ferrite</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
     </div>
   </div>
 </div>
-<div class=s id=Neyang-Uga><a class=sy href="javascript:clr();">Neyang-Uga <img src="pirate_icon.png"/></a>
+<div class=s id=Anggierfo><a class=sy href="javascript:clr();">Anggierfo</a>
+  <div>System Info
+    <div>Celestial Bodies: 5 Planets // 1 Moon</div>
+    <div>Dominant Lifeform: Gek</div>
+    <div>Economy: Fuel Generation // Satisfactory</div>
+    <div>Conflict level: Alarming</div>
+    <div>Glyphs: <span>100b&nbsp;&nbsp;fd97&nbsp;&nbsp;926b</span></div>
+  </div>
+  <div>Technology
+    <div>Hot Protection</div>
+    <div>Launch Thrusters</div>
+    <div>Movement</div>
+    <div>Nautilon Cannon</div>
+    <div>Radiation Protection</div>
+  </div>
+  <div>Buy Sell
+    <div>Amino Chamber</div>
+    <div>Chlorine</div>
+    <div>Chromatic Metal</div>
+    <div>Cobalt</div>
+    <div>Dioxite</div>
+    <div>Dirty Bronze</div>
+    <div>Ferrite Dust</div>
+    <div>Industrial-Grade Battery</div>
+    <div>Magnetised Ferrite</div>
+    <div>Metal Plating</div>
+    <div>Microprocessor</div>
+    <div>Ohmic Gel</div>
+    <div>Platinum</div>
+    <div>Pugneum</div>
+    <div>Pyrite</div>
+    <div>Residual Goop</div>
+    <div>Solar Mirror</div>
+    <div>Spark Canister</div>
+    <div>Unstable Plasma</div>
+    <div>Wiring Loom</div>
+  </div>
+  <div class=p id=Erylanaith_Otsu><a class=pl href="javascript:clr();">Erylanaith Otsu</a>
+    <div>Planet Info
+      <div>Biome: Endless Morass</div>
+      <div>Weather: <div class="poi rd">Cataclysmic Monsoons</div></div>
+      <div>Sentinels: Require Orthodoxy</div>
+      <div>Flora: Copious</div>
+      <div>Fauna: Ample</div>
+      <div>POI: <div class="poi bl">Storm Crystals</div></div>
+    </div>
+    <div>Resources
+      <div>Salvageable Scrap</div>
+      <div>Salt</div>
+      <div>Mordite</div>
+      <div>Activated Copper</div>
+    </div>
+  </div>
+  <div class=p id=Awlisaac><a class=pl href="javascript:clr();">Awlisaac</a>
+    <div>Planet Info
+      <div>Biome: Barren Planet</div>
+      <div>Weather: Infrequent Dust Storms</div>
+      <div>Sentinels: Enforcing</div>
+      <div>Flora: Bountiful</div>
+      <div>Fauna: Ample</div>
+    </div>
+    <div>Resources
+      <div>Cactus Flesh</div>
+      <div>Salt</div>
+      <div>Pyrite</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Teseyc_Tau><a class=pl href="javascript:clr();">Teseyc Tau</a>
+    <div>Planet Info
+      <div>Biome: Fiery Planet</div>
+      <div>Weather: Sunny</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Abundant</div>
+      <div>Fauna: Ordinary</div>
+    </div>
+    <div>Resources
+      <div>Solanium</div>
+      <div>Salt</div>
+      <div>Phosphorus</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Yowoo><a class=pl href="javascript:clr();">Yowoo</a>
+    <div>Planet Info
+      <div>Biome: Flourishing Planet</div>
+      <div>Weather: Broiling Humidity</div>
+      <div>Sentinels: Unwavering</div>
+      <div>Flora: Rich</div>
+      <div>Fauna: Bountiful</div>
+      <div>POI: <div class="poi yl">R4</div> Crashed Freighter</div>
+    </div>
+    <div>Resources
+      <div>Salvageable Scrap</div>
+      <div>Star Bulb</div>
+      <div>Cobalt</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Jarn_XII><a class=pl href="javascript:clr();">Jarn XII</a>
+    <div>Planet Info
+      <div>Biome: Airless Planet</div>
+      <div>Weather: Peaceful</div>
+      <div>Sentinels: Frequent</div>
+      <div>Flora: Not Present</div>
+      <div>Fauna: Devoid</div>
+      <div>POI: <div class="poi yl">Ms 4.4</div> Reclamation - Restore a crashed ship<blockquote><div class=sct>Base:</div> Crashed class-A Shuttle -4.09, +36.04<blockquote></div>
+    </div>
+    <div>Resources
+      <div>Sodium</div>
+      <div>Rusted Metal</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Orfold_VI><a class=pl href="javascript:clr();">Orfold VI</a>
+    <div>Planet Info
+      <div>Biome: Icy Planet</div>
+      <div>Weather: Migratory Blizzards</div>
+      <div>Sentinels: Enforcing</div>
+      <div>Flora: Abundant</div>
+      <div>Fauna: Copious</div>
+    </div>
+    <div>Resources
+      <div>Frost Crystal</div>
+      <div>Magnetised Ferrite</div>
+      <div>Dioxite</div>
+      <div>Copper</div>
+    </div>
+  </div>
+</div>
+<div class=s id=Nomyussko><a class=sy href="javascript:clr();">Nomyussko</a>
   <div>System Info
     <div>Celestial Bodies: 6 Planets</div>
     <div>Dominant Lifeform: Gek</div>
-    <div>Economy: Construction // Black Market</div>
-    <div>Conflict level: Pirate Controlled</div>
-    <div>Glyphs: <span>1079&nbsp;&nbsp;056e&nbsp;&nbsp;df93</span></div>
-    <div>Distance: 57 ly &rarr; Chater-Muk X</div>
-    <div>POI: <div class="poi yl">Ms 4.3</div> Hot Pursuit - Smuggle contraband: 500,000 units</div>
+    <div>Economy: Shipping // Medium Supply</div>
+    <div>Conflict level: Fractious</div>
+    <div>Glyphs: <span>11a0&nbsp;&nbsp;fd97&nbsp;&nbsp;a26b</span></div>
   </div>
   <div>Technology
-    <div>Suspicious Blaze Javelin</div>
+    <div>Boltcaster</div>
+    <div>Cold Protection</div>
+    <div>Exocraft Boost</div>
+    <div>Hot Protection</div>
+    <div>Life Support</div>
+    <div>Movement</div>
+    <div>Neutron Cannon</div>
+    <div>Photon Cannon</div>
+    <div>Plasma Launcher</div>
+    <div>Pulse Engine</div>
+    <div>Radiation Protection</div>
+    <div>Scanner</div>
+    <div>Starship Shield</div>
+  </div>
+  <div>Buy Sell
+    <div>Carbon Nanotubes</div>
+    <div>Cobalt</div>
+    <div>Comet Droplets</div>
+    <div>Decrypted User Data</div>
+    <div>Dioxite</div>
+    <div>Ferrite Dust</div>
+    <div>Hermetic Seal</div>
+    <div>Ion Sphere</div>
+    <div>Ionised Cobalt</div>
+    <div>Lemmium</div>
+    <div>Metal Plating</div>
+    <div>Microprocessor</div>
+    <div>Paraffinium</div>
+    <div>Phosphorus</div>
+    <div>Salt</div>
+    <div>Silver</div>
+    <div>Star Silk</div>
+    <div>Unstable Plasma</div>
+    <div>Uranium</div>
+    <div>Wiring Loom</div>
+  </div>
+  <div class=p id=Roezet_Tau><a class=pl href="javascript:clr();">Roezet Tau</a>
+    <div>Planet Info
+      <div>Biome: Poisonous Planet</div>
+      <div>Weather: Alkaline Cloudbursts</div>
+      <div>Sentinels: <div class="poi rd">Threatening</div></div>
+      <div>Flora: Copious</div>
+      <div>Fauna: Abundant</div>
+    </div>
+    <div>Resources
+      <div>Fungal Mould</div>
+      <div>Magnetised Ferrite</div>
+      <div>Ammonia</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Eotis><a class=pl href="javascript:clr();">Eotis</a>
+    <div>Planet Info
+      <div>Biome: Abandoned Planet</div>
+      <div>Weather: Highly Variable Temperatures</div>
+      <div>Sentinels: None Present</div>
+      <div>Flora: Bountiful</div>
+      <div>Fauna: Generous</div>
+      <div>POI: <div class="poi yl">R5</div> Crashed Freighter</div>
+    </div>
+    <div>Resources
+      <div>Cactus Flesh</div>
+      <div>Salt</div>
+      <div>Pyrite</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Dozoavid_Yosh><a class=pl href="javascript:clr();">Dozoavid Yosh</a>
+    <div>Planet Info
+      <div>Biome: Contaminated Planet</div>
+      <div>Weather: Irradiated Winds</div>
+      <div>Sentinels: Require Orthodoxy</div>
+      <div>Flora: Fair</div>
+      <div>Fauna: Fair</div>
+    </div>
+    <div>Resources
+      <div>Gamma Root</div>
+      <div>Sodium</div>
+      <div>Uranium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Mexborut_Minor><a class=pl href="javascript:clr();">Mexborut Minor</a>
+    <div>Planet Info
+      <div>Biome: Icy Abhorrence</div>
+      <div>Weather: Frozen Clouds</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Invasive</div>
+      <div>Fauna: Ample</div>
+    </div>
+    <div>Resources
+      <div>Frost Crystal</div>
+      <div>Silver</div>
+      <div>Dioxite</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Itnew_W29><a class=pl href="javascript:clr();">Itnew W29</a>
+    <div>Planet Info
+      <div>Biome: Temperate Planet</div>
+      <div>Weather: Lethal Humidity Outbreaks</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Generous</div>
+      <div>Fauna: Full</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Cobalt</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Owcestj><a class=pl href="javascript:clr();">Owcestj</a>
+    <div>Planet Info
+      <div>Biome: Paradise Planet</div>
+      <div>Weather: Light Showers</div>
+      <div>Sentinels: None Present</div>
+      <div>Flora: Ample</div>
+      <div>Fauna: Bountiful</div>
+    </div>
+    <div>Resources
+      <div>Star Bulb</div>
+      <div>Sodium</div>
+      <div>Paraffinium</div>
+      <div>Copper</div>
+    </div>
+  </div>
+</div>
+<div class=s id=Odvigal><a class=sy href="javascript:clr();">Odvigal <img src="pirate_icon.png"/></a>
+  <div>System Info
+    <div>Celestial Bodies: 5 Planets</div>
+    <div>Dominant Lifeform: Korvax</div>
+    <div>Economy: Power Generation // Black Market</div>
+    <div>Conflict level: Pirate Controlled</div>
+    <div>Glyphs: <span>115c&nbsp;&nbsp;fd97&nbsp;&nbsp;a26b</span></div>
+    <div><div class=scp><b>Distance:</b></div> 55 ly &rarr; Nomyussko</div>
+  </div>
+  <div>Technology
     <div>Suspicious Boltcaster</div>
-    <div>Suspicious Hyperdrive</div>
-    <div>Suspicious Infra-Knife</div>
+    <div>Suspicious Launch Thrusters</div>
     <div>Suspicious Life Support</div>
     <div>Suspicious Movement</div>
     <div>Suspicious Neutron Cannon</div>
-    <div>Suspicious Photon Cannon</div>
     <div>Suspicious Plasma Launcher</div>
-    <div>Suspicious Pulse Spitter</div>
+    <div>Suspicious Positron</div>
+    <div>Suspicious Pulse Engine</div>
+    <div>Suspicious Scanner</div>
+    <div>Suspicious Scatter Blaster</div>
     <div>Suspicious Shield</div>
     <div>Suspicious Starship Shield</div>
   </div>
   <div>Buy Sell
+      <div><div class=scp>Blood Salt</div></div>
       <div><div class=scp>Counterfeit Circuits</div></div>
+    <div>Di-hydrogen</div>
+    <div>Hadal Core</div>
     <div>Hypnotic Eye</div>
-    <div>Larval Core</div>
       <div><div class=scp>Moon Ether</div></div>
-      <div><div class=scp>NipNip Buds</div></div>
-    <div>Repair Kit</div>
-    <div>Runaway Mould</div>
+    <div>Pugneum</div>
+    <div>Residual Goop</div>
     <div>Starshield Battery</div>
     <div>Suspicious Packet (Arms)</div>
     <div>Suspicious Packet (Goods)</div>
     <div>Suspicious Packet (Tech)</div>
     <div>Tritium</div>
   </div>
-  <div class=p id=Iami_B7><a class=pl href="javascript:clr();">Iami B7</a>
+  <div class=p id=Useiy_40/J5><a class=pl href="javascript:clr();">Useiy 40/J5</a>
     <div>Planet Info
-      <div>Biome: Rainy Planet</div>
-      <div>Weather: Mellow</div>
-      <div>Sentinels: <div class="poi rd">Hateful</div></div>
-      <div>Flora: Ample</div>
+      <div>Biome: Verdant Planet</div>
+      <div>Weather: Blistering Damp</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Abundant</div>
       <div>Fauna: Abundant</div>
     </div>
     <div>Resources
@@ -436,681 +1036,169 @@ Xeno-Colony</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Tiletchol_Dakas><a class=pl href="javascript:clr();">Tiletchol Dakas</a>
+  <div class=p id=Stjo_Beta><a class=pl href="javascript:clr();">Stjo Beta</a>
     <div>Planet Info
-      <div>Biome: Barren Planet</div>
-      <div>Weather: Planetwide Desiccation</div>
-      <div>Sentinels: Observant</div>
+      <div>Biome: Incandescent Planet</div>
+      <div>Weather: Atmospheric Heat Instabilities</div>
+      <div>Sentinels: <div class="poi rd">Frenzied</div></div>
+      <div>Flora: Ample</div>
+      <div>Fauna: High</div>
+    </div>
+    <div>Resources
+      <div>Solanium</div>
+      <div>Sodium</div>
+      <div>Phosphorus</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Adcaseiu_II><a class=pl href="javascript:clr();">Adcaseiu II</a>
+    <div>Planet Info
+      <div>Biome: Tropical Planet</div>
+      <div>Weather: Usually Mild</div>
+      <div>Sentinels: Absent</div>
       <div>Flora: Abundant</div>
-      <div>Fauna: Rich</div>
+      <div>Fauna: Copious</div>
     </div>
     <div>Resources
       <div>Salvageable Scrap</div>
-      <div>Cactus Flesh</div>
-      <div>Sodium</div>
-      <div>Pyrite</div>
+      <div>Star Bulb</div>
+      <div>Silver</div>
+      <div>Paraffinium</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Angdona_Y45><a class=pl href="javascript:clr();">Angdona Y45</a>
+  <div class=p id=Letu_III><a class=pl href="javascript:clr();">Letu III</a>
     <div>Planet Info
-      <div>Biome: Fungal Planet</div>
-      <div>Weather: Haunted Frost</div>
-      <div>Sentinels: Require Obedience</div>
-      <div>Flora: Misplaced</div>
-      <div>Fauna: Uprooted</div>
-    </div>
-    <div>Resources
-      <div>Sodium</div>
-      <div>Gold</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Nita_75/E7><a class=pl href="javascript:clr();">Nita 75/E7</a>
-    <div>Planet Info
-      <div>Biome: Acrid Planet</div>
-      <div>Weather: <div class="poi rd">Dangerously Toxic Rain</div></div>
-      <div>Sentinels: Frequent</div>
-      <div>Flora: Ample</div>
+      <div>Biome: Rotting Planet</div>
+      <div>Weather: Toxic Monscons</div>
+      <div>Sentinels: Observant</div>
+      <div>Flora: Generous</div>
       <div>Fauna: Abundant</div>
     </div>
     <div>Resources
       <div>Fungal Mould</div>
-      <div>Salt</div>
+      <div>Sodium</div>
       <div>Ammonia</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Irtinet><a class=pl href="javascript:clr();">Irtinet</a>
+  <div class=p id=Pesterry><a class=pl href="javascript:clr();">Pesterry</a>
     <div>Planet Info
-      <div>Biome: Flourishing Planet</div>
-      <div>Weather: Mostly Calm</div>
-      <div>Sentinels: <div class="poi rd">Aggressive</div></div>
-      <div>Flora: Generous</div>
-      <div>Fauna: Full</div>
+      <div>Biome: Foaming Planet</div>
+      <div>Weather: Infinite Toxic Mist</div>
+      <div>Sentinels: Frequent</div>
+      <div>Flora: Forfeited</div>
+      <div>Fauna: Between Worlds</div>
     </div>
     <div>Resources
-      <div>Star Bulb</div>
-      <div>Cobalt</div>
-      <div>Paraffinium</div>
+      <div></div>
+      <div>Gold</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Aphas_XVIII><a class=pl href="javascript:clr();">Aphas XVIII</a>
+</div>
+<div class=s id=Tekamy><a class=sy href="javascript:clr();">Tekamy</a>
+  <div>System Info
+    <div>Celestial Bodies: 4 Planets</div>
+    <div>Dominant Lifeform: Gek</div>
+    <div>Economy: Construction // Satisfactory</div>
+    <div>Conflict level: Unruly</div>
+    <div>Glyphs: <span>119f&nbsp;&nbsp;fd97&nbsp;&nbsp;a26b</span></div>
+  </div>
+  <div>Technology
+    <div>Cold Protection</div>
+    <div>Cyclotron</div>
+    <div>Geology Cannon</div>
+    <div>Pulse Spitter</div>
+    <div>Radiation Protection</div>
+    <div>Toxic Protection</div>
+  </div>
+  <div>Buy Sell
+    <div>Aronium</div>
+    <div>Cobalt</div>
+    <div>Di-hydrogen Jelly</div>
+    <div>Enormous Metal Cog</div>
+    <div>Ferrite Dust</div>
+    <div>Hermetic Seal</div>
+    <div>Ionised Cobalt</div>
+    <div>Magnetic Resonator</div>
+    <div>Mesh Decouplers</div>
+    <div>Metal Plating</div>
+    <div>Microprocessor</div>
+    <div>Non-Stick Piston</div>
+    <div>Pugneum</div>
+    <div>Pure Ferrite</div>
+    <div>Residual Goop</div>
+    <div>Silver</div>
+    <div>Tritium</div>
+    <div>Unstable Plasma</div>
+    <div>Uranium</div>
+    <div>Wiring Loom</div>
+  </div>
+  <div class=p id=Ayama_34/F6><a class=pl href="javascript:clr();">Ayama 34/F6</a>
     <div>Planet Info
-      <div>Biome: Frozen Planet</div>
-      <div>Weather: Raging Snowstorms</div>
-      <div>Sentinels: Enforcing</div>
-      <div>Flora: Rich</div>
+      <div>Biome: Boiling Doom</div>
+      <div>Weather: Wandering Hot Spots</div>
+      <div>Sentinels: None</div>
+      <div>Flora: Diseased</div>
+      <div>Fauna: Abundant</div>
+    </div>
+    <div>Resources
+      <div>Ancient Bones</div>
+      <div>Solanium</div>
+      <div>Salt</div>
+      <div>Phosphorus</div>
+      <div>Copper</div>
+    </div>
+  </div>
+  <div class=p id=Uiseid><a class=pl href="javascript:clr();">Uiseid</a>
+    <div>Planet Info
+      <div>Biome: Torrid Planet</div>
+      <div>Weather: Infrequent Heat Storms</div>
+      <div>Sentinels: None</div>
+      <div>Flora: High</div>
       <div>Fauna: Bountiful</div>
     </div>
     <div>Resources
       <div>Salvageable Scrap</div>
-      <div>Frost Crystal</div>
-      <div>Cobalt</div>
-      <div>Dioxite</div>
-      <div>Copper</div>
-    </div>
-  </div>
-</div>
-<div class=s id=Denayanov><a class=sy href="javascript:clr();">Denayanov</a>
-  <div>System Info
-    <div>Celestial Bodies: 6 Planets</div>
-    <div>Dominant Lifeform: Korvax</div>
-    <div>Economy:</div>
-    <div>Nano-construction // Satisfactory</div>
-    <div>Conflict level: Alarming</div>
-    <div>Glyphs: <span>1014&nbsp;&nbsp;056e&nbsp;&nbsp;df93</span></div>
-  </div>
-  <div>Technology
-    <div>Cold Protection</div>
-    <div>Cyclotron</div>
-    <div>Mining Beam</div>
-    <div>Phase Beam</div>
-    <div>Pulse Spitter</div>
-    <div>Underwater Protection</div>
-  </div>
-  <div>Buy Sell
-    <div>Autonomous Positioning Unit</div>
-    <div>Chromatic Metal</div>
-    <div>Decommissioned Circuits</div>
-    <div>Hermetic Seal</div>
-    <div>Ion Capacitor</div>
-    <div>Lemmium</div>
-    <div>Magnetic Resonator</div>
-    <div>Magnetised Ferrite</div>
-    <div>Metal Plating</div>
-    <div>Microprocessor</div>
-    <div>Paraffinium</div>
-    <div>Phosphorus</div>
-    <div>Pyrite</div>
-    <div>Silver</div>
-    <div>Tritium</div>
-    <div>Unstable Plasma</div>
-    <div>Welding Soap</div>
-    <div>Wiring Loom</div>
-  </div>
-  <div class=p id=Lottonia_Chofu><a class=pl href="javascript:clr();">Lottonia Chofu</a>
-    <div>Planet Info
-      <div>Biome: Bleak Planet</div>
-      <div>Weather: Highly Variable Temperatures</div>
-      <div>Sentinels: Regular Patrols</div>
-      <div>Flora: Rich</div>
-      <div>Fauna: Abundant</div>
-    </div>
-    <div>Resources
-      <div>Cactus Flesh</div>
-      <div>Cobalt</div>
-      <div>Pyrite</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Yilis_IV><a class=pl href="javascript:clr();">Yilis IV</a>
-    <div>Planet Info
-      <div>Biome: Capped Planet</div>
-      <div>Weather: Crimson Heat</div>
-      <div>Sentinels: Require Orthodoxy</div>
-      <div>Flora: Forfeited</div>
-      <div>Fauna: Between Worlds</div>
-      <div>POI: <div class="poi yl">Ms 2.6</div> Fallen Giants - Explore a freighter crash site<blockquote><div class=sct>Base:</div> Crashed Freighter -15.79, -137.77<blockquote></div>
-    </div>
-    <div>Resources
-      <div>Magnetised Ferrite</div>
-      <div>Gold</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Couverles_Yoha><a class=pl href="javascript:clr();">Couverles Yoha</a>
-    <div>Planet Info
-      <div>Biome: Bountiful Planet</div>
-      <div>Weather: Choking Humidity</div>
-      <div>Sentinels: Enforcing</div>
-      <div>Flora: Ample</div>
-      <div>Fauna: Abundant</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Cobalt</div>
-      <div>Paraffinium</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Rinusc_XIX><a class=pl href="javascript:clr();">Rinusc XIX</a>
-    <div>Planet Info
-      <div>Biome: Caustic Planet</div>
-      <div>Weather: Choking Clouds</div>
-      <div>Sentinels: Enforcing</div>
-      <div>Flora: Full</div>
-      <div>Fauna: Average</div>
-    </div>
-    <div>Resources
-      <div>Fungal Mould</div>
+      <div>Solanium</div>
       <div>Salt</div>
-      <div>Ammonia</div>
+      <div>Phosphorus</div>
       <div>Copper</div>
     </div>
   </div>
-  <div class=p id=Eynsihept_B35><a class=pl href="javascript:clr();">Eynsihept B35</a>
+  <div class=p id=Arasu_14/H3><a class=pl href="javascript:clr();">Arasu 14/H3</a>
     <div>Planet Info
-      <div>Biome: Infected Dustbowl</div>
-      <div>Weather: Direct Sunlight</div>
-      <div>Sentinels: Attentive</div>
-      <div>Flora: Viral</div>
-      <div>Fauna: High</div>
-      <div>POI: <div class="poi yl">Ap 1</div> Portal +59.66, -54.45<blockquote><div class=sct>Reward:</div> Memory Resonator plans<blockquote>Ancestral Memories &times;16<br>Gold &times;40<br>Chromatic Metal &times;30</blockquote></blockquote></div>
-      <div>POI: <div class="poi yl">Ms 1.7</div> Wake The Past <img src="grave_icon.png"/> Grave</div>
-    </div>
-    <div>Resources
-      <div>Ancient Bones</div>
-      <div>Cactus Flesh</div>
-      <div>Magnetised Ferrite</div>
-      <div>Pyrite</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Mebayasicis_Gatag><a class=pl href="javascript:clr();">Mebayasicis Gatag</a>
-    <div>Planet Info
-      <div>Biome: Verdant Planet</div>
-      <div>Weather: Lethal Humidity Outbreaks</div>
+      <div>Biome: Arctic Planet</div>
+      <div>Weather: Outbreaks of Frozen Rain</div>
       <div>Sentinels: Enforcing</div>
-      <div>Flora: Generous</div>
-      <div>Fauna: Rich</div>
-      <div>POI: <div class="poi yl">Ms 2.5</div>Atonement - Tame a predator <img src="predator_icon.png"/></div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Salt</div>
-      <div>Paraffinium</div>
-      <div>Copper</div>
-    </div>
-  </div>
-</div>
-<div class=s id=Washeyu-Hebe><a class=sy href="javascript:clr();">Washeyu-Hebe</a>
-  <div>System Info
-    <div>Celestial Bodies: 4 Planets // 1 Moon</div>
-    <div>Dominant Lifeform: Korvax</div>
-    <div>Economy: - Data Unavailable -</div>
-    <div>Conflict level: - Data Unavailable -</div>
-    <div>Glyphs: <span>107e&nbsp;&nbsp;056e&nbsp;&nbsp;df94</span></div>
-    <div>Stellar Class: E5f<span class='dot gr'></span></div>
-  </div>
-  <div>Technology
-  </div>
-  <div>Buy Sell
-    <div>Aronium</div>
-    <div>Chromatic Metal</div>
-    <div>Decommissioned Circuits</div>
-    <div>Dioxite</div>
-    <div>Metal Plating</div>
-    <div>Microprocessor</div>
-    <div>Pyrite</div>
-    <div>Residual Goop</div>
-    <div>Solar Mirror</div>
-    <div>Unstable Plasma</div>
-    <div>Welding Soap</div>
-    <div>Wiring Loom</div>
-  </div>
-  <div class=p id=Losa_Alpha><a class=pl href="javascript:clr();">Losa Alpha</a>
-    <div>Planet Info
-      <div>Biome: Dusty Planet</div>
-      <div>Weather: Blasted Atmosphere</div>
-      <div>Sentinels: Require Obedience</div>
-      <div>Flora: Copious</div>
-      <div>Fauna: Not Present</div>
+      <div>Flora: Frequent</div>
+      <div>Fauna: Generous</div>
     </div>
     <div>Resources
       <div>Salvageable Scrap</div>
-      <div>Cactus Flesh</div>
-      <div>Salt</div>
-      <div>Pyrite</div>
-      <div>Emeril</div>
-    </div>
-  </div>
-  <div class=p id=Saderry_Unam><a class=pl href="javascript:clr();">Saderry Unam</a>
-    <div>Planet Info
-      <div>Biome: Rainy Planet</div>
-      <div>Weather: Mostly Calm</div>
-      <div>Sentinels: Frequent</div>
-      <div>Flora: Full</div>
-      <div>Fauna: None</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Silver</div>
-      <div>Paraffinium</div>
-      <div>Emeril</div>
-    </div>
-  </div>
-  <div class=p id=Oger_Alpha><a class=pl href="javascript:clr();">Oger Alpha</a>
-    <div>Planet Info
-      <div>Biome: Infested Paradise</div>
-      <div>Weather: <div class="poi rd">Superheated Rain</div></div>
-      <div>Sentinels: <div class="poi rd">Frenzied</div></div>
-      <div>Flora: Rich</div>
-      <div>Fauna: Lacking</div>
-      <div>POI: <div class="poi yl">Ap 2</div> Portal +34.82, +16.52</div>
-      <div>POI: <div class="poi yl">Ms 2.2</div> To Crave The Stars <img src="grave_icon.png"/> Grave</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Cobalt</div>
-      <div>Paraffinium</div>
-      <div>Emeril</div>
-    </div>
-  </div>
-  <div class=p id=Agjy_Beta><a class=pl href="javascript:clr();">Agjy Beta</a>
-    <div>Planet Info
-      <div>Biome: Desert Planet</div>
-      <div>Weather: Extreme Wind Blasting</div>
-      <div>Sentinels: Require Obedience</div>
-      <div>Flora: Full</div>
-      <div>Fauna: Undetected</div>
-    </div>
-    <div>Resources
-      <div>Cactus Flesh</div>
-      <div>Silver</div>
-      <div>Pyrite</div>
-      <div>Activated Emeril</div>
-    </div>
-  </div>
-  <div class=p id=Yornandac_Alpha><a class=pl href="javascript:clr();">Yornandac Alpha</a>
-    <div>Planet Info
-      <div>Biome: High Temperature Planet</div>
-      <div>Weather: Dangerously Hot</div>
-      <div>Sentinels: Observant</div>
-      <div>Flora: Generous</div>
-      <div>Fauna: Not Present</div>
-    </div>
-    <div>Resources
-      <div>Solanium</div>
-      <div>Cobalt</div>
-      <div>Phosphorus</div>
-      <div>Emeril</div>
-    </div>
-  </div>
-</div>
-<div class=s id=Satands><a class=sy href="javascript:clr();">Satands</a>
-  <div>System Info
-    <div>Celestial Bodies: 2 Planets</div>
-    <div>Dominant Lifeform: Vy'keen</div>
-    <div>Economy: Engineering // Sustainable</div>
-    <div>Conflict level: Critical</div>
-    <div>Glyphs: <span>120e&nbsp;&nbsp;066e&nbsp;&nbsp;df94</span></div>
-  </div>
-  <div>Technology
-    <div>Boltcaster</div>
-    <div>Cold Protection</div>
-    <div>Cyclotron</div>
-    <div>Exocraft Boost</div>
-    <div>Hot Protection</div>
-    <div>Infra-Knife</div>
-    <div>Mining Beam</div>
-    <div>Minotaur Laser</div>
-    <div>Neutron Cannon</div>
-    <div>Radiation Protection</div>
-    <div>Underwater Protection</div>
-  </div>
-  <div>Buy Sell
-    <div>Decommissioned Circuits</div>
-    <div>Dirty Bronze</div>
-    <div>Ion Capacitor</div>
-    <div>Magnetic Resonator</div>
-    <div>Magno-Gold</div>
-    <div>Metal Plating</div>
-    <div>Microprocessor</div>
-    <div>Phosphorus</div>
-    <div>Pure Ferrite</div>
-    <div>Silver</div>
-    <div>Unstable Plasma</div>
-    <div>Welding Soap</div>
-    <div>Wiring Loom</div>
-  </div>
-  <div class=p id=Ninarb_S13><a class=pl href="javascript:clr();">Ninarb S13</a>
-    <div>Planet Info
-      <div>Biome: Xeno-Colony</div>
-      <div>Weather: Bilious Storms</div>
-      <div>Sentinels: Regular Patrols</div>
-      <div>Flora: Copious</div>
-      <div>Fauna: Sporadic</div>
-      <div>POI: <div class="poi yl">Ap 3</div> Portal -13.49, -48.56</div>
-      <div>POI: <div class="poi yl">Ms 3.2</div> Obsession <img src="grave_icon.png"/> Grave<blockquote><div class=sct>Reward:</div> Memory Fragment plans<blockquote>Wiring Loom &times;2<br>Silver &times;50<br>Pugneum &times;100</blockquote></blockquote></div>
-      <div>POI: <div class="poi yl">Ms 4.6</div> Cluster Horde - Earn nanites: 1000<blockquote><div class=sct>Reward:</div><blockquote>Wiring Loom &times;10<br>Silver &times;250<br>Pugneum &times;500</blockquote></blockquote></div>
-      <div>POI: <div class="poi yl">Ms 3.5</div> Self Improvement - Summon your own memory fragment</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Salt</div>
-      <div>Paraffinium</div>
-      <div>Activated Copper</div>
-    </div>
-  </div>
-  <div class=p id=Wilm><a class=pl href="javascript:clr();">Wilm</a>
-    <div>Planet Info
-      <div>Biome: Freezing Planet</div>
-      <div>Weather: Freezing</div>
-      <div>Sentinels: Regular Patrols</div>
-      <div>Flora: Uncommen</div>
-      <div>Fauna: Numerous</div>
-    </div>
-    <div>Resources
       <div>Frost Crystal</div>
-      <div>Sodium</div>
+      <div>Silver</div>
       <div>Dioxite</div>
       <div>Copper</div>
     </div>
   </div>
-</div>
-<div class=s id=Yedneya><a class=sy href="javascript:clr();">Yedneya</a>
-  <div>System Info
-    <div>Celestial Bodies: 3 Planets // 1 Moon</div>
-    <div>Dominant Lifeform: Korvax</div>
-    <div>Economy: High Voltage // Sustainable</div>
-    <div>Conflict level: Critical</div>
-    <div>Glyphs: <span>1004&nbsp;&nbsp;066e&nbsp;&nbsp;df96</span></div>
-  </div>
-  <div>Technology
-    <div>Hot Protection</div>
-    <div>Hyperdrive</div>
-    <div>Launch Thrusters</div>
-    <div>Life Support</div>
-    <div>Mining Beam</div>
-    <div>Nautilon Cannon</div>
-    <div>Radiation Protection</div>
-    <div>Shield</div>
-    <div>Starship Shield</div>
-    <div>Underwater Protection</div>
-  </div>
-  <div>Buy Sell
-    <div>Ammonia</div>
-    <div>Di-hydrogen Jelly</div>
-    <div>Hydraulic Wiring</div>
-    <div>Industrial-Grade Battery</div>
-    <div>Magnetised Ferrite</div>
-    <div>Metal Plating</div>
-    <div>Microprocessor</div>
-    <div>Ohmic Gel</div>
-    <div>Pyrite</div>
-    <div>Residual Goop</div>
-    <div>Spark Canister</div>
-    <div>Tritium</div>
-    <div>Unstable Plasma</div>
-    <div>Wiring Loom</div>
-  </div>
-  <div class=p id=Geori><a class=pl href="javascript:clr();">Geori</a>
+  <div class=p id=Myonker><a class=pl href="javascript:clr();">Myonker</a>
     <div>Planet Info
-      <div>Biome: Viridescent Planet</div>
-      <div>Weather: Usually Mild</div>
-      <div>Sentinels: Threatening</div>
-      <div>Flora: Abundant</div>
-      <div>Fauna: High</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Silver</div>
-      <div>Paraffinium</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Syrachu><a class=pl href="javascript:clr();">Syrachu</a>
-    <div>Planet Info
-      <div>Biome: Glacial Planet</div>
-      <div>Weather: Crisp</div>
-      <div>Sentinels: Require Orthodoxy</div>
-      <div>Flora: Abundant</div>
-      <div>Fauna: Common</div>
-    </div>
-    <div>Resources
-      <div>Frost Crystal</div>
-      <div>Salt</div>
-      <div>Dioxite</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Bognorth_V><a class=pl href="javascript:clr();">Bognorth V</a>
-    <div>Planet Info
-      <div>Biome: Radioactive Abomination</div>
-      <div>Weather: Irradiated Storms</div>
-      <div>Sentinels: Unwavering</div>
-      <div>Flora: Infected</div>
-      <div>Fauna: Abundant</div>
-      <div>POI: <div class="poi yl">Ap 4</div> Portal +11.46, +6.11</div>
-      <div>POI: <div class="poi yl">Ms 4.2</div> Monomania <img src="grave_icon.png"/> Grave</div>
-    </div>
-    <div>Resources
-      <div>Gamma Root</div>
-      <div>Cobalt</div>
-      <div>Uranium</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Tarv_X5><a class=pl href="javascript:clr();">Tarv X5</a>
-    <div>Planet Info
-      <div>Biome: Caustic Planet</div>
-      <div>Weather: Caustic Moisture</div>
-      <div>Sentinels: Frequent</div>
-      <div>Flora: Low</div>
-      <div>Fauna: High</div>
-    </div>
-    <div>Resources
-      <div>Ancient Bones</div>
-      <div>Fungal Mould</div>
-      <div>Silver</div>
-      <div>Ammonia</div>
-      <div>Copper</div>
-    </div>
-  </div>
-</div>
-<div class=s id=Hantury_VIII><a class=sy href="javascript:clr();">Hantury VIII</a>
-  <div>System Info
-    <div>Celestial Bodies: 3 Planets</div>
-    <div>Dominant Lifeform: Vy'keen</div>
-    <div>Economy: Nano-construction // Satisfactory</div>
-    <div>Conflict level: Unruly</div>
-    <div>Glyphs: <span>120e&nbsp;&nbsp;066e&nbsp;&nbsp;ef96</span></div>
-  </div>
-  <div>Technology
-    <div>Blaze Javelin</div>
-    <div>Boltcaster</div>
-    <div>Cold Protection</div>
-    <div>Cyclotron</div>
-    <div>Exocraft Laser</div>
-    <div>Hot Protection</div>
-    <div>Mining Beam</div>
-    <div>Positron</div>
-  </div>
-  <div>Buy Sell
-    <div>Amino Chamber</div>
-    <div>Ammonia</div>
-    <div>Autonomous Positioning Unit</div>
-    <div>Carbon Nanotubes</div>
-    <div>Chromatic Metal</div>
-    <div>Copper</div>
-    <div>Decommissioned Circuits</div>
-    <div>Ion Capacitor</div>
-    <div>Magnetised Ferrite</div>
-    <div>Magno-Gold</div>
-    <div>Metal Plating</div>
-    <div>Microprocessor</div>
-    <div>Platinum</div>
-    <div>Pure Ferrite</div>
-    <div>Pyrite</div>
-    <div>Unstable Plasma</div>
-    <div>Welding Soap</div>
-    <div>Wiring Loom</div>
-  </div>
-  <div class=p id=Enporene><a class=pl href="javascript:clr();">Enporene</a>
-    <div>Planet Info
-      <div>Biome: Rainy Planet</div>
-      <div>Weather: <div class="poi rd">Blistering Floods</div></div>
+      <div>Biome: Mutated Planet</div>
+      <div>Weather: Gamma Cyclones</div>
       <div>Sentinels: Malicious</div>
-      <div>Flora: High</div>
-      <div>Fauna: Ample</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Magnetised Ferrite</div>
-      <div>Paraffinium</div>
-      <div>Activated Copper</div>
-    </div>
-  </div>
-  <div class=p id=Yardogo_XVII><a class=pl href="javascript:clr();">Yardogo XVII</a>
-    <div>Planet Info
-      <div>Biome: Fiery Dreadworld</div>
-      <div>Weather: Burning Gas Clouds</div>
-      <div>Sentinels: Require Obedience</div>
-      <div>Flora: Twisted</div>
-      <div>Fauna: Copious</div>
-      <div>POI: <div class="poi yl">Ap 5</div> Portal +2.45, -124.65</div>
-      <div>POI: <div class="poi yl">Ms 5.2</div> Another Chance <img src="grave_icon.png"/> Grave</div>
-      <div>POI: <div class="poi yl">Ms 5.4</div> A Shattered Past - Pulse to a derelict freighter<blockquote><div class=sct>Reward:</div> Whalesong Flute plans<blockquote>Liquid Sun &times;32<br>Ancestral Memories &times;32<br>Somnal Dust &times;32</blockquote></blockquote></div>
-      <div>POI: <div class="poi yl">Ms 5.5</div> The Siren - Assemble the Whalesong</div>
-      <div>POI: <div class="poi yl">Ms 5.6</div> Leviathan - Call the Leviathan</div>
-    </div>
-    <div>Resources
-      <div>Solanium</div>
-      <div>Silver</div>
-      <div>Phosphorus</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Hawesl_XI><a class=pl href="javascript:clr();">Hawesl XI</a>
-    <div>Planet Info
-      <div>Biome: Arid Planet</div>
-      <div>Weather: Parched</div>
-      <div>Sentinels: Infrequent</div>
-      <div>Flora: High</div>
-      <div>Fauna: Typical</div>
-    </div>
-    <div>Resources
-      <div>Salvageable Scrap</div>
-      <div>Solanium</div>
-      <div>Salt</div>
-      <div>Phosphorus</div>
-      <div>Copper</div>
-    </div>
-  </div>
-</div>
-<div class=s id=Oginic-Roran_II><a class=sy href="javascript:clr();">Oginic-Roran II</a>
-  <div>System Info
-    <div>Celestial Bodies: 4 Planets</div>
-    <div>Dominant Lifeform: Vy'keen</div>
-    <div>Economy: Alchemical // Promising</div>
-    <div>Conflict level: Tranquil</div>
-    <div>Glyphs: <span>1197&nbsp;&nbsp;066e&nbsp;&nbsp;ef96</span></div>
-    <div>Distance: 35 ly &rarr; Hantury VIII</div>
-  </div>
-  <div>Technology
-    <div>Cold Protection</div>
-    <div>Life Support</div>
-    <div>Nautilon Cannon</div>
-    <div>Neutron Cannon</div>
-    <div>Photon Cannon</div>
-    <div>Plasma Launcher</div>
-    <div>Pulse Spitter</div>
-    <div>Underwater Protection</div>
-  </div>
-  <div>Buy Sell
-    <div>Ammonia</div>
-    <div>Chromatic Metal</div>
-    <div>Copper</div>
-    <div>Dirty Bronze</div>
-    <div>Hermetic Seal</div>
-    <div>Lemmium</div>
-    <div>Magnetic Resonator</div>
-    <div>Metal Plating</div>
-    <div>Microprocessor</div>
-    <div>Nanotube Crate</div>
-    <div>Optical Solvent</div>
-    <div>Pyrite</div>
-    <div>Rusted Metal</div>
-    <div>Self-Repairing Heridium</div>
-    <div>Silver</div>
-    <div>Tritium</div>
-    <div>Unstable Plasma</div>
-    <div>Wiring Loom</div>
-  </div>
-  <div class=p id=Gaapo_VI><a class=pl href="javascript:clr();">Gaapo VI</a>
-    <div>Planet Info
-      <div>Biome: Foggy Planet</div>
-      <div>Weather: <div class="poi rd">Caustic Floods</div></div>
-      <div>Sentinels: Unwavering</div>
-      <div>Flora: Abundant</div>
-      <div>Fauna: Frequent</div>
-      <div>POI: <div class="poi yl">Ms 3.4</div> Calcified Echoes - Collect Storm Crystals: 2<blockquote>Credit: <a href="https://youtu.be/7-p2lJsgIKk?t=82" target=_blank><img src=yt_icon.png> Scottish Rod</a></blockquote></div>
-    </div>
-    <div>Resources
-      <div>Sodium</div>
-      <div>Paraffinium</div>
-      <div>Activated Copper</div>
-    </div>
-  </div>
-  <div class=p id=Azaw_28/F2><a class=pl href="javascript:clr();">Azaw 28/F2</a>
-    <div>Planet Info
-      <div>Biome: Temperate Planet</div>
-      <div>Weather: Blistering Damp</div>
-      <div>Sentinels: Ever-present</div>
-      <div>Flora: Copious</div>
-      <div>Fauna: Frequent</div>
-    </div>
-    <div>Resources
-      <div>Star Bulb</div>
-      <div>Salt</div>
-      <div>Paraffinium</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Sialatwhith_Izur><a class=pl href="javascript:clr();">Sialatwhith Izur</a>
-    <div>Planet Info
-      <div>Biome: Scalding Planet</div>
-      <div>Weather: Direct Sunlight</div>
-      <div>Sentinels: Isolated</div>
-      <div>Flora: Abundant</div>
-      <div>Fauna: High</div>
-    </div>
-    <div>Resources
-      <div>Solanium</div>
-      <div>Cobalt</div>
-      <div>Phosphorus</div>
-      <div>Copper</div>
-    </div>
-  </div>
-  <div class=p id=Hegoria><a class=pl href="javascript:clr();">Hegoria</a>
-    <div>Planet Info
-      <div>Biome: Isotopic Planet</div>
-      <div>Weather: Irradiated Winds</div>
-      <div>Sentinels: Remote</div>
-      <div>Flora: Fair</div>
-      <div>Fauna: Ordinary</div>
+      <div>Flora: Diseased</div>
+      <div>Fauna: Abundant</div>
     </div>
     <div>Resources
       <div>Gamma Root</div>
-      <div>Cobalt</div>
+      <div>Salt</div>
       <div>Uranium</div>
-      <div>Copper</div>
+      <div>Activated Copper</div>
     </div>
   </div>
 </div>
-
 <div style="margin-top: 700px;"></div>
 <script>
 function clr(){
