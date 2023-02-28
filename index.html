@@ -42,6 +42,23 @@ a {white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-decoration: n
 .scb {display: inline-block; padding-left: 0; color:blue !important;}
 .sct {display: inline-block; padding-left: 0; color:teal !important;}
 .scp {display: inline-block; padding-left: 0; color:purple !important;}
+/* https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders?r=Saves_AllUserSaves */
+.box {
+  --b: 1px;    /* thickness of the border */
+  --c: #888;   /* color of the border */
+  --w: 20px;   /* width of border */
+  
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  width:330px; 
+  padding: 10px;
+}
 </style></head><body>
 <h2>Utopia System Summary</h2>
 <table><tr><th>Systems</th><th>Planets</th></tr>
@@ -92,6 +109,7 @@ Quagmire Planet</div>
     <div>Economy: - Data Unavailable -</div>
     <div>Conflict level: - Data Unavailable -</div>
     <div>Glyphs: <span>11c9&nbsp;&nbsp;03ce&nbsp;&nbsp;7641</span></div>
+    <div><div class="poi tr">TIP:</div> Create a "Restore Point" before <b>learning</b> any upgrade or <b>cooking</b> any recipe</div>
   </div>
   <div>Technology
   </div>
@@ -116,7 +134,15 @@ Quagmire Planet</div>
       <div>Sentinels: None</div>
       <div>Flora: Frequent</div>
       <div>Fauna: Abundant</div>
-      <div>POI: <div class="poi yl">Settlement #1</div><blockquote><div class=sct>Checklist before leaving base:</div><blockquote>Boltcaster<br>Ammunition<br>Life Support Gel<br>Hermatic Seal<br>Di-hydrogen Jelly<br>Metal Plating<br>Nomad (2000u)</blockquote></blockquote><blockquote>Optional:<blockquote>Nutrient Processor: Metal Plating&times;2, Hermetic Seal&times;1, Sodium&times;25<blockquote>Carbon &rarr; Creature Pellets</blockquote>Humming Sacs&times;5<blockquote><div class=sct>Reward:</div> Haz-Mat Gauntlets</blockquote>Star Bulbs &rarr; Pilgrimberry &rarr; Pilgrim's Tonic<br>Impulse Beans &rarr; Bittersweet Cocoa<blockquote><div class=sct>Reward:</div> Assortment of cakes</blockquote>Companion (Predators are fast!)</blockquote></blockquote></div>
+      <div>POI: <div class="poi yl">Ms 1.1</div> Foundations - Establish a base</div>
+      <div>POI: <div class="poi yl">Ms 1.3</div> Ground Control - Upload a base</div>
+      <div>POI: <div class="poi yl">Ms 1.2</div> Provisions<blockquote>Boltcaster<br>Ammunition<br>Life Support Gel<br>Hermatic Seal<br>Di-hydrogen Jelly<br>Metal Plating</blockquote></div>
+      <div>POI: <div class="poi yl">Ms 1.4</div> Planet Link - Deploy an Exocraft</div>
+      <div>POI: <div class="poi yl">Ms 2.6</div> Companion - Adopt a companion<blockquote>Predators are fast!</blockquote></div>
+      <div>POI: <div class="poi yl">Ms 2.5</div> Albumen Spawn<blockquote>Humming Sacs&times;5<br><div class=sct>Reward:</div> Haz-Mat Gauntlets</blockquote>POI: <div class="poi yl">Ms 3.7</div> Local Delicacies<blockquote>Star Bulbs &rarr; Pilgrimberry &rarr; Pilgrim's Tonic<br>Impulse Beans &rarr; Bittersweet Cocoa<br><div class=sct>Reward:</div> Assortment of cakes</blockquote></div>
+      <div>POI: <div class="poi yl">Ms 1.6</div> Scenic Route - Travel by Exocraft: 2000u</div>
+      <div>POI: <div class="poi yl">Ms 1.5</div> System Link - Locate and Repair your starship</div>
+      <div>POI: <div class="poi yl">Ms 1.7</div> Outpost Alpha - Archive +15.11, -14.21</div>
     </div>
     <div>Resources
       <div>Star Bulb</div>
@@ -132,8 +158,8 @@ Quagmire Planet</div>
       <div>Sentinels: Frequent</div>
       <div>Flora: Intermittent</div>
       <div>Fauna: Medium</div>
-      <div>POI: <div class="poi yl">Settlement #2</div><blockquote><div class=scr><b>BUGGED:</b></div> Save before you learn any upgrade.<br> The milestone must be selected to register.<br> You've been <b>WARNED!</b><blockquote> Ironclad<br>Advanced Mechanics<br>Omni-Tool<br>Flight Calculations<blockquote><blockquote></div>
-      <div>POI: <div class="poi yl">Ms 2.4</div> Ironclad<blockquote><div class=sct><b>Reward:</b></div> Airburst Engine<br><b>Tip:</b> Don't install! <br>Wait for the pre-packaged one at <br><div class="poi yl">Ms 3.2</div> Assignment Gamma<blockquote></div>
+      <div>POI: <div class="poi yl">Ms 2.1</div> Outpost Beta - Archive +75.49, +152.10</div>
+      <div>POI: <div class="poi yl">Ms 2.4</div> Ironclad<blockquote><div class=sct><b>Reward:</b></div> Airburst Engine plans<br><b>Tip:</b> Don't install! <br>Wait for the pre-packaged one at <br><div class="poi yl">Ms 3.2</div> Assignment Gamma<blockquote></div>
     </div>
     <div>Resources
       <div>Salt</div>
@@ -148,7 +174,7 @@ Quagmire Planet</div>
       <div>Sentinels: <div class="poi rd">Threatening</div></div>
       <div>Flora: Full</div>
       <div>Fauna: Generous</div>
-      <div>POI: <div class="poi yl">Settlement #3</div></div>
+      <div>POI: <div class="poi yl">Ms 3.1</div> Outpost Gamma - Archive +57.84, +56.40</div>
     </div>
     <div>Resources
       <div>Star Bulb</div>
@@ -164,7 +190,7 @@ Quagmire Planet</div>
       <div>Sentinels: Frequent</div>
       <div>Flora: Infected</div>
       <div>Fauna: Generous</div>
-      <div>POI: <div class="poi yl">Settlement #4</div></div>
+      <div>POI: <div class="poi yl">Ms 4.1</div> Outpost Delta - Trade Post -49.51, +120.77</div>
     </div>
     <div>Resources
       <div>Cactus Flesh</div>
@@ -180,7 +206,7 @@ Quagmire Planet</div>
       <div>Sentinels: Unwavering</div>
       <div>Flora: Full</div>
       <div>Fauna: Frequent</div>
-      <div>POI: <div class="poi yl">Settlement #5</div></div>
+      <div>POI: <div class="poi yl">Ms 5.1</div> Outpost Epsilon - Archive -13.53, +168.79</div>
     </div>
     <div>Resources
       <div>Salt</div>
@@ -205,17 +231,19 @@ Quagmire Planet</div>
 </div>
 <h2>Utopia Crafting Summary</h2>
 <div>
-  <div><div class=sct><b>Note: </b></div>
-    Buy at Colossal Archive to build<br>
-    <b>Base Teleport Module &amp; Biofuel Reactor</b>
+  <div class="box">
+    <div class=sct><b>Tip:</b></div>
+    Buy at Colossal Archive to build:<br><br>
+    <b>Base Teleport Module &amp; Biofuel Reactor,5</b>
     <div>
       x10 Carbon Nanotubes [x1 Carbon,50]<br>
       x25 Metal Plating [x1 Ferrite Dust,50]
     </div>
   </div>
 
-<div class=p><b>Carbon,1295</b>
-<div>x5 Settlement - 8&times;floors, 7&times;walls,255</div>
+<div class=p><b>Carbon,1355</b>
+<div>x5 Utopia Station - 8&times;floors, 7&times;walls,255</div>
+<div>x1 Creature Pellets,60</div>
 <div>x1 Life Support Gel,20</div>
 </div>
 <div class=p><b>Carbon Nanotubes,13</b>
@@ -248,8 +276,9 @@ Quagmire Planet</div>
 <div>x1 Antimatter Housing,50</div>
 <div>x1 Metal Plating,50</div>
 </div>
-<div class=p><b>Hermetic Seal,1</b>
+<div class=p><b>Hermetic Seal,2</b>
 <div>x1 (R)Pulse Engine,1</div>
+<div>x1 Nutrient Processor,1</div>
 </div>
 <div class=p><b>Ion Battery,2</b>
 <div>x1 Nomad Geobay,2</div>
@@ -257,10 +286,11 @@ Quagmire Planet</div>
 <div class=p><b>Magnetised Ferrite,25</b>
 <div>x1 Utopia Exosuit Station,25</div>
 </div>
-<div class=p><b>Metal Plating,31</b>
+<div class=p><b>Metal Plating,33</b>
 <div>x1 (R)Pulse Engine,1</div>
 <div>x1 Nomad Geobay,5</div>
 <div>x5 Base Teleport Module,4</div>
+<div>x1 Nutrient Processor,2</div>
 <div>x5 Biofuel Reactor,1</div>
 </div>
 <div class=p><b>Oxygen,155</b>
@@ -277,8 +307,9 @@ Quagmire Planet</div>
 <div class=p><b>Silicate Powder,25</b>
 <div>x1 Utopia Multi-Tool Station,25</div>
 </div>
-<div class=p><b>Sodium,200</b>
+<div class=p><b>Sodium,225</b>
 <div>x5 Base Teleport Module,40</div>
+<div>x1 Nutrient Processor,25</div>
 </div>
 <div class=p><b>Tritium,25</b>
 <div>x1 Utopia Ship Station,25</div>
