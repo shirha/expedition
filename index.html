@@ -29,7 +29,7 @@ blockquote {margin: 0; padding: 0 10px; font-style: italic; color: navy}
 /* https://stackoverflow.com/questions/4919076/outline-effect-to-text */
 .s, .p {padding-top: 8px;} 
 td {vertical-align: top;}
-button {width: 185px; font-size: 18px;}
+button {font-size: 18px; padding: 2px 10px; margin-top: 15px; border-radius: 8px; border: 1px solid #222; background-color: greenyellow;}
 span {font-family: "NMS Glyphs"; font-size: larger; font-weight: bold;} 
 .dot {border-radius: 50%; border: 1px solid black; height: 10px; width: 10px; display: inline-block; margin-left: 8px;}
 .fl td::first-letter {font-weight: normal;}
@@ -519,7 +519,7 @@ Xeno-Colony</div>
     <div>Planet Info
       <div>Biome: Molten Planet</div>
       <div>Weather: Smothering Ash</div>
-      <div>Sentinels: Dissonant</div>
+      <div>Sentinels: <div class="poi co">Dissonant</div></div>
       <div>Flora: Few</div>
       <div>Fauna: High</div>
       <div>POI: <div class="poi yl">Ms 2.3</div> Radiance - Harvest Radiant Shard: 16</div>
@@ -1268,15 +1268,34 @@ Xeno-Colony</div>
     <div>Wiring Loom</div>
   </div>
 </div>
-<div style="margin-top: 700px;"></div>
+<!--button>Collapse All</button--><div style="margin-top: 700px;"></div>
 <script>
 function clr(){
   window.scrollTo(0, 0);
   window.location.href = window.location.href.split('#')[0];
   return false;
 }
+
 function sv(id){
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
-
+/*
+document.querySelector('button').addEventListener('click', function(){
+  let p = document.querySelectorAll('.p');
+  for(let i = 0; i < p.length; i++){
+    if(p[i].innerHTML.search(/POI:/) < 0){
+      console.log(p[i].innerHTML.search(/POI:/),p[i].id);
+      p[i].style.display = "none";
+    }
+  }
+  // https://stackoverflow.com/questions/37098405/javascript-queryselector-find-div-by-innertext
+  s = document.querySelectorAll('.s');
+  for(let i = 0; i < s.length; i++){
+    if(p[i].innerHTML.search(/POI:/) < 0){
+      console.log(p[i].innerHTML.search(/POI:/),p[i].id);
+      p[i].style.display = "none";
+    }
+  }
+})
+*/
 </script></body></html>
