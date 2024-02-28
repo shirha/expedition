@@ -1490,12 +1490,12 @@ let cbox = document.querySelectorAll('input[type=checkbox]');
 
 for (let i = 0; i < cbox.length; i++) {
   cbox[i].addEventListener("click", function(e) {
-    let k = e.target.nextSibling.nextSibling.innerHTML;
-    if(localStorage.getItem(k) === null){
-      localStorage.setItem(k, 'true');
+    let key = e.target.nextSibling.nextSibling.innerHTML;
+    if(localStorage.getItem(key) === null){
+      localStorage.setItem(key, true);
       e.target.checked == true;
     }else{
-      localStorage.removeItem(k);
+      localStorage.removeItem(key);
       e.target.checked == false;
     }
   });
@@ -1508,10 +1508,12 @@ for (let i = 0; i < cbox.length; i++) {
 }
 
 function clearCheckbox(){
-  Object.keys(localStorage)
-    .filter(key => key.startsWith("Ms "))
-    .map(key => localStorage.removeItem(key));
-  [...cbox].map(e => e.checked = false);
+  if(confirm("Are you sure?")){
+    Object.keys(localStorage)
+      .filter(key => /Ms \d\.\d/.test(key))
+      .map(key => localStorage.removeItem(key));
+    [...cbox].map(e => e.checked = false);
+  }
 }
 
 </script></body></html>
