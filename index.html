@@ -99,7 +99,24 @@ a {color:black; white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-
 #id02 {background-color: rgb(224, 224, 224,0.8);}
 #al tr:nth-child(1) td {border-bottom: 1px solid #98e2e2;}
 #al {margin: 16px; background-color: white; border: 1px solid #98e2e2; border-radius: 8px;}
+#container {max-width: 900px; padding: 0;}
 
+.content { 
+  position: fixed;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  border-radius: 8px;
+  padding:0;
+}
+
+@media (min-width: 600px) {
+  .content {
+    left: 600px;
+  }
+}
+/*
 .content { 
   position: fixed;
   left: 50%;
@@ -109,7 +126,12 @@ a {color:black; white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-
   border-radius: 8px;
   padding:0;
 }
-#container {max-width: 900px; padding: 0;}
+@media (min-width: 740px) {
+  .content {
+    left: 370px;
+  }
+}
+*/
 </style></head><body><div id="container">
 <div id="id01" class="modal">
   <img src="i/help.png">
