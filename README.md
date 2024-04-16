@@ -48,9 +48,8 @@ This captures the "Stellar Classification" for the system color.
 Note: Yellow is F or G, Red is K or M, Green is E, Blue is B or O 
 
 The Python libraries needed are:
-
-import imutils
 ```
+import imutils
 import cv2 # OpenCV
 import numpy as np
 import pytesseract
