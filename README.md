@@ -2,7 +2,7 @@ pip3.py walks directories named by a single digit like '0' and '1' and calls a l
 
 The functions are in the pip3m.py import and their names are:
 
-# isSysInfo()
+**isSysInfo()**
 
 This screenshot opportunity is created when you enter the space station through the teleporter. The screen is identified by the double slashes // in the bottom left corner. OpenCV is used to capture the following information. It's extremely important that this information has a dark background so that the OCR can read it.
 
@@ -12,7 +12,7 @@ System Info
  Economy: Construction // Flourishing
  Conflict level: Stable
 
-# isVisited()
+**isVisited()**
 
 This screenshot is identified by 'VISITED SYSTEMS' in the upper left of the screen. It's important to note that there are 3 different screens identified here. 
 
@@ -25,7 +25,7 @@ This is used to set the System name prior to a batch of Resources and Biomes for
 3. Sysinfo screen with the cursor over the system on the left side of the screen showing the SysInfo in a system 'card'
 This is good alternative to get SysInfo in a system without a space station.
 
-# isGlyphs()
+**isGlyphs()**
 
 This screenshot MUST follow the SysInfo screenshot to get captured.
 
@@ -33,15 +33,15 @@ Glyphs: 106202 900054
 
 The NMS-Glyphs-Mono.ttf is used to display these hex digits correctly.
 
-# isTechno()
+**isTechno()**
 
 The screenshots here are either of the Galactic Terminal or Technology Merchants.
 
-# isResource()
+**isResource()**
 
 These screenshots capture planet info and planet resources
 
-# isStellar()
+**isStellar()**
 
 This screenshot is found in the missions 'Log' tab and selecting the Exploration Guide.
 This captures the "Stellar Classification" for the system color.
