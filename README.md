@@ -35,11 +35,11 @@ The NMS-Glyphs-Mono.ttf is used to display these hex digits correctly.
 
 **isTechno()**
 
-The screenshots here are either of the Galactic Terminal or Technology Merchants.
+This screenshots is identified by 'Avaliable to Buy' in the upper right. These screens are either of the Galactic Terminal or Technology Merchants.
 
 **isResource()**
 
-These screenshots capture planet info and planet resources
+This screenshot is identified by the Icons lined-up on the left side. These screens capture planet info and planet resources.
 
 **isStellar()**
 
