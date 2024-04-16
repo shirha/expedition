@@ -5,13 +5,13 @@ The functions are in the pip3m.py import and their names are:
 **isSysInfo()**
 
 This screenshot opportunity is created when you enter the space station through the teleporter. The screen is identified by the double slashes // in the bottom left corner. OpenCV is used to capture the following information. It's extremely important that this information has a dark background so that the OCR can read it.
-
+```
 System Info
  Celestial Bodies: 5 Planets
  Dominant Lifeform: Korvax
  Economy: Construction // Flourishing
  Conflict level: Stable
-
+```
 **isVisited()**
 
 This screenshot is identified by 'VISITED SYSTEMS' in the upper left of the screen. It's important to note that there are 3 different screens identified here. 
@@ -22,7 +22,7 @@ This is used to set the System name prior to a batch of Resources and Biomes for
 
 2. Biome screen with cursor over the plant on the left side of the screen showing the Biome in a planet 'card'.
 
-3. Sysinfo screen with the cursor over the system on the left side of the screen showing the SysInfo in a system 'card'
+3. Sysinfo screen with the cursor over the system on the left side of the screen showing the SysInfo in a system 'card'.
 This is good alternative to get SysInfo in a system without a space station.
 
 **isGlyphs()**
@@ -50,8 +50,10 @@ Note: Yellow is F or G, Red is K or M, Green is E, Blue is B or O
 The Python libraries needed are:
 
 import imutils
+```
 import cv2 # OpenCV
 import numpy as np
 import pytesseract
+```
 
 Checkout the Demo.pdf and visit Github Pages site for this project.
