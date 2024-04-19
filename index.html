@@ -41,11 +41,10 @@ a {color:black; white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-
 .pg  {border: 0; padding: 0;}
 .pg img {vertical-align: top;}
 #sum {border-spacing: 4px 4px; border-collapse: separate;}
-/*#sum td {padding-bottom: 0px;}*/
 .r {margin-top: 10px;}
 .pu {font-style: italic; color: purple; padding-left: 0; display: inline-block;}
 .tc,.ib,.scp {padding:0; cursor: pointer;}
-/* .ic {... see trace routes */
+/*.ic {display: inline-block;)*/
 .bc {cursor: pointer;}
 .ab {background-color: #E1C16E;}
 .ab,.ac {border:0;}
@@ -152,6 +151,7 @@ h3 {font-size:24px;}
 .tre {white-space: nowrap; border-radius: 6px; padding: 1px 6px; cursor: pointer;
   text-decoration: none; margin-bottom: 1px; border: 1px solid #ccc;}
 .trk {padding:0;}
+.not {border-radius:0; padding:0; border:0;}
 
 </style></head><body><div id="container">
 <div id="id01" class="modal">
@@ -1401,8 +1401,8 @@ h3 {font-size:24px;}
   </div>
 </div>
 <button>Collapse All</button>
-<div class="trc" id="Trade_Routes"><a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Major Trade Routes</h2></a>
-<div class="trr"><img src="i/mini_image.png"><b>Mining</b>
+<div class="trc" id="Trade_Routes"><a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Major Trade Routes <img src="i/linkicon1.png"></h2></a>
+<div class="trr"><img src="i/mini_image.png"><b>Mining</b> &nbsp; Minerals, Ore Extraction, Prospecting
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s709">Re-latticed Arc Crystal</div>
@@ -1415,7 +1415,7 @@ h3 {font-size:24px;}
   <a class="tre trp">Okubun-Chadr</a>&hairsp;<div class=trk><div class="trn trb">5</div></div>
  </div>
 </div></div>
-<div class="trr"><img src="i/manu_image.png"><b>Manufacturing</b>
+<div class="trr"><img src="i/manu_image.png"><b>Manufacturing</b> &nbsp; Construction, Industrial, Mass Production
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s714">Vector Compressors</div>
@@ -1431,7 +1431,7 @@ h3 {font-size:24px;}
   <a class="tre trp">Amling</a>&hairsp;<div class=trk><div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
  </div>
 </div></div>
-<div class="trr"><img src="i/tech_image.png"><b>Technology</b>
+<div class="trr"><img src="i/tech_image.png"><b>Technology</b> &nbsp; Engineering, High Tech, Nano-construction
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s719">Quantum Accelerator</div>
@@ -1444,7 +1444,7 @@ h3 {font-size:24px;}
   <a class="tre trp">Toyabe IX</a>&hairsp;<div class=trk><div class="trn trb">5</div></div>
  </div>
 </div></div>
-<div class="trr"><img src="i/powe_image.png"><b>Power Generation</b>
+<div class="trr"><img src="i/powe_image.png"><b>Power Generation</b> &nbsp; Energy Supply, Fuel Generation, High Voltage
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s724">Fusion Core</div>
@@ -1456,8 +1456,8 @@ h3 {font-size:24px;}
  <div class="tr1">
  </div>
 </div></div>
-<a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Minor Trade Routes</h2></a>
-<div class="trr"><img src="i/trad_image.png"><b>Trading</b>
+<a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Minor Trade Routes <img src="i/linkicon1.png"></h2></a>
+<div class="trr"><img src="i/trad_image.png"><b>Trading</b> &nbsp; Commercial, Mercantile, Shipping
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s729">Teleport Coordinates</div>
@@ -1469,7 +1469,7 @@ h3 {font-size:24px;}
  <div class="tr1">
  </div>
 </div></div>
-<div class="trr"><img src="i/adva_image.png"><b>Advanced Materials</b>
+<div class="trr"><img src="i/adva_image.png"><b>Advanced Materials</b> &nbsp; Alchemical, Material Fusion, Metal Processing, Ore Processing
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s734">Superconducting Fibre</div>
@@ -1483,7 +1483,7 @@ h3 {font-size:24px;}
   <a class="tre trp">Yusvadbeat XII</a>&hairsp;<div class=trk><div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
  </div>
 </div></div>
-<div class="trr"><img src="i/scie_image.png"><b>Scientific</b>
+<div class="trr"><img src="i/scie_image.png"><b>Scientific</b> &nbsp; Experimental, Mathematical, Research
 <div class="trx">
  <div class="tr1">
   <div class="trn try">1</div>&hairsp;<div class="ic" id="_s739">Neural Duct</div>
