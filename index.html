@@ -138,7 +138,7 @@ a {color:black; white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-
 
 .ic {border-radius:6px;padding:1px 6px;border: 1px solid #bbb; margin-bottom: 1px;
      background-color:#e0e0e0; cursor: pointer;}
-/* see links
+/*
 .trd {border-radius:6px;padding:1px 6px;border: 1px solid #bbb; margin-bottom: 1px;}
 .trg {background-color:#e0e0e0;}
 */
@@ -1401,7 +1401,7 @@ h3 {font-size:24px;}
   </div>
 </div>
 <button>Collapse All</button>
-<div class="trc" id="Trade_Routes"><h2>Major Trade Routes</h3>
+<div class="trc" id="Trade_Routes"><a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Major Trade Routes</h2></a>
 <div class="trr"><img src="i/mini_image.png"><b>Mining</b>
 <div class="trx">
  <div class="tr1">
@@ -1456,7 +1456,7 @@ h3 {font-size:24px;}
  <div class="tr1">
  </div>
 </div></div>
-<h2>Minor Trade Routes</h3>
+<a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Minor Trade Routes</h2></a>
 <div class="trr"><img src="i/trad_image.png"><b>Trading</b>
 <div class="trx">
  <div class="tr1">
@@ -1533,7 +1533,7 @@ const id01 = document.getElementById('id01')
     let docs = [];
     const urls = findLinks(links,e.target.id);
     if(urls.length == 1 && links[urls[0]][1] == "Trade_Routes"){
-      id02.style.display='none';
+      jump("Trade_Routes")
       return;
     } 
     urls.forEach((x,i) => {
@@ -1581,7 +1581,7 @@ function sv(id){
     }
   });         
 
-[...document.querySelectorAll(".trc a")]
+[...document.querySelectorAll(".trc a:not(.not)")]
   .forEach(e => {
     const a_id = e.textContent.replace(/ /g, '_');
     e.addEventListener('click', function(e){
