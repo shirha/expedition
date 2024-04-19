@@ -44,7 +44,6 @@ a {color:black; white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-
 .r {margin-top: 10px;}
 .pu {font-style: italic; color: purple; padding-left: 0; display: inline-block;}
 .tc,.ib,.scp {padding:0; cursor: pointer;}
-/*.ic {display: inline-block;)*/
 .bc {cursor: pointer;}
 .ab {background-color: #E1C16E;}
 .ab,.ac {border:0;}
@@ -116,31 +115,11 @@ a {color:black; white-space: nowrap; border-radius: 6px; padding: 1px 6px; text-
     left: 600px;
   }
 }
-/*
-.content { 
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  padding:0;
-}
-@media (min-width: 740px) {
-  .content {
-    left: 370px;
-  }
-}
-*/
 
 /* trade routes css */     
 
 .ic {border-radius:6px;padding:1px 6px;border: 1px solid #bbb; margin-bottom: 1px;
      background-color:#e0e0e0; cursor: pointer;}
-/*
-.trd {border-radius:6px;padding:1px 6px;border: 1px solid #bbb; margin-bottom: 1px;}
-.trg {background-color:#e0e0e0;}
-*/
 .tr1 {padding:0;}
 .tr1 div {display: inline-block;}
 .trx,.trr {padding-left:10px;}
@@ -152,6 +131,7 @@ h3 {font-size:24px;}
   text-decoration: none; margin-bottom: 1px; border: 1px solid #ccc;}
 .trk {padding:0;}
 .not {border-radius:0; padding:0; border:0;}
+.now {white-space: nowrap;}
 
 </style></head><body><div id="container">
 <div id="id01" class="modal">
@@ -1401,69 +1381,74 @@ h3 {font-size:24px;}
   </div>
 </div>
 <button>Collapse All</button>
-<div class="trc" id="Trade_Routes"><a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Major Trade Routes <img src="i/linkicon1.png"></h2></a>
+<div class="trc" id="Trade_Routes">
+
+<a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Major Trade Routes <img src="i/linkicon1.png"></h2></a>
+
 <div class="trr"><img src="i/mini_image.png"><b>Mining</b> &nbsp; Minerals, Ore Extraction, Prospecting
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s709">Re-latticed Arc Crystal</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s710">Polychromatic Zirconium</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s711">Bromide Salt</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s712">Unrefined Pyrite Grease</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s713">Dirt</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s709">Re-latticed Arc Crystal</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s710">Polychromatic Zirconium</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s711">Bromide Salt</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s712">Unrefined Pyrite Grease</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s713">Dirt</div></div>
  </div>
  <div class="tr1">
-  <a class="tre trp">Okubun-Chadr</a>&hairsp;<div class=trk><div class="trn trb">5</div></div>
+  <div class="now"><a class="tre trp">Okubun-Chadr</a>&hairsp;<div class=trk><div class="trn trb">5</div></div></div>
  </div>
 </div></div>
 <div class="trr"><img src="i/manu_image.png"><b>Manufacturing</b> &nbsp; Construction, Industrial, Mass Production
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s714">Vector Compressors</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s715">Holographic Crankshaft</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s716">Mesh Decouplers</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s717">Non-Stick Piston</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s718">Enormous Metal Cog</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s714">Vector Compressors</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s715">Holographic Crankshaft</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s716">Mesh Decouplers</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s717">Non-Stick Piston</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s718">Enormous Metal Cog</div></div>
  </div>
  <div class="tr1">
-  <a class="tre trp">Doriguc VII</a>&hairsp;<div class=trk><div class="trn trb">1</div>&hairsp;<div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
-  <a class="tre trp">Jiyose-Aishe XIV</a>&hairsp;<div class=trk><div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
-  <a class="tre trp">Amling</a>&hairsp;<div class=trk><div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
+  <div class="now"><a class="tre trp">Doriguc VII</a>&hairsp;<div class=trk><div class="trn trb">1</div>&hairsp;<div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div></div>
+  <div class="now"><a class="tre trp">Jiyose-Aishe XIV</a>&hairsp;<div class=trk><div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div></div>
+  <div class="now"><a class="tre trp">Amling</a>&hairsp;<div class=trk><div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div></div>
  </div>
 </div></div>
 <div class="trr"><img src="i/tech_image.png"><b>Technology</b> &nbsp; Engineering, High Tech, Nano-construction
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s719">Quantum Accelerator</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s720">Autonomous Positioning Unit</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s721">Ion Capitor</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s722">Welding Soap</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s723">Decommissioned Circuits</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s719">Quantum Accelerator</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s720">Autonomous Positioning Unit</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s721">Ion Capitor</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s722">Welding Soap</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s723">Decommissioned Circuits</div></div>
  </div>
  <div class="tr1">
-  <a class="tre trp">Toyabe IX</a>&hairsp;<div class=trk><div class="trn trb">5</div></div>
+  <div class="now"><a class="tre trp">Toyabe IX</a>&hairsp;<div class=trk><div class="trn trb">5</div></div></div>
  </div>
 </div></div>
 <div class="trr"><img src="i/powe_image.png"><b>Power Generation</b> &nbsp; Energy Supply, Fuel Generation, High Voltage
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s724">Fusion Core</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s725">Experimental Power Fluid</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s726">Ohmic Gel</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s727">Industrial-Grade Battery</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s728">Spark Canister</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s724">Fusion Core</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s725">Experimental Power Fluid</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s726">Ohmic Gel</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s727">Industrial-Grade Battery</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s728">Spark Canister</div></div>
  </div>
  <div class="tr1">
  </div>
 </div></div>
+
 <a class="not" href="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/6/64/Trade_loops_for_no_mans_sky.png"><h2>Minor Trade Routes <img src="i/linkicon1.png"></h2></a>
+
 <div class="trr"><img src="i/trad_image.png"><b>Trading</b> &nbsp; Commercial, Mercantile, Shipping
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s729">Teleport Coordinates</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s730">Ion Sphere</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s731">Comet Droplets</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s732">Star Silk</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s733">Decrypted User Data</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s729">Teleport Coordinates</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s730">Ion Sphere</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s731">Comet Droplets</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s732">Star Silk</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s733">Decrypted User Data</div></div>
  </div>
  <div class="tr1">
  </div>
@@ -1471,28 +1456,28 @@ h3 {font-size:24px;}
 <div class="trr"><img src="i/adva_image.png"><b>Advanced Materials</b> &nbsp; Alchemical, Material Fusion, Metal Processing, Ore Processing
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s734">Superconducting Fibre</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s735">5D Torus</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s736">Optical Solvent</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s737">Self-Repairing Heridium</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s738">Nanotube Crate</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s734">Superconducting Fibre</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s735">5D Torus</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s736">Optical Solvent</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s737">Self-Repairing Heridium</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s738">Nanotube Crate</div></div>
  </div>
  <div class="tr1">
-  <a class="tre trp">Dovour-Jaus</a>&hairsp;<div class=trk><div class="trn trb">5</div></div>
-  <a class="tre trp">Yusvadbeat XII</a>&hairsp;<div class=trk><div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
+  <div class="now"><a class="tre trp">Dovour-Jaus</a>&hairsp;<div class=trk><div class="trn trb">5</div></div></div>
+  <div class="now"><a class="tre trp">Yusvadbeat XII</a>&hairsp;<div class=trk><div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div></div>
  </div>
 </div></div>
 <div class="trr"><img src="i/scie_image.png"><b>Scientific</b> &nbsp; Experimental, Mathematical, Research
 <div class="trx">
  <div class="tr1">
-  <div class="trn try">1</div>&hairsp;<div class="ic" id="_s739">Neural Duct</div>
-  <div class="trn try">2</div>&hairsp;<div class="ic" id="_s740">Organic Piping</div>
-  <div class="trn try">3</div>&hairsp;<div class="ic" id="_s741">Instability Injector</div>
-  <div class="trn try">4</div>&hairsp;<div class="ic" id="_s742">Neutron Microscope</div>
-  <div class="trn try">5</div>&hairsp;<div class="ic" id="_s743">De-Scented Bottles</div>
+  <div class="now"><div class="trn try">1</div>&hairsp;<div class="ic" id="_s739">Neural Duct</div></div>
+  <div class="now"><div class="trn try">2</div>&hairsp;<div class="ic" id="_s740">Organic Piping</div></div>
+  <div class="now"><div class="trn try">3</div>&hairsp;<div class="ic" id="_s741">Instability Injector</div></div>
+  <div class="now"><div class="trn try">4</div>&hairsp;<div class="ic" id="_s742">Neutron Microscope</div></div>
+  <div class="now"><div class="trn try">5</div>&hairsp;<div class="ic" id="_s743">De-Scented Bottles</div></div>
  </div>
  <div class="tr1">
-  <a class="tre trp">Mazuna</a>&hairsp;<div class=trk><div class="trn trb">1</div>&hairsp;<div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div>
+  <div class="now"><a class="tre trp">Mazuna</a>&hairsp;<div class=trk><div class="trn trb">1</div>&hairsp;<div class="trn trb">2</div>&hairsp;<div class="trn trb">3</div>&hairsp;<div class="trn trb">4</div>&hairsp;<div class="trn trb">5</div></div></div>
  </div>
 </div></div>
 </div>
