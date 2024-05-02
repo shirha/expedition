@@ -31,11 +31,18 @@
     border-radius: 4px;
     padding:16px 8px;
     background-color:#b9d9ff;}
-  a {color: purple;}
+  a { top: 0;
+    display: inline-block;
+    position: relative;
+    color: purple;}
+  #core {
+    font-weight: normal;
+    text-decoration: none;}
 
 /* https://www.w3schools.com/css/css_tooltip.asp 
    Tooltip container */
 .tooltip {
+  margin-left: 100px;
   position: relative;
   display: inline-block;
   color: purple;
@@ -50,6 +57,7 @@
   font-family: "Courier New"; 
  
   position: relative;
+  left: -125px;
   z-index: 1;
 }
 
@@ -57,7 +65,7 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-.python {visibility: visible;}
+td {vertical-align: top;}
 </style><body><div id="container"><pre>
 All the Gateway Systems are 3000 lys from the core. A Gateway System is the only one in the region (Theory). Each region is <a href="https://nomanssky.fandom.com/wiki/Module:DistanceCalc">400</a> lys apart. That puts each Gateway System at eight clicks (<div class=g>8</div>) away from the core. Also, there's about <a href="https://mathworld.wolfram.com/CirclePacking.html">900</a> Gateway Systems in Euclid. 
 
@@ -208,7 +216,9 @@ Pahenix
 <div class=g>100101 003008</div>
 <div class=g>100102 003008</div>
 
-<div class="tooltip" onclick="toggle()">code
+<table><tr>
+  <td><a id=core href="galactic_core2.jpg" target="_blank">core</a></td>
+  <td><div class="tooltip" onclick="toggle()">code
   <span class="tooltiptext">
 import math
 db = set()
@@ -231,7 +241,7 @@ for i in sorted([i for i in db],
   key=lambda i: i[10:14]+i[7:10]+i[4:7]):
   print(i)
 
-</span></div>
+</span></div></td></tr></table>
 </pre></div>
 <script>
 const tooltip = document.querySelector('.tooltiptext');
