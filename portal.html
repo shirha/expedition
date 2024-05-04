@@ -33,36 +33,39 @@
     background-color:#b9d9ff;}
   a { top: 0;
     display: inline-block;
-    positio: relative;
+    position: relative;
     color: purple;}
   #core {
     font-weight: normal;
-    text-decoratio: none;}
+    text-decoration: none;}
 
 /* https://www.w3schools.com/css/css_tooltip.asp 
    Tooltip container */
 .tooltip {
   margin-left: 100px;
-  positio: relative;
+  position: relative;
   display: inline-block;
   color: purple;
   font-weight: normal;
+  cursor: pointer;
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltiptext {
   visibility: hidden;
   min-width: 500px;
   color: black;
   font-family: "Courier New"; 
+  color: purple;
+  font-weight: normal;
  
-  positio: relative;
-  left: -125px;
+  position: relative;
+/*  left: -125px;*/
   z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.tooltip:hover, .tooltiptext:hover {
   visibility: visible;
 }
 td {vertical-align: top;}
@@ -219,11 +222,6 @@ Puikeg Band // Don o:Nitango-Exm [GW#3]
 <div class=g>100100 005007</div>
 <div class=g>100101 005007</div>
 
-<hr><div class=g>1001ff 000008</div>
-Lakultu // [ATL] Primo Eurus - 463 ly
-<div class=g>109dff 000008</div>
-Lakultu // Anskoy-Igenr [GW#1]
-0807:007E:07FF:009D 157 8,-1,0
 <hr><div class=g>100100 000008</div>
 Rugalt Anomaly // Sembouti - 596 ly
 <div class=g>109dff 000008</div>
@@ -255,23 +253,100 @@ Rariha Quadrant // Tehili-Aks - 346
 Rariha Quadrant // Taco o:Fayenn-Onj
 0807:0080:0800:00B7 183 8,1,1
 <hr><div class=g>100102 001008</div>
-<div class=g>100103 001008</div>
-<div class=g>100100 002008</div>
-<div class=g>100101 002008</div>
-<div class=g>100102 002008</div>
-Mepawe // Rekinl Cipe - 975 ly
+Iferec Cluster // TACOCAT o:Gideqin - 493 lyʲ
+<div class=g>10b701 001008</div>
+Rariha Quadrant // Taco o:Fayenn-Onj
+0807:0080:0800:00B7 183 8,1,1
+<hr><div class=g>100103 001008</div>
+Twrigga Sector // Grand View of The End - 645+
+<div class=g>10b701 001008</div>
+Rariha Quadrant // Taco o:Fayenn-Onj
+0807:0080:0800:00B7 183 8,1,1
+<hr><div class=g>100100 002008</div>
+Ukyana Shallows // 3rd Stop For the Center - 337 ly
+<div class=g>10aa00 002008</div>
+Ukyana Shallows // Last stop before the center. GL!
+0807:007F:0801:00AA 170 8,0,2
+<hr><div class=g>100101 002008</div>
+Alsaten Terminus // Gehaixingk - 368 ly
+<div class=g>109101 002008</div>
+Alsaten Terminus // Taco o:Zarmarga
+0807:0080:0801:0091 145 8,1,2
+<hr><div class=g>100102 002008</div>
+Mepawe // Rekinl Cipe - 975 lyʲ
+Only 662 ly to 8,1,2 Taco
 <div class=g>107d03 003007</div>
 Puikeg Band // Don o:Nitango-Exm [GW#3]
 0806:0082:0802:007D 125 7,3,3
-<div class=g>100103 002008</div>
-<div class=g>100100 003008</div>
-<div class=g>100101 003008</div>
-<div class=g>100102 003008</div>
-
-<table><tr>
-  <td><a id=core href="galactic_core2.jpg" target="_blank">core</a></td>
-  <td><div class="tooltip" onclick="toggle()">code
-  <span class="tooltiptext">
+<hr><div class=g>100103 002008</div>
+Gutiap Mass // Iihamur VI - 686+123 ly
+<div class=g>107d03 003007</div>
+Puikeg Band // Don o:Nitango-Exm [GW#3]
+0806:0082:0802:007D 125 7,3,3
+<hr><div class=g>100100 003008</div>
+Ewyani Quadrant // Demens-Adjac V - 
+<div class=g>10aa00 002008</div>
+Ukyana Shallows // Last stop before the center. GL!
+0807:007F:0801:00AA 170 8,0,2
+<hr><div class=g>100101 003008</div>
+Manheirs Sector // Remyar-Yikjav VII - 520 ly
+<div class=g>109101 002008</div>
+Alsaten Terminus // Taco o:Zarmarga
+0807:0080:0801:0091 145 8,1,2
+<hr><div class=g>100102 003008</div>
+Nitromi Instability // Dafenho-Eding V - 693 ly
+<div class=g>107d03 003007</div>
+Puikeg Band // Don o:Nitango-Exm [GW#3]
+0806:0082:0802:007D 125 7,3,3
+<hr><div class=g>1001ff 000008</div>
+Lakultu // [ATL] Primo Eurus - 463 ly
+<div class=g>109dff 000008</div>
+Lakultu // Anskoy-Igenr [GW#1]
+0807:007E:07FF:009D 157 8,-1,0
+<hr><div class=g>1001ff 001008</div>
+Ecvari Spur // Unxianzad - 335 ly
+<div class=g>1089ff 001008</div>
+Ecvari Spur // The Last Watering Hole o:Uayinnin
+0807:007E:0800:0089 137 8,-1,1
+<hr><div class=g>1001ff 002008</div>
+The Arm of Gusitl // Mytili - 317 ly
+<div class=g>1084ff 002008</div>
+The Arm of Gusitl // Sachris-Nusin
+0807:007E:0801:0084 132 8,-1,2
+<hr><div class=g>1001ff fff008</div>
+Fluegle Sector // Mihaeju-Lajot - 716
+<div class=g>109dff 000008</div>
+Lakultu // Anskoy-Igenr [GW#1]
+0807:007E:07FF:009D 157 8,-1,0
+<hr><div class=g>100100 fff008</div>
+Mopkeanos Mass // Martiou4 o:Oseidiu - 408 ly
+<div class=g>109300 fff008</div>
+Mopkeanos Mass // Tungrat
+0807:007F:07FE:0093 147 8,0,-1
+<hr><div class=g>100101 fff008</div>
+Orfann Cloud // Galamad - 361 ly
+<div class=g>107d01fff008</div>
+Orfann Cloud // Ogbaime
+0807:0080:07FE:007D 125 8,1,-1
+<hr><div class=g>100102 fff008</div>
+Totraksh Cluster // Pisplan-Iae III - 438 ly
+<div class=g>10ac02fff008</div>
+Totraksh Cluster // Taco o:Restil
+0807:0081:07FE:00AC 172 8,2,-1
+<hr><div class=g>100100 ffe008</div>
+Vundler Adjunct // Elungo - 359 ly
+<div class=g>108200 ffe008</div>
+Vundler Adjunct // welcome to the end
+0807:007F:07FD:0082 130 8,0,-2
+<hr><div class=g>100100 ffd008</div>
+Ecvard // Ruvanta-Uita - 721 ly
+<div class=g>108200 ffe008</div>
+Vundler Adjunct // welcome to the end
+0807:007F:07FD:0082 130 8,0,-2
+<hr><table>
+<tr><td><a id=core href="galactic_core2.jpg" target="_blank">core</a></td>
+    <td><div class="tooltip" onclick="toggle()">code</div></td></tr>
+<tr><td colspan="2"><span class="tooltiptext">
 import math
 db = set() # 108 keys * 8 = 864 total
 def store():
@@ -291,9 +366,10 @@ for x in range(9):
 
 for i in sorted([i for i in db],
   key=lambda i: i[10:14]+i[7:10]+i[4:7]):
-  print(i)
+    print(i)
 
-</span></div></td></tr></table>
+</span></td></tr>
+</table>
 </pre></div>
 <script>
 const tooltip = document.querySelector('.tooltiptext');
