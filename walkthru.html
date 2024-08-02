@@ -67,14 +67,15 @@
   }
 
   #fn {
-    display: none;
     bottom: 40px;
     right: 40px;
   }
-  i {
+  .wt {
+    display: inline-block;
     color: white;
   }
-  b {
+  .rd {
+    display: inline-block;
     color: red;
   }
 </style>
@@ -91,47 +92,47 @@
 const imagesData = {
   "wt/20240721080200_1.jpg": "Angyuan-Raha XIX // Eardog Sigma",
   "wt/20240721080300_1.jpg": "Angyuan-Raha XIX // Eardog Sigma",
-  "wt/20240721080400_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 3.6: Law of the Jungle~<i>Reward:</i> A-Underwater O₂ ×3~Cobalt → Ion Batteries ×12~Raw Steak ×20 (Health recharge)",
+  "wt/20240721080400_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 3.6: Law of the Jungle~<div class=wt>Reward:</div> A-Underwater O₂ ×3~Cobalt → Ion Batteries ×12~Raw Steak ×20 (Health recharge)",
   "wt/20240721080700_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 1.1: All Guns Blazing",
   "wt/20240721080750_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 1.4: Exterminator",
-  "wt/20240721080760_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 2.6: Close Air Support~<i>Reward:</i> S-Movement ×2",
+  "wt/20240721080760_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 2.6: Close Air Support~<div class=wt>Reward:</div> S-Movement ×2",
   "wt/20240721080775_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Copper → Chromatic Metal ×225",
-  "wt/20240721080800_1.jpg": "Angyuan-Raha XIX~<i>Buy:</i> B-Hyperdrive Upgrade ×2~     A-Hot Protection",
-  "wt/20240721080900_1.jpg": "Angyuan-Raha XIX~Ms 1.2: Dust Off~<i>Reward:</i> B-Hyperdrive Plans",
-  "wt/20240721081000_1.jpg": "Iawshea-Yook~<i>Buy:</i> A-Radiation Protection",
+  "wt/20240721080800_1.jpg": "Angyuan-Raha XIX<div class=wt>Buy:</div> B-Hyperdrive Upgrade ×2~     A-Hot Protection",
+  "wt/20240721080900_1.jpg": "Angyuan-Raha XIX~Ms 1.2: Dust Off~<div class=wt>Reward:</div> B-Hyperdrive Plans",
+  "wt/20240721081000_1.jpg": "Iawshea-Yook~<div class=wt>Buy:</div> A-Radiation Protection",
   "wt/20240721081100_1.jpg": "Iawshea-Yook~Ms 1.3 Acceleration",
   "wt/20240721081200_1.jpg": "Iawshea-Yook",
   "wt/20240721081300_1.jpg": "Iawshea-Yook // Rahype Omega",
   "wt/20240721081500_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 1.5: Dropzone One",
-  "wt/20240721081600_1.jpg": "Iawshea-Yook // Rahype Omega~Oxygen Patch 800u South of dz1 = O₂ ×3500",
-  "wt/20240721081700_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 1.6: Fat of the Land~<i>Reward:</i> Salvaged Data ×30 = $1.5M",
+  "wt/20240721081600_1.jpg": "Iawshea-Yook // Rahype Omega~Oxygen Patch 800u South of dz1 <div class=wt>O₂ ×3500</div>",
+  "wt/20240721081700_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 1.6: Fat of the Land~<div class=wt>Reward:</div> Salvaged Data ×30 <div class=wt>$1.5M</div>",
   "wt/20240721081750_1.jpg": "Iawshea-Yook // Rahype Omega~Vile Brood Mother",
-  "wt/20240721081800_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 1.6: Infestation Alpha~<i>Reward:</i> Haz-Mat Gauntlet",
-  "wt/20240721081900_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 3.4: Provocateur~<i>Reward:</i> Nutrient Processor",
+  "wt/20240721081800_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 1.6: Infestation Alpha~<div class=wt>Reward:</div> Haz-Mat Gauntlet",
+  "wt/20240721081900_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 3.4: Provocateur~<div class=wt>Reward:</div> Nutrient Processor",
   "wt/20240721082100_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 5.4: Spare Ribs",
-  "wt/20240721082150_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 2.5: Metamorphosis~<i>Reward:</i> S-Toxic Protection",
+  "wt/20240721082150_1.jpg": "Iawshea-Yook // Rahype Omega~Ms 2.5: Metamorphosis~<div class=wt>Reward:</div> S-Toxic Protection",
   "wt/20240721082200_1.jpg": "Iawshea-Yook // Waff XVI",
   "wt/20240721082350_1.jpg": "Iawshea-Yook // Waff XVI~Alluring Specimen",
   "wt/20240721082400_1.jpg": "Iawshea-Yook // Waff XVI",
   "wt/20240721082500_1.jpg": "Iawshea-Yook // Waff XVI~Ms 4.4: Blood in the Water",
   "wt/20240721082550_1.jpg": "Iawshea-Yook // Waff XVI",
   "wt/20240721082600_1.jpg": "Iawshea-Yook // Waff XVI~Ms 3.3: Apex Predator",
-  "wt/20240721082800_1.jpg": "Nuuraya~<i>Buy:</i> A-Cold Protection",
+  "wt/20240721082800_1.jpg": "Nuuraya~<div class=wt>Buy:</div> A-Cold Protection",
   "wt/20240721082900_1.jpg": "Nuuraya",
   "wt/20240721082950_1.jpg": "Nuuraya // Ridl III",
   "wt/20240721083000_1.jpg": "Nuuraya // Ridl III~Ms 2.1: Dropzone Two",
-  "wt/20240721083200_1.jpg": "Nuuraya // Ridl III~Ms 2.4: Lock and Load~<i>Reward:</i> Plasma Launcher + S-Upgrade",
+  "wt/20240721083200_1.jpg": "Nuuraya // Ridl III~Ms 2.4: Lock and Load~<div class=wt>Reward:</div> Plasma Launcher + S-Upgrade",
   "wt/20240721083300_1.jpg": "Nuuraya // Ridl III~Ms 2.2: Infestation Beta",
   "wt/20240721083500_1.jpg": "Rudoin-Blosa",
   "wt/20240721083600_1.jpg": "Rudoin-Blosa",
   "wt/20240721083800_1.jpg": "Rudoin-Blosa // Uban 93/M7",
-  "wt/20240721084000_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 4.2 Fire in the Hole~Install Plasma Launcher + S-Upgrade <b>(Supercharged)</b>",
-  "wt/20240721084100_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 4.2 Independent Action~<i>Reward:</i> Aqua Jets",
+  "wt/20240721084000_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 4.2 Fire in the Hole~Install Plasma Launcher + S-Upgrade <div class=rd>(Supercharged)</div>",
+  "wt/20240721084100_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 4.2 Independent Action~<div class=wt>Reward:</div> Aqua Jets",
   "wt/20240721084200_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 3.1 Dropzone Three",
   "wt/20240721084250_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 3.2: Infestation Gamma",
   "wt/20240721084300_1.jpg": "Rudoin-Blosa // Uban 93/M7~Ms 4.5: Snowblind~Grab some Storm Crystals",
   "wt/20240721084700_1.jpg": "Uooyiiji",
-  "wt/20240721084800_1.jpg": "Uooyiiji~Ms 5.2: Bleeding Foam~<i>Sell:</i> A-Underwater O₂ ×2 (used 1) ~      Pulse Spitter~      A-Pulse Spitter ×2~      X-Exosuit Module~      Blaze Javelin~      A-Blaze Javelin ×2~      Combat Scope~      S-Plasma Launcher ×2~      Boltcaster Richochet~      X-Boltcaster ×3~      X-Multi-tool Module ×2~      Neutron Cannon~      A-Neutron Cannon ×2",
+  "wt/20240721084800_1.jpg": "Uooyiiji~Ms 5.2: Bleeding Foam~<div class=wt>Sell:</div> A-Underwater O₂ ×2 (used 1) ~      Pulse Spitter~      A-Pulse Spitter ×2~      X-Exosuit Module~      Blaze Javelin~      A-Blaze Javelin ×2~      Combat Scope~      S-Plasma Launcher ×2~      Boltcaster Richochet~      X-Boltcaster ×3~      X-Multi-tool Module ×2~      Neutron Cannon~      A-Neutron Cannon ×2",
   "wt/20240721084900_1.jpg": "Uooyiiji",
   "wt/20240721085000_1.jpg": "Uooyiiji // Azuzuma F38",
   "wt/20240721085100_1.jpg": "Uooyiiji // Azuzuma F38~Ms 4.1 Dropzone Four",
@@ -147,7 +148,7 @@ const imagesData = {
   "wt/20240721090100_1.jpg": "Taotie // Wednaean H8~Ms 5.5 Dropzone Five",
   "wt/20240721090200_1.jpg": "Taotie // Wednaean H8~Ms 5.6 Infestation Omega",
   "wt/20240721090250_1.jpg": "Taotie // Wednaean H8~Ms 5.7 Swarmsong",
-  "wt/20240721090300_1.jpg": "Taotie // New Yirrolin~<b>Frenzied Sentinels</b>",
+  "wt/20240721090300_1.jpg": "Taotie // New Yirrolin~<div class=rd>Frenzied Sentinels</div>",
   "wt/20240721090400_1.jpg": "Taotie // New Yirrolin~Planetary Chart inhabited outpost~Base of operations",
   "wt/20240721090500_1.jpg": "Taotie // New Yirrolin~Sentinel Walker",
   "wt/20240721090600_1.jpg": "Taotie // New Yirrolin~Ms 5.1 Timberwolf",
