@@ -90,6 +90,35 @@
 </div>
 <div id="log"></div>
 <script>
+const recipes = `
+  Copper,850
+  425x Chromatic Metal,2
+      1x Hyperdrive,125
+      4x Warp Cell,100
+      5x Microprocessor,200
+  Condensed Carbon,110
+    4x Warp Cell,20
+    1x Hermetic Seal,30
+  Carbon,350
+    5x Life Support Gel,20
+    5x Microprocessor,50
+      1x Carbon Nanotube,50
+  Cobalt,120
+   12x Ion Battery,10
+  Ferrite Dust,360
+    4x Antimatter Housing,50
+   12x Ion Battery,5
+    2x Metal Plating,50
+      1x Portable Refiner,1
+      1x Launch Thruster(R),1
+  Oxygen,150
+    4x Antimatter Housing,30
+    1x Portable Refiner,30
+  Di-hydrogen,200
+    5x Life Support Gel,40
+      1x Jelly,40
+
+`;
 const imagesData = {
   "wt/20240726000100_1.jpg": "Angyuan-Raha XIX // Eardog Sigma",
   "wt/20240726000200_1.jpg": "Angyuan-Raha XIX // Eardog Sigma",
@@ -98,7 +127,7 @@ const imagesData = {
   "wt/20240726000400_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 1.1 All Guns Blazing~Reached your starship",
   "wt/20240726000500_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 1.4 Exterminator~Kill 16 biological horrors",
   "wt/20240726000600_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Ms 2.6 Close Air Support~Jetpacked 1,000u~<div class=wt>Reward:</div> S-Movement &times;2",
-  "wt/20240726000700_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Copper &rarr; Chromatic Metal &times;225",
+  "wt/20240726000700_1.jpg": "Angyuan-Raha XIX // Eardog Sigma~Copper &rarr; Chromatic Metal &times;225~<div class=wt>Craft:</div> Hyperdrive &times;1, Warp Cell &times;4~<div class=wt>Sell:</div> Salvaged Data &times;3 &rarr; Microprocessor &times;5 ~or add Chromatic Metal &times;200, Carbon &times;250~<div class=wt>Sell:</div> Salvaged Data &times;4 &rarr; Uranium &times;400~"+recipes,
   "wt/20240726000800_1.jpg": "Angyuan-Raha XIX~<div class=wt>Buy:</div> B-Hyperdrive Upgrade &times;2~     A-Hot Protection",
   "wt/20240726000900_1.jpg": "Angyuan-Raha XIX~Ms 1.2 Dust Off~Left the planet~<div class=wt>Reward:</div> B-Hyperdrive Plans",
   "wt/20240726001000_1.jpg": "Iawshea-Yook~<div class=wt>Buy:</div> A-Radiation Protection~     Pyrite",
