@@ -67,7 +67,7 @@
   }
 
   #fn {
-    display: none;
+    display: block;
     bottom: 40px;
     right: 40px;
   }
@@ -90,29 +90,23 @@
     bottom: 20px;
     z-index: 1;
   }
-/*  
-  .rend:nth-child(1) { left: 40px; }
-  .rend:nth-child(2) { left: 90px; }
-  .rend:nth-child(3) { left: 140px; }
-  .rend:nth-child(4) { left: 190px; }
-  .rend:nth-child(5) { left: 240px; }
-*/  
-  #rend0 { left: 0px; color:greenyellow; background-color: rgba(0,0,0,0.5); border-width: 0;}
-  #rend1 { left: 50px; }
-  #rend2 { left: 100px; }
-  #rend3 { left: 150px; }
-  #rend4 { left: 200px; }
-  #rend5 { left: 250px; }
 
+  #rend0 {left: 0px;}
+  #rend1 {left: 50px;}
+  #rend2 {left: 100px;}
+  #rend3 {left: 150px;}
+  #rend4 {left: 200px;}
+  #rend5 {left: 250px;}
+  .hilite {color:greenyellow; background-color: black;}
 </style>
 </head>
 <body>
 <div id="container">
-  <div id="fn"></div>
-  <div id="left" class="chevron">⮜</div>
-  <div id="right" class="chevron">⮞</div>
+  <div id="fn"></div> <!-- ⮜⮞ -->
+  <div id="left" class="chevron">◀</div>
+  <div id="right" class="chevron">▶</div>
   <img id="image" src="" alt="Slideshow Image">
-  <div id="rend0" class="rend">&Rscr;</div>
+  <div id="rend0" class="rend hilite">&Rscr;</div>
   <div id="rend1" class="rend">1</div>
   <div id="rend2" class="rend">2</div>
   <div id="rend3" class="rend">3</div>
@@ -121,10 +115,12 @@
 </div>
 <div id="log"></div>
 <script>
+const locations = ["Galince", "Stbury", "Syasthe", "Eugeli", "Zaresvet XVI", "Biychiem"];
 let imagesData = {}; // Declare imagesData in a higher scope
 let images = [];
 let descs = [];
 let currentIndex = 0;
+let rendNodes = document.querySelectorAll('.rend');
 
 // Fetch the JSON file
 fetch('ss5.json')
@@ -138,21 +134,31 @@ fetch('ss5.json')
 
     // Show the first image initially
     showImage(currentIndex);
+    document.querySelector('.rend').classList.add('hilite');
   })
   .catch(error => {
     console.error('Error loading JSON data:', error);
   });
 
 function showImage(index) {
-  const imgElement = document.getElementById('image'); // Access imgElement within the function
-  const filename = document.getElementById('fn'); // Access filename within the function
+  const imgElement = document.getElementById('image');
+  const filename = document.getElementById('fn');
 
   imgElement.src = images[index];
   showMsg(images[index]);
 
-  // Update the filename display
   filename.textContent = `${currentIndex}. ${images[index]}`;
-}
+
+  // Remove the 'hilite' class from the currently highlighted button
+  document.querySelector('.rend.hilite').classList.remove('hilite');
+
+  // Iterate over the locations to find the first match in descs[index]
+  for (let i = 0; i < locations.length; i++) {
+    const re = new RegExp(`^${locations[i]}`);
+    if (re.test(descs[index])) {
+      rendNodes[i].classList.add('hilite');
+      break;
+} } }
 
 function showMsg(imagePath) {
   const msgData = imagesData[imagePath];
@@ -218,9 +224,10 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-const locations = ["Galince", "Stbury", "Syasthe", "Eugeli", "Zaresvet XVI", "Biychiem"];
-document.querySelectorAll('.rend').forEach((button, index) => {
+rendNodes.forEach((button, index) => {
   button.addEventListener('click', function() {
+    document.querySelector('.rend.hilite').classList.remove('hilite');
+    rendNodes[index].classList.add('hilite');
     const re = new RegExp(`^${locations[index]}`);
     currentIndex = descs.findIndex(desc => re.test(desc));
     showImage(currentIndex);
