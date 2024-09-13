@@ -150,7 +150,11 @@ function showImage(index) {
   filename.textContent = `${currentIndex}. ${images[index]}`;
 
   // Remove the 'hilite' class from the currently highlighted button
-  document.querySelector('.rend.hilite').classList.remove('hilite');
+  for (let i = 0; i < rendNodes.length; i++) {
+    if (rendNodes[i].classList.contains('hilite')) {
+      rendNodes[i].classList.remove('hilite');
+      break;
+  } }
 
   // Iterate over the locations to find the first match in descs[index]
   for (let i = 0; i < locations.length; i++) {
@@ -226,8 +230,15 @@ document.addEventListener('keydown', function(event) {
 
 rendNodes.forEach((button, index) => {
   button.addEventListener('click', function() {
-    document.querySelector('.rend.hilite').classList.remove('hilite');
+
+    // Remove the 'hilite' class from the currently highlighted button
+    for (let i = 0; i < rendNodes.length; i++) {
+      if (rendNodes[i].classList.contains('hilite')) {
+        rendNodes[i].classList.remove('hilite');
+        break;
+    } }
     rendNodes[index].classList.add('hilite');
+
     const re = new RegExp(`^${locations[index]}`);
     currentIndex = descs.findIndex(desc => re.test(desc));
     showImage(currentIndex);
