@@ -67,11 +67,12 @@
   }
 
   #fn {
-    display: none;
+    display: block;
     bottom: 40px;
     right: 40px;
   }
 
+  /* rendezvous */
   .rend {
     font-weight: bold;
     font-size: 20px;
@@ -116,25 +117,25 @@
 <div id="log"></div>
 <script>
 const locations = ["Galince", "Stbury", "Syasthe", "Eugeli", "Zaresvet XVI", "Biychiem"];
-let imagesData = {}; // Declare imagesData in a higher scope
-let images = [];
-let descs = [];
-let currentIndex = 0;
-let rendNodes = document.querySelectorAll('.rend');
+let rendNodes = document.querySelectorAll('.rend'),
+  currentIndex = 0,
+  imagesData = {},
+  images = [],
+  descs = [];
+  
 
 // Fetch the JSON file
 fetch('ss5.json')
   .then(response => response.json())
   .then(data => {
-    imagesData = data; // Assign the data to the global imagesData variable
-    images = Object.keys(imagesData); // Store the keys (image paths) in the global images array
+    imagesData = data;
+    images = Object.keys(imagesData);
     descs = Object.values(imagesData);
 
     console.log(imagesData);
 
     // Show the first image initially
     showImage(currentIndex);
-    document.querySelector('.rend').classList.add('hilite');
   })
   .catch(error => {
     console.error('Error loading JSON data:', error);
@@ -219,7 +220,6 @@ function prevImage() {
 
 document.getElementById('right').addEventListener('click', nextImage);
 document.getElementById('left').addEventListener('click', prevImage);
-
 document.addEventListener('keydown', function(event) {
   if (event.key === 'ArrowRight') {
     nextImage();
@@ -239,6 +239,7 @@ rendNodes.forEach((button, index) => {
     } }
     rendNodes[index].classList.add('hilite');
 
+    // set currentIndex to first descs matching location[index]
     const re = new RegExp(`^${locations[index]}`);
     currentIndex = descs.findIndex(desc => re.test(desc));
     showImage(currentIndex);
