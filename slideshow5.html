@@ -67,7 +67,7 @@
   }
 
   #fn {
-    display: block;
+    display: none;
     bottom: 40px;
     right: 40px;
   }
@@ -107,7 +107,7 @@
   <div id="left" class="chevron">◀</div>
   <div id="right" class="chevron">▶</div>
   <img id="image" src="" alt="Slideshow Image">
-  <div id="rend0" class="rend hilite">&Rscr;</div>
+  <div id="rend0" class="rend">&Rscr;</div>
   <div id="rend1" class="rend">1</div>
   <div id="rend2" class="rend">2</div>
   <div id="rend3" class="rend">3</div>
@@ -150,7 +150,7 @@ function showImage(index) {
 
   filename.textContent = `${currentIndex}. ${images[index]}`;
 
-  // Remove the 'hilite' class from the currently highlighted button
+  // Remove the 'hilite' from the currently highlighted button
   for (let i = 0; i < rendNodes.length; i++) {
     if (rendNodes[i].classList.contains('hilite')) {
       rendNodes[i].classList.remove('hilite');
@@ -230,14 +230,6 @@ document.addEventListener('keydown', function(event) {
 
 rendNodes.forEach((button, index) => {
   button.addEventListener('click', function() {
-
-    // Remove the 'hilite' class from the currently highlighted button
-    for (let i = 0; i < rendNodes.length; i++) {
-      if (rendNodes[i].classList.contains('hilite')) {
-        rendNodes[i].classList.remove('hilite');
-        break;
-    } }
-    rendNodes[index].classList.add('hilite');
 
     // set currentIndex to first descs matching location[index]
     const re = new RegExp(`^${locations[index]}`);
