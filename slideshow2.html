@@ -70,7 +70,7 @@
   }
 
   #fn {
-    display: none;
+    display: block;
     bottom: 40px;
     right: 40px;
   }
@@ -128,7 +128,7 @@ let rendNodes = document.querySelectorAll('.rend'),
   
 
 // Fetch the JSON file
-fetch('run1.json')
+fetch('run2.json')
   .then(response => response.json())
   .then(data => {
     imagesData = data;
