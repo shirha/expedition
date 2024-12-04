@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Checkbox Parser with Versioning</title>
+  <style>
+    @font-face {
+      font-family: "Lora"; 
+      src: url("Lora-Regular.ttf");}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      /* line-height: 1.6; */
+    }
+    pre {
+      font-family: Lora;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <pre id="mission-data">
+<b>Bezhgo-Zam // Wureno X</b>
+  Ms 1.3 Exobotany
+  ☐ Discover plants: 6
+  Ms 3.1 One Man's Treasure
+  ☐ Dig up buried items: 3
+  Reward: Salvaged Data ×16
+  Ms 1.6 Scavenger
+  ☐ Repair vital equipment
+
+<b>Bezhgo-Zam</b>
+  Ms 2.3 Stardust
+  ☐ Mine Asteroids: 30
+  Reward: Wonder Project plans
+
+<b>Bezhgo-Zam // Kovantilia Neri</b>
+  Ms 1.1 Escape Velocity
+  ☐ Take to the stars
+  Reward: Base Computer plans
+  ☐ Ms 3.2 Grand Tour
+  Photograph 3 different environments: Scorched
+
+<b>Bezhgo-Zam // Larinalde Ranon</b>
+  Ms 2.4 Expansion
+  ☐ Grow your base
+  Reward: Pre-packaged Personal Refiner
+  Prq: Ceiling Light @ Anomaly
+  Ms 2.6 Memento
+  ☐ Build a Wonder Project
+  Ms 4.4 Boundary Failure
+  ☐ Eliminate Sentinels: 15
+  Ms 4.5 Palate Cleanser
+  ☐ Bake some biscuits
+  Prq: Nutrient Processor @ Grand Tour
+
+<b>Oiteln</b>
+  Distance: 25 ly South of Bezhgo-Zam
+  Ms 1.4 Interstellar
+  ☐ Warp to new system
+  Ms 1.5 Anomaly's Heart
+  ☐ Find the Space Anomaly
+  ☐ Buy: Ceiling Light (1 Salvaged Data)
+    Advanced Mining Laser plans (75 Nanites)
+    Unstable Gel recipe (750 Nanites)
+
+<b>Oiteln // Eubea II</b>
+  Ms 3.2 Grand Tour
+  ☐ Photograph 3 different environments: Airless
+  Reward: Nutrient Processor plans
+
+<b>Bezhgo-Zam // Larinalde Ranon</b>
+  Ms 3.2 Grand Tour
+  ☐ Photograph 3 different environments: Frozen
+  Ms 3.3 Life In All Its Forms
+  ☐ Discover planetary fauna: 12
+  Ms 1.2 Homecoming
+  ☐ Establish a Base
+  Reward: Hyperdrive plans
+  ☐ Use 'Ticket to Freedom' to locate pirate system
+
+<b>Lomyzyak</b>
+  Distance: 46 ly West of Bezhgo-Zam
+  ☐ Tip: Buy contraband
+
+<b>Obrazni XVII</b>
+  Ms 3.4 Hot Pursuit
+  ☐ Smuggle contraband: 120,000 units
+  Reward: Craftable component plans
+  Ms 5.2 Astrolinguistics
+  ☐ Learn new words: 12
+  ☐ Buy: Dig site chart
+
+<b>Obrazni XVII // Sujii 84/D5</b>
+  Ms 1.7 ℛ1 Archive +48.90, +160.79
+  Tip: Buy Solar Mirror from Tech merchant
+  Ms 4.1 Relic Hunter
+  ☐ Collect ancient artifact: 1
+  Reward: Nautilon, Sonar and Cannon
+  Ms 4.2 Fallen Giants
+  ☐ Visit the site of a sunken freigther
+
+<b>Obrazni XVII</b>
+  Ms 2.1 Atlas Rises
+  ☐ Witness the Atlas
+  Prq: Speak to Nada
+  Reward: Memory of Ocean
+  99× Silicate Powder
+  66× Tritium
+  33× Salt
+  Ms 2.2 Reality Grains
+  ☐ View Memory of Ocean
+  Reward: Memory of Conquest
+  99× Chromatic Metal
+  66× Magnetised Ferrite
+  33× Sodium Nitrate
+  2nd Reward: Carrier AI Fragment
+  Locates crashed interceptors
+  Ms 3.6 Unbounded
+  ☐ View Memory of Conquest
+  Reward: Memory of Bones
+  99× Cadmium
+  66× Di-hydrogen
+  33× Ionised Cobalt
+  Tip: C-Photon Cannon → Cadmium ×125
+  Ms 4.6 Deep Glass
+  ☐ View Memory of Bones
+  Reward: Memory of Void
+  99× Pugneum
+  66× Condensed Carbon
+  33× Gold
+  Ms 5.5 Creation
+  ☐ Witness the final memory
+  Ms 5.6 Eclipse
+  ☐ Return to the Atlas
+  Ms 2.5 To Infinity
+  ☐ Enter a black hole
+
+<b>Gaden Beta</b>
+  Ms 4.3 Radiant Flight
+  ☐ Acquire a Sentinel interceptor
+  Tip: Harmonic Camp -40.69, +6.88
+  Prq: Advanced Mining Laser @ Anomaly
+
+<b>Ebdersf K36</b>
+  Ms 5.4 Xenophile
+  ☐ Discover exotic creatures: 1
+
+<b>Erkhas // Syolva</b>
+  Storm Crystals
+  Ms 2.7 ℛ2 Portal -40.69, +6.88
+  ☐ Visit Portal
+
+<b>Erkhas // Oltoni Onbet</b>
+  Cactus Flesh
+  Ms 3.5 Assembly Required
+  ☐ Manufacture Unstable Gel
+  Cactus Flesh ×200 → Unstable Gel ×1
+  Prq: Unstable Gel recipe @ Anomaly
+
+<b>Erkhas // Bihir 77/B8</b>
+  Ms 5.4 Xenophile
+  ☐ Discover exotic creatures: 1
+
+<b>Erkhas // New Ealius</b>
+  Ms 5.4 Xenophile
+  Discover exotic creatures: 1
+
+<b>Apulang-Ersk // Reket N43</b>
+  Ms 3.7 ℛ3 Crashed Freighter +18.74, +10.18
+  ☐ Visit Crashed Freighter
+
+<b>Eomitang // Usissi XII</b>
+  Ms 4.7 ℛ4 Portal +15.81, -33.20
+  ☐ Visit Portal
+  Ms 5.1 The Fallen
+  ☐ Visit a traveller's grave site
+  Prq: ℛ4 first then talk to Polo
+  Ms 5.3 Blue Expanse
+  ☐ Visit a blue star
+
+<b>Anhota-Gui XV // Dudlow VII</b>
+  Green star
+  Ms 5.7 ℛ5 Portal -26.80, +65.91
+  ☐ Visit Portal
+  </pre>
+
+  <button onClick="clearLocalStorage()">Clear checkboxes</button>
+
+  <script>
+    const version = '1.1'; // Current version of the app
+
+    function clearLocalStorage() {
+      if(confirm("Are you sure?")){
+        localStorage.clear();
+        location.reload(); 
+      }
+     }
+
+    function manageVersioning(clear) {
+      const storedVersion = localStorage.getItem('checkbox-0');
+      if (storedVersion !== version || clear) {
+        // Clear localStorage if versions are different
+        localStorage.clear();
+        localStorage.setItem('checkbox-0', version); // Store the new version
+      }
+    }
+
+    function parsePreContent() {
+      const pre = document.getElementById('mission-data');
+      const content = pre.innerHTML; // textContent;
+      const lines = content.split('\n');
+      let checkboxCount = 0;
+
+      const parsedContent = lines.map(line => {
+        if (line.includes('☐')) {
+          checkboxCount++;
+          const id = `checkbox-${checkboxCount}`;
+          // Replace ☐ with an input checkbox element
+          return line.replace('☐', `<input type="checkbox" id="${id}">`);
+        }
+        return line; // Return the line unmodified if no checkbox found
+      }).join('\n');
+
+      pre.innerHTML = parsedContent;
+
+      // Restore checkbox states from localStorage
+      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        const id = checkbox.id;
+        const savedState = localStorage.getItem(id);
+        if (savedState !== null) {
+          checkbox.checked = savedState === "true";
+        }
+
+        // Save state on change
+        checkbox.addEventListener('change', () => {
+          localStorage.setItem(id, checkbox.checked);
+        });
+      });
+    }
+
+    // On DOMContentLoaded, check version and parse content
+    document.addEventListener('DOMContentLoaded', () => {
+      manageVersioning(false);
+      parsePreContent();
+    });
+  </script>
+</body>
+</html>
