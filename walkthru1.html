@@ -22,7 +22,15 @@
       white-space: pre-wrap;
       word-wrap: break-word;
     }
-  </style>
+  i {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin: 1px 0;
+    font-style: normal;
+    background-color: pink;
+  } 
+</style>
 </head>
 <body>
   <pre id="mission-data">
@@ -63,24 +71,25 @@
   Ms 1.1 Escape Velocity
   ☐ Take to the stars
   Reward: Base Computer plans
-  Ms 3.2 Grand Tour †
+  Ms 3.2 Grand Tour <i>†</i>
   ☐ Photograph 3 different environments: Scorched
 
 <b>Bezhgo-Zam // Larinalde Ranon</b>
-  Ms 3.2 Grand Tour †
+  Ms 3.2 Grand Tour <i>†</i>
   ☐ Photograph 3 different environments: Frozen
   Ms 3.3 Life In All Its Forms
   ☐ Discover planetary fauna: 12
   Ms 1.2 Homecoming
   ☐ Establish a Base
   Reward: Hyperdrive plans
-  ☐ Use 'Ticket to Freedom' to locate pirate system
+  ☐ Mine Dioxite, Silver ×60
 
 <b>Bezhgo-Zam</b>
-  Ms 5.2 Astrolinguistics †
+  Ms 5.2 Astrolinguistics <i>†</i>
   ☐ Learn new words: 12
-  Buy: A-Toxic, A-Rad, A-Cold, 
-          A-Hyperdrive, A-Boltcaster
+  ☐ Sell: 6× Upgrades for ×3480 Nanites
+  ☐ Buy: A-Toxic, A-Rad, A-Cold,A-Hyperdrive, A-Boltcaster, Fe, Co, Co+ ×33, Py ×200, Wiring Loom ×4, Metal Plating ×8, Microprocessor ×5
+  ☐ Use 'Ticket to Freedom' to locate pirate system
 
 <b>Oiteln</b>
   Distance: 25 ly South of Bezhgo-Zam
@@ -88,7 +97,7 @@
   ☐ Warp to new system
   Ms 5.2 Astrolinguistics
   ☐ Learn new words: 12
-        Buy: A-Hot
+  ☐ Buy: A-Hot
   Ms 1.5 Anomaly's Heart
   ☐ Find the Space Anomaly
   ☐ Buy: Ceiling Light (1 Salvaged Data)
@@ -103,7 +112,7 @@
 
 <b>Lomyzyak</b>
   Distance: 46 ly West of Bezhgo-Zam
-  ☐ Tip: Buy contraband
+  ☐ Buy: contraband
 
 <b>Obrazni XVII</b>
   Ms 3.4 Hot Pursuit
@@ -115,18 +124,18 @@
   Ms 2.4 Expansion
   ☐ Grow your base
   Reward: Pre-packaged Personal Refiner
-  Prq: Ceiling Light @ Anomaly
+  <i>Prq:</i> Ceiling Light @ Anomaly
   Ms 2.6 Memento
   ☐ Build a Wonder Project
   Ms 4.4 Boundary Failure
   ☐ Eliminate Sentinels: 15
   Ms 4.5 Palate Cleanser
   ☐ Bake some biscuits
-  Prq: Nutrient Processor @ Grand Tour
+  <i>Prq:</i> Nutrient Processor @ Grand Tour
 
 <b>Obrazni XVII // Sujii 84/D5</b>
   Ms 1.7 ℛ1 Archive +48.90, +160.79
-  ☐ Tip: Buy Solar Mirror from Tech merchant
+  ☐ Buy: Solar Mirror from Tech merchant
   Ms 4.1 Relic Hunter
   ☐ Collect ancient artifact: 1
   Reward: Nautilon, Sonar and Cannon
@@ -136,7 +145,7 @@
 <b>Obrazni XVII</b>
   Ms 2.1 Atlas Rises
   ☐ Witness the Atlas
-  Prq: Speak to Nada
+  <i>Prq:</i> Speak to Nada
   Reward: Memory of Ocean
     99× Silicate Powder
     66× Tritium
@@ -174,7 +183,7 @@
   Ms 4.3 Radiant Flight
   ☐ Acquire a Sentinel interceptor
   Tip: Harmonic Camp -40.69, +6.88
-  Prq: Advanced Mining Laser @ Anomaly
+  <i>Prq:</i> Advanced Mining Laser @ Anomaly
 
 <b>Ebdersf K36</b>
   Ms 5.4 Xenophile
@@ -190,7 +199,7 @@
   Ms 3.5 Assembly Required
   ☐ Manufacture Unstable Gel
   Cactus Flesh ×200 → Unstable Gel ×1
-  Prq: Unstable Gel recipe @ Anomaly
+  <i>Prq:</i> Unstable Gel recipe @ Anomaly
 
 <b>Erkhas // Bihir 77/B8</b>
   Ms 5.4 Xenophile
@@ -209,7 +218,7 @@
   ☐ Visit Portal
   Ms 5.1 The Fallen
   ☐ Visit a traveller's grave site
-  Prq: ℛ4 first then talk to Polo
+  <i>Prq:</i> ℛ4 first then talk to Polo
   Ms 5.3 Blue Expanse
   ☐ Visit a blue star
 
@@ -218,7 +227,7 @@
   Ms 5.7 ℛ5 Portal -26.80, +65.91
   ☐ Visit Portal
 
-† Only partially complete
+<i>†</i> Only partially complete
   </pre>
 
   <button onClick="clearLocalStorage()">Clear checkboxes</button>
