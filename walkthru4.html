@@ -34,7 +34,7 @@
     table {
       display: inline-block;
       font-family: Lora;
-      margin-left: 20px;
+/*      margin-left: 20px;*/
       border-collapse: collapse;
       border-spacing: 0px;
     }
@@ -50,6 +50,7 @@
 <b>Xillup// Aanasusi</b>
   Fauna:9 Bountiful
   POI: Predators <img src='i/paws.png'/>
+  <b><font color=green>Tip:</font></b> Scan Fauna:24, Flora:16, Chart Waypoints: 6
   POI: Ms 5.4 In the Weeds
   ☐ Eliminate hazardous flora: 6
   POI: Ms 1.1 Alone in the Dark
@@ -69,24 +70,21 @@
   POI: Ms 2.3 Make Do and Mend
   ☐ Repair Multi-Tool and Starship
   Refine: Silicate Powder ×1 + Di-hydrogen ×1 → Deuterium ×1
-  Starship  
-  <table><tr><td>Launch Thruster(R) <td>Magnetised Ferrite ×50<tr>
-    <td><td>Deuterium ×45<tr><td>Pulse Engine(R)<td>Hermatic Seal ×1<tr>
-    <td><td>Metal Plating ×1<tr><td>Rusted Circiut<td>Copper ×40<tr>
-    <td>Hydraulic Damage<td>Condensed Carbon ×45<tr>
-    <td>Corroded Tanks<td>Oxygen ×45<tr>
-    <td>Hull Fracture<td>Magnetised Ferrite ×80</table>
-  Multi-Tool  
-  <table><tr><td>Burnt-Out Terminal <td>Sodium Nitrate ×25<tr>
-    <td>Failed Resistor<td>Di-hydrogen ×25<tr>
-    <td>Corrupt Module<td>Silver ×60</table>
+  <table><tr><td>Starship<tr><td>  Launch Thruster(R) <td>Magnetised Ferrite ×50<tr>
+    <td><td>Deuterium ×45<tr><td>  Pulse Engine(R)<td>Hermatic Seal ×1<tr>
+    <td><td>Metal Plating ×1<tr><td>  Rusted Circiut<td>Copper ×40<tr>
+    <td>  Hydraulic Damage<td>Condensed Carbon ×45<tr>
+    <td>  Corroded Tanks<td>Oxygen ×45<tr>
+    <td>  Hull Fracture<td>Magnetised Ferrite ×80</table>
+  <table><tr><td>Multi-Tool<tr><td>  Burnt-Out Terminal <td>Sodium Nitrate ×25<tr>
+    <td>  Failed Resistor<td>Di-hydrogen ×25<tr>
+    <td>  Corrupt Module<td>Silver ×60</table>
   POI: Ms 5.2 Still They Hunger
   ☐ Purge Hungering Tendrils: 5
   POI: Ms 1.4 An Unlikely Escape
   ☐ Leave the planet
 
 <b>Xillup</b>
-  Tip: Scan Fauna:24, Flora:16, Chart Waypoints: 6
   POI: Ms 1.7 Worlds of Rock & Ice
   ☐ Destroy Asteroids: 30
   Note: <b><font color=purple>Tritium</font></b> ×25 + Condensed Carbon ×20 → Antimatter ×1
@@ -98,7 +96,7 @@
     Microprocessor ×5
 
 <b>Xillup // Orey XII</b>
-  ☐ Tip: Find Heptaploid Wheat → Refined Flour
+  ☐ Find Heptaploid Wheat → Refined Flour
   Fauna:7 Frequent
   POI: Ms 3.2 Call of the Void
   ☐ Extract Radiant Shards: 1
@@ -247,7 +245,7 @@
           checkboxCount++;
           const id = `checkbox-${checkboxCount}`;
 
-          // track keywords in an Object
+          // track keywords in an Object (see Omega Redux)
           Object.keys(keywords).forEach(key => {
             if(line.toLowerCase().includes(key)){
               keywords[key].push(id);
