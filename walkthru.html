@@ -50,11 +50,12 @@
   <pre id="mission-data">
 <b>Gukoyerd // Cusete Alpha</b>
   Fauna:7 Intermittent
-  <div id=tt>Carbon,310
-Cobalt,80
-Copper,650
-Ferrite Dust,140
-Oxygen,30
+  <div id=tt>Carbon,220
+Cobalt,40
+Copper,450
+Di-hydrogen,40
+Ferrite Dust,370
+Oxygen,150
 Sodium,80</div>
   POI: Ms 1.1 All Guns Blazing
   ☐ Locate your starship
@@ -67,7 +68,7 @@ Sodium,80</div>
   Pulse Engine(R)
     Hermetic Seal ×1
     Metal Plating ×1
-  Ion Battery ×8
+  Ion Battery ×4
   POI: Ms 1.4 Exterminator
   ☐ Kill biological horrors: 12
   POI: Ms 3.6 Law of the Jungle
@@ -75,12 +76,13 @@ Sodium,80</div>
   Reward: Powerful Underwater Oxygen Upgrade x 3
 
 <b>Gukoyerd</b>
-  Buy: A-Hot Protection
+  Buy: A-Hot Protection, Microprocessor ×5
   POI: Ms 1.2 Dust Off
   ☐ Leave the planet
   Reward: Hyperdrive plans
     Chromatic Metal ×125
     Microprocessor ×5
+  Warp Cell ×4
 
 <b>Diyzhev</b>
   ☐ Buy: B-Hyperdrive ×2, A-Radiation
@@ -182,20 +184,23 @@ Sodium,80</div>
     const version = '13.1'; // Current version of the app
     const keywords = {'exotic':[], 'interceptor':[]};
     const conv = {
-      "Ammunition": {"Ferrite Dust": 50},
+      "Ammunition": {"Ferrite Dust": 250},
       "Carbon Nanotube": {"Carbon": 50},
       "Chromatic Metal": {"Copper": 2},
       "Condensed Carbon": {"Carbon": 2},
       "Creature Pellets": {"Carbon": 60},
+      "Di-hydrogen Jelly": {"Di-hydrogen": 40},
       "Hermetic Seal": {"Carbon": 60},
       "Ion Battery": {"Cobalt": 10, "Ferrite Dust": 5},
       "Ionised Cobalt": {"Cobalt": 2},
       "Life Support Gel": {"Carbon": 20, "Di-hydrogen": 40},
       "Magnetic Resonator": {"Ferrite Dust": 80, "Cobalt": 80},
       "Magnetised Ferrite": {"Ferrite Dust": 2},
+      "Pure Ferrite": {"Ferrite Dust": 1},
       "Metal Plating": {"Ferrite Dust": 50},
-      "Microprocessor": {"Carbon": 50, "Copper": 80},
+  //  "Microprocessor": {"Carbon": 50, "Copper": 80},
       "Sodium Nitrate": {"Sodium": 2},
+      "Warp Cell": {"Oxygen": 30, "Ferrite Dust": 50, "Copper": 50, "Carbon": 40},
     };
     let tt, obj, dict = {}, title;
 
