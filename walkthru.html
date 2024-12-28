@@ -44,10 +44,17 @@
       padding: 0 5px;
     }
     #tt {padding-left: 10px;}
+    #mission-data-alpha {display: none;}
+    #mission-data-digit {display: none;}
 </style>
 </head>
 <body>
-  <pre id="mission-data">
+  <button onClick="show(pre_n)">Normal</button>
+  <button onClick="show(pre_a)">A - Z</button>
+  <button onClick="show(pre_d)">1 - 5</button>
+  <pre id="mission-data-digit"></pre>
+  <pre id="mission-data-alpha"></pre>
+  <pre id="mission-data-normal">
 <div id=tt>Carbon,220
 Cobalt,40
 Copper,450
@@ -82,7 +89,7 @@ Sodium,80</div>
   ☐ Travel by jetpack : 600u
 
 <b>Gukoyerd</b>
-  Buy: A-Hot Protection, Microprocessor ×5
+  ☐ Buy: A-Hot Protection, Microprocessor ×5
   POI: Ms 1.2 Dust Off
   ☐ Leave the planet
   Reward: Hyperdrive plans
@@ -122,7 +129,7 @@ Sodium,80</div>
 
 <b>Amenni-Akr // Tasburyd W46</b>
   Fauna:12 Bountiful
-  POI: Ms 2.1 ʣ2 Dropzone Two -27.54, +110.96
+  POI: Ms 2.1 ʣ2 Transmission Tower -27.54, +110.96
   ☐ Reach the second dropzone
   POI: Ms 3.3 Apex Predator
   ☐ Record a predator with aggression levels over 9.0pav
@@ -137,11 +144,11 @@ Sodium,80</div>
 
 <b>Abgyailin // Hanburf Major</b>
   Fauna:9 Abundant
-  POI: Ms 3.1 ʣ3 Dropzone Three
+  POI: Ms 3.1 ʣ3 Transmission Tower
   ☐ Reach the third dropzone
   Reward: Minotaur Combat Deployment Set
   POI: Ms 2.3 Scrap Metal
-  Eliminate Sentinels: 22
+  ☐ Eliminate Sentinels: 22
   POI: Ms 5.1 Timberwolf
   ☐ Kill 25 hostiles while in the Minotaur
   POI: Ms 5.3 Iron Giants
@@ -151,14 +158,14 @@ Sodium,80</div>
 
 <b>Lungleb // Wurag V</b>
   Fauna:10 Abundant
-  POI: Ms 4.1 ʣ4 Dropzone Four
+  POI: Ms 4.1 ʣ4 Transmission Tower
   ☐ Reach the fourth dropzone
   POI: Ms 4.2 Infestation Delta
   ☐ Purge the fourth site
 
 <b>Bejoie // Illiangu XII</b>
   Fauna:5 Rare
-  POI: Ms 5.5 ʣ5 Dropzone Five
+  POI: Ms 5.5 ʣ5 Transmission Tower
   ☐ Reach the final dropzone
   POI: Ms 5.6 Infestation Omega
   ☐ Purge the final site
@@ -174,7 +181,7 @@ Sodium,80</div>
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
-    const version = '13.1'; // Current version of the app
+    const version = '14.0'; // Current version of the app
     const keywords = {'exotic':[], 'interceptor':[]};
     const conv = {
       "Ammunition": {"Ferrite Dust": 250},
@@ -195,7 +202,23 @@ Sodium,80</div>
       "Sodium Nitrate": {"Sodium": 2},
       "Warp Cell": {"Oxygen": 30, "Ferrite Dust": 50, "Copper": 50, "Carbon": 40},
     };
-    let tt, obj, dict = {}, title;
+    let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
+
+    function show(e) {
+      pre_n.style.display = "none"; 
+      pre_a.style.display = "none"; 
+      pre_d.style.display = "none"; 
+      e.style.display     = "block";
+      const sel = `#${e.id} input[type="checkbox"]`;
+      console.log(sel);
+      document.querySelectorAll(sel).forEach(checkbox => {
+        const id = checkbox.id;
+        const savedState = localStorage.getItem(id);
+        if (savedState !== null) {
+          checkbox.checked = savedState === "true";
+        }
+      });
+    }
 
     function clearLocalStorage() {
       if(confirm("Are you sure?")){
@@ -214,11 +237,17 @@ Sodium,80</div>
     }
 
     function parsePreContent() {
-      const pre = document.getElementById('mission-data');
-      const content = pre.innerHTML; // textContent;
+      pre_n = document.getElementById('mission-data-normal');
+      pre_a = document.getElementById('mission-data-alpha');
+      pre_d = document.getElementById('mission-data-digit');
+      const content = pre_n.innerHTML; // textContent;
       const lines = content.split('\n');
       let checkboxCount = 0, id, trace;
       const parsedContent = lines.map(line => {
+        let match = line.match(/POI: Ms (\d\.\d) (.+)/);
+        if (match) {
+          poi.push([match[1], match[2], line]);
+        }
         if (line.includes('☐')) {
           checkboxCount++;
           id = `checkbox-${checkboxCount}`;
@@ -232,13 +261,16 @@ Sodium,80</div>
           });
 
           // Replace ☐ with an input checkbox element
-          return line.replace('☐', `<input type="checkbox" id="${id}">`);
+          line = line.replace('☐', `<input type="checkbox" id="${id}">`)
+          if(poi[poi.length-1].length == 3)
+            poi[poi.length-1] = [...poi[poi.length-1], line];
+          return line;
         }
         if (line.startsWith('\`')) {
           return line.slice(1);
         }
 
-        const match = line.match(/(\w[\w\s-]+) ×(\d+)/);
+        match = line.match(/(\w[\w\s-]+) ×(\d+)/);
         if (match) {
           const key = match[1]; // Object.keys(dict).find(k => line.includes(k));
           const value = parseInt(match[2], 10);
@@ -274,7 +306,11 @@ Sodium,80</div>
         return line; // Return the line unmodified if no checkbox found
       }).join('\n');
 
-      pre.innerHTML = parsedContent;
+      console.log(JSON.stringify(poi, null, 2)); 
+      pre_d.innerHTML = poi.sort((a,b)=>a[0].localeCompare(b[0])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
+      pre_a.innerHTML = poi.sort((a,b)=>a[1].localeCompare(b[1])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
+
+      pre_n.innerHTML = parsedContent;
       console.log('');
 
       // Restore checkbox states from localStorage
@@ -356,8 +392,11 @@ Sodium,80</div>
 
     // On DOMContentLoaded, check version and parse content
     document.addEventListener('DOMContentLoaded', () => {
-      tt = document.querySelector('#tt');
-      obj = parseComponents();
+      tt    = document.querySelector('#tt');
+      obj   = parseComponents();
+      pre_n = document.getElementById('mission-data-normal');
+      pre_a = document.getElementById('mission-data-alpha');
+      pre_d = document.getElementById('mission-data-digit');
       manageVersioning();
       parsePreContent();
     });
