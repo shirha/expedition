@@ -57,13 +57,13 @@
   <pre id="mission-data-digit"></pre>
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
-<div id=tt>Carbon,220
+<div id=tt>Carbon,320
 Cobalt,40
-Copper,450
+Copper,500
 Di-hydrogen,40
-Ferrite Dust,370
-Oxygen,150
-Sodium,80</div>
+Ferrite Dust,520
+Oxygen,180
+Sodium,25</div>
 
 <b>Gukoyerd // Cusete Alpha</b>
   Fauna:7 Intermittent
@@ -97,7 +97,7 @@ Sodium,80</div>
   Reward: Hyperdrive plans
     Chromatic Metal ×125
     Microprocessor ×5
-  Warp Cell ×4
+  Warp Cell ×5
 
 <b>Diyzhev</b>
   ☐ Buy: B-Hyperdrive ×2
@@ -111,10 +111,6 @@ Sodium,80</div>
   Fauna:6 Infrequent
   POI: Ms 1.5 ʣ1 Transmission Tower <span>+20.77, -167.60</span>
   ☐ Reach the first dropzone
-  POI: Ms 2.4 Lock and Load
-  ☐ Fire 1,200 rounds of ammunition
-  POI: Ms 4.6 Fire in the Hole
-  ☐ Score 3 hits with one grenade
   POI: Ms 1.6 Infestation Alpha
   ☐ Purge the first site
   Reward: Pre-Packaged Haz-Mat Gauntlet Unit
@@ -124,8 +120,15 @@ Sodium,80</div>
   POI: Ms 3.4 Provocateur
   ☐ Steal Whispering Eggs: 8
   Reward: Nutrient Processor
+    Metal Plating ×2
+    Hermetic Seal ×1
+    Sodium ×25
   POI: Ms 5.4 Spare Ribs
   ☐ Prepare fiendish meat
+  POI: Ms 2.4 Lock and Load
+  ☐ Fire 1,200 rounds of ammunition
+  POI: Ms 4.6 Fire in the Hole
+  ☐ Score 3 hits with one grenade
   POI: Ms 5.2 Bleeding Foam
   ☐ Earn Nanites: 4,000
 
@@ -183,7 +186,7 @@ Sodium,80</div>
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
-    const version = '14.0'; // Current version of the app
+    const version = '14.1'; // Current version of the app
     const keywords = {'exotic':[], 'interceptor':[]};
     const conv = {
       "Ammunition": {"Ferrite Dust": 250},
@@ -211,6 +214,8 @@ Sodium,80</div>
       pre_a.style.display =
       pre_d.style.display = "none"; 
       e.style.display     = "block";
+
+      // Restore checkbox states from localStorage
       const sel = `#${e.id} input[type="checkbox"]`;
       console.log(sel);
       document.querySelectorAll(sel).forEach(checkbox => {
