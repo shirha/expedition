@@ -205,8 +205,8 @@ Sodium,80</div>
     let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
 
     function show(e) {
-      pre_n.style.display = "none"; 
-      pre_a.style.display = "none"; 
+      pre_n.style.display =
+      pre_a.style.display =
       pre_d.style.display = "none"; 
       e.style.display     = "block";
       const sel = `#${e.id} input[type="checkbox"]`;
@@ -306,7 +306,7 @@ Sodium,80</div>
         return line; // Return the line unmodified if no checkbox found
       }).join('\n');
 
-      console.log(JSON.stringify(poi, null, 2)); 
+      // console.log(JSON.stringify(poi, null, 2)); 
       pre_d.innerHTML = poi.sort((a,b)=>a[0].localeCompare(b[0])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
       pre_a.innerHTML = poi.sort((a,b)=>a[1].localeCompare(b[1])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
 
@@ -320,12 +320,14 @@ Sodium,80</div>
         if (savedState !== null) {
           checkbox.checked = savedState === "true";
 
+          const parentId = checkbox.parentNode.id;
+          console.log(`${parentId}, ${id}`);
           let flag = false;
           Object.keys(dict[id]).forEach(key =>{
-            if (key in obj && checkbox.checked) {
+            if (key in obj && checkbox.checked && parentId == 'mission-data-normal') {
               flag = true;
               obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
-              console.log(`${id}, ${key.padEnd(18)}, ${String(dict[id][key]).padStart(3)}, ${obj[key]}`);
+              console.log(`${parentId}, ${id}, ${key.padEnd(18)}, ${String(dict[id][key]).padStart(3)}, ${obj[key]}`);
             }
           });
           if (flag) {
@@ -336,9 +338,10 @@ Sodium,80</div>
         checkbox.addEventListener('change', () => {
           localStorage.setItem(id, checkbox.checked);
 
+          const parentId = checkbox.parentNode.id;
           let flag = false;
           Object.keys(dict[id]).forEach(key =>{
-            if (key in obj) {
+            if (key in obj && parentId == 'mission-data-normal') {
               flag = true;
               obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
             }
