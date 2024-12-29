@@ -17,7 +17,6 @@
       line-height: 1.6; 
       */
     }
-    button {font-size: 18px;}
     #tt, table, pre {
       font-family: Lora;
       white-space: pre-wrap;
@@ -48,12 +47,21 @@
     #mission-data-digit {display: none;}
     span {white-space: nowrap;}
 
+    button {
+      font-size: 18px;
+      background-color: #f0f0f0;
+      border: 1px solid #767676;
+      border-radius: 4px;
+    }
+    .highlight {
+      background-color: #e0e0e0;
+    }
 </style>
 </head>
 <body>
-  <button onClick="show(pre_n)">Normal</button>
-  <button onClick="show(pre_a)">A - Z</button>
-  <button onClick="show(pre_d)">1 - 5</button>
+  <button onclick="handleClick(this, pre_n)">Normal</button>
+  <button onclick="handleClick(this, pre_a)">A - Z</button>
+  <button onclick="handleClick(this, pre_d)">1 - 5</button>
   <pre id="mission-data-digit"></pre>
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
@@ -117,6 +125,12 @@ Sodium,25</div>
   POI: Ms 2.5 Metamorphosis
   ☐ Crush a vile grub
   Reward: S-Toxic Protection
+  POI: Ms 2.4 Lock and Load
+  ☐ Fire 1,200 rounds of ammunition
+  Reward: Plasma Launcher
+  POI: Ms 4.6 Fire in the Hole
+  ☐ Score 3 hits with one grenade
+  Tip: Stand back & shoot an egg
   POI: Ms 3.4 Provocateur
   ☐ Steal Whispering Eggs: 8
   Reward: Nutrient Processor
@@ -125,10 +139,6 @@ Sodium,25</div>
     Sodium ×25
   POI: Ms 5.4 Spare Ribs
   ☐ Prepare fiendish meat
-  POI: Ms 2.4 Lock and Load
-  ☐ Fire 1,200 rounds of ammunition
-  POI: Ms 4.6 Fire in the Hole
-  ☐ Score 3 hits with one grenade
   POI: Ms 5.2 Bleeding Foam
   ☐ Earn Nanites: 4,000
 
@@ -140,12 +150,12 @@ Sodium,25</div>
   ☐ Record a predator with aggression levels over 9.0pav
   POI: Ms 2.2 Infestation Beta
   ☐ Purge the second site
+  POI: Ms 4.3 Independent Action
+  ☐ Brave the swarm around 3 waypoints
   POI: Ms 4.4 Blood in the Water
   ☐ Kill 1 Alluring Specimen
   POI: Ms 4.5 Snowblind
   ☐ Navigate during storms: 1,100u
-  POI: Ms 4.3 Independent Action
-  ☐ Brave the swarm around 3 waypoints
 
 <b>Abgyailin // Hanburf Major</b>
   Fauna:9 Abundant
@@ -177,6 +187,7 @@ Sodium,25</div>
   POI: Ms 5.7 Swarmsong
   ☐ Learn the fate of Liquidator #3813G
 
+  Distance: 29 ly Northeast of Bejoie
 <b>Qihari-Himal // Yotiris XII</b>
   Fauna:10 Full
   POI: Ms 4.7 Purple Mist
@@ -209,6 +220,22 @@ Sodium,25</div>
     };
     let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
 
+    function handleClick(button, param) {
+      // Remove highlight from the previously clicked button
+      if (lastClickedButton) {
+        lastClickedButton.classList.remove('highlight');
+      }
+
+      // Add highlight to the currently clicked button
+      button.classList.add('highlight');
+
+      // Update the reference to the last clicked button
+      lastClickedButton = button;
+
+      // Call the show function with the provided parameter
+      show(param);
+    }
+
     function show(e) {
       pre_n.style.display =
       pre_a.style.display =
@@ -226,6 +253,8 @@ Sodium,25</div>
         }
       });
     }
+
+    let lastClickedButton = null;
 
     function clearLocalStorage() {
       if(confirm("Are you sure?")){
@@ -413,3 +442,4 @@ Sodium,25</div>
   </script>
 </body>
 </html>
+
