@@ -134,12 +134,23 @@ fetch('run1.json')
 
     console.log(imagesData);
 
+    // Parse the query string for the index parameter
+    const indexFromQuery = getQueryParameter('index');
+    if (indexFromQuery !== null && !isNaN(indexFromQuery)) {
+      currentIndex = Math.min(Math.max(parseInt(indexFromQuery, 10), 0), images.length - 1);
+    }
+
     // Show the first image initially
     showImage(currentIndex);
   })
   .catch(error => {
     console.error('Error loading JSON data:', error);
   });
+
+function getQueryParameter(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
 
 function showImage(index) {
   const imgElement = document.getElementById('image');
