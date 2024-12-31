@@ -138,6 +138,9 @@ fetch('run1.json')
     const indexFromQuery = getQueryParameter('index');
     if (indexFromQuery !== null && !isNaN(indexFromQuery)) {
       currentIndex = Math.min(Math.max(parseInt(indexFromQuery, 10), 0), images.length - 1);
+
+      // Remove the "index" parameter from the query string
+      removeQueryParameter('index');
     }
 
     // Show the first image initially
@@ -147,9 +150,16 @@ fetch('run1.json')
     console.error('Error loading JSON data:', error);
   });
 
+// https://localhost:9000/slideshow1.html?index=26
 function getQueryParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
+}
+
+function removeQueryParameter(param) {
+  const url = new URL(window.location.href); // Create a URL object
+  url.searchParams.delete(param); // Remove the specified query parameter
+  window.history.replaceState(null, '', url.toString()); // Update the URL without reloading
 }
 
 function showImage(index) {
