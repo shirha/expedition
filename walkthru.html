@@ -238,8 +238,8 @@ Sodium,0</div>
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
-    const version = '15.1'; // Current version of the app
-    const keywords = {'exotic':[], 'interceptor':[], 'Ms 5.5': []};
+    const version = '15.2'; // Current version of the app
+    const keywords = {'75kg': []};
     const conv = {
       "Launch Thruster(R)": {"Ferrite Dust": 50, "Di-hydrogen": 40},
       "Pulse Engine(R)": {"Carbon": 60, "Ferrite Dust": 50},
@@ -435,11 +435,14 @@ Sodium,0</div>
             if (keywords[key].includes(id)) {
               // If this checkbox belongs to a keyword group, toggle all related checkboxes
               keywords[key].forEach(relatedId => {
-                const relatedCheckbox = document.getElementById(relatedId);
-                if (relatedCheckbox) {
-                  relatedCheckbox.checked = checkbox.checked;
-                  localStorage.setItem(relatedId, checkbox.checked); // Update localStorage for related checkboxes
-                }
+                const relatedCheckbox = document.querySelectorAll(`#${relatedId}`);
+                console.log(id,relatedCheckbox);
+                relatedCheckbox.forEach(relatedCheckboxTab => {
+                  if (relatedCheckboxTab) {
+                    relatedCheckboxTab.checked = checkbox.checked;
+                    localStorage.setItem(relatedId, checkbox.checked); // Update localStorage for related checkboxes
+                  }
+                });
               });
             }
           });
