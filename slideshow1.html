@@ -116,7 +116,7 @@
 </div>
 <div id="log"></div>
 <script>
-const locations = ["Gukoyerd","Androv XIV","Amenni-Akr","Abgyailin","Lungleb","Bejoie"];
+const locations = ["Maskjalsa", "Ierpla-Lue", "Meoalf-Ohi", "Vunutu-Eami VI", "Iperhet-Caces V", "Planas-Dozhs"];
 let rendNodes = document.querySelectorAll('.rend'),
   currentIndex = 0,
   imagesData = {},
@@ -150,7 +150,7 @@ fetch('run1.json')
     console.error('Error loading JSON data:', error);
   });
 
-// https://localhost:9000/slideshow1.html?index=26
+// https://shirha.github.io/expedition/slideshow1.html?index=26
 function getQueryParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
