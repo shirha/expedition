@@ -439,21 +439,35 @@
   <div style="margin-bottom: 800px;">&nbsp;</div>
   <div id=tt></div>
 <script>
-  const h3Elements = document.querySelectorAll('h3');
-  const imgElements = document.querySelectorAll('.s');
-  let nearestH3;
+  const version = '1.0'; // Current version of the app
+  const keywords = {'75kg': []};
+  const conv = {};
+  let tt, obj, dict = {}, title, pre_n, poi = [];
+  let h3Elements, imgElements, nearestH3;
 
-  document.querySelector('.t').addEventListener('click', () => {
-    const imgStyle = imgElements[0].style.display == 'none';
-    if(imgStyle){
-      imgElements.forEach(img => { img.style.display = 'block' });
-      nearestH3.scrollIntoView({ behavior: "smooth" });
-      nearestH3.style.color = 'black'; // Example: Highlight it
-    }else{
-      findNearestH3();
-      imgElements.forEach(img => { img.style.display = 'none' });
-      nearestH3.scrollIntoView({ behavior: "smooth" });
-    }
+  // On DOMContentLoaded, check version and parse content
+  document.addEventListener('DOMContentLoaded', () => {
+    tt    = document.querySelector('#tt');
+    obj   = parseComponents();
+    pre_n = document.querySelector('.container');
+    manageVersioning();
+    parsePreContent();
+
+    h3Elements = document.querySelectorAll('h3');
+    imgElements = document.querySelectorAll('.s');
+
+    document.querySelector('.t').addEventListener('click', () => {
+      const imgStyle = imgElements[0].style.display == 'none';
+      if(imgStyle){
+        imgElements.forEach(img => { img.style.display = 'block' });
+        nearestH3.scrollIntoView({ behavior: "smooth" });
+        nearestH3.style.color = 'black'; // Example: Highlight it
+      }else{
+        findNearestH3();
+        imgElements.forEach(img => { img.style.display = 'none' });
+        nearestH3.scrollIntoView({ behavior: "smooth" });
+      }
+    });
   });
 
   function findNearestH3() {
@@ -494,11 +508,6 @@
   }
 
 // -----------------------------------------------------
-
-  const version = '1.0'; // Current version of the app
-    const keywords = {'75kg': []};
-    const conv = {};
-    let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
 
   function clearLocalStorage() {
     if(confirm("Are you sure?")){
@@ -674,17 +683,6 @@
     }
   }
 
-  // On DOMContentLoaded, check version and parse content
-  document.addEventListener('DOMContentLoaded', () => {
-    tt    = document.querySelector('#tt');
-    obj   = parseComponents();
-    pre_n = document.querySelector('.container');
-    // pre_n = document.getElementById('mission-data-normal');
-    // pre_a = document.getElementById('mission-data-alpha');
-    // pre_d = document.getElementById('mission-data-digit');
-    manageVersioning();
-    parsePreContent();
-  });
 
 
 
