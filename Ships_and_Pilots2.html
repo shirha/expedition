@@ -56,11 +56,11 @@
       margin: 3px 0 0 3px; 
       display: inline-block;
     }
-    button {position: fixed; left: 10px; top: 50px; border-radius: 6px; border: 1px solid #767676; padding: 2px 7px;}
+    .t {position: fixed; left: 10px; top: 50px; border-radius: 6px; border: 1px solid #767676; padding: 2px 7px;}
   </style>
 </head>
 <body>
-  <button>Toggle</button>
+  <button class=t>Toggle</button>
   <div class="container">
   
     <h2>Maskjalsa <span>P:14 S:14</span></h2>
@@ -253,57 +253,57 @@
       </div>
     
       <div class="image-container">
-      <h3>Research Entity Naysk</h3>
+      ☐ <h3>Research Entity Naysk</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Operator Entity Ispoleso</h3>
+      ☐ <h3>Operator Entity Ispoleso</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Technician Entity Biyskomp</h3>
+      ☐ <h3>Technician Entity Biyskomp</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Engineering Entity Anzheni</h3>
+      ☐ <h3>Engineering Entity Anzheni</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Divine Atlas Entity Osluzhno</h3>
+      ☐ <h3>Divine Atlas Entity Osluzhno</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Physicist Entity Mich</h3>
+      ☐ <h3>Physicist Entity Mich</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Entity Epas</h3>
+      ☐ <h3>Entity Epas</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Mathematician Entity Zuvenyev</h3>
+      ☐ <h3>Mathematician Entity Zuvenyev</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Entity Leleromenn</h3>
+      ☐ <h3>Entity Leleromenn</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Vy&#39;keen-at-Arms lagua</h3>
+      ☐ <h3>Vy&#39;keen-at-Arms lagua</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Corporal Nokardo</h3>
+      ☐ <h3>Corporal Nokardo</h3>
       
       </div>
     
@@ -396,54 +396,54 @@
       </div>
     
       <div class="image-container">
-      <h3>WorkGek Ergagnad</h3>
+      ☐ <h3>WorkGek Ergagnad</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Secretary Lulfack</h3>
+      ☐ <h3>Secretary Lulfack</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Captain Dutgefic</h3>
+      ☐ <h3>Captain Dutgefic</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Assistant Ifterser</h3>
+      ☐ <h3>Assistant Ifterser</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>ToilGek Orr</h3>
+      ☐ <h3>ToilGek Orr</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Hireling Ayryunju</h3>
+      ☐ <h3>Hireling Ayryunju</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Trader Erlever</h3>
+      ☐ <h3>Trader Erlever</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Resource Analyst Tagaelses</h3>
+      ☐ <h3>Resource Analyst Tagaelses</h3>
       
       </div>
-    
-  
   </div>
-  <div style="margin-bottom: 800px;">&nbspl</div>
+  <button onClick="clearLocalStorage()">Clear</button>
+  <div style="margin-bottom: 800px;">&nbsp;</div>
+  <div id=tt></div>
 <script>
   const h3Elements = document.querySelectorAll('h3');
   const imgElements = document.querySelectorAll('.s');
   let nearestH3;
 
-  document.querySelector('button').addEventListener('click', () => {
+  document.querySelector('.t').addEventListener('click', () => {
     const imgStyle = imgElements[0].style.display == 'none';
     if(imgStyle){
       imgElements.forEach(img => { img.style.display = 'block' });
@@ -492,6 +492,202 @@
     }
   // });
   }
+
+// -----------------------------------------------------
+
+  const version = '1.0'; // Current version of the app
+    const keywords = {'75kg': []};
+    const conv = {};
+    let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
+
+  function clearLocalStorage() {
+    if(confirm("Are you sure?")){
+      localStorage.clear();
+      location.reload(); 
+    }
+  }
+
+  function manageVersioning() {
+    const storedVersion = localStorage.getItem('checkbox-0');
+    if (storedVersion !== version) {
+      // Clear localStorage if versions are different
+      localStorage.clear();
+      localStorage.setItem('checkbox-0', version); // Store the new version
+    }
+  }
+
+  function parsePreContent() {
+    pre_n = document.querySelector('.container');
+    const content = pre_n.innerHTML; // textContent;
+    const lines = content.split('\n');
+    let checkboxCount = 0, id, trace;
+    const parsedContent = lines.map(line => {
+      let match = line.match(/POI: Ms (\d\.\d) (.+)/);
+      if (match) {
+        poi.push([match[1], match[2], line]);
+      }
+      if (line.includes('☐ ')) {
+        checkboxCount++;
+        id = `checkbox-${checkboxCount}`;
+        dict[id] = {};
+
+        // track keywords in an Object (see Omega Redux)
+        Object.keys(keywords).forEach(key => {
+          if(line.toLowerCase().includes(key)){
+            keywords[key].push(id);
+          }
+        });
+
+        // Replace ☐  with an input checkbox element
+        line = line.replace('☐ ', `<input type="checkbox" id="${id}">`)
+        // if(poi[poi.length-1].length == 3)
+        //   poi[poi.length-1] = [...poi[poi.length-1], line];
+        return line;
+      }
+      // if (line.startsWith('\`')) {
+      //   return line.slice(1);
+      // }
+
+      match = line.match(/(\w[\w\s-]+) ×(\d+)/);
+      if (match) {
+        const key = match[1]; // Object.keys(dict).find(k => line.includes(k));
+        const value = parseInt(match[2], 10);
+        if (id) {
+          const dbg = id.match(/checkbox/);
+          const temp = {3:"Advanced Mining Beam",4:"Personal Refiner MK2",5:"Repair Starship & Multi-tool",7:"Leave planet",13:"Restore crashed ship",9:"Hyperdrive",16:"Nutrient Processor, Haz-Mat Gauntlet",19:"Shell Greaser",22:"Mind Arc",23:"Cadmium Drive",29:"Nautilon Chamber, High-Power Sonar"}[checkboxCount];
+          if (title != temp) {title = temp; console.log(title);}
+          if (key in conv){
+            Object.keys(conv[key]).map(k => {
+              if (k in dict[id]) { trace = 'conv-1';
+                dict[id][k] += conv[key][k] * value;
+                if (dbg) 
+                  console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][k]}`);
+              } else { trace = 'conv-0';
+                dict[id][k] = conv[key][k] * value;
+                if (dbg) 
+                  console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][k]}`);
+              }
+            });
+          } else {
+            if (key in dict[id]) { trace = 'dict-1';
+              dict[id][key] += value; k = '';
+              if (dbg) 
+                console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][key]}`);
+            } else { trace = 'dict-0';
+              dict[id][key] = value; k = '';
+              if (dbg) 
+                console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][key]}`);
+            }
+          }
+        }
+      }
+      return line; // Return the line unmodified if no checkbox found
+    }).join('\n');
+
+    // console.log(JSON.stringify(poi, null, 2)); 
+    // pre_d.innerHTML = poi.sort((a,b)=>a[0].localeCompare(b[0])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
+    // pre_a.innerHTML = poi.sort((a,b)=>a[1].localeCompare(b[1])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
+
+    pre_n.innerHTML = parsedContent;
+    console.log('');
+
+    // Restore checkbox states from localStorage
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+      const id = checkbox.id;
+      const savedState = localStorage.getItem(id);
+      if (savedState !== null) {
+        checkbox.checked = savedState === "true";
+
+        const parentId = checkbox.parentNode.id;
+        console.log(`${parentId}, ${id}`);
+        let flag = false;
+        Object.keys(dict[id]).forEach(key =>{
+          if (key in obj && checkbox.checked && parentId == 'mission-data-normal') {
+            flag = true;
+            obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
+            console.log(`${parentId}, ${id}, ${key.padEnd(18)}, ${String(dict[id][key]).padStart(3)}, ${obj[key]}`);
+          }
+        });
+        if (flag) {
+          document.getElementById('tt').textContent = Object.keys(obj).map(k => `${k},${obj[k]}`).join('\n');
+        }
+      }
+
+      checkbox.addEventListener('change', () => {
+        localStorage.setItem(id, checkbox.checked);
+
+        const parentId = checkbox.parentNode.id;
+        let flag = false;
+        Object.keys(dict[id]).forEach(key =>{
+          if (key in obj && parentId == 'mission-data-normal') {
+            flag = true;
+            obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
+          }
+        });
+        if (flag) {
+          document.getElementById('tt').textContent = Object.keys(obj).map(k => `${k},${obj[k]}`).join('\n');
+        }
+
+        // Loop through each keyword group
+        Object.keys(keywords).forEach(key => {
+          if (keywords[key].includes(id)) {
+            // If this checkbox belongs to a keyword group, toggle all related checkboxes
+            keywords[key].forEach(relatedId => {
+              const relatedCheckbox = document.querySelectorAll(`#${relatedId}`);
+              console.log(id,relatedCheckbox);
+              relatedCheckbox.forEach(relatedCheckboxTab => {
+                if (relatedCheckboxTab) {
+                  relatedCheckboxTab.checked = checkbox.checked;
+                  localStorage.setItem(relatedId, checkbox.checked); // Update localStorage for related checkboxes
+                }
+              });
+            });
+          }
+        });
+
+      });
+    });
+  }
+
+  function parseComponents() {
+    return tt.textContent.split('\n') // Split the string into lines
+      .map(line => line.trim()) // Trim leading/trailing spaces
+      .map(line => line.split(',')) // Split each line into key-value pairs
+      .reduce((acc, [key, value]) => {
+        acc[key] = parseInt(value, 10); // Add to object, parse value as an integer
+        return acc;
+      }, {});
+  }
+
+  function updateComponents(checkbox, id) {
+    let flag = false;
+    Object.keys(dict[id]).forEach(key =>{
+      if (key in obj && checkbox.checked) {
+        flag = true;
+        obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
+        // console.log(key, obj[key]);
+      }
+    });
+    if (flag) {
+      document.getElementById('tt').textContent = Object.keys(obj).map(k => `${k},${obj[k]}`).join('\n');
+      console.log(tt);
+    }
+  }
+
+  // On DOMContentLoaded, check version and parse content
+  document.addEventListener('DOMContentLoaded', () => {
+    tt    = document.querySelector('#tt');
+    obj   = parseComponents();
+    pre_n = document.querySelector('.container');
+    // pre_n = document.getElementById('mission-data-normal');
+    // pre_a = document.getElementById('mission-data-alpha');
+    // pre_d = document.getElementById('mission-data-digit');
+    manageVersioning();
+    parsePreContent();
+  });
+
+
+
 </script>
 </body>
 </html>
