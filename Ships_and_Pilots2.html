@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Ships and Pilots</title>
   <style>
     body {
@@ -56,20 +56,58 @@
       margin: 4px 0 0 4px; 
       display: inline-block;
     }
+/*
     .t {
-      -webkit-backface-visibility: hidden; /* mobile */
+      -webkit-backface-visibility: hidden;
       position: fixed; 
       left: 10px; 
       top: 80px; 
       border-radius: 6px; 
       border: 1px solid #767676; 
       padding: 2px 7px;       
+      font-size: 2em;
+    }
+*/
+    svg {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      width: 96px;
+      height: 30px;
+    }
+    #toggle-on, #toggle-off {
+      -webkit-backface-visibility: hidden; /* mobile */
+      position: fixed; 
+      left: 10px; 
+      top: 65px; 
       font-size: 2em; /* Adjust the size of the h2 if needed */
+/*
+      border-radius: 6px; 
+      border: 1px solid #767676; 
+      padding: 2px 7px;       
+*/
     }
   </style>
 </head>
 <body>
-  <button class=t>Toggle</button>
+  <!-- <button class=t>Toggle</button> -->
+    <div id="toggle-off" style="display: none;"  onclick="toggleSwitch('off')">
+      <!-- SVG for toggle switch in 'off' position -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+        <!-- Background rectangle with rounded edges -->
+        <rect x="0" y="0" width="320" height="200" rx="100" fill="gray" />
+        <!-- Small white circle (toggle) -->
+        <circle cx="100" cy="100" r="80" fill="white" />
+      </svg>
+    </div>
+    <div id="toggle-on" style="display: block;" onclick="toggleSwitch('on')">
+      <!-- SVG for toggle switch in 'on' position -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+        <!-- Background rectangle with rounded edges -->
+        <rect x="0" y="0" width="320" height="200" rx="100" fill="green" />
+        <!-- Small white circle (toggle) -->
+        <circle cx="220" cy="100" r="80" fill="white" />
+      </svg>
+    </div>
   <div class="container">
   
     <h2>Maskjalsa <span>P:14 S:14</span></h2>
@@ -465,18 +503,18 @@
     h3Elements = document.querySelectorAll('h3');
     imgElements = document.querySelectorAll('.s');
 
-    document.querySelector('.t').addEventListener('click', () => {
-      const imgStyle = imgElements[0].style.display == 'none';
-      if(imgStyle){
-        imgElements.forEach(img => { img.style.display = 'block' });
-        nearestH3.scrollIntoView({ behavior: "smooth" });
-        nearestH3.style.color = 'black'; // Example: Highlight it
-      }else{
-        findNearestH3();
-        imgElements.forEach(img => { img.style.display = 'none' });
-        nearestH3.scrollIntoView({ behavior: "smooth" });
-      }
-    });
+    // document.querySelector('.t').addEventListener('click', () => {
+    //   const imgStyle = imgElements[0].style.display == 'none';
+    //   if(imgStyle){
+    //     imgElements.forEach(img => { img.style.display = 'block' });
+    //     nearestH3.scrollIntoView({ behavior: "smooth" });
+    //     nearestH3.style.color = 'black'; // Example: Highlight it
+    //   }else{
+    //     findNearestH3();
+    //     imgElements.forEach(img => { img.style.display = 'none' });
+    //     nearestH3.scrollIntoView({ behavior: "smooth" });
+    //   }
+    // });
   });
 
   function findNearestH3() {
@@ -692,8 +730,24 @@
     }
   }
 
+    function toggleSwitch(state) {
+      const offToggle = document.getElementById('toggle-off');
+      const onToggle = document.getElementById('toggle-on');
 
-
+      if (state === 'off') {
+        offToggle.style.display = 'none';
+        onToggle.style.display = 'block';
+        imgElements.forEach(img => { img.style.display = 'block' });
+        nearestH3.scrollIntoView({ behavior: "smooth" });
+        nearestH3.style.color = 'black'; // Example: Highlight it
+      } else {
+        offToggle.style.display = 'block';
+        onToggle.style.display = 'none';
+        findNearestH3();
+        imgElements.forEach(img => { img.style.display = 'none' });
+        nearestH3.scrollIntoView({ behavior: "smooth" });
+      }
+    }
 
 </script>
 </body>
