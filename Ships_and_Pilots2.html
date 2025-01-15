@@ -29,198 +29,196 @@
       width: fit-content; /* Make the width fit the content */
       font-weight: normal;
       border-radius: 8px;
-      border: 1px solid #c0c0c0;
+      border: 1px solid #606060;
     }
     h2 {
-      background: #c0c0c0; /* Light gray background */
+      background: #d0eafb; /* Light blue background */
       width: 100%; /* Full width for <h2> */
       text-align: center; /* Center the text content of <h2> */
       margin-top: 10px;
       font-size: 2em; /* Adjust the size of the h2 if needed */
+      font-weight: bold;
     }
     h3 {
-      background: #d0eafb; /* Light blue background */
+      background: #a74e40; /* red background */
+      color: white;
       font-size: 1.5em; /* Adjust the size of the h2 if needed */
     }
     h4 {
-      background: #fff2cc; /* Light yellow background */
-      font-style: italic;
-      font-size: 1em; /* Adjust the size of the h2 if needed */
+      background: black; /* gray background */
+      color: white;
+/*      font-style: italic;*/
+      font-size: 1.5em; /* Adjust the size of the h2 if needed */
     }
     span {
       background: white; 
       border-radius: 8px; 
       font-size: 24px; 
+      font-weight: normal;
       padding: 4px; 
       vertical-align: top; 
-      margin: 4px 0 0 4px; 
+      margin: 0px 0 0 4px; 
       display: inline-block;
     }
-/*
-    .t {
-      -webkit-backface-visibility: hidden;
-      position: fixed; 
-      left: 10px; 
-      top: 80px; 
-      border-radius: 6px; 
-      border: 1px solid #767676; 
-      padding: 2px 7px;       
-      font-size: 2em;
-    }
-*/
     svg {
       cursor: pointer;
-      transition: transform 0.2s ease;
+   /* transition: transform 0.2s ease; */
       width: 96px;
       height: 30px;
+    }
+    svg:hover {
+   /* transform: scale(1.1); */
     }
     #toggle-on, #toggle-off {
       -webkit-backface-visibility: hidden; /* mobile */
       position: fixed; 
       left: 10px; 
       top: 65px; 
-      font-size: 2em; /* Adjust the size of the h2 if needed */
-/*
-      border-radius: 6px; 
-      border: 1px solid #767676; 
-      padding: 2px 7px;       
-*/
     }
   </style>
 </head>
 <body>
-  <!-- <button class=t>Toggle</button> -->
-    <div id="toggle-off" style="display: none;"  onclick="toggleSwitch('off')">
-      <!-- SVG for toggle switch in 'off' position -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
-        <!-- Background rectangle with rounded edges -->
-        <rect x="0" y="0" width="320" height="200" rx="100" fill="gray" />
-        <!-- Small white circle (toggle) -->
-        <circle cx="100" cy="100" r="80" fill="white" />
-      </svg>
-    </div>
-    <div id="toggle-on" style="display: block;" onclick="toggleSwitch('on')">
-      <!-- SVG for toggle switch in 'on' position -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
-        <!-- Background rectangle with rounded edges -->
-        <rect x="0" y="0" width="320" height="200" rx="100" fill="green" />
-        <!-- Small white circle (toggle) -->
-        <circle cx="220" cy="100" r="80" fill="white" />
-      </svg>
-    </div>
+  <div id="toggle-off" style="display: none;"  onclick="toggleSwitch('off')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+      <rect x="0" y="0" width="320" height="200" rx="100" fill="gray" />
+      <circle cx="100" cy="100" r="80" fill="white" />
+    </svg>
+  </div>
+  <div id="toggle-on" style="display: block;" onclick="toggleSwitch('on')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+      <rect x="0" y="0" width="320" height="200" rx="100" fill="green" />
+      <circle cx="220" cy="100" r="80" fill="white" />
+    </svg>
+  </div>
   <div class="container">
   
-    <h2>Maskjalsa <span>P:14 S:14</span></h2>
+    <h2>Maskjalsa <span>P:16 S:16</span></h2>
     
       <div class="image-container">
-      <h3>Brigadier Ragxinxo</h3>
       
         <h4>Mazun Seeker XVII</h4>
+        <h3>Brigadier Ragxinxo</h3>
         <img src="static/processed_images/Brigadier Ragxinxo_Mazun Seeker XVII_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Enforcer Gubian</h3>
       
         <h4>ZS4 Tebayas</h4>
+        <h3>Enforcer Gubian</h3>
         <img src="static/processed_images/Enforcer Gubian_ZS4 Tebayas_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Scout Glong</h3>
       
         <h4>Okubungs Halcyon Gambit</h4>
+        <h3>Scout Glong</h3>
         <img src="static/processed_images/Scout Glong_Okubungs Halcyon Gambit_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Enemy Slayer Jis</h3>
       
         <h4>Serene Sword CB4</h4>
+        <h3>Enemy Slayer Jis</h3>
         <img src="static/processed_images/Enemy Slayer Jis_Serene Sword CB4_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Ensign Ajing</h3>
       
         <h4>The Hammer of Fire</h4>
+        <h3>Ensign Ajing</h3>
         <img src="static/processed_images/Ensign Ajing_The Hammer of Fire_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Enemy Slayer Runinni</h3>
       
         <h4>Stellar Voice SN5</h4>
+        <h3>Enemy Slayer Runinni</h3>
         <img src="static/processed_images/Enemy Slayer Runinni_Stellar Voice SN5_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Conscript Anto</h3>
       
         <h4>Blazing Wings UJ8</h4>
+        <h3>Conscript Anto</h3>
         <img src="static/processed_images/Conscript Anto_Blazing Wings UJ8_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Sentinel Hunter Alt</h3>
       
         <h4>Nikas NR6</h4>
+        <h3>Sentinel Hunter Alt</h3>
         <img src="static/processed_images/Sentinel Hunter Alt_Nikas NR6_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Corporal Uiping</h3>
       
         <h4>Damatam JX8</h4>
+        <h3>Corporal Uiping</h3>
         <img src="static/processed_images/Corporal Uiping_Damatam JX8_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Warrior Huenn</h3>
       
         <h4>Mother of the Ojiyodaw</h4>
+        <h3>Warrior Huenn</h3>
         <img src="static/processed_images/Warrior Huenn_Mother of the Ojiyodaw_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Officer Ruang</h3>
       
         <h4>Gashiw&#39;ss Timeless Future</h4>
+        <h3>Officer Ruang</h3>
         <img src="static/processed_images/Officer Ruang_Gashiw&#39;ss Timeless Future_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Flagbearer Zocort</h3>
       
         <h4>Kawachio s Floating Prospect</h4>
+        <h3>Flagbearer Zocort</h3>
         <img src="static/processed_images/Flagbearer Zocort_Kawachio s Floating Prospect_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Guard Yipugar</h3>
       
         <h4>EM1 Kodaisar</h4>
+        <h3>Guard Yipugar</h3>
         <img src="static/processed_images/Guard Yipugar_EM1 Kodaisar_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Corporal Emane</h3>
       
         <h4>Ayasen&#39;s Gambit</h4>
+        <h3>Corporal Emane</h3>
         <img src="static/processed_images/Corporal Emane_Ayasen&#39;s Gambit_ship_0.jpg" class="s">
+      
+      </div>
+    
+      <div class="image-container">
+      
+        <h4>Miokis Last Laugh</h4>
+        <h3>Guard Yun</h3>
+        <img src="static/processed_images/Guard Yun_Miokis Last Laugh_ship_0.jpg" class="s">
+      
+      </div>
+    
+      <div class="image-container">
+      
+        <h4>Sesak KV4</h4>
+        <h3>Scout Zaoy</h3>
+        <img src="static/processed_images/Scout Zaoy_Sesak KV4_ship_0.jpg" class="s">
       
       </div>
     
@@ -228,134 +226,146 @@
     <h2>Ierpla-Lue <span>P:21 S:9</span></h2>
     
       <div class="image-container">
-      <h3>Enemy Slayer Obgy</h3>
       
         <h4>Razaws Tranquil Discovery</h4>
+        <h3>Enemy Slayer Obgy</h3>
         <img src="static/processed_images/Enemy Slayer Obgy_Razaws Tranquil Discovery_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Guard lijins</h3>
       
         <h4>The Breath of Infinity</h4>
+        <h3>Guard lijins</h3>
         <img src="static/processed_images/Guard lijins_The Breath of Infinity_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Enforcer Yiyantseh</h3>
       
         <h4>Hihiry Pilgrim VII</h4>
+        <h3>Enforcer Yiyantseh</h3>
         <img src="static/processed_images/Enforcer Yiyantseh_Hihiry Pilgrim VII_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Flagbearer Bogk</h3>
       
         <h4>Manaoedas Victory YJ7</h4>
+        <h3>Flagbearer Bogk</h3>
         <img src="static/processed_images/Flagbearer Bogk_Manaoedas Victory YJ7_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Enforcer Gla</h3>
       
         <h4>Riyam&#39;s Pride</h4>
+        <h3>Enforcer Gla</h3>
         <img src="static/processed_images/Enforcer Gla_Riyam&#39;s Pride_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Guard Negjiawsh</h3>
       
         <h4>JG2 Suitain</h4>
+        <h3>Guard Negjiawsh</h3>
         <img src="static/processed_images/Guard Negjiawsh_JG2 Suitain_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Recruit Keheeo</h3>
       
         <h4>The Marvel of the Void</h4>
+        <h3>Recruit Keheeo</h3>
         <img src="static/processed_images/Recruit Keheeo_The Marvel of the Void_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Guard Kagormar</h3>
       
         <h4>Niigak&#39;s Voyage MK6</h4>
+        <h3>Guard Kagormar</h3>
         <img src="static/processed_images/Guard Kagormar_Niigak&#39;s Voyage MK6_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Officer Wojiayugk</h3>
       
         <h4>The Foe of the Abyss</h4>
+        <h3>Officer Wojiayugk</h3>
         <img src="static/processed_images/Officer Wojiayugk_The Foe of the Abyss_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Research Entity Naysk</h3>
+      
+        <h3>Research Entity Naysk</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Operator Entity Ispoleso</h3>
+      
+        <h3>Operator Entity Ispoleso</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Technician Entity Biyskomp</h3>
+      
+        <h3>Technician Entity Biyskomp</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Engineering Entity Anzheni</h3>
+      
+        <h3>Engineering Entity Anzheni</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Divine Atlas Entity Osluzhno</h3>
+      
+        <h3>Divine Atlas Entity Osluzhno</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Physicist Entity Mich</h3>
+      
+        <h3>Physicist Entity Mich</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Entity Epas</h3>
+      
+        <h3>Entity Epas</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Mathematician Entity Zuvenyev</h3>
+      
+        <h3>Mathematician Entity Zuvenyev</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Entity Leleromenn</h3>
+      
+        <h3>Entity Leleromenn</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Vy&#39;keen-at-Arms lagua</h3>
+      
+        <h3>Vy&#39;keen-at-Arms lagua</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Corporal Nokardo</h3>
+      
+        <h3>Corporal Nokardo</h3>
       
       </div>
     
       <div class="image-container">
-      <h3>Ensign Chyuehil</h3>
+      
+        <h3>Ensign Chyuehil</h3>
       
       </div>
     
@@ -363,165 +373,147 @@
     <h2>Meoalf-Ohi <span>P:18 S:10</span></h2>
     
       <div class="image-container">
-      <h3>Operator Entity Ispoleso</h3>
       
         <h4>Gauranos Redemption</h4>
+        <h3>Operator Entity Ispoleso</h3>
         <img src="static/processed_images/Operator Entity Ispoleso_Gauranos Redemption_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Technician Entity Biyskomp</h3>
       
         <h4>Sayaman Singer II</h4>
+        <h3>Technician Entity Biyskomp</h3>
         <img src="static/processed_images/Technician Entity Biyskomp_Sayaman Singer II_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Research Entity Naysk</h3>
       
         <h4>The Pride of Destiny</h4>
+        <h3>Research Entity Naysk</h3>
         <img src="static/processed_images/Research Entity Naysk_The Pride of Destiny_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Divine Atlas Entity Osluzhno</h3>
       
         <h4>Onmats&#39;s Conqueror</h4>
+        <h3>Divine Atlas Entity Osluzhno</h3>
         <img src="static/processed_images/Divine Atlas Entity Osluzhno_Onmats&#39;s Conqueror_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Entity Epas</h3>
       
         <h4>Halcyon Mistress WV8</h4>
+        <h3>Entity Epas</h3>
         <img src="static/processed_images/Entity Epas_Halcyon Mistress WV8_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Engineering Entity Anzheni</h3>
       
         <h4>Mamirs Spirit YB2</h4>
+        <h3>Engineering Entity Anzheni</h3>
         <img src="static/processed_images/Engineering Entity Anzheni_Mamirs Spirit YB2_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Physicist Entity Mich</h3>
       
         <h4>Inspiring Sword BX2</h4>
+        <h3>Physicist Entity Mich</h3>
         <img src="static/processed_images/Physicist Entity Mich_Inspiring Sword BX2_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Mathematician Entity Zuvenyev</h3>
       
         <h4>TU3 Miuraino</h4>
+        <h3>Mathematician Entity Zuvenyev</h3>
         <img src="static/processed_images/Mathematician Entity Zuvenyev_TU3 Miuraino_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Entity Leleromenn</h3>
       
         <h4>Inuyama VW6</h4>
+        <h3>Entity Leleromenn</h3>
         <img src="static/processed_images/Entity Leleromenn_Inuyama VW6_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      <h3>Operator Entity Kazarap</h3>
       
         <h4>Mother of the Susashin</h4>
+        <h3>Operator Entity Kazarap</h3>
         <img src="static/processed_images/Operator Entity Kazarap_Mother of the Susashin_ship_0.jpg" class="s">
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>WorkGek Ergagnad</h3>
+      
+        <h3>WorkGek Ergagnad</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Secretary Lulfack</h3>
+      
+        <h3>Secretary Lulfack</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Captain Dutgefic</h3>
+      
+        <h3>Captain Dutgefic</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Assistant Ifterser</h3>
+      
+        <h3>Assistant Ifterser</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>ToilGek Orr</h3>
+      
+        <h3>ToilGek Orr</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Hireling Ayryunju</h3>
+      
+        <h3>Hireling Ayryunju</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Trader Erlever</h3>
+      
+        <h3>Trader Erlever</h3>
       
       </div>
     
       <div class="image-container">
-      ☐ <h3>Resource Analyst Tagaelses</h3>
+      
+        <h3>Resource Analyst Tagaelses</h3>
       
       </div>
+    
+  
   </div>
-  <button onClick="clearLocalStorage()">Clear</button>
   <div style="margin-bottom: 800px;">&nbsp;</div>
-  <div id=tt></div>
 <script>
-  const version = '1.0';
-  const keywords = {};
-  const conv = {};
-  let dict = {}, tt, obj, title, pre_n, poi = [];
-  let h3Elements, imgElements, nearestH3;
-
-  // On DOMContentLoaded, check version and parse content
   document.addEventListener('DOMContentLoaded', () => {
-    tt    = document.querySelector('#tt');
-    obj   = parseComponents();
-    // pre_n = document.querySelector('.container');
-    manageVersioning();
-    parsePreContent();
-    pre_n.style.width = window.innerWidth + 'px';
+    document.querySelector('.container').width = window.innerWidth + 'px';
     [...document.querySelectorAll('.image-container')]
       .forEach(div => div.width = window.innerWidth + 'px');
 
     h3Elements = document.querySelectorAll('h3');
     imgElements = document.querySelectorAll('.s');
-
-    // document.querySelector('.t').addEventListener('click', () => {
-    //   const imgStyle = imgElements[0].style.display == 'none';
-    //   if(imgStyle){
-    //     imgElements.forEach(img => { img.style.display = 'block' });
-    //     nearestH3.scrollIntoView({ behavior: "smooth" });
-    //     nearestH3.style.color = 'black'; // Example: Highlight it
-    //   }else{
-    //     findNearestH3();
-    //     imgElements.forEach(img => { img.style.display = 'none' });
-    //     nearestH3.scrollIntoView({ behavior: "smooth" });
-    //   }
-    // });
   });
 
   function findNearestH3() {
-  // document.querySelector('button').addEventListener('click', function () {
     // Get all h3 elements on the page
     nearestH3 = null;
     let smallestDistance = Infinity;
@@ -532,8 +524,6 @@
     h3Elements.forEach(h3 => {
       // Get the bounding rectangle of each h3 element
       const rect = h3.getBoundingClientRect();
-      // const distance = Math.abs(rect.top - viewportCenter);
-      // console.log(`top:${rect.top}, bottom:${rect.bottom}, height:${window.innerHeight}, distance:${distance}`);
 
       // Check if the h3 is visible in the viewport
       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
@@ -550,208 +540,43 @@
 
     if (nearestH3) {
       console.log('Nearest h3 in viewport:', nearestH3.textContent);
-      nearestH3.style.color = 'purple'; // Example: Highlight it
+      // nearestH3.style.color = 'black'; // Example: Highlight it
+      // nearestH3.style.backgroundColor = '#dcaaa3'; // Example: Highlight it
+      nearestH3.style.fontWeight = "bold"; // Example: Highlight it
     } else {
       console.log('No h3 elements visible in the viewport.');
     }
-  // });
   }
 
-// -----------------------------------------------------
+  function toggleSwitch(state) {
+    const offToggle = document.getElementById('toggle-off');
+    const onToggle = document.getElementById('toggle-on');
 
-  function clearLocalStorage() {
-    if(confirm("Are you sure?")){
-      localStorage.clear();
-      location.reload(); 
+    if (state === 'off') {
+      offToggle.style.display = 'none';
+      onToggle.style.display = 'block';
+
+      imgElements.forEach(img => { img.style.display = 'block' });
+      nearestH3.scrollIntoView({ behavior: "smooth" });
+      // window.scrollBy(0, -35);
+      setTimeout(() => { window.scrollBy(0, -36); }, 500);
+      // Pause for 0.5 seconds (500 milliseconds)
+      nearestH3.style.fontWeight = "normal"; // Example: Highlight it
+      // nearestH3.style.color = 'white'; // Example: Highlight it
+      // nearestH3.style.backgroundColor = '#a74e40'; // Example: Highlight it
+
+    } else {
+      offToggle.style.display = 'block';
+      onToggle.style.display = 'none';
+
+      findNearestH3();
+      imgElements.forEach(img => { img.style.display = 'none' });
+      nearestH3.scrollIntoView({ behavior: "smooth" });
+      // window.scrollBy(0, -35);
+      setTimeout(() => { window.scrollBy(0, -36); }, 500);
+      // Pause for 0.5 seconds (500 milliseconds)
     }
   }
-
-  function manageVersioning() {
-    const storedVersion = localStorage.getItem('checkbox-0');
-    if (storedVersion !== version) {
-      // Clear localStorage if versions are different
-      localStorage.clear();
-      localStorage.setItem('checkbox-0', version); // Store the new version
-    }
-  }
-
-  function parsePreContent() {
-    pre_n = document.querySelector('.container');
-    const content = pre_n.innerHTML; // textContent;
-    const lines = content.split('\n');
-    let checkboxCount = 0, id, trace;
-    const parsedContent = lines.map(line => {
-      let match = line.match(/POI: Ms (\d\.\d) (.+)/);
-      if (match) {
-        poi.push([match[1], match[2], line]);
-      }
-      if (line.includes('☐ ')) {
-        checkboxCount++;
-        id = `checkbox-${checkboxCount}`;
-        dict[id] = {};
-
-        // track keywords in an Object (see Omega Redux)
-        Object.keys(keywords).forEach(key => {
-          if(line.toLowerCase().includes(key)){
-            keywords[key].push(id);
-          }
-        });
-
-        // Replace ☐  with an input checkbox element
-        line = line.replace('☐ ', `<input type="checkbox" id="${id}">`)
-        // if(poi[poi.length-1].length == 3)
-        //   poi[poi.length-1] = [...poi[poi.length-1], line];
-        return line;
-      }
-      // if (line.startsWith('\`')) {
-      //   return line.slice(1);
-      // }
-
-      match = line.match(/(\w[\w\s-]+) ×(\d+)/);
-      if (match) {
-        const key = match[1]; // Object.keys(dict).find(k => line.includes(k));
-        const value = parseInt(match[2], 10);
-        if (id) {
-          const dbg = id.match(/checkbox/);
-          const temp = {3:"Advanced Mining Beam",4:"Personal Refiner MK2",5:"Repair Starship & Multi-tool",7:"Leave planet",13:"Restore crashed ship",9:"Hyperdrive",16:"Nutrient Processor, Haz-Mat Gauntlet",19:"Shell Greaser",22:"Mind Arc",23:"Cadmium Drive",29:"Nautilon Chamber, High-Power Sonar"}[checkboxCount];
-          if (title != temp) {title = temp; console.log(title);}
-          if (key in conv){
-            Object.keys(conv[key]).map(k => {
-              if (k in dict[id]) { trace = 'conv-1';
-                dict[id][k] += conv[key][k] * value;
-                if (dbg) 
-                  console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][k]}`);
-              } else { trace = 'conv-0';
-                dict[id][k] = conv[key][k] * value;
-                if (dbg) 
-                  console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][k]}`);
-              }
-            });
-          } else {
-            if (key in dict[id]) { trace = 'dict-1';
-              dict[id][key] += value; k = '';
-              if (dbg) 
-                console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][key]}`);
-            } else { trace = 'dict-0';
-              dict[id][key] = value; k = '';
-              if (dbg) 
-                console.log(`${id}, ${key.padEnd(18)}, ${String(value).padStart(3)}, ${k.padEnd(18)}, ${dict[id][key]}`);
-            }
-          }
-        }
-      }
-      return line; // Return the line unmodified if no checkbox found
-    }).join('\n');
-
-    // console.log(JSON.stringify(poi, null, 2)); 
-    // pre_d.innerHTML = poi.sort((a,b)=>a[0].localeCompare(b[0])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
-    // pre_a.innerHTML = poi.sort((a,b)=>a[1].localeCompare(b[1])).map(a=>`${a[2]}\n${a[3]}\n`).join('');
-
-    pre_n.innerHTML = parsedContent;
-    console.log('');
-
-    // Restore checkbox states from localStorage
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-      const id = checkbox.id;
-      const savedState = localStorage.getItem(id);
-      if (savedState !== null) {
-        checkbox.checked = savedState === "true";
-
-        const parentId = checkbox.parentNode.id;
-        console.log(`${parentId}, ${id}`);
-        let flag = false;
-        Object.keys(dict[id]).forEach(key =>{
-          if (key in obj && checkbox.checked && parentId == 'mission-data-normal') {
-            flag = true;
-            obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
-            console.log(`${parentId}, ${id}, ${key.padEnd(18)}, ${String(dict[id][key]).padStart(3)}, ${obj[key]}`);
-          }
-        });
-        if (flag) {
-          document.getElementById('tt').textContent = Object.keys(obj).map(k => `${k},${obj[k]}`).join('\n');
-        }
-      }
-
-      checkbox.addEventListener('change', () => {
-        localStorage.setItem(id, checkbox.checked);
-
-        const parentId = checkbox.parentNode.id;
-        let flag = false;
-        Object.keys(dict[id]).forEach(key =>{
-          if (key in obj && parentId == 'mission-data-normal') {
-            flag = true;
-            obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
-          }
-        });
-        if (flag) {
-          document.getElementById('tt').textContent = Object.keys(obj).map(k => `${k},${obj[k]}`).join('\n');
-        }
-
-        // Loop through each keyword group
-        Object.keys(keywords).forEach(key => {
-          if (keywords[key].includes(id)) {
-            // If this checkbox belongs to a keyword group, toggle all related checkboxes
-            keywords[key].forEach(relatedId => {
-              const relatedCheckbox = document.querySelectorAll(`#${relatedId}`);
-              console.log(id,relatedCheckbox);
-              relatedCheckbox.forEach(relatedCheckboxTab => {
-                if (relatedCheckboxTab) {
-                  relatedCheckboxTab.checked = checkbox.checked;
-                  localStorage.setItem(relatedId, checkbox.checked); // Update localStorage for related checkboxes
-                }
-              });
-            });
-          }
-        });
-
-      });
-    });
-  }
-
-  function parseComponents() {
-    return tt.textContent.split('\n') // Split the string into lines
-      .map(line => line.trim()) // Trim leading/trailing spaces
-      .map(line => line.split(',')) // Split each line into key-value pairs
-      .reduce((acc, [key, value]) => {
-        acc[key] = parseInt(value, 10); // Add to object, parse value as an integer
-        return acc;
-      }, {});
-  }
-
-  function updateComponents(checkbox, id) {
-    let flag = false;
-    Object.keys(dict[id]).forEach(key =>{
-      if (key in obj && checkbox.checked) {
-        flag = true;
-        obj[key] += dict[id][key] * (checkbox.checked ? -1 : 1);
-        // console.log(key, obj[key]);
-      }
-    });
-    if (flag) {
-      document.getElementById('tt').textContent = Object.keys(obj).map(k => `${k},${obj[k]}`).join('\n');
-      console.log(tt);
-    }
-  }
-
-    function toggleSwitch(state) {
-      const offToggle = document.getElementById('toggle-off');
-      const onToggle = document.getElementById('toggle-on');
-
-      if (state === 'off') {
-        offToggle.style.display = 'none';
-        onToggle.style.display = 'block';
-        imgElements.forEach(img => { img.style.display = 'block' });
-        nearestH3.scrollIntoView({ behavior: "smooth" });
-        nearestH3.style.color = 'black'; // Example: Highlight it
-      } else {
-        offToggle.style.display = 'block';
-        onToggle.style.display = 'none';
-        findNearestH3();
-        imgElements.forEach(img => { img.style.display = 'none' });
-        nearestH3.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-
 </script>
 </body>
 </html>
