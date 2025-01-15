@@ -36,16 +36,16 @@
       width: 100%; /* Full width for <h2> */
       text-align: center; /* Center the text content of <h2> */
       margin-top: 10px;
-      font-size: 2.5em; /* Adjust the size of the h2 if needed */
+      font-size: 2em; /* Adjust the size of the h2 if needed */
     }
     h3 {
       background: #d0eafb; /* Light blue background */
-      font-size: 2.25em; /* Adjust the size of the h2 if needed */
+      font-size: 1.5em; /* Adjust the size of the h2 if needed */
     }
     h4 {
       background: #fff2cc; /* Light yellow background */
       font-style: italic;
-      font-size: 2em; /* Adjust the size of the h2 if needed */
+      font-size: 1em; /* Adjust the size of the h2 if needed */
     }
     span {
       background: white; 
@@ -500,8 +500,8 @@
     manageVersioning();
     parsePreContent();
     pre_n.style.width = window.innerWidth + 'px';
-    [...document.querySelectorAll('img')]
-      .forEach(img => img.width = window.innerWidth + 'px');
+    [...document.querySelectorAll('.image-container')]
+      .forEach(div => div.width = window.innerWidth + 'px');
 
     h3Elements = document.querySelectorAll('h3');
     imgElements = document.querySelectorAll('.s');
