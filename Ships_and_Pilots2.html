@@ -15,12 +15,14 @@
       width: 100%;
       max-width: 900px;
     }
+   .image-container {
+      margin: 8px; 
+    }
     .s {
       display: block;
       width: 100%;
       max-width: 100vw;
       height: auto;
-      margin: 10px;
     }
     h2, h3, h4 {
       margin: 2px auto; /* Center horizontally using auto margins */
@@ -40,14 +42,14 @@
       font-weight: bold;
     }
     h3 {
-      background: #a74e40; /* red background */
+      background: #cf2f17; /* red background */
       color: white;
       font-size: 1.5em; /* Adjust the size of the h2 if needed */
     }
     h4 {
       background: black; /* gray background */
       color: white;
-/*      font-style: italic;*/
+   /* font-style: italic; */
       font-size: 1.5em; /* Adjust the size of the h2 if needed */
     }
     span {
@@ -526,7 +528,7 @@
       const rect = h3.getBoundingClientRect();
 
       // Check if the h3 is visible in the viewport
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      if (rect.top >= -1 && rect.bottom <= window.innerHeight) {
         // Calculate the vertical distance from the button to the h3
         const distance = Math.abs(rect.top - viewportCenter);
 
@@ -542,7 +544,7 @@
       console.log('Nearest h3 in viewport:', nearestH3.textContent);
       // nearestH3.style.color = 'black'; // Example: Highlight it
       // nearestH3.style.backgroundColor = '#dcaaa3'; // Example: Highlight it
-      nearestH3.style.fontWeight = "bold"; // Example: Highlight it
+      // nearestH3.style.fontWeight = "bold"; // Example: Highlight it
     } else {
       console.log('No h3 elements visible in the viewport.');
     }
@@ -556,14 +558,16 @@
       offToggle.style.display = 'none';
       onToggle.style.display = 'block';
 
+      findNearestH3();
       imgElements.forEach(img => { img.style.display = 'block' });
       nearestH3.scrollIntoView({ behavior: "smooth" });
-      // window.scrollBy(0, -35);
-      // setTimeout(() => { window.scrollBy(0, -36); }, 500);
-      // Pause for 0.5 seconds (500 milliseconds)
-      nearestH3.style.fontWeight = "normal"; // Example: Highlight it
-      // nearestH3.style.color = 'white'; // Example: Highlight it
-      // nearestH3.style.backgroundColor = '#a74e40'; // Example: Highlight it
+
+      // imgElements.forEach(img => { img.style.display = 'block' });
+      // nearestH3.scrollIntoView({ behavior: "smooth" });
+      // // setTimeout(() => { window.scrollBy(0, -36); }, 500);
+      // nearestH3.style.fontWeight = "normal"; // Example: Highlight it
+      // // nearestH3.style.color = 'white'; // Example: Highlight it
+      // // nearestH3.style.backgroundColor = '#a74e40'; // Example: Highlight it
 
     } else {
       offToggle.style.display = 'block';
@@ -572,9 +576,7 @@
       findNearestH3();
       imgElements.forEach(img => { img.style.display = 'none' });
       nearestH3.scrollIntoView({ behavior: "smooth" });
-      // window.scrollBy(0, -35);
       // setTimeout(() => { window.scrollBy(0, -36); }, 500);
-      // Pause for 0.5 seconds (500 milliseconds)
     }
   }
 </script>
