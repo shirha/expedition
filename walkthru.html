@@ -40,7 +40,7 @@
       height: 14px; 
       padding: 0 1px;
     }
-    #tt {padding-left: 10px; display: none;}
+    #tt {padding-left: 10px; /*display: none;*/}
     #mission-data-alpha {display: none;}
     #mission-data-digit {display: none;}
     span {white-space: nowrap;}
@@ -57,7 +57,8 @@
     }
     del {font-family:arial; font-style: normal; text-decoration-style: double; font-weight:100;}
 /*    del {font-family: monospace;}*/
-    a {text-decoration: none;
+    a {text-decoration: none;}
+    s {color: #8080e0; text-decoration: none; /*display: none;*/}
 </style>
 </head>
 <body>
@@ -67,70 +68,86 @@
   <pre id="mission-data-digit"></pre>
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
-  <div id=tt>Carbon,0
+  <div id=tt>Alantideum,0
+Carbon,0
 Cobalt,0
 Copper,0
 Di-hydrogen,0
 Ferrite Dust,0
+Gold,0
+Mordite,0
 Oxygen,0
-Salt,0
-Sodium,0</div>
+Shattered Qualia,0
+Silver,0
+Sodium,0
+Storm Crystal,0</div>
 
 <b>Miurai XI // Vira XIV</b>
+  Fauna:9 Frequent
   POI: Ms 1.1 Out of Time
   ☐ Seek shelter
-  Reward: Elixir of Glass 
-    Di-hydrogen ×30
-    Shattered Qualia ×10
+  Reward: Elixir of Glass recipe
   POI: Ms 1.2 Elixir of Glass
   ☐ Create the Elixir
+    Di-hydrogen ×30
+    Shattered Qualia ×10
   Reward: Pre-Packaged Advanced Mining Laser Unit; Pre-Packaged Teleport Receiver Unit 
   POI: Ms 1.3 Nowhere to Run
   ☐ Leave the planet
+    Launch Thruster(R) ×1
+    Pulse Engine(R) ×1
   Reward: Pre-Packaged Cloaking Device Unit; Powerful Scanning System Upgrade; Supreme Movement System Upgrade 
   POI: Ms 1.4 Ink-Stained Skies
   ☐ Exorcise Boundary Horrors: 16
   Reward: Elixir of Blood <div class="gl">a</div> recipe 
-    Silver ×20
-    Pure Ferrite ×33
-    Chromatic Metal ×40
   POI: Ms 1.5 Written in Blood
   ☐ Prepare the Elixir of Blood <div class="gl">a</div>
-  Reward: Elixir of Quicksilver recipe 
     Silver ×20
     Pure Ferrite ×33
     Chromatic Metal ×40
+  Reward: Elixir of Quicksilver recipe 
   POI: Ms 1.6 Dislocation
-  ☐ Reveal a Portal
+  ☐ Reveal a Portal 
+  Prepare and consumer the Elixir of Quicksilver
+    Silver ×20
+    Pure Ferrite ×33
+    Chromatic Metal ×40
   Reward: Pre-Packaged Pulse Spitter Unit; Pre-Packaged Combat Scope Unit; Inventory Slot x 3 
   POI: Ms 1.7 Beyond the Boundary <div class="gl">a</div>
   ☐ Breach the Portal Network
+<s>  Elixir of Quicksilver ×1
+  Elixir of Glass ×5</s>
   Reward: Portal glyph set; Advanced Habitation Module plans; Base Computer plans 
 
 <b>Ahagil III // Pembo</b>
+  Fauna:10 Copious
   POI: Ms 2.1 The Edge of Glass
   ☐ Spend time with low boundary integrity: 180s
   Reward: Elixir of Glass x 2; Pre-Packaged Launch Auto-Charger Unit; Supreme Pulse Engine Upgrade x 2 
   POI: Ms 2.2 Beyond Death
-  ☐ Excavate ancient bones: 0/10
+  ☐ Excavate ancient bones: 10
   Reward: Pre-Packaged Haz-Mat Gauntlet Unit; Supreme Defensive Systems Upgrade; Supreme Scanning System Upgrade 
   POI: Ms 2.3 Hewn from Light
-  ☐ Collect Storm Crystals: 0/5
+  ☐ Collect Storm Crystals: 5
   Reward: Inventory Slot x 3; Battery plans; Solar Panel plans;
   Elixir of Blood <div class="gl">4</div> recipe 
     Silver ×20
     Pure Ferrite ×33
     Chromatic Metal ×40
   POI: Ms 2.4 Fear the Sun
-  ☐ Tunnel underground: 0/1,600u?
+  ☐ Tunnel underground: 1,600u
   Reward: Pre-Packaged Personal Refiner Unit; Glowing Mineral x 3; Salvaged Data x 30 
   POI: Ms 2.5 Breach Two <div class="gl">4</div>
   ☐ Enter the second Portal
+<s>  Elixir of Quicksilver ×1
+  Elixir of Glass ×5</s>
   Reward: Anomaly Seal plans; Multi-Tool Inventory Slot x 3 
 
 <b>Noyama-Kaus // Idwo Omega</b>
+  Fauna:10 Copious
+  Biome: Doomed Jade Planet
   POI: Ms 3.1 Well Grounded
-  ☐ Explore on foot: 258u/8,000u
+  ☐ Explore on foot: 8,000u
   Reward: Amplified Cartridges plans; Supreme Movement System Upgrade; Inventory Slot x 5 
   POI: Ms 3.2 Endless Hunger
   ☐ Purge 0/8 Hungering Tendrils
@@ -147,11 +164,19 @@ Sodium,0</div>
     Gold ×20
   POI: Ms 3.5 Breach Three <div class="gl">9</div>
   ☐ Enter the third Portal
+<s>  Elixir of Quicksilver ×1
+  Elixir of Glass ×5</s>
   Reward: Pre-Packaged Impact Igniter Unit; Supreme Launch Thrusters Upgrade; Inverted Mirror x 5 
+
+<b>Noyama-Kaus // Nehous V47</b>
+  Fauna:1 Displaced
+  POI: Ms 4.3 Genetic Glitch
+  ☐ Discover 2 exotic creatures
+  Reward: Elixir of Glass x 2; Faecium x 160; Delicate Flora 
 
 <b>Oglegk III // </b>
   POI: Ms 4.1 Discordant
-  ☐ Amass Atlantideum: 0/256
+  ☐ Amass Atlantideum: 256
   Reward: Forbidden Exosuit Module; Navigation Data x 20; Cadmium x 440
   Elixir of Blood <div class="gl">b</div> recipe;  
     Mordite ×15
@@ -164,27 +189,35 @@ Sodium,0</div>
   ☐ Discover 2 exotic creatures
   Reward: Elixir of Glass x 2; Faecium x 160; Delicate Flora 
   POI: Ms 4.4 In Deep Water
-  ☐ Float over the deep ocean: 0/60s
+  ☐ Float over the deep ocean: 60s
   Reward: Marine Shelter plans; Powerful Underwater Oxygen Upgrade x 2 
   POI: Ms 4.5 Glassy Stare
   ☐ Gather 4 Hypnotic Eyes
   Reward: Terrifying Sample; 1,500 Nanites 
   POI: Ms 4.6 Arachnophobia
-  ☐ Eliminate Corrupt Quadrupeds: 0/2
+  ☐ Eliminate Corrupt Quadrupeds: 2
   Reward: Forbidden Multi-Tool Module x 2; Radiant Shard x 5 
   POI: Ms 4.7 Breach Four <div class="gl">b</div>
   ☐ Enter the fourth Portal
+<s>  Elixir of Quicksilver ×1
+  Elixir of Glass ×5</s>
   Reward: Atlantideum x 1616; Living Slime x 8080 
+
+<b>Oglegk III // Kobabat I7 </b>
+  Fauna:1 Lost
+  POI: Ms 4.3 Genetic Glitch
+  ☐ Discover 2 exotic creatures
+  Reward: Elixir of Glass x 2; Faecium x 160; Delicate Flora 
 
 <b>Layant XI // </b>
   POI: Ms 5.1 Stone Ghosts
   ☐ Discover 2 ancient ruins
   Reward: Geodesite x 5; Unearthed Treasure 
   POI: Ms 5.2 Ink-Drenched Skies
-  ☐ Exorcise Boundary Horrors: 6/64
+  ☐ Exorcise Boundary Horrors: 64
   Reward: Purple Ribbon Firework x 25; Biological Sample 
   POI: Ms 5.3 Reality Foam
-  ☐ Earn Nanites: 0/4,200
+  ☐ Earn Nanites: 4,200
   Reward: Terrifying Sample; Elixir of Glass;
   Elixir of Blood <div class="gl">0</div> recipe
     Mordite ×15
@@ -192,7 +225,15 @@ Sodium,0</div>
     Gold ×20
   POI: Ms 5.4 Breach Five <div class="gl">0</div>
   ☐ Enter the final Portal
+<s>  Elixir of Quicksilver ×1
+  Elixir of Glass ×5</s>
   Reward: Assorted glitches 
+
+<b>Layant XI // Distoniarn Nabet </b>
+  Fauna:1 Displaced
+  POI: Ms 4.3 Genetic Glitch
+  ☐ Discover 2 exotic creatures
+  Reward: Elixir of Glass x 2; Faecium x 160; Delicate Flora 
 
 <b>Yuanbai // </b>
   POI: Ms 5.5 The Face of Glass
@@ -202,13 +243,19 @@ Sodium,0</div>
   POI: Ms 5.6 To Drink The Water
   ☐ Create the Elixir of Water
   Reward: 256 Quicksilver, Elixir of Glass 
+
+<b>Yuanbai // Elump G7 </b>
+  Fauna:1 From Elsewhere
+  POI: Ms 4.3 Genetic Glitch
+  ☐ Discover 2 exotic creatures
+  Reward: Elixir of Glass x 2; Faecium x 160; Delicate Flora 
   </pre>
 
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
     const version = '15.2'; // Current version of the app
-    const keywords = {'75kg': []};
+    const keywords = {'anomalous': [], 'exotic': []};
     const conv = {
       "Launch Thruster(R)": {"Ferrite Dust": 50, "Di-hydrogen": 40},
       "Pulse Engine(R)": {"Carbon": 60, "Ferrite Dust": 50},
@@ -230,6 +277,9 @@ Sodium,0</div>
   //  "Microprocessor": {"Carbon": 50, "Copper": 80},
       "Sodium Nitrate": {"Sodium": 2},
       "Warp Cell": {"Oxygen": 30, "Ferrite Dust": 50, "Copper": 50, "Carbon": 40},
+      "Elixir of Quicksilver": {"Silver": 20, "Pure Ferrite": 33, "Chromatic Metal": 40},
+      "Elixir of Glass": {"Di-hydrogen": 30, "Shattered Qualia": 10},
+
     };
     let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
 
@@ -319,13 +369,13 @@ Sodium,0</div>
           return line.slice(1);
         }
 
-        match = line.match(/(\w[\w\s-]+) ×(\d+)/);
+        match = line.match(/(\w[\w\s\(\)-]+) ×(\d+)/);
         if (match) {
           const key = match[1]; // Object.keys(dict).find(k => line.includes(k));
           const value = parseInt(match[2], 10);
           if (id) {
             const dbg = id.match(/checkbox/);
-            const temp = {3:"Advanced Mining Beam",4:"Personal Refiner MK2",5:"Repair Starship & Multi-tool",7:"Leave planet",13:"Restore crashed ship",9:"Hyperdrive",16:"Nutrient Processor, Haz-Mat Gauntlet",19:"Shell Greaser",22:"Mind Arc",23:"Cadmium Drive",29:"Nautilon Chamber, High-Power Sonar"}[checkboxCount];
+            const temp = '' //{3:"Advanced Mining Beam",4:"Personal Refiner MK2",5:"Repair Starship & Multi-tool",7:"Leave planet",13:"Restore crashed ship",9:"Hyperdrive",16:"Nutrient Processor, Haz-Mat Gauntlet",19:"Shell Greaser",22:"Mind Arc",23:"Cadmium Drive",29:"Nautilon Chamber, High-Power Sonar"}[checkboxCount];
             if (title != temp) {title = temp; console.log(title);}
             if (key in conv){
               Object.keys(conv[key]).map(k => {
@@ -454,6 +504,7 @@ Sodium,0</div>
       pre_d = document.getElementById('mission-data-digit');
       manageVersioning();
       parsePreContent();
+// document.querySelectorAll('input[type="checkbox"').forEach(checkbox => {checkbox.checked = true; localStorage.setItem(checkbox.id, checkbox.checked);});
     });
   </script>
 </body>
