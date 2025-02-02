@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Slideshow</title>
 <style>
+  @font-face {
+    font-family: "NMS Glyphs"; 
+    src: url("NMS-Glyphs-Mono.ttf");}    
+  .gl {display: inline-block; font-family: "NMS Glyphs"; /*font-size: larger;*/}
+  s {display: none;}
+  .wh {display: inline-block; color: white;}
+
   body::-webkit-scrollbar {display: none;}
   body {margin: 0;}
 
@@ -67,7 +74,7 @@
   }
 
   #fn {
-    display: none;
+    display: block;
     bottom: 40px;
     right: 40px;
   }
@@ -116,7 +123,7 @@
 </div>
 <div id="log"></div>
 <script>
-const locations = ["Maskjalsa", "Ierpla-Lue", "Meoalf-Ohi", "Vunutu-Eami VI", "Iperhet-Caces V", "Planas-Dozhs"];
+const locations = ["Miurai XI", "Ahagil III", "Noyama-Kaus", "Oglegk III", "Layant XI", "Yuanbai"];
 let rendNodes = document.querySelectorAll('.rend'),
   currentIndex = 0,
   imagesData = {},
@@ -125,7 +132,7 @@ let rendNodes = document.querySelectorAll('.rend'),
   
 
 // Fetch the JSON file
-fetch('run2.json')
+fetch('run1.json')
   .then(response => response.json())
   .then(data => {
     imagesData = data;
