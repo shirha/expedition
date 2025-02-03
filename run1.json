@@ -13,8 +13,6 @@
   "ss/20250201001100_1.jpg": "Miurai XI // Abolar~POI: Ms 1.6 Dislocation~Reveal a Portal~Prepare and consumer the Elixir of Quicksilver~  Silver ×20~  Pure Ferrite ×33~  Chromatic Metal ×40~Reward: Pre-Packaged Pulse Spitter Unit;~  Pre-Packaged Combat Scope Unit;~  Inventory Slot x 3",
   "ss/20250201001200_1.jpg": "Ahagil III // Pembo~Fauna:10 Copious",
   "ss/20250201001300_1.jpg": "Ahagil III // Pembo~POI: Ms 1.7 Beyond the Boundary <div class=gl>a</div>~Breach the Portal Network<s>  Elixir of Quicksilver ×1~Elixir of Glass ×5</s>~Reward: Portal glyph set;~  Advanced Habitation Module plans;~  Base Computer plans~<div class=wh>Tip:</div> Buy A-Cold Protection at SS",
-  "ss/20250201001400_1.jpg": "Ahagil III~Derelict Freighter",
-  "ss/20250201001500_1.jpg": "Ahagil III~POI: Ms 4.2 Metal Bones~Salvage tainted metal~Reward: Perpetual Ice Cream;~  Inventory Slot x 5",
   "ss/20250201001600_1.jpg": "Ahagil III // Vasiusa XVI~Fauna:8 Copious",
   "ss/20250201001700_1.jpg": "Ahagil III // Vasiusa XVI~POI: Ms 2.2 Beyond Death~Excavate ancient bones: 10~Reward: Pre-Packaged Haz-Mat Gauntlet Unit;~  Supreme Defensive Systems Upgrade;~  Supreme Scanning System Upgrade",
   "ss/20250201001800_1.jpg": "Ahagil III // Vasiusa XVI~POI: Ms 2.3 Hewn from Light~Collect Storm Crystals: 5~Reward: Inventory Slot x 3;~  Battery plans;~  Solar Panel plans;~Elixir of Blood <div class=gl>4</div> recipe~  Mordite ×15~  Storm Crystal ×1~  Gold ×20",
@@ -50,5 +48,7 @@
   "ss/20250201004800_1.jpg": "Yuanbai // Paplebon~Boundary Guardian",
   "ss/20250201004900_1.jpg": "Yuanbai // Paplebon~POI: Ms 5.7 Boundary Guardian~Defeat the Boundary Guardian~Reward: Ancient Skeleton x 2;~  Living Glass x 10",
   "ss/20250201005000_1.jpg": "Yuanbai // Elump G7~Fauna:1 From Elsewhere",
-  "ss/20250201005100_1.jpg": "Yuanbai // Elump G7~POI: Ms 4.3 Genetic Glitch~Discover 2 exotic creatures~Reward: Elixir of Glass x 2;~  Faecium x 160;~  Delicate Flora"
+  "ss/20250201005100_1.jpg": "Yuanbai // Elump G7~POI: Ms 4.3 Genetic Glitch~Discover 2 exotic creatures~Reward: Elixir of Glass x 2;~  Faecium x 160;~  Delicate Flora",
+  "ss/20250201001400_1.jpg": "Yuanbai~Derelict Freighter~<div class=wh>Preq:</div> 5M<del>υ</del> Emergency Signal Scanner",
+  "ss/20250201001500_1.jpg": "Yuanbai~POI: Ms 4.2 Metal Bones~Salvage tainted metal~Reward: Perpetual Ice Cream;~  Inventory Slot x 5"
 }
