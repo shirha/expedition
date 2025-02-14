@@ -1257,6 +1257,11 @@ const id01 = document.getElementById('id01'),
     id02.innerHTML = docs.join("\n");
     id02.style.display='block';
   };
+  document.body.addEventListener('click', e => {
+    console.log(e.target.id);
+    if(e.target.id === "id02")
+      id02.style.display='none';
+  });
 
 [...document.querySelectorAll('div')]
   .filter(e => e.id.startsWith('_'))
