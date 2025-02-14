@@ -71,8 +71,10 @@
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
   <div id=tt>Carbon,560
+Cobalt,280
 Copper,220
 Crystal Sulphide,4
+Cyto-Phosphate,120
 Di-hydrogen,200
 Ferrite Dust,990
 Faecium,51
@@ -221,13 +223,13 @@ Sodium,25</div>
   ☐ Take a photo at the third rendezvous
   Reward: 1,080 Nanites; 128 Quicksilver
 
-  POI: Ms 4.1 Wheels of Titan
-  ☐ Pilot a Colossus Exocraft
-  Reward: Pre-Packaged Thermal Buffer Unit; Mineral Processing Rig plans
-
   POI: Ms 4.2 No Place Like Home
   ☐ Construct a base on a gas giant
   Reward: Pre-Packaged Exocraft Mining Laser Unit; Pre-Packaged Advanced Exocraft Laser Unit
+
+  POI: Ms 4.1 Wheels of Titan
+  ☐ Pilot a Colossus Exocraft
+  Reward: Pre-Packaged Thermal Buffer Unit; Mineral Processing Rig plans
 
   POI: Ms 4.4 Plasmic Oceans
   ☐ Catch 4 fish from gas giants
@@ -280,7 +282,7 @@ Sodium,25</div>
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
-    const version = '16.2'; // Current version of the app
+    const version = '17.0'; // Current version of the app
     const keywords = {'anomalous': [], 'exotic': []};
     const conv = {
       "Hydrothermal Fuel Cell": {"Salt": 40, "Cyto-Phosphate": 40, "Carbon": 40},
@@ -301,7 +303,7 @@ Sodium,25</div>
       "Magnetised Ferrite": {"Ferrite Dust": 2},
       "Pure Ferrite": {"Ferrite Dust": 1},
       "Metal Plating": {"Ferrite Dust": 50},
-  //  "Microprocessor": {"Carbon": 50, "Copper": 80},
+      "Microprocessor": {"Carbon": 50, "Copper": 80},
       "Sodium Nitrate": {"Sodium": 2},
       "Warp Cell": {"Oxygen": 30, "Ferrite Dust": 50, "Copper": 50, "Carbon": 40},
       "Elixir of Quicksilver": {"Silver": 20, "Pure Ferrite": 33, "Chromatic Metal": 40},
