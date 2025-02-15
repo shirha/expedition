@@ -70,13 +70,13 @@
   <pre id="mission-data-digit"></pre>
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
-  <div id=tt>Carbon,660
+  <div id=tt>Carbon,940
 Cobalt,280
-Copper,380
+Copper,500
 Crystal Sulphide,4
 Cyto-Phosphate,120
 Di-hydrogen,200
-Ferrite Dust,990
+Ferrite Dust,1030
 Faecium,51
 Oxygen,310
 Paraffinium,100
@@ -130,10 +130,11 @@ Sodium,25</div>
     Sodium ×25
 
 <b>Siborou III</b>
+  Buy: A-Toxic, A-Cold, A-Radiation, C-Hyperdrive x3
+
   POI: Ms 1.5 Never Look Back
   ☐ Warp to a new system
   Reward: Warp Cell x 3; Warp Hypercore plans
-  Buy: A-Toxic, A-Cold, A-Radiation, C-Hyperdrive ×3
 
 <b>Eiestori // Iticu Y43</b>
   POI: Ms 1.6 ℛ1 Beacon <span>-32.68, -151.04</span>
@@ -183,14 +184,15 @@ Sodium,25</div>
     Di-hydrogen Jelly ×3
 
 <b>Haporin // Adtow</b>
-  Tip: Build a base
-  POI: Ms 2.7 ℛ2 Ocean <span>+31.43, -158.12</span>
+  POI: Ms 2.7 ℛ2 Step foot in the Ocean <span class=hidden>+31.43, -158.12</span>
   ☐ Reach the 2nd rendezvous
   Reward: Inventory Slot x 5;
   Pressure Membrane plans
     Oxygen ×150
     Hermetic Seal ×3
     Hydrothermal Fuel Cell ×3
+  <div class=gy>Tip:</div> Place a Base Computer
+    Chromatic Metal ×30
 
   POI: Ms 2.8 The Chronicle: 2
   ☐ Take a photo at the second rendezvous
@@ -221,18 +223,11 @@ Sodium,25</div>
   Reward: Supreme Scanning System Upgrade; 
     Supreme Movement System Upgrade; Automated Trap plans
 
-  POI: Ms 3.5 Fathoms Below
-  ☐ Visit the site of a sunken freighter
-  Reward: Terrifying Sample; Starship Inventory Slot x 5
-
 <b>Rihalin-Regan // Toletho Omega</b>
   POI: Ms 3.6 ℛ3 Crashed Freighter <span>+36.23, -145.61</span>
   ☐ Reach the 3rd rendezvous
   Reward: Banned Hazard Protection Upgrade;
   Colossus Geobay plans
-    Metal Plating ×5
-    Ion Battery ×4
-    Paraffinium ×100
 
   POI: Ms 3.7 The Chronicle: 3
   ☐ Take a photo at the third rendezvous
@@ -240,13 +235,10 @@ Sodium,25</div>
 
   POI: Ms 4.2 No Place Like Home
   ☐ Construct a base on a gas giant
+  Tip: Build the base over a fishing hole
+    Titan Base ×1 (ch x30, c x280, fe x40)
   Reward: Pre-Packaged Exocraft Mining Laser Unit; 
     Pre-Packaged Advanced Exocraft Laser Unit
-
-  POI: Ms 4.1 Wheels of Titan
-  ☐ Pilot a Colossus Exocraft
-  Reward: Pre-Packaged Thermal Buffer Unit; 
-    Mineral Processing Rig plans
 
   POI: Ms 4.4 Plasmic Oceans
   ☐ Catch 4 fish from gas giants
@@ -265,6 +257,10 @@ Sodium,25</div>
   POI: Ms 4.7 The Chronicle: 4
   ☐ Take a photo at the fourth rendezvous
   Reward: 1,080 Nanites; 128 Quicksilver
+
+  POI: Ms 3.5 Fathoms Below
+  ☐ Visit the site of a sunken freighter
+  Reward: Terrifying Sample; Starship Inventory Slot x 5
 
   POI: Ms 5.1 Quantum Bedrock
   ☐ Earn Nanites: 7,200
@@ -288,6 +284,8 @@ Sodium,25</div>
   Reward: Supreme Scanning System Upgrade; Hypnotic Eye
 
 <b>Aluper-Ina // Ipto XIV </b>
+  Buy: Paraffinium x100
+
   POI: Ms 5.6 ℛ5 Portal <span>-42.23, -105.49</span>
   ☐ Reach the final rendezvous
   Reward: Delicate Flora
@@ -295,6 +293,14 @@ Sodium,25</div>
   POI: Ms 5.7 The Chronicle: 5
   ☐ Take a photo at the final rendezvous
   Reward: Sea Glass x 3; 256 Quicksilver
+
+  POI: Ms 4.1 Wheels of Titan
+  ☐ Pilot a Colossus Exocraft
+    Metal Plating ×5
+    Ion Battery ×4
+    Paraffinium ×100
+  Reward: Pre-Packaged Thermal Buffer Unit; 
+    Mineral Processing Rig plans
 </pre>
 
   <button onClick="clearLocalStorage()">Clear</button>
@@ -324,9 +330,7 @@ Sodium,25</div>
       "Microprocessor": {"Carbon": 50, "Copper": 80},
       "Sodium Nitrate": {"Sodium": 2},
       "Warp Cell": {"Oxygen": 30, "Ferrite Dust": 50, "Copper": 50, "Carbon": 40},
-      "Elixir of Quicksilver": {"Silver": 20, "Pure Ferrite": 33, "Chromatic Metal": 40},
-      "Elixir of Glass": {"Di-hydrogen": 30, "Shattered Qualia": 10},
-
+      "Titan Base": {"Ferrite Dust": 40, "Copper": 60, "Carbon": 280},
     };
     let tt, obj, dict = {}, title, pre_n, pre_a, pre_d, poi = [];
 
