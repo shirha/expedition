@@ -28,6 +28,14 @@
       font-style: normal;
       background-color: greenyellow;
     }
+    .rd {
+      display: inline-block;
+      border-radius: 8px;
+      padding: 0 8px;
+      margin: 1px;
+      font-style: normal;
+      background-color: pink;
+    }
     div, table {
       display: inline-block;
       font-family: Lora;
@@ -43,7 +51,12 @@
     #tt {padding-left: 10px; /*display: none;*/}
     #mission-data-alpha {display: none;}
     #mission-data-digit {display: none;}
-    span {white-space: nowrap;}
+    span {
+      white-space: nowrap;       
+      border-radius: 8px;
+      padding: 0 8px;
+      background: #f8f8f8;
+    }
 /*    .mono {font-family: monospace; text-decoration-style: double; display: inline-block;}*/
     .gl {display: inline-block; font-family: "NMS Glyphs"; font-size: larger;}
 
@@ -70,7 +83,7 @@
   <pre id="mission-data-digit"></pre>
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
-  <div id=tt>Carbon,900
+  <div id=tt class=hidden>Carbon,900
 Cobalt,280
 Copper,450
 Crystal Sulphide,4
@@ -82,224 +95,171 @@ Oxygen,180
 Paraffinium,100
 Salt,120
 Sodium,25</div>
-
-<b>Skatae // New Aftesfi</b>
-  POI: Ms 1.1 Escape from Titan
+<b>Juduppka // Enbayneu XI</b>
+  POI: Ms 1.1 Echoes of the Past
   ☐ Locate your starship
-  Reward: Pre-Packaged Personal Refiner Unit; 
-    Starship Launch Fuel x 3
+  Reward: Pre-Packaged Personal Refiner Unit; Starship Launch Fuel x 3; Signal Booster plans; Surge Battery plans; Gek words x 12
 
-  POI: Ms 4.3 Winds of Change
-  ☐ Get carried away by a tornado
-  Reward: Supreme Movement System Upgrade; 
-    Crunchy Wings x 2
+  POI: Ms 1.2 Exhibition Admission
+  ☐ Excavate artifacts for the Galactic Palaeology Society: 1
+  Reward: Base Computer plans; Pre-Packaged Scatter Blaster Unit; Banned Hazard Protection Upgrade; Powerful Frost Protection Upgrade
 
-  POI: Ms 2.1 Bottled Lightning
-  ☐ Collect Storm Crystals: 7
-  Reward: Pre-Packaged Advanced Mining Laser Unit; 
-    Pre-Packaged Haz-Mat Gauntlet Unit
+  POI: Ms 1.7 Rock Hound
+  ☐ Discover Minerals: 10
+  Reward: Pre-Packaged Advanced Mining Laser Unit; Supreme Defensive Systems Upgrade; Inventory Slot x 5
 
-  POI: Ms 4.5 Hazardous Materials
-  ☐ Gather Crystallised Helium: 256
-  Reward: Lithium x 999; Methane x 999
+  POI: Ms 2.4 Descendants
+  ☐ Discover Creatures: 10
+  Reward: Supreme Radiation Protection Upgrade; Creature Pellets x 20
 
-<b>Skatae</b>
-  POI: Ms 1.2 Ignition
-  ☐ Leave the planet
-    Launch Thruster(R) ×1
-    Pulse Engine(R) ×1
-    Warp Cell ×1
-  Reward: Pre-Packaged Teleport Receiver Unit
+  POI: Ms 2.5 Uprooting
+  ☐ Eliminate hazardous flora: 10
+  Reward: Delicate Flora; Supreme Toxic Protection Upgrade
 
-  POI: Ms 2.5 Stone and Fire
-  ☐ Destroy asteroids: 50
-  Reward: Craftable Components plans; 
-  Aqua-Jets plans
+  POI: Ms 2.7 Bytesized
+  ☐ Analyse recovered data: 5
+  Reward: Pre-Packaged Sub-Light Amplifier Unit; Banned Pulse Engine Upgrade; Navigation Data x 20
 
-<b>Skatae // Euge</b>
-  POI: Ms 5.3 Reliquary
-  ☐ Excavate ancient bones: 6
-  Reward: Constructable Relic Plans
-  Tip: Mine Quartzite, Scan for fuana and fish
+  POI: Ms 2.6 Domestic Relatives
+  ☐ Adopt animal companions: 1
+  Reward: Supreme Life Support Upgrade; Life Support Gel x 5
 
-<b>Skatae // Resid Prime</b>
-  POI: Ms 1.3 Children of Giants
-  ☐ Visit all the moons of a gas giant
-  Reward: Pre-Packaged Launch Auto-Charger Unit; 
-    Sodium Nitrate x 720
+  POI: Ms 4.4 Deeper Underground
+  ☐ Excavate terrain: 3,500u³
+  Reward: Salvaged Data x 30
 
-  POI: Ms 1.4 Biosphere
-  ☐ Discover Plants: 6
-  Reward: Salty Chunks x 3;
-  Nutrient Processor plans
-    Metal Plating ×2
-    Hermetic Seal ×1
-    Sodium ×25
+  POI: Ms 3.4 Snapshot in Time
+  ☐ Take a photo of 5 ground creatures
+  Reward: Fishing Rig plans; Exo-Skiff plans; Bionic Lure x 40
 
-  POI: Ms 2.2 Divergent Evolution
-  ☐ Discover Creatures: 9
-  Reward: Lubricant recipe; Exo-Skiff plans
+  POI: Ms 5.4 Nose in the Dirt
+  ☐ Search dung samples: 20
+  Reward: Hexite x 20
 
-  POI: Ms 2.3 Field Logistics
-  ☐ Cook your own food
-    Heptaploid Wheat &rarr; Refined Flour
-    Faceum &rarr; Wild Yeast<span class=hidden>Faecium ×1</span>
-    Refined Flour + Wild Yeast &rarr; Dough
-    Dough &rarr; Bread
-  Reward: Packet of Seeds; Nutrient Ingestor plans
+  POI: Ms 5.5 Written in Stone
+  ☐ Investigate Memory Stones: 5
+  Reward: Dirty Bronze x 10
 
-  POI: Ms 2.4 Meal in a Can
-  ☐ Deploy a Nutrient Ingestor
-    Condensed Carbon ×30
-    Lubricant ×1
-      Faecium ×50
-      Gamma Root ×400
-    Microprocessor ×2
-  Reward: Fishing Bait recipes; 
-    Underwater Survival Blueprints
+  POI: Ms 3.6 Reverse Palaeobotany
+  ☐ Discover Plants: <div class=rd>5 of</div> 15
 
-<b>Siborou III</b>
-  <div class=gy>Buy:</div> A-Cold, C-Hyperdrive x3
+<b>Juduppka</b>
+  <div class=gy>Buy:</div> B-Hyperdrive ×3 w/ X-Life Support
 
-  POI: Ms 1.5 Never Look Back
-  ☐ Warp to a new system
-  Reward: Warp Cell x 3; Warp Hypercore plans
+<b>Xifenqj II // Bicentiu XIV</b>
+  POI: Ms 1.3 The Dig: I <span>0, 0</span>
+  ☐ Report to the GPS field office
+  Reward: Avian Fossil Display plans; Inventory Slot x 3; Gek words x 11
 
-<b>Eiestori // Iticu Y43</b>
-  POI: Ms 1.6 ℛ1 Beacon <span>-32.68, -151.04</span>
-  ☐ Reach the 1st rendezvous
-  Reward: Supreme Movement System Upgrade; 
-    Inventory Slot x 5; Base Computer plans
+<b>Xifenqj II // Ioka 51/W6</b>
+  POI: Ms 1.4 Junior Field Agent
+  ☐ Collect a complete fossil for the Galactic Palaeology Society
+  Reward: Supreme Geology Cannon Upgrade; Pre-Packaged Geology Cannon Unit; Powerful Thermal Protection Upgrade
 
-  POI: Ms 1.7 The Chronicle: 1
-  ☐ Take a photo at the first rendezvous
-  Reward: 1,080 Nanites; Powerful Life Support Upgrade; 
-    128 Quicksilver; Supreme Scanning System Upgrade
+  POI: Ms 1.5 Do Not Disturb
+  ☐ Defeat an ancient guardian
+  Reward: Pre-Packaged Personal Forcefield Unit; Pre-Packaged Shell Greaser Unit; Powerful Scatter Blaster Upgrade; Multi-Tool Inventory Slot x 2
 
-  POI: Ms 5.4 Genetic Currency
-  ☐ Earn 90,000 units for discovering a creature
-  Reward: Prismatic Feathers x 3; NipNip Buds
+  POI: Ms 1.6 Ancient Avian
+  ☐ Reassemble an avian skeleton
+  Reward: Supreme Movement System Upgrade; Supreme Launch Thrusters Upgrade; 300 Nanites
 
-  POI: Ms 2.6 By Sky and Sea
-  ☐ Install starship Aqua-Jets
-    Magnetic Resonator ×3
-    Antimatter ×2
-    Crystal Sulphide ×4
-  Reward: Mealworms x 5;
-  Hydrothermal Fuel Cell plans
-    Salt ×40
-    Cyto-Phosphate ×40
-    Carbon ×40
-  Nautilon Platform<span class="hidden">
-    Magnetised Ferrite x90
-    Oxygen x100
-    Di-hydrogen Jelly x3</span>
+  POI: Ms 3.6 Reverse Palaeobotany
+  ☐ Discover Plants: <div class=rd>10 of</div> 15
 
-<b>Haporin // Adtow</b>
-  POI: Ms 2.7 ℛ2 Step foot in the Ocean <span class=hidden>+31.43, -158.12</span>
-  ☐ Reach the 2nd rendezvous
-  Reward: Inventory Slot x 5;
-  Pressure Membrane plans
-    Oxygen ×150
-    Hermetic Seal ×3
-    Hydrothermal Fuel Cell ×2
-  <div class=gy>Tip:</div> Place a Base Computer
-    Chromatic Metal ×30
+<b>Adrielde // Elea Alpha</b>
+  POI: Ms 2.1 The Dig: II <span>+14.15, +175.84</span>
+  ☐ Report to the second GPS dig
+  Reward: Biped Fossil Display plans; Inventory Slot x 5; Gek words x 6
 
-  POI: Ms 2.8 The Chronicle: 2
-  ☐ Take a photo at the second rendezvous
-  Reward: 1,080 Nanites; 128 Quicksilver; 
-    Powerful Underwater Oxygen Upgrade x 2
+<b>Adrielde // Ijona 86/S5</b>
+  POI: Ms 2.2 Associate Field Agent
+  ☐ Collect a complete fossil for the Galactic Palaeology Society
+  Reward: Pre-Packaged Launch Auto-Charger Unit; Supreme Scanning System Upgrade
 
-  POI: Ms 3.1 Under Pressure
-  ☐ Install an Exosuit Pressure Membrane
-  Reward: Pre-Packaged High-Power Sonar Unit; 
-  Pre-Packaged Tethys Beam Unit;
-  Fishing Rig plans
-    Carbon Nanotubes ×3
-    Di-hydrogen Jelly ×1
-    Chromatic Metal ×60
+  POI: Ms 2.3 Bygone Biped
+  ☐ Reassemble a biped skeleton
+  Reward: Pre-Packaged Rocket Boots Unit; Supreme Movement System Upgrade; 300 Nanites
 
-  POI: Ms 3.4 Teeming with Life
-  ☐ Discover 7 aquatic creatures
-  Reward: Supreme Scanning System Upgrade; 
-    Supreme Movement System Upgrade; Automated Trap plans
+  POI: Ms 3.6 Reverse Palaeobotany
+  ☐ Discover Plants: 15
+  Reward: Delicate Flora x 2
 
-  POI: Ms 3.5 Fathoms Below
-  ☐ Visit the site of a sunken freighter
-  Reward: Terrifying Sample; Starship Inventory Slot x 5
+<b>Luhabug // Maslowel</b>
+  POI: <div class=rd>Predators</div> <img src="i/paws.png">
+  <div class=gy>Tip:</div> Hotkey Creature Pellets
 
-  POI: Ms 3.2 Crush Zone <span>+5.96, -66.13</span>
-  ☐ Reach ocean depths: 1,001u
-  Reward: Crystal Sulphide x 10; Glass x 17; 
-    Pure Ferrite x 1000; Underwater Construction Plans
+  POI: Ms 3.1 The Dig: III <span>0, 0</span>
+  ☐ Report to the third GPS dig
+  Reward: Quadruped Fossil Display plans; Inventory Slot x 5; Gek words x 9
 
-  POI: Ms 3.3 Hazard Pay
-  ☐ Collect Sea Glass: 5
-  Reward: Supreme Defensive Systems Upgrade; 
-    Dredging Laser plans
+  POI: Ms 3.2 Senior Field Agent
+  ☐ Collect a complete fossil for the Galactic Palaeology Society
+  Reward: Supreme Hyperdrive Upgrade x 2; Pre-Packaged Aqua-Jets Unit; Multi-Tool Inventory Slot x 5
 
-<b>Rihalin-Regan // Toletho Omega</b>
-  POI: Ms 3.6 ℛ3 Crashed Freighter <span>+36.23, -145.61</span>
-  ☐ Reach the 3rd rendezvous
-  Reward: Banned Hazard Protection Upgrade;
-  Colossus Geobay plans
+  POI: Ms 3.3 Former Fourlegs
+  ☐ Reassemble a quadruped skeleton
+  Reward: Pre-Packaged Neutron Cannon Unit; Pre-Packaged P-Field Compressor Unit; 500 Nanites
 
-  POI: Ms 3.7 The Chronicle: 3
-  ☐ Take a photo at the third rendezvous
-  Reward: 1,080 Nanites; 128 Quicksilver
+  POI: Ms 3.7 An Arm for a Leg
+  ☐ Exchange fossils with a collector
+  Reward: Pre-Packaged Teleport Receiver Unit; Starship Inventory Slot x 5
 
-  POI: Ms 4.2 No Place Like Home
-  ☐ Construct a base on a gas giant
-  Tip: Build the base over a fishing hole
-    Titan Base ×1 (ch x30, c x280, fe x40)
-  Reward: Pre-Packaged Exocraft Mining Laser Unit; 
-    Pre-Packaged Advanced Exocraft Laser Unit
+<b>Luhabug // Ligart Prime</b>
+  POI: Ms 3.5 Living Fossils
+  ☐ Catch a Whispering or Bleached Bonefish
+  <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
+  Reward: Hadal Core x 2; Aquatic Treasure
 
-  POI: Ms 4.4 Plasmic Oceans
-  ☐ Catch 4 fish from gas giants
-  Reward: Multi-Tool Inventory Slot x 4; Fish Pie
+<b>Oishiv // Noha 39/W6</b>
+  POI: Ms 4.1 The Dig: IV <span>+76.67, +148.26</span>
+  ☐ Report to the fourth GPS dig
+  Reward: Reptilian Fossil Display plans; Inventory Slot x 7; Gek words x 11
 
-<b>Hohakyn XV // Rahamsey</b>
-  POI: Ms 4.6 ℛ4 Abandoned Building <span>-69.15, -138.90</span>
-  ☐ Reach the 4th rendezvous
-  Reward: Supreme Scanning System Upgrade;
-  Exocraft Summoning Unit plans
+  POI: Ms 4.2 Principle Field Agent
+  ☐ Collect a complete fossil for the Galactic Palaeology Society
+  Reward: Ancient Skeleton; Glowing Mineral x 3
 
-  POI: Ms 4.7 The Chronicle: 4
-  ☐ Take a photo at the fourth rendezvous
-  Reward: 1,080 Nanites; 128 Quicksilver
+  POI: Ms 4.3 Reassembled Reptile
+  ☐ Reassemble a reptilian skeleton
+  Reward: Nutrient Processor plans; 150 Quicksilver
 
-  POI: Ms 5.2 Legacy
-  ☐ Rename a discovery
-  Reward: 256 Quicksilver
+  POI: Ms 4.5 The Archaeologist
+  ☐ Excavate ancient bones: 80
+  Reward: Titanic Trophy
 
-<b>Aluper-Ina // Ipto XIV </b>
-  <div class=gy>Buy:</div> Paraffinium x100
-  POI: Ms 5.1 Quantum Bedrock
-  ☐ Earn Nanites: 7,200
-  Reward: Polished Stone x 512; Inventory Slot x 7
+  POI: Ms 4.6 Hearty Stock
+  ☐ Whip up a delicious bone broth
+    Fossilised Bone ×3 &rarr; Softened Marrow ×3
+    Softened Marrow + Softened Marrow &rarr; Bone Broth
+  <div class=gy>Tip:</div> Softened Marrow ×1 &rarr; Cronus
+  Reward: Biological Sample
 
+<b>Anomaly</b>
+  POI: Ms 4.7 Bone Appétit
+  ☐ Serve up a bone to Cronus
+  Reward: Diplo Chunks x 5; Giant Egg
 
-  POI: Ms 5.6 ℛ5 Portal <span>-42.23, -105.49</span>
-  ☐ Reach the final rendezvous
-  Reward: Delicate Flora
+<b>Yugaiati // Amli Tau</b>
+  POI: Ms 5.1 The Dig: V <span>-65.27, +155.48</span>
+  ☐ Report to the final GPS dig
+  Reward: Protoform Fossil Display plans; Inventory Slot x 7
 
-  POI: Ms 5.7 The Chronicle: 5
-  ☐ Take a photo at the final rendezvous
-  Reward: Sea Glass x 3; 256 Quicksilver
+  POI: Ms 5.2 Master of Bones
+  ☐ Collect a complete fossil for the Galactic Palaeology Society
+  Reward: Fossil Sample; Polished Stone x 75
 
-  POI: Ms 4.1 Wheels of Titan
-  ☐ Pilot a Colossus Exocraft
-    Metal Plating ×5
-    Ion Battery ×4
-    Paraffinium ×100
-  Reward: Pre-Packaged Thermal Buffer Unit; 
-    Mineral Processing Rig plans
+  POI: Ms 5.3 Fixed Forerunner
+  ☐ Reassemble a protoform skeleton
+  Reward: Gek Relic x 10; 250 Quicksilver
 
-  POI: Ms 5.5 Surveyor of Worlds
-  ☐ Explore on foot: 9,999u
-  Reward: Supreme Scanning System Upgrade; Hypnotic Eye
+  POI: Ms 5.6 Stone Ghosts
+  ☐ Defeat ancient guardians: 5
+  Reward: Salvaged Scrap; Polished Stone x 150
+
+  POI: Ms 5.7 Rags and Bones
+  ☐ Sell fossils: 2,500,000<img src="i/unit1.png">
+  Reward: Polychromatic Zirconium x 10; Dirt x 20
 </pre>
 
   <button onClick="clearLocalStorage()">Clear</button>
