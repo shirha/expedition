@@ -64,7 +64,6 @@
       border-radius: 8px;
       padding: 0 8px;
       background: #f8f8f8;
-/*      color: #0000ee;*/
     }
 /*    .mono {font-family: monospace; text-decoration-style: double; display: inline-block;}*/
     .gl {display: inline-block; font-family: "NMS Glyphs"; font-size: larger;}
@@ -83,9 +82,32 @@
     a {text-decoration: none;}
     s {color: #8080e0; text-decoration: none; /*display: none;*/}
     .hidden {display: none;}
+
+    /* Style for the overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        align-items: center;
+        justify-content: flex-start;
+    }
+    /* Style for the image */
+    .overlay img {
+    /*    max-width: 80%;
+        max-height: 80%; */
+        border-radius: 10px;
+        height: 278px;
+    }
 </style>
 </head>
 <body>
+  <div class="overlay" id="imageOverlay">
+      <img src="bonefish2.webp" alt="Popup Image">
+  </div>
   <button onclick="handleClick(this, pre_n)">Normal</button>
   <button onclick="handleClick(this, pre_a)">A - Z</button>
   <button onclick="handleClick(this, pre_d)">1 - 5</button>
@@ -214,13 +236,23 @@
   ☐ Excavate ancient bones: 80
   Reward: Titanic Trophy
 
+<b>Luhabug // Ligart Prime</b>
+  POI: Ms 3.5 Living Fossils <span>+13.42, -103.66, 80'</span>
+  ☐ Catch a Whispering or Bleached Bonefish
+  <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
+  Reward: Hadal Core x 2; Aquatic Treasure
+
 <b>Oishiv // Romseyc I12</b>
+  Biome: Waterworld
+
   POI: Ms 3.5 Living Fossils
   ☐ Catch a Whispering or Bleached Bonefish
   <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
   Reward: Hadal Core x 2; Aquatic Treasure
 
 <b>Oishiv // Omich 71/J7</b>
+  Biome: Waterworld
+
   POI: Ms 3.5 Living Fossils
   ☐ Catch a Whispering or Bleached Bonefish
   <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
@@ -249,7 +281,7 @@
 <b>Anomaly</b>
   <div class=gy>Tip:</div> Put all other edibles in <span>Storage Container</span> first
   POI: Ms 4.7 Bone Appétit
-  ☐ Serve up a <span>Softened Marrow</span> to Cronus
+  ☐ Serve up a Softened Marrow to Cronus
   Reward: Diplo Chunks x 5; Giant Egg
 
 <b>Yugaiati // Amli Tau</b>
@@ -269,6 +301,12 @@
   POI: Ms 5.7 Rags and Bones
   ☐ Sell fossils: 2,500,000<img src="i/unit1.png">
   Reward: Polychromatic Zirconium x 10; Dirt x 20
+
+  POI: Ms 3.5 Living Fossils
+  ☐ Catch a Whispering or Bleached <a href="javascript:openImage(event)">Bonefish <img src="i/linkicon1.png"></a>
+  <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
+  Reward: Hadal Core x 2; Aquatic Treasure
+
   <div id=tt class=hidden>Carbon,900
 Cyto-Phosphate,80
 Di-hydrogen,80
@@ -280,8 +318,8 @@ Sodium,25</div>
   <!--div class=gy>Important:</div> Fly back to dig site before reassembling
   <div class=gy>Important:</div> Fly back to dig site before reassembling
   <div class=gy>Important:</div> Fly back to dig site before reassembling
-  <div class=gy>Important:</div> Fly back to dig site before reassembling-->
-
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+  <a target='_blank' href="https://nomanssky.fandom.com/wiki/Biome_-_Toxic#Name_generation">Wiki <img src="i/linkicon1.png"></a-->
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
@@ -525,8 +563,30 @@ Sodium,25</div>
       }
     }
 
+    function openImage() {
+        // event.preventDefault();
+        console.log("Show the overlay when clicking the link");
+        document.getElementById("imageOverlay").style.display = "flex";
+    }
+
     // On DOMContentLoaded, check version and parse content
     document.addEventListener('DOMContentLoaded', () => {
+      const overlay = document.getElementById("imageOverlay");
+      // const openImage = document.getElementById("openImage");
+
+      // Show the overlay when clicking the link
+      // openImage.addEventListener("click", function(event) {
+      //     event.preventDefault();
+      //     console.log("Show the overlay when clicking the link");
+      //     overlay.style.display = "flex";
+      // });
+
+      // Close the overlay when clicking anywhere
+      overlay.addEventListener("click", function() {
+          console.log("Close the overlay when clicking anywhere");
+          overlay.style.display = "none";
+      });
+
       tt    = document.querySelector('#tt');
       obj   = parseComponents();
       pre_n = document.getElementById('mission-data-normal');
@@ -534,6 +594,7 @@ Sodium,25</div>
       pre_d = document.getElementById('mission-data-digit');
       manageVersioning();
       parsePreContent();
+
 // document.querySelectorAll('input[type="checkbox"').forEach(checkbox => {checkbox.checked = true; localStorage.setItem(checkbox.id, checkbox.checked);});
     });
   </script>
