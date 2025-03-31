@@ -36,6 +36,14 @@
       font-style: normal;
       background-color: pink;
     }
+    .gr {
+      display: inline-block;
+      border-radius: 8px;
+      padding: 0 8px;
+      margin: 1px;
+      font-style: normal;
+      background-color: #99ff66;;
+    }
     div, table {
       display: inline-block;
       font-family: Lora;
@@ -84,19 +92,7 @@
   <pre id="mission-data-digit"></pre>
   <pre id="mission-data-alpha"></pre>
   <pre id="mission-data-normal">
-  <div id=tt class=hidden>Carbon,900
-Cobalt,280
-Copper,450
-Crystal Sulphide,4
-Cyto-Phosphate,120
-Di-hydrogen,80
-Ferrite Dust,800
-Faecium,51
-Oxygen,180
-Paraffinium,100
-Salt,120
-Sodium,25</div>
-<b>Juduppka // Enbayneu XI</b>
+<b>Juduppka // Enbayneu XI</b>  <!-- POI: <div class=gr>Curious Deposits</div> <img src="i/curious.png"> -->
   POI: Ms 1.1 Echoes of the Past
   ☐ Locate your starship
   Reward: Pre-Packaged Personal Refiner Unit; Starship Launch Fuel x 3; Signal Booster plans; Surge Battery plans; Gek words x 12
@@ -132,6 +128,7 @@ Sodium,25</div>
   POI: Ms 3.4 Snapshot in Time
   ☐ Take a photo of 5 ground creatures
   Reward: Fishing Rig plans; Exo-Skiff plans; Bionic Lure x 40
+  <div class=gy>Mine:</div> Cyto-Phosphate ×40 for Shadow Lure    
 
   POI: Ms 5.4 Nose in the Dirt
   ☐ Search dung samples: 20
@@ -181,15 +178,10 @@ Sodium,25</div>
   ☐ Report to the second GPS dig
   Reward: Biped Fossil Display plans; Inventory Slot x 5; Gek words x 6
 
-<b>Adrielde // Ijona 86/S5</b>
-  POI: Ms 4.5 The Archaeologist
-  ☐ Excavate ancient bones: <div class=rd>60 of</div> 80
-
   POI: Ms 2.2 Associate Field Agent
   ☐ Collect a complete fossil for the Galactic Palaeology Society
   Reward: Pre-Packaged Launch Auto-Charger Unit; Supreme Scanning System Upgrade
 
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
   POI: Ms 2.3 Bygone Biped
   ☐ Reassemble a biped skeleton
   Reward: Pre-Packaged Rocket Boots Unit; Supreme Movement System Upgrade; 300 Nanites
@@ -210,18 +202,17 @@ Sodium,25</div>
   ☐ Report to the third GPS dig
   Reward: Quadruped Fossil Display plans; Inventory Slot x 5; Gek words x 9
 
-  POI: Ms 4.5 The Archaeologist
-  ☐ Excavate ancient bones: 80
-  Reward: Titanic Trophy
-
   POI: Ms 3.2 Senior Field Agent
   ☐ Collect a complete fossil for the Galactic Palaeology Society
   Reward: Supreme Hyperdrive Upgrade x 2; Pre-Packaged Aqua-Jets Unit; Multi-Tool Inventory Slot x 5
 
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
   POI: Ms 3.3 Former Fourlegs
   ☐ Reassemble a quadruped skeleton
   Reward: Pre-Packaged Neutron Cannon Unit; Pre-Packaged P-Field Compressor Unit; 500 Nanites
+
+  POI: Ms 4.5 The Archaeologist
+  ☐ Excavate ancient bones: 80
+  Reward: Titanic Trophy
 
 <b>Luhabug // Ligart Prime</b>
   POI: Ms 3.5 Living Fossils
@@ -234,17 +225,10 @@ Sodium,25</div>
   ☐ Report to the fourth GPS dig
   Reward: Reptilian Fossil Display plans; Inventory Slot x 7; Gek words x 11
 
-<b>Oishiv // Romseyc I12</b>
-  POI: Ms 3.5 Living Fossils
-  ☐ Catch a Whispering or Bleached Bonefish
-  <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
-  Reward: Hadal Core x 2; Aquatic Treasure
-
   POI: Ms 4.2 Principle Field Agent
   ☐ Collect a complete fossil for the Galactic Palaeology Society
   Reward: Ancient Skeleton; Glowing Mineral x 3
 
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
   POI: Ms 4.3 Reassembled Reptile
   ☐ Reassemble a reptilian skeleton
   Reward: Nutrient Processor plans; 150 Quicksilver
@@ -272,7 +256,6 @@ Sodium,25</div>
   ☐ Collect a complete fossil for the Galactic Palaeology Society
   Reward: Fossil Sample; Polished Stone x 75
 
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
   POI: Ms 5.3 Fixed Forerunner
   ☐ Reassemble a protoform skeleton
   Reward: Gek Relic x 10; 250 Quicksilver
@@ -280,12 +263,28 @@ Sodium,25</div>
   POI: Ms 5.7 Rags and Bones
   ☐ Sell fossils: 2,500,000<img src="i/unit1.png">
   Reward: Polychromatic Zirconium x 10; Dirt x 20
+  <div id=tt class=hidden>Carbon,900
+Cyto-Phosphate,80
+Di-hydrogen,80
+Ferrite Dust,800
+Oxygen,180
+Sodium,25</div>
 </pre>
+
+  <!--div class=gy>Important:</div> Fly back to dig site before reassembling
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+<b>Oishiv // Romseyc I12</b>
+  POI: Ms 3.5 Living Fossils
+  ☐ Catch a Whispering or Bleached Bonefish
+  <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
+  Reward: Hadal Core x 2; Aquatic Treasure-->
 
   <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
-    const version = '18.0'; // Current version of the app
+    const version = '18.1'; // Current version of the app
     const keywords = {'bonefish': [], 'exotic': []}; // when multiple Ms used, both get checked
     const conv = {
       "Hydrothermal Fuel Cell": {"Salt": 40, "Cyto-Phosphate": 40, "Carbon": 40},
