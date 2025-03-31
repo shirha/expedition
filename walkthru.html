@@ -62,6 +62,7 @@
     span {
       white-space: nowrap;       
       border-radius: 8px;
+      border: 1px solid #e0e0e0;
       padding: 0 8px;
       background: #f8f8f8;
     }
@@ -81,6 +82,7 @@
 /*    del {font-family: monospace;}*/
     a {text-decoration: none;}
     s {color: #8080e0; text-decoration: none; /*display: none;*/}
+    .units {font-family:monospace;text-decoration:line-through;text-decoration-style:double;}
     .hidden {display: none;}
 
     /* Style for the overlay */
@@ -97,10 +99,11 @@
     }
     /* Style for the image */
     .overlay img {
-    /*    max-width: 80%;
+    /*  max-width: 80%;
         max-height: 80%; */
         border-radius: 10px;
         height: 278px;
+        margin-left: 10px;
     }
 </style>
 </head>
@@ -187,13 +190,13 @@
   ☐ Defeat ancient guardians: 5
   Reward: Salvaged Scrap; Polished Stone x 150
 
+  POI: Ms 3.6 Reverse Palaeobotany
+  ☐ Discover Plants: <div class=rd>10 of</div> 15
+
   <div class=gy>Important:</div> Fly back to dig site before reassembling
   POI: Ms 1.6 Ancient Avian
   ☐ Reassemble an avian skeleton
   Reward: Supreme Movement System Upgrade; Supreme Launch Thrusters Upgrade; 300 Nanites
-
-  POI: Ms 3.6 Reverse Palaeobotany
-  ☐ Discover Plants: <div class=rd>10 of</div> 15
 
 <b>Adrielde // Elea Alpha</b>
   POI: Ms 2.1 The Dig: II <span>+14.15, +175.84</span>
@@ -289,7 +292,6 @@
   ☐ Report to the final GPS dig
   Reward: Protoform Fossil Display plans; Inventory Slot x 7
 
-<b>Yugaiati // Haisypoh</b>
   POI: Ms 5.2 Master of Bones
   ☐ Collect a complete fossil for the Galactic Palaeology Society
   Reward: Fossil Sample; Polished Stone x 75
@@ -299,13 +301,15 @@
   Reward: Gek Relic x 10; 250 Quicksilver
 
   POI: Ms 5.7 Rags and Bones
-  ☐ Sell fossils: 2,500,000<img src="i/unit1.png">
+  ☐ Sell fossils: 2,500,000<div class=units>υ</div>
   Reward: Polychromatic Zirconium x 10; Dirt x 20
 
   POI: Ms 3.5 Living Fossils
-  ☐ Catch a Whispering or Bleached <a href="javascript:openImage(event)">Bonefish <img src="i/linkicon1.png"></a>
+  ☐ Catch a Whispering or Bleached <a href="javascript:openImage()">Bonefish <img src="i/linkicon1.png"></a>
   <div class=gy>Tip:</div> Deep water at night w/ Shadow Lure
   Reward: Hadal Core x 2; Aquatic Treasure
+</pre>
+  <button onClick="clearLocalStorage()">Clear</button>
 
   <div id=tt class=hidden>Carbon,900
 Cyto-Phosphate,80
@@ -313,14 +317,6 @@ Di-hydrogen,80
 Ferrite Dust,800
 Oxygen,180
 Sodium,25</div>
-</pre>
-
-  <!--div class=gy>Important:</div> Fly back to dig site before reassembling
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
-  <div class=gy>Important:</div> Fly back to dig site before reassembling
-  <a target='_blank' href="https://nomanssky.fandom.com/wiki/Biome_-_Toxic#Name_generation">Wiki <img src="i/linkicon1.png"></a-->
-  <button onClick="clearLocalStorage()">Clear</button>
 
   <script>
     const version = '18.1'; // Current version of the app
@@ -479,6 +475,7 @@ Sodium,25</div>
 
       pre_n.innerHTML = parsedContent;
       console.log('');
+      // console.log(parsedContent);
 
       // Restore checkbox states from localStorage
       document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
@@ -571,8 +568,16 @@ Sodium,25</div>
 
     // On DOMContentLoaded, check version and parse content
     document.addEventListener('DOMContentLoaded', () => {
+      tt    = document.querySelector('#tt');
+      obj   = parseComponents();
+      pre_n = document.getElementById('mission-data-normal');
+      pre_a = document.getElementById('mission-data-alpha');
+      pre_d = document.getElementById('mission-data-digit');
+      manageVersioning();
+      parsePreContent();
+
       const overlay = document.getElementById("imageOverlay");
-      // const openImage = document.getElementById("openImage");
+      const openImage = document.getElementById("openImage");
 
       // Show the overlay when clicking the link
       // openImage.addEventListener("click", function(event) {
@@ -587,13 +592,7 @@ Sodium,25</div>
           overlay.style.display = "none";
       });
 
-      tt    = document.querySelector('#tt');
-      obj   = parseComponents();
-      pre_n = document.getElementById('mission-data-normal');
-      pre_a = document.getElementById('mission-data-alpha');
-      pre_d = document.getElementById('mission-data-digit');
-      manageVersioning();
-      parsePreContent();
+      // console.log(overlay,openImage);
 
 // document.querySelectorAll('input[type="checkbox"').forEach(checkbox => {checkbox.checked = true; localStorage.setItem(checkbox.id, checkbox.checked);});
     });
@@ -601,3 +600,11 @@ Sodium,25</div>
 </body>
 </html>
 
+  <!-- href="javascript:openImage()"
+<b>Yugaiati // Haisypoh</b>
+  ☐ Catch a Whispering or Bleached <a href="javascript:void(0);" id=openImage>Bonefish <img src="i/linkicon1.png"></a>
+   div class=gy>Important:</div> Fly back to dig site before reassembling
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+  <div class=gy>Important:</div> Fly back to dig site before reassembling
+  <a target='_blank' href="https://nomanssky.fandom.com/wiki/Biome_-_Toxic#Name_generation">Wiki <img src="i/linkicon1.png"></a-->
