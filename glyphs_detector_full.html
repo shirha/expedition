@@ -108,10 +108,23 @@
           for (let i = 0; i < 12; i++) {
             let roi = cropped.roi(new cvInstance.Rect(i * 32, 0, 32, 32));
             cvInstance.matchTemplate(roi, glyphMat, result, cvInstance.TM_SQDIFF_NORMED);
-            let minLoc = cvInstance.minMaxLoc(result).minLoc;
-            let n = Math.round(minLoc.x / 32);
-            matchScore += minLoc.x;
-            glyphs += "0123456789abcdef"[n];
+            
+            // Sample every 32nd value from result
+            let sampledResult = [];
+            for (let x = 0; x < 512; x += 32) {
+              let value = result.data32F[x];
+              sampledResult.push(value);
+            }
+            
+            // Find min value and index (like np.min and np.argmin)
+            let minValue = Math.min(...sampledResult);
+            let minIndex = sampledResult.indexOf(minValue);
+            matchScore += minValue;
+            
+            // Log it
+            console.log(`${minIndex.toString().padStart(2)} [${sampledResult.map(v => v.toFixed(3)).join(", ")}]`);
+            
+            glyphs += "0123456789abcdef"[minIndex];
             roi.delete();
           }
 
@@ -123,6 +136,7 @@
           result.delete();
           mat.delete();
 
+          console.log(`Glyphs: mn+:${matchScore.toFixed(3)} ${glyphs}`);
           return glyphs;
         } catch (error) {
           console.error("Error in isGlyphs:", error);
