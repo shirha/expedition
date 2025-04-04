@@ -207,7 +207,6 @@
               const glyphSheet = document.getElementById("glyph-sprite");
               isGlyphs(tempImg, glyphSheet, cvInstanceGlobal)
                 .then(glyphs => {
-                  console.log("Glyphs:", glyphs);
                   renderGlyphString(glyphs); // Render clickable glyphs
                   const logoCanvas = document.getElementById("logo");
                   const dataUrl = logoCanvas.toDataURL("image/png");
