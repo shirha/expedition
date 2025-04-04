@@ -96,10 +96,10 @@
             let minValue = Math.min(...sampledResult);
             let minIndex = sampledResult.indexOf(minValue);
             matchScore += minValue;
+            glyphs += "0123456789abcdef"[minIndex];
+
             // Log it
             console.log(`${minIndex.toString().padStart(2)} [${sampledResult.map(v => v.toFixed(3)).join(", ")}]`);
-            
-            glyphs += "0123456789abcdef"[minIndex];
             roi.delete();
           }
 
