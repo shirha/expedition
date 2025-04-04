@@ -48,7 +48,7 @@
       text-align: center;
       z-index: 2;
     }
-    #logo {width: 960px; height: 540px; background-image: url("logo.jpg");}
+    #logo {width: 960px; height: 540px; background-image: url("i/logo.jpg");}
     #glyph-sprite {cursor: pointer;}
     #decoder {bottom: 25px; left: 100px; text-decoration: none; padding: 0 6px; border-radius: 6px; width: fit-content; background-color: rgba(255,255,255,.5); position: fixed;}
   </style>
@@ -61,7 +61,7 @@
     <div id="instructions">ctrl-v or shift-insert<br>to paste glyphs screenshot</div>
     <canvas id="logo"></canvas>
     <div id="glyph-string">&nbsp;</div>
-    <img id="glyph-sprite" src="glyph_image_gray.png"> <!-- i get this error without http-server: SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data. -->
+    <img id="glyph-sprite" src="i/glyph_image_gray.png"> <!-- i get this error without http-server: SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data. -->
     <a id="decoder" href="https://nmsportals.github.io/" target="_blank">No Man's Sky Portals Decoder</a>
 </div>
   <script>
