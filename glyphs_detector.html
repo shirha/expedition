@@ -198,6 +198,7 @@
                   const logoCanvas = document.getElementById("logo");
                   const dataUrl = logoCanvas.toDataURL("image/png");
                   document.getElementById("background-layer").style.backgroundImage = `url('${dataUrl}')`;
+                  setBodyBgColor(logoCanvas);
                 })
                 .catch(err => console.error("Error processing glyphs:", err));
             };
@@ -208,6 +209,37 @@
         }
       };
     }
+
+    function setBodyBgColor(canvas) {
+      const ctx = canvas.getContext('2d');
+
+      // Get color pixel
+      const x = 770; // next to 'instructions'
+      const y = 180;
+      const pixel = ctx.getImageData(x, y, 1, 1).data;
+      const [r, g, b] = pixel;
+
+      // Lighten the color by 50%
+      function lightenColor([r, g, b], percent) {
+        r = Math.round(r + (255 - r) * (percent / 100));
+        g = Math.round(g + (255 - g) * (percent / 100));
+        b = Math.round(b + (255 - b) * (percent / 100));
+        return [r, g, b];
+      }
+      const [lr, lg, lb] = lightenColor([r, g, b], 50);
+
+      // Draw circle around the pixel
+      ctx.beginPath();
+      ctx.arc(x, y, 5, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgb(${lr}, ${lg}, ${lb})`;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Set body background color
+      document.body.style.backgroundColor = `rgb(${lr}, ${lg}, ${lb})`;
+    }
+</script>
+
   </script>
 </body>
 </html>
