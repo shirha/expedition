@@ -51,7 +51,7 @@ export async function isGlyphs(tempImage, glyphSprite, cvInstance) {
       glyphs += "0123456789abcdef"[minIndex];
       
       // Log it
-      // console.log(`${minIndex.toString().padStart(2)} [${sampledResult.map(v => v.toFixed(3)).join(", ")}]`);
+      console.log(`${minIndex.toString().padStart(2)} [${sampledResult.map(v => v.toFixed(3)).join(", ")}]`);
       roi.delete();
     }
 
@@ -169,8 +169,8 @@ export function showImage(index, cvInstance, setSelectedGlyphIndex) {
 // setBodyBgColor remains unchanged
 export function setBodyBgColor(canvas) {
   const ctx = getLogoCanvasContext();
-  const x = 770;
-  const y = 180;
+  const x = 765;
+  const y = 165;
   const pixel = ctx.getImageData(x, y, 1, 1).data;
   const [r, g, b] = pixel;
 
@@ -199,31 +199,26 @@ export function setBodyBgColor(canvas) {
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Your HTML elements -->
-  <div id="container">
+  <div id="container" class="drop-zone">
     <div id="background-layer"></div>
-    <div id="instructions">ctrl-v or shift-insert<br>to paste glyphs screenshot</div>
+    <div id="instructions">Ctrl-V, Shift-Insert<br>or drag and drop<br>to add a glyphs screenshot<br>navigate with &larr; and &rarr;</div>
     <canvas id="logo"></canvas>
     <div id="glyph-string">&nbsp;</div>
-    <img id="glyph-sprite" src="i/glyph_image_gray.png"> <!-- i get this error without http-server: SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data. -->
+    <img id="glyph-sprite" src="i/glyph_image_gray.png">
     <a id="decoder" href="https://nmsportals.github.io/" target="_blank">No Man's Sky Portals Decoder</a>
   </div>
 
-  <!-- Load OpenCV first -->
   <script async src="https://docs.opencv.org/4.x/opencv.js" id="opencvScript"></script>
-  
-  <!-- Load main script as a module -->
   <script type="module">
     import { onOpenCVLoaded } from './main.js';
     const opencvScript = document.getElementById('opencvScript');
     if (opencvScript.complete && window.cv) {
-      console.log("opencvScript.complete")
-      // Script already loaded
+      console.log("opencvScript.complete");
       onOpenCVLoaded();
     } else {
       opencvScript.addEventListener('load', () => {
-      console.log("opencvScript.addEvent")
-      onOpenCVLoaded();
+        console.log("opencvScript.addEvent");
+        onOpenCVLoaded();
       });
     }
   </script>
@@ -240,6 +235,24 @@ const setSelectedGlyphIndex = index => {
   selectedGlyphIndex = index;
   console.log("Selected glyph index set to:", selectedGlyphIndex);
 };
+const getSelectedGlyphIndex = () => selectedGlyphIndex;
+
+function processImage(imageDataUrl) {
+  const tempImg = new Image();
+  tempImg.onload = function() {
+    const glyphSheet = document.getElementById("glyph-sprite");
+    isGlyphs(tempImg, glyphSheet, cvInstanceGlobal)
+      .then(glyphs => {
+        renderGlyphString(glyphs, setSelectedGlyphIndex);
+        const logoCanvas = document.getElementById("logo");
+        const dataUrl = logoCanvas.toDataURL("image/png");
+        document.getElementById("background-layer").style.backgroundImage = `url('${dataUrl}')`;
+        setBodyBgColor(logoCanvas);
+      })
+      .catch(err => console.error("Error processing glyphs:", err));
+  };
+  tempImg.src = imageDataUrl;
+}
 
 function onOpenCVLoaded() {
   console.log("opencv.js loaded");
@@ -247,41 +260,61 @@ function onOpenCVLoaded() {
   waitForOpenCV()
     .then(cvInstance => {
       cvInstanceGlobal = cvInstance;
-      console.log("OpenCV ready for paste events");
+      console.log("OpenCV ready for paste and drop events");
       getLogoCanvasContext();
-      setupGlyphSpriteClick(() => selectedGlyphIndex, setSelectedGlyphIndex);
+      setupGlyphSpriteClick(getSelectedGlyphIndex, setSelectedGlyphIndex);
     })
     .catch(err => console.error("Error initializing OpenCV:", err));
 
+  // Paste handler
   document.onpaste = function(event) {
     const item = event.clipboardData.items[0];
     if (item.type.indexOf("image") === 0) {
       const reader = new FileReader();
       reader.onload = function(e) {
-        const tempImg = new Image();
-        tempImg.onload = function() {
-          const glyphSheet = document.getElementById("glyph-sprite");
-          isGlyphs(tempImg, glyphSheet, cvInstanceGlobal)
-            .then(glyphs => {
-              renderGlyphString(glyphs, setSelectedGlyphIndex);
-              const logoCanvas = document.getElementById("logo");
-              const dataUrl = logoCanvas.toDataURL("image/png");
-              document.getElementById("background-layer").style.backgroundImage = `url('${dataUrl}')`;
-              setBodyBgColor(logoCanvas);
-            })
-            .catch(err => console.error("Error processing glyphs:", err));
-        };
-        tempImg.src = e.target.result;
+        processImage(e.target.result);
       };
       reader.readAsDataURL(item.getAsFile());
     }
   };
 
-  fetch('glyph_filename.json')
+  // Drag-and-drop handler
+  const dropZone = document.getElementById("container");
+  dropZone.addEventListener("dragover", (event) => {
+    event.preventDefault(); // Allow drop
+    dropZone.classList.add("drag-over");
+  });
+
+  dropZone.addEventListener("dragenter", (event) => {
+    event.preventDefault();
+    dropZone.classList.add("drag-over");
+  });
+
+  dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("drag-over");
+  });
+
+  dropZone.addEventListener("drop", (event) => {
+    event.preventDefault();
+    dropZone.classList.remove("drag-over");
+    const file = event.dataTransfer.files[0];
+    if (file && file.type.startsWith("image/")) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        processImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
+    } else {
+      console.error("Dropped file is not an image");
+    }
+  });
+
+  // Existing fetch and keydown logic
+  fetch('glyph_filename_i.json')
     .then(response => response.json())
     .then(data => {
       setImages(data);
-      showImage(0, cvInstanceGlobal, setSelectedGlyphIndex); // Pass setSelectedGlyphIndex here
+      showImage(0, cvInstanceGlobal, setSelectedGlyphIndex);
     })
     .catch(error => {
       console.error('Error loading JSON data:', error);
@@ -289,9 +322,9 @@ function onOpenCVLoaded() {
 
   document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowRight') {
-      nextImage(cvInstanceGlobal, setSelectedGlyphIndex); // Pass setSelectedGlyphIndex
+      nextImage(cvInstanceGlobal, setSelectedGlyphIndex);
     } else if (event.key === 'ArrowLeft') {
-      prevImage(cvInstanceGlobal, setSelectedGlyphIndex); // Pass setSelectedGlyphIndex
+      prevImage(cvInstanceGlobal, setSelectedGlyphIndex);
     }
   });
 }
