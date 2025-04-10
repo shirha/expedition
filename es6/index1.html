@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glyph Detector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container" class="drop-zone">
+    <div id="background-layer"></div>
+    <div id="instructions">Ctrl-V, Shift-Insert<br>or drag and drop<br>to add a glyphs screenshot<br>navigate with &larr; and &rarr;</div>
+    <canvas id="logo"></canvas>
+    <div id="glyph-string">&nbsp;</div>
+    <img id="glyph-sprite" src="i/glyph_image_gray.png">
+    <a id="decoder" href="https://nmsportals.github.io/" target="_blank">No Man's Sky Portals Decoder</a>
+  </div>
+
+  <script async src="https://docs.opencv.org/4.x/opencv.js" id="opencvScript"></script>
+  <script type="module">
+    import { onOpenCVLoaded } from './main.js';
+    const opencvScript = document.getElementById('opencvScript');
+    if (opencvScript.complete && window.cv) {
+      console.log("opencvScript.complete");
+      onOpenCVLoaded();
+    } else {
+      opencvScript.addEventListener('load', () => {
+        console.log("opencvScript.addEvent");
+        onOpenCVLoaded();
+      });
+    }
+  </script>
+</body>
+</html>

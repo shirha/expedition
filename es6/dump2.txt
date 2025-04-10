@@ -1,0 +1,23 @@
+#!/usr/bin/perl -w
+# dump.pl
+  use File::Slurp;
+  use File::Find;
+  use File::Copy qw(copy);
+  use Data::Dumper;
+
+foreach(qw(.)){ # qw(chapter4 chapter5 chapter6)){  
+  find(
+    sub{
+      unless( $File::Find::dir =~ m|node_modules| ){
+        if(-f $_ && /(html|js)$/){
+          printf "%s\n%s\n\n", $File::Find::name, join "", read_file $_;
+        # }else{
+        #   print "\n$File::Find::name";
+        }
+      }
+    }, $_
+  );
+}
+  
+# if(-f $_ && /(css|js)$/){
+#   unless( $File::Find::dir ~= m|/lib/| ){

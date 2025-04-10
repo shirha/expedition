@@ -1,0 +1,61 @@
+@font-face {font-family: "NMS Glyphs"; src: url("NMS-Glyphs-Mono.ttf");}
+html, body {overflow: hidden;}
+#container {
+  position: relative;
+  width: 960px;
+  height: 100vh;
+}
+#background-layer {
+  position: absolute;
+  top: 540px;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-size: 200% 200%; /* Scale the image to 200% */
+  background-position: 100% 0%; /* Focus on the top-right corner */
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+#logo, #glyph-string, #glyph-sprite, #decoder {
+  position: relative;
+  z-index: 1;
+}
+#glyph-string {font-family: "NMS Glyphs"; font-size: 32px; font-weight: bold; width: fit-content; background-color: rgba(255,255,255,.5);}
+#glyph-string span {cursor: pointer; display: inline-block; width: 32px; text-align: center;}
+#glyph-string span.selected {background-color: yellow;}
+#glyph-string, #glyph-sprite {margin: 4px 11px; border-radius: 8px;}
+#instructions {
+  position: absolute;
+  white-space: nowrap;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,.5);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+#logo {width: 960px; height: 540px; background-image: url("i/logo.jpg");}
+#glyph-sprite {cursor: pointer;}
+#decoder {bottom: 25px; left: 100px; text-decoration: none; padding: 0 6px; border-radius: 6px; width: fit-content; background-color: rgba(255,255,255,.5); position: fixed;}
+
+.drop-zone {
+  position: relative;
+  min-height: 200px; /* Ensure it’s large enough to drop into */
+  transition: all 0.2s ease;
+}
+
+.drop-zone.drag-over {
+  border: 2px dashed #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}

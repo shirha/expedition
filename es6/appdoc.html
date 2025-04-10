@@ -1,0 +1,161 @@
+<div><div><div class="prose"><p>Here's comprehensive documentation for your No Man's Sky Glyph Detector web application:</p>
+<h1>No Man's Sky Glyph Detector Documentation</h1>
+<h2>Overview</h2>
+<p>A web application that detects and decodes portal glyph sequences from No Man's Sky screenshots using computer vision (OpenCV.js). Users can paste screenshots or navigate through a gallery of images to extract glyph sequences.</p>
+<h2>Key Features</h2>
+<ul>
+<li>Glyph detection from screenshots using OpenCV.js</li>
+<li>Interactive glyph string editing</li>
+<li>Image gallery navigation</li>
+<li>Dynamic background color extraction</li>
+<li>Integration with NMS Portals Decoder</li>
+</ul>
+<h2>Technical Stack</h2>
+<ul>
+<li>Vanilla JavaScript (ES Modules)</li>
+<li>OpenCV.js (v4.x) for computer vision</li>
+<li>HTML5 Canvas for image processing</li>
+<li>JSON for image metadata storage</li>
+</ul>
+<h2>File Structure</h2></div></div><div><div class="my-4"><button class="bg-white inline-flex w-full items-center gap-2 rounded-lg border-4 border-gray-300 p-1.5"><div class="bg-gray-300 flex size-8 items-center justify-center rounded font-bold">V5</div><div class="flex flex-col gap-0.5 text-left leading-none"><div class="text-sm font-medium leading-none"> v5</div><div class="text-xs leading-none text-gray-500">-v5.</div></div><div class="ml-auto"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.75.75v10.5M6.583 2.5L3.083 6m0 0l3.5 3.5M3.083 6h8.167" stroke="#525252" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></button></div></div><div><div class="prose"><h2>Detailed Module Documentation</h2>
+<h3>glyphUtils.js</h3>
+<h4><code>waitForOpenCV()</code></h4>
+<pre><code class="language-js">export async function waitForOpenCV()
+</code></pre>
+<ul>
+<li><strong>Purpose</strong>: Ensures OpenCV.js is fully loaded</li>
+<li><strong>Returns</strong>: Promise resolving to OpenCV instance</li>
+<li><strong>Usage</strong>: Called during initialization</li>
+</ul>
+<h4><code>isGlyphs(tempImage, glyphSprite, cvInstance)</code></h4>
+<pre><code class="language-js">export async function isGlyphs(tempImage, glyphSprite, cvInstance)
+</code></pre>
+<ul>
+<li><strong>Purpose</strong>: Detects glyph sequence from an image</li>
+<li><strong>Parameters</strong>:
+<ul>
+<li><code>tempImage</code>: Input image element</li>
+<li><code>glyphSprite</code>: Reference glyph sprite sheet</li>
+<li><code>cvInstance</code>: OpenCV instance</li>
+</ul>
+</li>
+<li><strong>Process</strong>:
+<ol>
+<li>Extracts logo area (bottom-left quarter)</li>
+<li>Converts to grayscale</li>
+<li>Uses template matching to identify glyphs</li>
+<li>Returns 12-character glyph string</li>
+</ol>
+</li>
+<li><strong>Returns</strong>: Promise resolving to glyph string (e.g., "0123456789ab")</li>
+</ul>
+<h4><code>renderGlyphString(glyphs, setSelectedGlyphIndex)</code></h4>
+<pre><code class="language-js">export function renderGlyphString(glyphs, setSelectedGlyphIndex)
+</code></pre>
+<ul>
+<li><strong>Purpose</strong>: Renders interactive glyph string</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Clickable glyphs for selection</li>
+<li>Visual selection indicator</li>
+<li>Automatic decoder link update</li>
+</ul>
+</li>
+</ul>
+<h4><code>setupGlyphSpriteClick()</code></h4>
+<pre><code class="language-js">export function setupGlyphSpriteClick(getSelectedGlyphIndex, setSelectedGlyphIndex)
+</code></pre>
+<ul>
+<li><strong>Purpose</strong>: Enables glyph editing by clicking sprite sheet</li>
+<li><strong>Behavior</strong>:
+<ul>
+<li>Updates selected glyph in string</li>
+<li>Maintains selection state</li>
+</ul>
+</li>
+</ul>
+<h3>imageNavigation.js</h3>
+<h4>Image Management Functions</h4>
+<pre><code class="language-js">export function setImages(data)  // Sets image gallery
+export function nextImage()      // Navigates to next image
+export function prevImage()      // Navigates to previous image
+export function showImage()      // Displays image at index
+</code></pre>
+<h4><code>setBodyBgColor(canvas)</code></h4>
+<pre><code class="language-js">export function setBodyBgColor(canvas)
+</code></pre>
+<ul>
+<li><strong>Purpose</strong>: Extracts dominant color from logo area</li>
+<li><strong>Process</strong>:
+<ol>
+<li>Samples color from specific coordinates</li>
+<li>Lightens color by 50%</li>
+<li>Applies as background</li>
+<li>Marks sample point on canvas</li>
+</ol>
+</li>
+</ul>
+<h3>main.js</h3>
+<ul>
+<li><strong>Entry Point</strong>: <code>onOpenCVLoaded()</code></li>
+<li><strong>Features</strong>:
+<ul>
+<li>OpenCV initialization</li>
+<li>Clipboard paste handling</li>
+<li>Image gallery loading</li>
+<li>Keyboard navigation (← → arrows)</li>
+</ul>
+</li>
+</ul>
+<h2>Setup Instructions</h2>
+<ol>
+<li>
+<p><strong>Requirements</strong>:</p>
+<ul>
+<li>Modern browser (Chrome/Firefox recommended)</li>
+<li>Local HTTP server (due to CORS restrictions)</li>
+</ul>
+</li>
+<li>
+<p><strong>Installation</strong>:</p>
+<pre><code class="language-bash">npm install -g http-server
+http-server
+</code></pre>
+</li>
+<li>
+<p><strong>Usage</strong>:</p>
+<ul>
+<li>Paste screenshots (Ctrl+V)</li>
+<li>Navigate images with arrow keys</li>
+<li>Click glyphs to edit</li>
+<li>Click decoder link for portal address</li>
+</ul>
+</li>
+</ol>
+<h2>Known Issues</h2>
+<ul>
+<li>Cross-origin restrictions require local server</li>
+<li>OpenCV.js loading may fail on slow connections</li>
+<li>Glyph detection accuracy varies with image quality</li>
+</ul>
+<h2>Future Improvements</h2>
+<ul>
+<li>Drag-and-drop image upload</li>
+<li>Glyph detection confidence indicators</li>
+<li>Batch processing for multiple images</li>
+<li>Mobile responsiveness</li>
+</ul>
+<h2>Example Usage Flow</h2>
+<ol>
+<li>User pastes screenshot</li>
+<li>App detects 12-glyph sequence</li>
+<li>User can:
+<ul>
+<li>Click glyphs to select</li>
+<li>Click sprite to modify</li>
+<li>Navigate gallery with arrows</li>
+<li>Visit decoder with current sequence</li>
+</ul>
+</li>
+</ol>
+<p>This documentation covers the core functionality and architecture of your glyph detection system. Would you like me to elaborate on any specific aspect or add additional sections?</p></div></div></div>
