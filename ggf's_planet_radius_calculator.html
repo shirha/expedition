@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Radius Calculator</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th, #radius, #circum {
+            background-color: #f2f2f2;
+        }
+        input {
+            width: 100px;
+            text-align: center;
+            border: none; /* No borders around input boxes */
+        }
+        input:focus {
+            outline: none; /* No focus outline */
+        }
+    </style>
+</head>
+<body>
+    <table>
+    		<a href="https://x.com/GoodGuysFree/status/1890321945868050772" style="padding-left:20px;">GGF's Planet Radius Calculator</a> <a href="https://www.youtube.com/shorts/MrPU97Shny8"><img src="i/yt_icon.png" style="padding-left:10px;height:1em;"></a>
+        <tr>
+            <th>P1Lat</th>
+            <th>P1Lon</th>
+            <th>Dist(u)</th>
+            <th>P2Lat</th>
+            <th>P2Lon</th>
+            <th>Radius(u)</th>
+            <th>C(ku)</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="p1Lat" value="-35.59" step="any"></td>
+            <td><input type="number" id="p1Lon" value="-146.06" step="any"></td>
+            <td><input type="number" id="dist" value="1248" step="any"></td>
+            <td><input type="number" id="p2Lat" value="-35.51" step="any"></td>
+            <td><input type="number" id="p2Lon" value="-145.93" step="any"></td>
+            <td id="radius">13380</td>
+            <td id="circum">84</td>
+        </tr>
+    </table>
+
+    <script>
+        // Degrees to radians conversion factor
+        const f = Math.PI / 180;
+
+        // Function to calculate radius and circumference
+        function calculate() {
+            // Get input values
+            const p1Lat = parseFloat(document.getElementById('p1Lat').value);
+            const p1Lon = parseFloat(document.getElementById('p1Lon').value);
+            const dist = parseFloat(document.getElementById('dist').value);
+            const p2Lat = parseFloat(document.getElementById('p2Lat').value);
+            const p2Lon = parseFloat(document.getElementById('p2Lon').value);
+
+            // Haversine formula for radius
+            const a = 0.5 - Math.cos((p2Lat - p1Lat) * f) / 2 +
+                      Math.cos(p1Lat * f) * Math.cos(p2Lat * f) * (1 - Math.cos((p2Lon - p1Lon) * f)) / 2;
+            const c = 2 * Math.asin(Math.sqrt(a));
+            const radius = Math.round(dist / c); // Integer radius
+
+            // Circumference in kilo-units (ku)
+            const circum = Math.round(radius * 2 * Math.PI / 1000); // Updated formula
+
+            // Update table
+            document.getElementById('radius').textContent = radius + 'u';
+            document.getElementById('circum').textContent = circum + 'ku';
+        }
+
+        // Add event listeners to inputs
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input => {
+            // Listener for input changes (recalculate)
+            input.addEventListener('input', calculate);
+            // Listener for focus (select text)
+            input.addEventListener('focus', () => input.select());
+        });
+
+        // Initial calculation
+        calculate();
+    </script>
+</body>
+</html>
