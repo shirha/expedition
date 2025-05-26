@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet Radius Calculator</title>
     <style>
+        @font-face {font-family: "NMS Glyphs"; src: url("NMS-Glyphs-Mono.ttf");}
+        /*.glyphs {
+            font-family: "NMS Glyphs";
+            width: 250px;
+            font-size: larger;
+        }*/ 
         table {
             border-collapse: collapse;
             margin: 20px;
         }
         th, td {
             border: 1px solid black;
-            padding: 8px;
+            padding: 0 4px;
             text-align: center;
         }
-        th, #radius, #circum {
+        th, .radius, .circum {
             background-color: #f2f2f2;
         }
         input {
@@ -25,69 +31,237 @@
         input:focus {
             outline: none; /* No focus outline */
         }
+        input[type="number"] {
+            width: 60px;
+        }
+        .planet {
+            width: 200px;
+            text-align: left;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .add-btn {
+            /*background-color: #4CAF50;
+            color: white;*/
+            border: none;
+            padding: 5px 10px;
+        }
+        .delete-btn {
+            /*background-color: #ff4d4d;
+            color: white;*/
+            border: none;
+            padding: 5px 10px;
+        }
     </style>
 </head>
 <body>
-    <a href="https://x.com/GoodGuysFree/status/1890321945868050772" style="padding-left:20px;">GGF's Planet Radius Calculator</a>
-    <table>
-        <tr>
-            <th>P1Lat</th>
-            <th>P1Lon</th>
-            <th>Dist(u)</th>
-            <th>P2Lat</th>
-            <th>P2Lon</th>
-            <th>Radius(u)</th>
-            <th>C(ku)</th>
-        </tr>
-        <tr>
-            <td><input type="number" id="p1Lat" value="-35.59" step="any"></td>
-            <td><input type="number" id="p1Lon" value="-146.06" step="any"></td>
-            <td><input type="number" id="dist" value="1248" step="any"></td>
-            <td><input type="number" id="p2Lat" value="-35.51" step="any"></td>
-            <td><input type="number" id="p2Lon" value="-145.93" step="any"></td>
-            <td id="radius">13380</td>
-            <td id="circum">84</td>
-        </tr>
+    <table id="planetTable">
+        <thead>
+            <tr>
+                <th>P1Lat</th>
+                <th>P1Lon</th>
+                <th>P2Lat</th>
+                <th>P2Lon</th>
+                <th>Dist(u)</th>
+                <th>Planet</th>
+                <th>Glyphs</th>
+                <th>Radius(u)</th>
+                <th>C(ku)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" id="p1Lat" class="p1Lat" value="" step="any"></td>
+                <td><input type="number" id="p1Lon" class="p1Lon" value="" step="any"></td>
+                <td><input type="number" id="p2Lat" class="p2Lat" value="" step="any"></td>
+                <td><input type="number" id="p2Lon" class="p2Lon" value="" step="any"></td>
+                <td><input type="number" id="dist" class="dist" value="" step="any"></td>
+                <td><input type="text" id="planet" class="planet" value=""></td>
+                <td><input type="text" id="glyphs" class="glyphs" value=""></td>
+                <td class="radius">0</td>
+                <td class="circum">0</td>
+                <td><button class="add-btn" id="addRowBtn">+</button></td>
+            </tr>
+        </tbody>
     </table>
 
     <script>
+        // Debugging: Confirm script is loaded
+        console.log('Script loaded');
+
         // Degrees to radians conversion factor
         const f = Math.PI / 180;
 
         // Function to calculate radius and circumference
-        function calculate() {
-            // Get input values
-            const p1Lat = parseFloat(document.getElementById('p1Lat').value);
-            const p1Lon = parseFloat(document.getElementById('p1Lon').value);
-            const dist = parseFloat(document.getElementById('dist').value);
-            const p2Lat = parseFloat(document.getElementById('p2Lat').value);
-            const p2Lon = parseFloat(document.getElementById('p2Lon').value);
+        function calculate(row) {
+            console.log('row=...');//,row);
+            const p1Lat = parseFloat(row.querySelector('.p1Lat').value) || 0;
+            const p1Lon = parseFloat(row.querySelector('.p1Lon').value) || 0;
+            const dist = parseFloat(row.querySelector('.dist').value) || 0;
+            const p2Lat = parseFloat(row.querySelector('.p2Lat').value) || 0;
+            const p2Lon = parseFloat(row.querySelector('.p2Lon').value) || 0;
 
             // Haversine formula for radius
             const a = 0.5 - Math.cos((p2Lat - p1Lat) * f) / 2 +
                       Math.cos(p1Lat * f) * Math.cos(p2Lat * f) * (1 - Math.cos((p2Lon - p1Lon) * f)) / 2;
             const c = 2 * Math.asin(Math.sqrt(a));
-            const radius = Math.round(dist / c); // Integer radius
+            const radius = c !== 0 ? Math.round(dist / c) : 0; // Prevent division by zero
+            const circum = Math.round(radius * 2 * Math.PI / 1000);
 
-            // Circumference in kilo-units (ku)
-            const circum = Math.round(radius * 2 * Math.PI / 1000); // Updated formula
-
-            // Update table
-            document.getElementById('radius').textContent = radius + 'u';
-            document.getElementById('circum').textContent = circum + 'ku';
+            row.querySelector('.radius').textContent = radius + 'u';
+            row.querySelector('.circum').textContent = circum + 'ku';
         }
 
-        // Add event listeners to inputs
-        const inputs = document.querySelectorAll('input');
-        inputs.forEach(input => {
-            // Listener for input changes (recalculate)
-            input.addEventListener('input', calculate);
-            // Listener for focus (select text)
-            input.addEventListener('focus', () => input.select());
+        // Add event listeners to inputs in a row
+        function addInputListeners(row) {
+            const inputs = row.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('input', () => {
+                    calculate(row);
+                    saveToLocalStorage();
+                });
+                input.addEventListener('focus', () => input.select());
+            });
+        }
+
+        // Add a new row with current calculator data
+        function addRow() {
+            console.log('addRow called'); // Debugging
+            const mainRow = document.querySelector('#planetTable tbody tr');
+            const data = {
+                p1Lat: mainRow.querySelector('.p1Lat').value,
+                p1Lon: mainRow.querySelector('.p1Lon').value,
+                p2Lat: mainRow.querySelector('.p2Lat').value,
+                p2Lon: mainRow.querySelector('.p2Lon').value,
+                dist: mainRow.querySelector('.dist').value,
+                planet: mainRow.querySelector('.planet').value,
+                glyphs: mainRow.querySelector('.glyphs').value
+            };
+
+            const tbody = document.querySelector('#planetTable tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="number" class="p1Lat" value="${data.p1Lat}" step="any"></td>
+                <td><input type="number" class="p1Lon" value="${data.p1Lon}" step="any"></td>
+                <td><input type="number" class="p2Lat" value="${data.p2Lat}" step="any"></td>
+                <td><input type="number" class="p2Lon" value="${data.p2Lon}" step="any"></td>
+                <td><input type="number" class="dist" value="${data.dist}" step="any"></td>
+                <td><input type="text" class="planet" value="${data.planet}"></td>
+                <td><input type="text" class="glyphs" value="${data.glyphs}"></td>
+                <td class="radius"></td>
+                <td class="circum"></td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">x</button></td>
+            `;
+            tbody.appendChild(newRow);
+            addInputListeners(newRow);
+            calculate(newRow);
+            saveToLocalStorage();
+
+            // Clear main row inputs for next calculation
+            mainRow.querySelector('.p1Lat').value = '';
+            mainRow.querySelector('.p1Lon').value = '';
+            mainRow.querySelector('.p2Lat').value = '';
+            mainRow.querySelector('.p2Lon').value = '';
+            mainRow.querySelector('.dist').value = '';
+            mainRow.querySelector('.planet').value = '';
+            mainRow.querySelector('.glyphs').value = '';
+            calculate(mainRow);
+        }
+
+        // Delete a row
+        function deleteRow(button) {
+            console.log('deleteRow called'); // Debugging
+            const row = button.parentElement.parentElement;
+            if(confirm('Are you sure?')){
+                row.remove();
+                saveToLocalStorage();
+            }
+        }
+
+        // Save table data to localStorage
+        function saveToLocalStorage() {
+            const rows = document.querySelectorAll('#planetTable tbody tr:not(:first-child)');
+            const data = Array.from(rows).map(row => ({
+                p1Lat: row.querySelector('.p1Lat').value,
+                p1Lon: row.querySelector('.p1Lon').value,
+                p2Lat: row.querySelector('.p2Lat').value,
+                p2Lon: row.querySelector('.p2Lon').value,
+                dist: row.querySelector('.dist').value,
+                planet: row.querySelector('.planet').value,
+                glyphs: row.querySelector('.glyphs').value
+            }));
+            localStorage.setItem('planetTableData', JSON.stringify(data));
+        }
+
+        // Load table data from localStorage
+        function loadFromLocalStorage() {
+            const data = JSON.parse(localStorage.getItem('planetTableData') || '[]');
+            data.forEach(rowData => {
+                const tbody = document.querySelector('#planetTable tbody');
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td><input type="number" class="p1Lat" value="${rowData.p1Lat || ''}" step="any"></td>
+                    <td><input type="number" class="p1Lon" value="${rowData.p1Lon || ''}" step="any"></td>
+                    <td><input type="number" class="p2Lat" value="${rowData.p2Lat || ''}" step="any"></td>
+                    <td><input type="number" class="p2Lon" value="${rowData.p2Lon || ''}" step="any"></td>
+                    <td><input type="number" class="dist" value="${rowData.dist || ''}" step="any"></td>
+                    <td><input type="text" class="planet" value="${rowData.planet || ''}"></td>
+                    <td><input type="text" class="glyphs" value="${rowData.glyphs || ''}"></td>
+                    <td class="radius"></td>
+                    <td class="circum"></td>
+                    <td><button class="delete-btn" onclick="deleteRow(this)">x</button></td>
+                `;
+                tbody.appendChild(newRow);
+                addInputListeners(newRow);
+                calculate(newRow);
+            });
+        }
+
+        // Initialize main row
+        function initMainRow() {
+            console.log('initMainRow called'); // Debugging
+            const mainRow = document.querySelector('#planetTable tbody tr');
+            addInputListeners(mainRow);
+            // Bind addRow to button programmatically
+            const addButton = document.getElementById('addRowBtn');
+            if (addButton) {
+                addButton.addEventListener('click', addRow);
+                console.log('addRow button event listener attached');
+            } else {
+                console.error('Add button not found');
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded, initializing');
+            initMainRow();
+            loadFromLocalStorage();
+            calculate(document.querySelector('#planetTable tbody tr'));
+            console.log(JSON.stringify(JSON.parse(localStorage.getItem('planetTableData')), null, 2));
         });
 
-        // Initial calculation
-        calculate();
+        function sortPlanetTableData() {
+          // Retrieve and parse the data from localStorage
+          let planetData = JSON.parse(localStorage.getItem('planetTableData')) || [];
+          
+          // Key transformation function
+          const key = str => str.slice(1) + str[0];
+          
+          // Sort the array
+          planetData.sort((a, b) => 
+            key(a.glyphs).localeCompare(key(b.glyphs))
+          );
+          
+          // Save sorted data back to localStorage
+          localStorage.setItem('planetTableData', JSON.stringify(planetData));
+          
+          return planetData;
+        }
     </script>
 </body>
 </html>
