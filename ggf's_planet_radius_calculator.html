@@ -39,6 +39,8 @@
             text-align: left;
         }
         button {
+            height: 25px;
+            width: 25px;
             margin: 5px;
             padding: 5px 10px;
             cursor: pointer;
@@ -52,6 +54,7 @@
         .delete-btn {
             /*background-color: #ff4d4d;
             color: white;*/
+            color:gray;
             border: none;
             padding: 5px 10px;
         }
@@ -260,7 +263,8 @@
           // Save sorted data back to localStorage
           localStorage.setItem('planetTableData', JSON.stringify(planetData));
           
-          return planetData;
+          location.reload();
+          // return planetData;
         }
     </script>
 </body>
