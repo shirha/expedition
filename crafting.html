@@ -23,7 +23,7 @@ Debris Rangefinder      5×  Chromatic Metal       40  Microprocessors        1 
 Debris Rangefinder      5×  Chromatic Metal       25  Antimatter             1  Quantum Computer       1
 Debris Rangefinder      5×  Carbon                40  Antimatter             1  Quantum Computer       1
 Debris Rangefinder      5×  Chromatic Metal       25  Quantum Computer       1                          
-Debris Rangefinder          Ferrite Dust          50  Metal Plating          1                          
+Debris Rangefinder      5×  Ferrite Dust          50  Metal Plating          1                          
 Cargo Rack 0                Ferrite Dust         150  Metal Plating          3                          
 Cargo Rack 0                Carbon                50  Microprocessors        1                          
 Cargo Rack 0                Chromatic Metal       40  Microprocessors        1                          
@@ -80,12 +80,12 @@ Ammunitiion             4×  Ferrite Dust          50
 (R)Pulse Engine             Ferrite Dust          50  Metal Plating          1                          
 (R)Launch Thrusters         Ferrite Dust          50  Pure Ferrite          50                          
 Warp Cells             10×  Ferrite Dust          50  Antimatter Housing     1                          
-Debris Rangefinder          Ferrite Dust          50  Metal Plating          1                          
+Debris Rangefinder      5×  Ferrite Dust          50  Metal Plating          1                          
 Cargo Rack 0                Ferrite Dust         150  Metal Plating          3                          
 Save Point                  Ferrite Dust         100  Metal Plating          2                          
 Nautilon Platform           Ferrite Dust         180  Magnetised Ferrite    90                          
 Fossil Display              Ferrite Dust          50  Pure Ferrite          50                          
-                            Subtotal:           1380  
+                            Subtotal:           1580  
 
 Debris Rangefinder      5×  Gold                  40  Solar Mirror           1                          
                             Subtotal:            200  
@@ -108,3 +108,10 @@ Haz-Mat Gauntlets           Sodium                40  Sodium Nitrate        20
 Advanced Mining Laser       Wiring Loom            2                                                    
                             Subtotal:              2
 </pre>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const element = document.querySelector('pre');
+        element.innerHTML = element.innerHTML.replaceAll(/(Subtotal: +)(\d+)/g, "$1<b>$2</b>");
+    });
+</script>
+
