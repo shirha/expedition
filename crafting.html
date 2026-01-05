@@ -1,3 +1,4 @@
+<style>b{background-color:#f8f8f8;}</style>
 <pre>REPORT BY ITEM
 ITEM                   QTY  MATERIAL            COST  MATERIAL            COST  MATERIAL            COST
 ========================================================================================================
@@ -111,7 +112,7 @@ Advanced Mining Laser       Wiring Loom            2
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         const element = document.querySelector('pre');
-        element.innerHTML = element.innerHTML.replaceAll(/(Subtotal: +)(\d+)/g, "$1<b>$2</b>");
+        element.innerHTML = element.innerHTML.replaceAll(/(Subtotal: +\d+)/g, "<b>$1</b>");
     });
 </script>
 
