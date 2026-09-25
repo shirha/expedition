@@ -169,7 +169,7 @@ h3 {font-size:24px;}
   <a class="pl">Oria V</a> 
   <a class="pl">Anhoeb<div class="dox yl"></div></a> 
   <a class="pl">Noder XVI</a> 
-  <a class="pl">Kileyto IV</a> 
+  <a class="pl">Kileyto IV<div class="dox yl"></div></a> 
   <a class="pl">Vide Prime</a></td></tr>
 <tr><td nowrap> <a class="sy">Iryang</a></td><td>
   <a class="pl">Oeotira<div class="dox yl"></div></a> 
@@ -444,6 +444,7 @@ h3 {font-size:24px;}
       <div>Sentinels: Require Obedience</div>
       <div>Flora: Copious</div>
       <div>Fauna:13 High</div>
+      <div>POI: <div class='poi gr'>Curious Deposit</div>&thinsp;<img src='i/curious.png'/> <div class=sca>+2.10, -126.89</div></div>
     </div>
     <div>Resources
       <div class="bc" id="_r270">Ancient Bones</div>
@@ -1074,6 +1075,7 @@ const id01 = document.getElementById('id01'),
     docs.push('</table>');
     id02.innerHTML = docs.join("\n");
     id02.style.display='block';
+    e.stopPropagation();
   };
 
   document.body.addEventListener('click', e => {
@@ -1184,5 +1186,11 @@ window.onclick = function(event) {
   //   id02.style.display = "none";
   }
 };
+
+document.getElementById('container').addEventListener('click', e => {
+  if (id02.style.display === 'block' && !id02.contains(e.target)) {
+    id02.style.display = 'none';
+  }
+});
 
 </script></body></html>
