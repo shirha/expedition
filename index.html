@@ -50,8 +50,8 @@ a[type="button"]{margin: 10px 10px 10px 0;}
 #sum {border-spacing: 4px 4px; border-collapse: separate;}
 .r {margin-top: 10px;}
 .pu {font-style: italic; color: purple; padding-left: 0; display: inline-block;}
-.tc,.ib,.scp {padding:0; cursor: pointer;}
-.bc {cursor: pointer;}
+.tc,.ib,.scp {padding:0; cursor: pointer; width: fit-content;}
+.bc {cursor: pointer; width: fit-content;}
 .ab {background-color: #E1C16E;}
 .ab,.ac {border:0;}
 .at {background-color: #f0f0f0;} /* #ffe9b3;} */
@@ -91,6 +91,7 @@ a[type="button"]{margin: 10px 10px 10px 0;}
 .tcx {background-color: #ddd;}      /* tech class x */
 .on  {background-color: #f8f8f8;}   /* #f8f8f8 */
 .bca {background-color: #d9b3ff; border-radius: 8px;}
+.tcs,.tca,.tcb,.tcc,.tcx {margin-right:2px;}
 #option1 {display:block;}
 #option2 {display:none;}
 
@@ -234,201 +235,203 @@ h3 {font-size:24px;}
   <a class="pl">Hydesde III</a> 
   <a class="pl">Tend 40/V5</a></td></tr>
 </table>
-<div class=c><center><b>Technology</b></center><div class="tc" id="_t001"><div class="tcs">S</div>&hairsp;Blaze Javelin</div>
-<div class="tc" id="_t002"><div class="tcs">S</div>&hairsp;Boltcaster</div>
-<div class="tc" id="_t003"><div class="tcs">S</div>&hairsp;Cold Protection</div>
-<div class="tc" id="_t004"><div class="tcs">S</div>&hairsp;Cyclotron</div>
-<div class="tc" id="_t005"><div class="tcs">S</div>&hairsp;Exocraft Boost</div>
-<div class="tc" id="_t006"><div class="tcs">S</div>&hairsp;Exocraft Cannon</div>
-<div class="tc" id="_t007"><div class="tcs">S</div>&hairsp;Exocraft Engine</div>
-<div class="tc" id="_t008"><div class="tcs">S</div>&hairsp;Exocraft Laser</div>
-<div class="tc" id="_t009"><div class="tcs">S</div>&hairsp;Geology Cannon</div>
-<div class="tc" id="_t010"><div class="tcs">S</div>&hairsp;Hot Protection</div>
-<div class="tc" id="_t011"><div class="tcs">S</div>&hairsp;Humboldt Drive</div>
-<div class="tc" id="_t012"><div class="tcs">S</div>&hairsp;Hyperdrive</div>
-<div class="tc" id="_t013"><div class="tcs">S</div>&hairsp;Infra-Knife</div>
-<div class="tc" id="_t014"><div class="tca">A</div>&hairsp;Launch Thrusters</div>
-<div class="tc" id="_t015"><div class="tcs">S</div>&hairsp;Life Support</div>
-<div class="tc" id="_t016"><div class="tcs">S</div>&hairsp;Mining Beam</div>
-<div class="tc" id="_t017"><div class="tcs">S</div>&hairsp;Minotaur Cannon</div>
-<div class="tc" id="_t018"><div class="tcs">S</div>&hairsp;Minotaur Engine</div>
-<div class="tc" id="_t019"><div class="tcs">S</div>&hairsp;Minotaur Flamethrower</div>
-<div class="tc" id="_t020"><div class="tcs">S</div>&hairsp;Minotaur Laser</div>
-<div class="tc" id="_t021"><div class="tcs">S</div>&hairsp;Movement</div>
-<div class="tc" id="_t022"><div class="tcs">S</div>&hairsp;Nautilon Cannon</div>
-<div class="tc" id="_t023"><div class="tcs">S</div>&hairsp;Neutron Cannon</div>
-<div class="tc" id="_t024"><div class="tcs">S</div>&hairsp;Phase Beam</div>
-<div class="tc" id="_t025"><div class="tcs">S</div>&hairsp;Photon Cannon</div>
-<div class="tc" id="_t026"><div class="tcs">S</div>&hairsp;Plasma Launcher</div>
-<div class="tc" id="_t027"><div class="tcs">S</div>&hairsp;Positron</div>
-<div class="tc" id="_t028"><div class="tcs">S</div>&hairsp;Pulse Engine</div>
-<div class="tc" id="_t029"><div class="tcs">S</div>&hairsp;Pulse Spitter</div>
-<div class="tc" id="_t030"><div class="tcs">S</div>&hairsp;Radiation Protection</div>
-<div class="tc" id="_t031"><div class="tcs">S</div>&hairsp;Scanner</div>
-<div class="tc" id="_t032"><div class="tcs">S</div>&hairsp;Scatter Blaster</div>
-<div class="tc" id="_t033"><div class="tcs">S</div>&hairsp;Shield</div>
-<div class="tc" id="_t034"><div class="tcs">S</div>&hairsp;Starship Shield</div>
-<div class="tc" id="_t035"><div class="tcs">S</div>&hairsp;Toxic Protection</div>
-<div class="tc" id="_t036"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+<div class=c><center><b>Technology</b></center>
+<div class="tc" id="_t001"><div class="tcs">S</div>Blaze Javelin</div>
+<div class="tc" id="_t002"><div class="tcs">S</div>Boltcaster</div>
+<div class="tc" id="_t003"><div class="tcs">S</div>Cold Protection</div>
+<div class="tc" id="_t004"><div class="tcs">S</div>Cyclotron</div>
+<div class="tc" id="_t005"><div class="tcs">S</div>Exocraft Boost</div>
+<div class="tc" id="_t006"><div class="tcs">S</div>Exocraft Cannon</div>
+<div class="tc" id="_t007"><div class="tcs">S</div>Exocraft Engine</div>
+<div class="tc" id="_t008"><div class="tcs">S</div>Exocraft Laser</div>
+<div class="tc" id="_t009"><div class="tcs">S</div>Geology Cannon</div>
+<div class="tc" id="_t010"><div class="tcs">S</div>Hot Protection</div>
+<div class="tc" id="_t011"><div class="tcs">S</div>Humboldt Drive</div>
+<div class="tc" id="_t012"><div class="tcs">S</div>Hyperdrive</div>
+<div class="tc" id="_t013"><div class="tcs">S</div>Infra-Knife</div>
+<div class="tc" id="_t014"><div class="tca">A</div>Launch Thrusters</div>
+<div class="tc" id="_t015"><div class="tcs">S</div>Life Support</div>
+<div class="tc" id="_t016"><div class="tcs">S</div>Mining Beam</div>
+<div class="tc" id="_t017"><div class="tcs">S</div>Minotaur Cannon</div>
+<div class="tc" id="_t018"><div class="tcs">S</div>Minotaur Engine</div>
+<div class="tc" id="_t019"><div class="tcs">S</div>Minotaur Flamethrower</div>
+<div class="tc" id="_t020"><div class="tcs">S</div>Minotaur Laser</div>
+<div class="tc" id="_t021"><div class="tcs">S</div>Movement</div>
+<div class="tc" id="_t022"><div class="tcs">S</div>Nautilon Cannon</div>
+<div class="tc" id="_t023"><div class="tcs">S</div>Neutron Cannon</div>
+<div class="tc" id="_t024"><div class="tcs">S</div>Phase Beam</div>
+<div class="tc" id="_t025"><div class="tcs">S</div>Photon Cannon</div>
+<div class="tc" id="_t026"><div class="tcs">S</div>Plasma Launcher</div>
+<div class="tc" id="_t027"><div class="tcs">S</div>Positron</div>
+<div class="tc" id="_t028"><div class="tcs">S</div>Pulse Engine</div>
+<div class="tc" id="_t029"><div class="tcs">S</div>Pulse Spitter</div>
+<div class="tc" id="_t030"><div class="tcs">S</div>Radiation Protection</div>
+<div class="tc" id="_t031"><div class="tcs">S</div>Scanner</div>
+<div class="tc" id="_t032"><div class="tcs">S</div>Scatter Blaster</div>
+<div class="tc" id="_t033"><div class="tcs">S</div>Shield</div>
+<div class="tc" id="_t034"><div class="tcs">S</div>Starship Shield</div>
+<div class="tc" id="_t035"><div class="tcs">S</div>Toxic Protection</div>
+<div class="tc" id="_t036"><div class="tcs">S</div>Underwater Protection</div>
 </div>
-<div class=c><center><b>Buy Sell</b></center><div class="ib" id="_s037">5D Torus⁺</div>
-<div class="ib" id="_s039">Amino Chamber</div>
-<div class="ib" id="_s041">Ammonia</div>
-<div class="ib" id="_s043">Aroniumˢ</div>
-<div class="scp" id="_s046">Banned Weapons</div>
-<div class="ib" id="_s047">Bromide Salt⁺</div>
-<div class="ib" id="_s049">Carbon Nanotubes</div>
-<div class="ib" id="_s051">Chlorine</div>
-<div class="ib" id="_s053">Chromatic Metal</div>
-<div class="ib" id="_s055">Cobalt</div>
-<div class="ib" id="_s057">Copper</div>
-<div class="ib" id="_s059">Di-hydrogen</div>
-<div class="ib" id="_s061">Di-hydrogen Jelly</div>
-<div class="ib" id="_s063">Dioxite</div>
-<div class="ib" id="_s065">Dirty Bronzeˢ</div>
-<div class="ib" id="_s067">Dirt⁺</div>
-<div class="ib" id="_s069">Enormous Metal Cog⁺</div>
-<div class="ib" id="_s071">Experimental Power Fluid⁺</div>
-<div class="ib" id="_s073">Ferrite Dust</div>
-<div class="ib" id="_s075">Gold</div>
-<div class="scp" id="_s078">GrahGrah</div>
-<div class="ib" id="_s079">Hadal Core</div>
-<div class="ib" id="_s081">Hermetic Seal</div>
-<div class="ib" id="_s083">Hexiteᵍ</div>
-<div class="ib" id="_s085">Holographic Crankshaft⁺</div>
-<div class="ib" id="_s087">Hydraulic Wiring</div>
-<div class="ib" id="_s089">Hypnotic Eye</div>
-<div class="ib" id="_s091">Industrial-Grade Battery⁺</div>
-<div class="ib" id="_s093">Ionised Cobalt</div>
-<div class="ib" id="_s095">Larval Core</div>
-<div class="ib" id="_s097">Lemmiumᵍ</div>
-<div class="ib" id="_s099">Magnetic Resonator</div>
-<div class="ib" id="_s101">Magnetised Ferrite</div>
-<div class="ib" id="_s103">Magno-Goldᵍ</div>
-<div class="ib" id="_s105">Mesh Decouplers⁺</div>
-<div class="ib" id="_s107">Metai Plating</div>
-<div class="ib" id="_s109">Metal Plating</div>
-<div class="ib" id="_s111">Microprocessor</div>
-<div class="ib" id="_s113">Nanotube Crate⁺</div>
-<div class="scp" id="_s116">NipNip Buds</div>
-<div class="ib" id="_s117">Non-Stick Piston⁺</div>
-<div class="ib" id="_s119">Ohmic Gel⁺</div>
-<div class="ib" id="_s121">Optical Solvent⁺</div>
-<div class="ib" id="_s123">Packet (Arms)</div>
-<div class="ib" id="_s125">Packet (Goods)</div>
-<div class="ib" id="_s127">Packet (Tech)</div>
-<div class="ib" id="_s129">Paraffinium</div>
-<div class="ib" id="_s131">Phosphorus</div>
-<div class="ib" id="_s133">Platinum</div>
-<div class="ib" id="_s135">Polychromatic Zirconium⁺</div>
-<div class="ib" id="_s137">Pugneum</div>
-<div class="ib" id="_s139">Pure Ferrite</div>
-<div class="ib" id="_s141">Pyrite</div>
-<div class="ib" id="_s143">Quantum Computer</div>
-<div class="ib" id="_s145">Re-latticed Arc Crystal⁺</div>
-<div class="ib" id="_s147">Residual Goop</div>
-<div class="ib" id="_s149">Rusted Metal</div>
-<div class="ib" id="_s151">Salt</div>
-<div class="ib" id="_s153">Self-Repairing Heridium⁺</div>
-<div class="ib" id="_s155">Silver</div>
-<div class="ib" id="_s157">Solar Mirror</div>
-<div class="ib" id="_s159">Spark Canister⁺</div>
-<div class="ib" id="_s161">Starshield Battery</div>
-<div class="ib" id="_s163">Tritium</div>
-<div class="ib" id="_s165">Unrefined Pyrite Grease⁺</div>
-<div class="ib" id="_s167">Unstable Piasma</div>
-<div class="ib" id="_s169">Unstable Plasma</div>
-<div class="ib" id="_s171">Uranium</div>
-<div class="ib" id="_s173">Viscous Fluids</div>
-<div class="ib" id="_s175">Wiring Loom</div></div>
-<div class=c><center><b>Resources</b></center><div class="ib" id="_r177">Activated Copper</div>
-<div class="ib" id="_r179">Activated Emeril</div>
-<div class="ib" id="_r181">Activated Quartzite</div>
-<div class="ib" id="_r183">Ammonia</div>
-<div class="ib" id="_r185">Ancient Bones</div>
-<div class="ib" id="_r187">Basalt</div>
-<div class="ib" id="_r189">Cactus Flesh</div>
-<div class="ib" id="_r191">Cadmium</div>
-<div class="ib" id="_r193">Cobait</div>
-<div class="ib" id="_r195">Cobalt</div>
-<div class="ib" id="_r197">Copper</div>
-<div class="ib" id="_r199">Crystatlised Helium</div>
-<div class="ib" id="_r201">Dioxite</div>
-<div class="scp" id="_r204">Dissonance detected</div>
-<div class="ib" id="_r205">Emenil</div>
-<div class="ib" id="_r207">Emeril</div>
-<div class="ib" id="_r209">Frost Crystal</div>
-<div class="ib" id="_r211">Fungal Mould</div>
-<div class="ib" id="_r213">Fungat Mould</div>
-<div class="ib" id="_r215">Gamma Root</div>
-<div class="ib" id="_r217">Gold</div>
-<div class="ib" id="_r219">Magnetised Ferrite</div>
-<div class="ib" id="_r221">Paraffinium</div>
-<div class="ib" id="_r223">Phosphorus</div>
-<div class="ib" id="_r225">Pyrite</div>
-<div class="ib" id="_r227">Quarizite</div>
-<div class="ib" id="_r229">Quartzite</div>
-<div class="ib" id="_r231">Rusted Metal</div>
-<div class="ib" id="_r233">Salt</div>
-<div class="ib" id="_r235">Salvageable Scrap</div>
-<div class="ib" id="_r237">Silver</div>
-<div class="ib" id="_r239">Sodium</div>
-<div class="ib" id="_r241">Solanium</div>
-<div class="ib" id="_r243">Star Bulb</div>
-<div class="ib" id="_r245">Sulphurine</div>
-<div class="ib" id="_r247">Swarm Debris</div>
-<div class="ib" id="_r249">Uranium</div>
-<div class="ib" id="_r251">Vile Brood Detected</div></div>
-<div class=c><center><b>Biome</b></center><div class="ib" id="_b253">Abandoned Moon</div>
-<div class="ib" id="_b254">Abandoned Planet</div>
-<div class="ib" id="_b255">Airless Moon</div>
-<div class="ib" id="_b256">Airless Planet</div>
-<div class="ib" id="_b257">Arctic Moon</div>
-<div class="ib" id="_b258">Bladed Moon</div>
-<div class="ib" id="_b259">Blighted Planet</div>
-<div class="ib" id="_b260">Boiling Planet</div>
-<div class="ib" id="_b261">Bubbling Moon</div>
-<div class="ib" id="_b262">Charred Planet</div>
-<div class="ib" id="_b263">Corrosive Moon</div>
-<div class="ib" id="_b264">Corrosive Planet</div>
-<div class="ib" id="_b265">Dead Planet</div>
-<div class="ib" id="_b266">Decaying Nuclear Planet</div>
-<div class="ib" id="_b267">Desolate Moon</div>
-<div class="ib" id="_b268">Desolate Planet</div>
-<div class="ib" id="_b269">Doomed Jade Moon</div>
-<div class="ib" id="_b270">Empty Planet</div>
-<div class="ib" id="_b271">Erupting Planet</div>
-<div class="ib" id="_b272">Frothing Planet</div>
-<div class="ib" id="_b273">Frozen Anomaly</div>
-<div class="ib" id="_b274">Frozen Planet</div>
-<div class="ib" id="_b275">Gas Giant</div>
-<div class="ib" id="_b276">Glacial Planet</div>
-<div class="ib" id="_b277">Hiemal Planet</div>
-<div class="ib" id="_b278">High Energy Planet</div>
-<div class="ib" id="_b279">Hot Planet</div>
-<div class="ib" id="_b280">Incandescent Moon</div>
-<div class="ib" id="_b281">Low Atmosphere Planet</div>
-<div class="ib" id="_b282">Metallic Planet</div>
-<div class="ib" id="_b283">Miasmatic Moon</div>
-<div class="ib" id="_b284">Miasmatic Planet</div>
-<div class="ib" id="_b285">Noxious Moon</div>
-<div class="ib" id="_b286">Noxious Planet</div>
-<div class="ib" id="_b287">Paradise Planet</div>
-<div class="ib" id="_b288">Poisonous Moon</div>
-<div class="ib" id="_b289">Rainy Planet</div>
-<div class="ib" id="_b290">Ruined Planet</div>
-<div class="ib" id="_b291">Scorched Planet</div>
-<div class="ib" id="_b292">Sub-zero Planet</div>
-<div class="ib" id="_b293">Tainted Planet</div>
-<div class="ib" id="_b294">Temperate Planet</div>
-<div class="ib" id="_b295">Terraforming Catastrophe</div>
-<div class="ib" id="_b296">Toxic Moon</div>
-<div class="ib" id="_b297">Tropical Planet</div>
-<div class="ib" id="_b298">Vapour Planet</div>
-<div class="ib" id="_b299">Verdant Planet</div>
-<div class="ib" id="_b300">Vile Anomaly</div>
-<div class="ib" id="_b301">Viridescent Planet</div>
-<div class="ib" id="_b302">Wine Dark Planet</div></div>
+<div class=c><center><b>Buy Sell</b></center>
+<div class="ib" id="_s037">5D Torus⁺</div>
+<div class="ib" id="_s038">Amino Chamber</div>
+<div class="ib" id="_s039">Ammonia</div>
+<div class="ib" id="_s040">Aronium</div>
+<div class="scp" id="_s041">Banned Weapons</div>
+<div class="ib" id="_s042">Bromide Salt⁺</div>
+<div class="ib" id="_s043">Carbon Nanotubes</div>
+<div class="ib" id="_s044">Chlorine</div>
+<div class="ib" id="_s045">Chromatic Metal</div>
+<div class="ib" id="_s046">Cobalt</div>
+<div class="ib" id="_s047">Copper</div>
+<div class="ib" id="_s048">Di-hydrogen</div>
+<div class="ib" id="_s049">Di-hydrogen Jelly</div>
+<div class="ib" id="_s050">Dioxite</div>
+<div class="ib" id="_s051">Dirty Bronze</div>
+<div class="ib" id="_s052">Dirt⁺</div>
+<div class="ib" id="_s053">Enormous Metal Cog⁺</div>
+<div class="ib" id="_s054">Experimental Power Fluid⁺</div>
+<div class="ib" id="_s055">Ferrite Dust</div>
+<div class="ib" id="_s056">Gold</div>
+<div class="scp" id="_s057">GrahGrah</div>
+<div class="ib" id="_s058">Hadal Core</div>
+<div class="ib" id="_s059">Hermetic Seal</div>
+<div class="ib" id="_s060">Hexite</div>
+<div class="ib" id="_s061">Holographic Crankshaft⁺</div>
+<div class="ib" id="_s062">Hydraulic Wiring</div>
+<div class="ib" id="_s063">Hypnotic Eye</div>
+<div class="ib" id="_s064">Industrial-Grade Battery⁺</div>
+<div class="ib" id="_s065">Larval Core</div>
+<div class="ib" id="_s066">Lemmium</div>
+<div class="ib" id="_s067">Magnetic Resonator</div>
+<div class="ib" id="_s068">Magnetised Ferrite</div>
+<div class="ib" id="_s069">Magno-Gold</div>
+<div class="ib" id="_s070">Mesh Decouplers⁺</div>
+<div class="ib" id="_s071">Metai Plating</div>
+<div class="ib" id="_s072">Metal Plating</div>
+<div class="ib" id="_s073">Microprocessor</div>
+<div class="ib" id="_s074">Nanotube Crate⁺</div>
+<div class="scp" id="_s075">NipNip Buds</div>
+<div class="ib" id="_s076">Non-Stick Piston⁺</div>
+<div class="ib" id="_s077">Ohmic Gel⁺</div>
+<div class="ib" id="_s078">Optical Solvent⁺</div>
+<div class="ib" id="_s079">Packet (Arms)</div>
+<div class="ib" id="_s080">Packet (Goods)</div>
+<div class="ib" id="_s081">Packet (Tech)</div>
+<div class="ib" id="_s082">Paraffinium</div>
+<div class="ib" id="_s083">Phosphorus</div>
+<div class="ib" id="_s084">Platinum</div>
+<div class="ib" id="_s085">Polychromatic Zirconium⁺</div>
+<div class="ib" id="_s086">Pugneum</div>
+<div class="ib" id="_s087">Pure Ferrite</div>
+<div class="ib" id="_s088">Pyrite</div>
+<div class="ib" id="_s089">Quantum Computer</div>
+<div class="ib" id="_s090">Re-latticed Arc Crystal⁺</div>
+<div class="ib" id="_s091">Residual Goop</div>
+<div class="ib" id="_s092">Rusted Metal</div>
+<div class="ib" id="_s093">Salt</div>
+<div class="ib" id="_s094">Self-Repairing Heridium⁺</div>
+<div class="ib" id="_s095">Silver</div>
+<div class="ib" id="_s096">Solar Mirror</div>
+<div class="ib" id="_s097">Spark Canister⁺</div>
+<div class="ib" id="_s098">Starshield Battery</div>
+<div class="ib" id="_s099">Tritium</div>
+<div class="ib" id="_s100">Unrefined Pyrite Grease⁺</div>
+<div class="ib" id="_s101">Unstable Piasma</div>
+<div class="ib" id="_s102">Unstable Plasma</div>
+<div class="ib" id="_s103">Uranium</div>
+<div class="ib" id="_s104">Viscous Fluids</div>
+<div class="ib" id="_s105">Wiring Loom</div>
+<div class="ib" id="_s106">lonised Cobalt</div></div>
+<div class=c><center><b>Resources</b></center>
+<div class="ib" id="_r107">Activated Copper</div>
+<div class="ib" id="_r108">Activated Emeril</div>
+<div class="ib" id="_r109">Activated Quartzite</div>
+<div class="ib" id="_r110">Ammonia</div>
+<div class="ib" id="_r111">Ancient Bones</div>
+<div class="ib" id="_r112">Basalt</div>
+<div class="ib" id="_r113">Cactus Flesh</div>
+<div class="ib" id="_r114">Cadmium</div>
+<div class="ib" id="_r115">Cobalt</div>
+<div class="ib" id="_r116">Copper</div>
+<div class="ib" id="_r117">Crystatlised Helium</div>
+<div class="ib" id="_r118">Dioxite</div>
+<div class="scp" id="_r119">Dissonance detected</div>
+<div class="ib" id="_r120">Emeril</div>
+<div class="ib" id="_r121">Frost Crystal</div>
+<div class="ib" id="_r122">Fungal Mould</div>
+<div class="ib" id="_r123">Gamma Root</div>
+<div class="ib" id="_r124">Gold</div>
+<div class="ib" id="_r125">Magnetised Ferrite</div>
+<div class="ib" id="_r126">Paraffinium</div>
+<div class="ib" id="_r127">Phosphorus</div>
+<div class="ib" id="_r128">Pyrite</div>
+<div class="ib" id="_r129">Quarizite</div>
+<div class="ib" id="_r130">Quartzite</div>
+<div class="ib" id="_r131">Rusted Metal</div>
+<div class="ib" id="_r132">Salt</div>
+<div class="ib" id="_r133">Salvageable Scrap</div>
+<div class="ib" id="_r134">Sedium</div>
+<div class="ib" id="_r135">Silver</div>
+<div class="ib" id="_r136">Sodium</div>
+<div class="ib" id="_r137">Solanium</div>
+<div class="ib" id="_r138">Star Bulb</div>
+<div class="ib" id="_r139">Sulphurine</div>
+<div class="ib" id="_r140">Swarm Debris</div>
+<div class="ib" id="_r141">Uranium</div>
+<div class="ib" id="_r142">Vile Brood Detectec</div></div>
+<div class=c><center><b>Biome</b></center>
+<div class="ib" id="_b143">Abandoned Moon</div>
+<div class="ib" id="_b144">Abandoned Planet</div>
+<div class="ib" id="_b145">Airless Moon</div>
+<div class="ib" id="_b146">Airless Planet</div>
+<div class="ib" id="_b147">Arctic Moon</div>
+<div class="ib" id="_b148">Bladed Moon</div>
+<div class="ib" id="_b149">Blighted Planet</div>
+<div class="ib" id="_b150">Boiling Planet</div>
+<div class="ib" id="_b151">Bubbling Moon</div>
+<div class="ib" id="_b152">Charred Planet</div>
+<div class="ib" id="_b153">Corrosive Moon</div>
+<div class="ib" id="_b154">Corrosive Planet</div>
+<div class="ib" id="_b155">Dead Planet</div>
+<div class="ib" id="_b156">Decaying Nuclear Planet</div>
+<div class="ib" id="_b157">Desolate Moon</div>
+<div class="ib" id="_b158">Desolate Planet</div>
+<div class="ib" id="_b159">Doomed Jade Moon</div>
+<div class="ib" id="_b160">Empty Planet</div>
+<div class="ib" id="_b161">Erupting Planet</div>
+<div class="ib" id="_b162">Frothing Planet</div>
+<div class="ib" id="_b163">Frozen Anomaly</div>
+<div class="ib" id="_b164">Frozen Planet</div>
+<div class="ib" id="_b165">Gas Giant</div>
+<div class="ib" id="_b166">Glacial Planet</div>
+<div class="ib" id="_b167">Hiemal Planet</div>
+<div class="ib" id="_b168">High Energy Planet</div>
+<div class="ib" id="_b169">Hot Planet</div>
+<div class="ib" id="_b170">Incandescent Moon</div>
+<div class="ib" id="_b171">Low Atmosphere Planet</div>
+<div class="ib" id="_b172">Metallic Planet</div>
+<div class="ib" id="_b173">Miasmatic Moon</div>
+<div class="ib" id="_b174">Miasmatic Planet</div>
+<div class="ib" id="_b175">Noxious Moon</div>
+<div class="ib" id="_b176">Noxious Planet</div>
+<div class="ib" id="_b177">Paradise Planet</div>
+<div class="ib" id="_b178">Poisonous Moon</div>
+<div class="ib" id="_b179">Rainy Planet</div>
+<div class="ib" id="_b180">Ruined Planet</div>
+<div class="ib" id="_b181">Scorched Planet</div>
+<div class="ib" id="_b182">Sub-zero Planet</div>
+<div class="ib" id="_b183">Tainted Planet</div>
+<div class="ib" id="_b184">Temperate Planet</div>
+<div class="ib" id="_b185">Terraforming Catastrophe</div>
+<div class="ib" id="_b186">Toxic Moon</div>
+<div class="ib" id="_b187">Tropical Planet</div>
+<div class="ib" id="_b188">Vapour Planet</div>
+<div class="ib" id="_b189">Verdant Planet</div>
+<div class="ib" id="_b190">Vile Anomaly</div>
+<div class="ib" id="_b191">Viridescent Planet</div>
+<div class="ib" id="_b192">Wine Dark Planet</div></div>
 <h2>Journey System Detail</h2>
 <div class="s" id="Paroi_Major"> <a class="sy">Paroi Major</a>
   <div>System Info
@@ -440,58 +443,63 @@ h3 {font-size:24px;}
     <div>Original Name: <div class='poi yl'>Hilodi-Nau</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t303"><div class="tcs">S</div>&hairsp;Cold Protection</div>
-    <div class="tc" id="_t304"><div class="tcs">S</div>&hairsp;Exocraft Boost</div>
-    <div class="tc" id="_t305"><div class="tcs">S</div>&hairsp;Hot Protection</div>
-    <div class="tc" id="_t306"><div class="tcs">S</div>&hairsp;Mining Beam</div>
-    <div class="tc" id="_t307"><div class="tcs">S</div>&hairsp;Minotaur Engine</div>
-    <div class="tc" id="_t308"><div class="tcs">S</div>&hairsp;Minotaur Flamethrower</div>
-    <div class="tc" id="_t309"><div class="tcs">S</div>&hairsp;Plasma Launcher</div>
-    <div class="tc" id="_t310"><div class="tcs">S</div>&hairsp;Pulse Engine</div>
-    <div class="tc" id="_t311"><div class="tcs">S</div>&hairsp;Shield</div>
-    <div class="tc" id="_t312"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+    <div class="tc" id="_t193"><div class="tcs">S</div>Cold Protection</div>
+    <div class="tc" id="_t194"><div class="tcs">S</div>Exocraft Boost</div>
+    <div class="tc" id="_t195"><div class="tca">A</div>Exocraft Boost</div>
+    <div class="tc" id="_t196"><div class="tcs">S</div>Hot Protection</div>
+    <div class="tc" id="_t197"><div class="tca">A</div>Hot Protection</div>
+    <div class="tc" id="_t198"><div class="tcs">S</div>Mining Beam</div>
+    <div class="tc" id="_t199"><div class="tcs">S</div>Minotaur Engine</div>
+    <div class="tc" id="_t200"><div class="tcs">S</div>Minotaur Flamethrower</div>
+    <div class="tc" id="_t201"><div class="tcs">S</div>Plasma Launcher</div>
+    <div class="tc" id="_t202"><div class="tca">A</div>Plasma Launcher</div>
+    <div class="tc" id="_t203"><div class="tcs">S</div>Pulse Engine</div>
+    <div class="tc" id="_t204"><div class="tca">A</div>Pulse Engine</div>
+    <div class="tc" id="_t205"><div class="tcs">S</div>Shield</div>
+    <div class="tc" id="_t206"><div class="tca">A</div>Shield</div>
+    <div class="tc" id="_t207"><div class="tcs">S</div>Underwater Protection</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s313">Ammonia</div>
-      <div class="bc" id="_s314">Bromide Salt⁺</div>
-      <div class="bc" id="_s315">Chlorine</div>
-      <div class="bc" id="_s316">Cobalt</div>
-      <div class="bc" id="_s317">Copper</div>
-      <div class="bc" id="_s318">Dioxite</div>
-      <div class="bc" id="_s319">Dirt⁺</div>
-      <div class="bc" id="_s320">Ferrite Dust</div>
-      <div class="bc" id="_s321">Ionised Cobalt</div>
-      <div class="bc" id="_s322">Magnetic Resonator</div>
-      <div class="bc" id="_s323">Magnetised Ferrite</div>
-      <div class="bc" id="_s324">Magno-Goldᵍ</div>
-      <div class="bc" id="_s325">Metal Plating</div>
-      <div class="bc" id="_s326">Microprocessor</div>
-      <div class="bc" id="_s327">Silver</div>
-      <div class="bc" id="_s328">Solar Mirror</div>
-      <div class="bc" id="_s329">Unrefined Pyrite Grease⁺</div>
-      <div class="bc" id="_s330">Unstable Piasma</div>
-      <div class="bc" id="_s331">Unstable Plasma</div>
-      <div class="bc" id="_s332">Wiring Loom</div>
+      <div class="bc" id="_s208">Ammonia</div>
+      <div class="bc" id="_s209">Bromide Salt⁺</div>
+      <div class="bc" id="_s210">Chlorine</div>
+      <div class="bc" id="_s211">Cobalt</div>
+      <div class="bc" id="_s212">Copper</div>
+      <div class="bc" id="_s213">Dioxite</div>
+      <div class="bc" id="_s214">Dirt⁺</div>
+      <div class="bc" id="_s215">Ferrite Dust</div>
+      <div class="bc" id="_s216">Magnetic Resonator</div>
+      <div class="bc" id="_s217">Magnetised Ferrite</div>
+      <div class="bc" id="_s218">Magno-Gold</div>
+      <div class="bc" id="_s219">Metal Plating</div>
+      <div class="bc" id="_s220">Microprocessor</div>
+      <div class="bc" id="_s221">Silver</div>
+      <div class="bc" id="_s222">Solar Mirror</div>
+      <div class="bc" id="_s223">Unrefined Pyrite Grease⁺</div>
+      <div class="bc" id="_s224">Unstable Piasma</div>
+      <div class="bc" id="_s225">Unstable Plasma</div>
+      <div class="bc" id="_s226">Wiring Loom</div>
+      <div class="bc" id="_s227">lonised Cobalt</div>
   </div>
   <div class="p" id="Oria_V"><a class="pl">Oria V</a>
     <div>Planet Info
-      <div class="bc" id="_b333">Biome: Paradise Planet</div>
+      <div class="bc" id="_b228">Biome: Paradise Planet</div>
       <div>Weather: Humid</div>
       <div>Sentinels: Few</div>
       <div>Flora: Copious</div>
       <div>Fauna:10 Abundant</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r334">Ancient Bones</div>
-      <div class="bc" id="_r335">Star Bulb</div>
-      <div class="bc" id="_r336">Salt</div>
-      <div class="bc" id="_r337">Paraffinium</div>
-      <div class="bc" id="_r338">Copper</div>
+      <div class="bc" id="_r229">Ancient Bones</div>
+      <div class="bc" id="_r230">Star Bulb</div>
+      <div class="bc" id="_r231">Salt</div>
+      <div class="bc" id="_r232">Paraffinium</div>
+      <div class="bc" id="_r233">Copper</div>
     </div>
   </div>
   <div class="p" id="Anhoeb"><a class="pl">Anhoeb</a>
     <div>Planet Info
-      <div class="bc" id="_b339">Biome: Charred Planet</div>
+      <div class="bc" id="_b234">Biome: Charred Planet</div>
       <div>Weather: Occasional Ash Storms</div>
       <div>Sentinels: Unwavering</div>
       <div>Flora: Generous</div>
@@ -499,31 +507,31 @@ h3 {font-size:24px;}
       <div>POI: <div class='poi gr'>Curious Deposit</div>&thinsp;<img src='i/curious.png'/> <div class=sca>+17.01, -84.43</div></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r340">Solanium</div>
-      <div class="bc" id="_r341">Salvageable Scrap</div>
-      <div class="bc" id="_r342">Sodium</div>
-      <div class="bc" id="_r343">Phosphorus</div>
-      <div class="bc" id="_r344">Copper</div>
+      <div class="bc" id="_r235">Solanium</div>
+      <div class="bc" id="_r236">Salvageable Scrap</div>
+      <div class="bc" id="_r237">Sedium</div>
+      <div class="bc" id="_r238">Phosphorus</div>
+      <div class="bc" id="_r239">Copper</div>
     </div>
   </div>
   <div class="p" id="Noder_XVI"><a class="pl">Noder XVI</a>
     <div>Planet Info
-      <div class="bc" id="_b345">Biome: Terraforming Catastrophe</div>
+      <div class="bc" id="_b240">Biome: Terraforming Catastrophe</div>
       <div>Weather: Absent</div>
       <div>Sentinels: <div class="poi co">Dissonant</div></div>
       <div>Flora: Barren</div>
       <div>Fauna: Deficient</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r346">Cobait</div>
-      <div class="bc" id="_r347">Rusted Metal</div>
-      <div class="bc" id="_r348">Copper</div>
-      <div><div class="scp" id="_r349">Dissonance detected</div></div>
+      <div class="bc" id="_r241">Cobalt</div>
+      <div class="bc" id="_r242">Rusted Metal</div>
+      <div class="bc" id="_r243">Copper</div>
+      <div><div class="scp" id="_r244">Dissonance detected</div></div>
     </div>
   </div>
   <div class="p" id="Kileyto_IV"><a class="pl">Kileyto IV</a>
     <div>Planet Info
-      <div class="bc" id="_b350">Biome: Vapour Planet</div>
+      <div class="bc" id="_b245">Biome: Vapour Planet</div>
       <div>Weather: superheated Mists</div>
       <div>Sentinels: Require Obedience</div>
       <div>Flora: Copious</div>
@@ -531,27 +539,27 @@ h3 {font-size:24px;}
       <div>POI: <div class='poi gr'>Curious Deposit</div>&thinsp;<img src='i/curious.png'/> <div class=sca>+2.10, -126.89</div></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r351">Ancient Bones</div>
-      <div class="bc" id="_r352">Vile Brood Detected</div>
-      <div class="bc" id="_r353">Salt</div>
-      <div class="bc" id="_r354">Sulphurine</div>
-      <div class="bc" id="_r355">Copper</div>
+      <div class="bc" id="_r246">Ancient Bones</div>
+      <div class="bc" id="_r247">Vile Brood Detectec</div>
+      <div class="bc" id="_r248">Salt</div>
+      <div class="bc" id="_r249">Sulphurine</div>
+      <div class="bc" id="_r250">Copper</div>
     </div>
   </div>
   <div class="p" id="Vide_Prime"><a class="pl">Vide Prime</a>
     <div>Planet Info
-      <div class="bc" id="_b356">Biome: Decaying Nuclear Planet</div>
+      <div class="bc" id="_b251">Biome: Decaying Nuclear Planet</div>
       <div>Weather: Contaminated Puddles</div>
       <div>Sentinels: Low Security</div>
       <div>Flora: Abundant</div>
       <div>Fauna:7 Moderate</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r357">Gamma Root</div>
-      <div class="bc" id="_r358">Salvageable Scrap</div>
-      <div class="bc" id="_r359">Silver</div>
-      <div class="bc" id="_r360">Uranium</div>
-      <div class="bc" id="_r361">Copper</div>
+      <div class="bc" id="_r252">Gamma Root</div>
+      <div class="bc" id="_r253">Salvageable Scrap</div>
+      <div class="bc" id="_r254">Silver</div>
+      <div class="bc" id="_r255">Uranium</div>
+      <div class="bc" id="_r256">Copper</div>
     </div>
   </div>
 </div>
@@ -571,7 +579,7 @@ h3 {font-size:24px;}
   </div>
   <div class="p" id="A01"><a class="pl">A01</a>
     <div>Planet Info
-      <div class="bc" id="_b362">Biome: Frothing Planet</div>
+      <div class="bc" id="_b257">Biome: Frothing Planet</div>
       <div>Weather: Inescapable Toxins</div>
       <div>Sentinels: Observant</div>
       <div>Flora: Unusual</div>
@@ -580,14 +588,14 @@ h3 {font-size:24px;}
       <div><blockquote>Collect a reality glitch</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r363">Silver</div>
-      <div class="bc" id="_r364">Gold</div>
-      <div class="bc" id="_r365">Cadmium</div>
+      <div class="bc" id="_r258">Silver</div>
+      <div class="bc" id="_r259">Gold</div>
+      <div class="bc" id="_r260">Cadmium</div>
     </div>
   </div>
   <div class="p" id="A02"><a class="pl">A02</a>
     <div>Planet Info
-      <div class="bc" id="_b366">Biome: Wine Dark Planet</div>
+      <div class="bc" id="_b261">Biome: Wine Dark Planet</div>
       <div>Weather: Rain of Atlas</div>
       <div>Sentinels: Few</div>
       <div>Flora: Copious</div>
@@ -597,52 +605,52 @@ h3 {font-size:24px;}
       <div><blockquote>Bring the Mind Arc to Artemis</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r367">Ancient Bones</div>
-      <div class="bc" id="_r368">Cobalt</div>
-      <div class="bc" id="_r369">Phosphorus</div>
-      <div class="bc" id="_r370">Cadmium</div>
+      <div class="bc" id="_r262">Ancient Bones</div>
+      <div class="bc" id="_r263">Cobalt</div>
+      <div class="bc" id="_r264">Phosphorus</div>
+      <div class="bc" id="_r265">Cadmium</div>
     </div>
   </div>
   <div class="p" id="A03"><a class="pl">A03</a>
     <div>Planet Info
-      <div class="bc" id="_b371">Biome: Low Atmosphere Planet</div>
+      <div class="bc" id="_b266">Biome: Low Atmosphere Planet</div>
       <div>Weather: Eerily Calm</div>
       <div>Sentinels: Frequent</div>
       <div>Flora: None</div>
       <div>Fauna: Deficient</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r372">Sodium</div>
-      <div class="bc" id="_r373">Rusted Metal</div>
-      <div class="bc" id="_r374">Cadmium</div>
+      <div class="bc" id="_r267">Sodium</div>
+      <div class="bc" id="_r268">Rusted Metal</div>
+      <div class="bc" id="_r269">Cadmium</div>
     </div>
   </div>
   <div class="p" id="A04"><a class="pl">A04</a>
     <div>Planet Info
-      <div class="bc" id="_b375">Biome: Bladed Moon</div>
+      <div class="bc" id="_b270">Biome: Bladed Moon</div>
       <div>Weather: Winds of Glass</div>
       <div>Sentinels: Isolated</div>
       <div>Flora: Lost</div>
       <div>Fauna:1 Unusual</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r376">Sodium</div>
-      <div class="bc" id="_r377">Gold</div>
-      <div class="bc" id="_r378">Cadmium</div>
+      <div class="bc" id="_r271">Sodium</div>
+      <div class="bc" id="_r272">Gold</div>
+      <div class="bc" id="_r273">Cadmium</div>
     </div>
   </div>
   <div class="p" id="A05"><a class="pl">A05</a>
     <div>Planet Info
-      <div class="bc" id="_b379">Biome: Metallic Planet</div>
+      <div class="bc" id="_b274">Biome: Metallic Planet</div>
       <div>Weather: Internal Rain</div>
       <div>Sentinels: Require Obedience</div>
       <div>Flora: Misplaced</div>
       <div>Fauna:1 Lost</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r380">Sodium</div>
-      <div class="bc" id="_r381">Gold</div>
-      <div class="bc" id="_r382">Cadmium</div>
+      <div class="bc" id="_r275">Sodium</div>
+      <div class="bc" id="_r276">Gold</div>
+      <div class="bc" id="_r277">Cadmium</div>
     </div>
   </div>
 </div>
@@ -655,41 +663,44 @@ h3 {font-size:24px;}
     <div>Glyphs: <div class=gl>1005f8&nbsp;08f6d2</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t383"><div class="tcs">S</div>&hairsp;Boltcaster</div>
-    <div class="tc" id="_t384"><div class="tcs">S</div>&hairsp;Exocraft Cannon</div>
-    <div class="tc" id="_t385"><div class="tcs">S</div>&hairsp;Geology Cannon</div>
-    <div class="tc" id="_t386"><div class="tca">A</div>&hairsp;Launch Thrusters</div>
-    <div class="tc" id="_t387"><div class="tcs">S</div>&hairsp;Mining Beam</div>
-    <div class="tc" id="_t388"><div class="tcs">S</div>&hairsp;Nautilon Cannon</div>
-    <div class="tc" id="_t389"><div class="tcs">S</div>&hairsp;Neutron Cannon</div>
-    <div class="tc" id="_t390"><div class="tcs">S</div>&hairsp;Photon Cannon</div>
-    <div class="tc" id="_t391"><div class="tcs">S</div>&hairsp;Positron</div>
-    <div class="tc" id="_t392"><div class="tcs">S</div>&hairsp;Pulse Engine</div>
-    <div class="tc" id="_t393"><div class="tcs">S</div>&hairsp;Pulse Spitter</div>
+    <div class="tc" id="_t278"><div class="tcs">S</div>Boltcaster</div>
+    <div class="tc" id="_t279"><div class="tca">A</div>Boltcaster</div>
+    <div class="tc" id="_t280"><div class="tcs">S</div>Exocraft Cannon</div>
+    <div class="tc" id="_t281"><div class="tcs">S</div>Geology Cannon</div>
+    <div class="tc" id="_t282"><div class="tca">A</div>Geology Cannon</div>
+    <div class="tc" id="_t283"><div class="tca">A</div>Launch Thrusters</div>
+    <div class="tc" id="_t284"><div class="tcs">S</div>Mining Beam</div>
+    <div class="tc" id="_t285"><div class="tcs">S</div>Nautilon Cannon</div>
+    <div class="tc" id="_t286"><div class="tca">A</div>Nautilon Cannon</div>
+    <div class="tc" id="_t287"><div class="tcs">S</div>Neutron Cannon</div>
+    <div class="tc" id="_t288"><div class="tcs">S</div>Photon Cannon</div>
+    <div class="tc" id="_t289"><div class="tcs">S</div>Positron</div>
+    <div class="tc" id="_t290"><div class="tcs">S</div>Pulse Engine</div>
+    <div class="tc" id="_t291"><div class="tcs">S</div>Pulse Spitter</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s394">Carbon Nanotubes</div>
-      <div class="bc" id="_s395">Chlorine</div>
-      <div class="bc" id="_s396">Cobalt</div>
-      <div class="bc" id="_s397">Dioxite</div>
-      <div class="bc" id="_s398">Enormous Metal Cog⁺</div>
-      <div class="bc" id="_s399">Ferrite Dust</div>
-      <div class="bc" id="_s400">Holographic Crankshaft⁺</div>
-      <div class="bc" id="_s401">Magno-Goldᵍ</div>
-      <div class="bc" id="_s402">Mesh Decouplers⁺</div>
-      <div class="bc" id="_s403">Metal Plating</div>
-      <div class="bc" id="_s404">Microprocessor</div>
-      <div class="bc" id="_s405">Non-Stick Piston⁺</div>
-      <div class="bc" id="_s406">Phosphorus</div>
-      <div class="bc" id="_s407">Rusted Metal</div>
-      <div class="bc" id="_s408">Silver</div>
-      <div class="bc" id="_s409">Unstable Plasma</div>
-      <div class="bc" id="_s410">Uranium</div>
-      <div class="bc" id="_s411">Wiring Loom</div>
+      <div class="bc" id="_s292">Carbon Nanotubes</div>
+      <div class="bc" id="_s293">Chlorine</div>
+      <div class="bc" id="_s294">Cobalt</div>
+      <div class="bc" id="_s295">Dioxite</div>
+      <div class="bc" id="_s296">Enormous Metal Cog⁺</div>
+      <div class="bc" id="_s297">Ferrite Dust</div>
+      <div class="bc" id="_s298">Holographic Crankshaft⁺</div>
+      <div class="bc" id="_s299">Magno-Gold</div>
+      <div class="bc" id="_s300">Mesh Decouplers⁺</div>
+      <div class="bc" id="_s301">Metal Plating</div>
+      <div class="bc" id="_s302">Microprocessor</div>
+      <div class="bc" id="_s303">Non-Stick Piston⁺</div>
+      <div class="bc" id="_s304">Phosphorus</div>
+      <div class="bc" id="_s305">Rusted Metal</div>
+      <div class="bc" id="_s306">Silver</div>
+      <div class="bc" id="_s307">Unstable Plasma</div>
+      <div class="bc" id="_s308">Uranium</div>
+      <div class="bc" id="_s309">Wiring Loom</div>
   </div>
   <div class="p" id="Court"><a class="pl">Court</a>
     <div>Planet Info
-      <div class="bc" id="_b412">Biome: Frozen Planet</div>
+      <div class="bc" id="_b310">Biome: Frozen Planet</div>
       <div>Weather: Powder Snow</div>
       <div>Sentinels: Require Obedience</div>
       <div>Flora: Ample</div>
@@ -698,15 +709,15 @@ h3 {font-size:24px;}
       <div><blockquote>Reach the first rendezvous point</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r413">Frost Crystal</div>
-      <div class="bc" id="_r414">Silver</div>
-      <div class="bc" id="_r415">Dioxite</div>
-      <div class="bc" id="_r416">Copper</div>
+      <div class="bc" id="_r311">Frost Crystal</div>
+      <div class="bc" id="_r312">Silver</div>
+      <div class="bc" id="_r313">Dioxite</div>
+      <div class="bc" id="_r314">Copper</div>
     </div>
   </div>
   <div class="p" id="Oeotira"><a class="pl">Oeotira</a>
     <div>Planet Info
-      <div class="bc" id="_b417">Biome: Boiling Planet</div>
+      <div class="bc" id="_b315">Biome: Boiling Planet</div>
       <div>Weather: <div class="poi rd">Selfigniting Storms</div></div>
       <div>Sentinels: Frequent</div>
       <div>Flora: Abundant</div>
@@ -714,15 +725,15 @@ h3 {font-size:24px;}
       <div>POI: <div class='poi bl'>Storm Crystals</div><img src='i/crystals.png'/></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r418">Solanium</div>
-      <div class="bc" id="_r419">Sodium</div>
-      <div class="bc" id="_r420">Phosphorus</div>
-      <div class="bc" id="_r421">Activated Copper</div>
+      <div class="bc" id="_r316">Solanium</div>
+      <div class="bc" id="_r317">Sodium</div>
+      <div class="bc" id="_r318">Phosphorus</div>
+      <div class="bc" id="_r319">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Sode_99/R5"><a class="pl">Sode 99/R5</a>
     <div>Planet Info
-      <div class="bc" id="_b422">Biome: Bubbling Moon</div>
+      <div class="bc" id="_b320">Biome: Bubbling Moon</div>
       <div>Weather: Harsh Toxic Wind</div>
       <div>Sentinels: <div class="poi rd">Hostile Patrols</div></div>
       <div>Flora: Displaced</div>
@@ -730,54 +741,54 @@ h3 {font-size:24px;}
       <div>POI: <div class='poi bl'>Exotic Bubble Clusters</div><img src='i/BUILDABLE.BUBBLECLUSTER.webp'/></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r423">Silver</div>
-      <div class="bc" id="_r424">Gold</div>
-      <div class="bc" id="_r425">Copper</div>
+      <div class="bc" id="_r321">Silver</div>
+      <div class="bc" id="_r322">Gold</div>
+      <div class="bc" id="_r323">Copper</div>
     </div>
   </div>
   <div class="p" id="Utha"><a class="pl">Utha</a>
     <div>Planet Info
-      <div class="bc" id="_b426">Biome: Noxious Moon</div>
+      <div class="bc" id="_b324">Biome: Noxious Moon</div>
       <div>Weather: <div class="poi rd">Frequent Toxic Floods</div></div>
       <div>Sentinels: <div class="poi rd">Aggressive</div></div>
       <div>Flora: Full</div>
       <div>Fauna:7 Bountiful</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r427">Fungal Mould</div>
-      <div class="bc" id="_r428">Salvageable Scrap</div>
-      <div class="bc" id="_r429">Silver</div>
-      <div class="bc" id="_r430">Ammonia</div>
-      <div class="bc" id="_r431">Activated Copper</div>
+      <div class="bc" id="_r325">Fungal Mould</div>
+      <div class="bc" id="_r326">Salvageable Scrap</div>
+      <div class="bc" id="_r327">Silver</div>
+      <div class="bc" id="_r328">Ammonia</div>
+      <div class="bc" id="_r329">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Mistin"><a class="pl">Mistin</a>
     <div>Planet Info
-      <div class="bc" id="_b432">Biome: Airless Planet</div>
+      <div class="bc" id="_b330">Biome: Airless Planet</div>
       <div>Weather: Inert</div>
       <div>Sentinels: Minimal</div>
       <div>Flora: Not Present</div>
       <div>Fauna: None</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r433">Silver</div>
-      <div class="bc" id="_r434">Rusted Metal</div>
-      <div class="bc" id="_r435">Copper</div>
+      <div class="bc" id="_r331">Silver</div>
+      <div class="bc" id="_r332">Rusted Metal</div>
+      <div class="bc" id="_r333">Copper</div>
     </div>
   </div>
   <div class="p" id="Bansc"><a class="pl">Bansc</a>
     <div>Planet Info
-      <div class="bc" id="_b436">Biome: Dead Planet</div>
+      <div class="bc" id="_b334">Biome: Dead Planet</div>
       <div>Weather: Perfectly Clear</div>
       <div>Sentinels: Spread Thin</div>
       <div>Flora: Empty</div>
       <div>Fauna: Empty</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r437">Ancient Bones</div>
-      <div class="bc" id="_r438">Silver</div>
-      <div class="bc" id="_r439">Rusted Metal</div>
-      <div class="bc" id="_r440">Copper</div>
+      <div class="bc" id="_r335">Ancient Bones</div>
+      <div class="bc" id="_r336">Silver</div>
+      <div class="bc" id="_r337">Rusted Metal</div>
+      <div class="bc" id="_r338">Copper</div>
     </div>
   </div>
 </div>
@@ -790,46 +801,50 @@ h3 {font-size:24px;}
     <div>Glyphs: <div class=gl>100af8&nbsp;08f6d2</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t441"><div class="tcs">S</div>&hairsp;Infra-Knife</div>
-    <div class="tc" id="_t442"><div class="tca">A</div>&hairsp;Launch Thrusters</div>
-    <div class="tc" id="_t443"><div class="tcs">S</div>&hairsp;Life Support</div>
-    <div class="tc" id="_t444"><div class="tcs">S</div>&hairsp;Mining Beam</div>
-    <div class="tc" id="_t445"><div class="tcs">S</div>&hairsp;Minotaur Flamethrower</div>
-    <div class="tc" id="_t446"><div class="tcs">S</div>&hairsp;Nautilon Cannon</div>
-    <div class="tc" id="_t447"><div class="tcs">S</div>&hairsp;Neutron Cannon</div>
-    <div class="tc" id="_t448"><div class="tcs">S</div>&hairsp;Phase Beam</div>
-    <div class="tc" id="_t449"><div class="tcs">S</div>&hairsp;Plasma Launcher</div>
-    <div class="tc" id="_t450"><div class="tcs">S</div>&hairsp;Radiation Protection</div>
-    <div class="tc" id="_t451"><div class="tcs">S</div>&hairsp;Scanner</div>
-    <div class="tc" id="_t452"><div class="tcs">S</div>&hairsp;Toxic Protection</div>
-    <div class="tc" id="_t453"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+    <div class="tc" id="_t339"><div class="tcs">S</div>Infra-Knife</div>
+    <div class="tc" id="_t340"><div class="tca">A</div>Infra-Knife</div>
+    <div class="tc" id="_t341"><div class="tca">A</div>Launch Thrusters</div>
+    <div class="tc" id="_t342"><div class="tcs">S</div>Life Support</div>
+    <div class="tc" id="_t343"><div class="tca">A</div>Life Support</div>
+    <div class="tc" id="_t344"><div class="tcs">S</div>Mining Beam</div>
+    <div class="tc" id="_t345"><div class="tcs">S</div>Minotaur Flamethrower</div>
+    <div class="tc" id="_t346"><div class="tcs">S</div>Nautilon Cannon</div>
+    <div class="tc" id="_t347"><div class="tcs">S</div>Neutron Cannon</div>
+    <div class="tc" id="_t348"><div class="tcs">S</div>Phase Beam</div>
+    <div class="tc" id="_t349"><div class="tcs">S</div>Plasma Launcher</div>
+    <div class="tc" id="_t350"><div class="tcs">S</div>Radiation Protection</div>
+    <div class="tc" id="_t351"><div class="tca">A</div>Radiation Protection</div>
+    <div class="tc" id="_t352"><div class="tcs">S</div>Scanner</div>
+    <div class="tc" id="_t353"><div class="tcs">S</div>Toxic Protection</div>
+    <div class="tc" id="_t354"><div class="tca">A</div>Toxic Protection</div>
+    <div class="tc" id="_t355"><div class="tcs">S</div>Underwater Protection</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s454">Ammonia</div>
-      <div class="bc" id="_s455">Chlorine</div>
-      <div class="bc" id="_s456">Cobalt</div>
-      <div class="bc" id="_s457">Copper</div>
-      <div class="bc" id="_s458">Dioxite</div>
-      <div class="bc" id="_s459">Ferrite Dust</div>
-      <div class="bc" id="_s460">Hermetic Seal</div>
-      <div class="bc" id="_s461">Hydraulic Wiring</div>
-      <div class="bc" id="_s462">Industrial-Grade Battery⁺</div>
-      <div class="bc" id="_s463">Magnetic Resonator</div>
-      <div class="bc" id="_s464">Metal Plating</div>
-      <div class="bc" id="_s465">Microprocessor</div>
-      <div class="bc" id="_s466">Ohmic Gel⁺</div>
-      <div class="bc" id="_s467">Quantum Computer</div>
-      <div class="bc" id="_s468">Residual Goop</div>
-      <div class="bc" id="_s469">Rusted Metal</div>
-      <div class="bc" id="_s470">Silver</div>
-      <div class="bc" id="_s471">Spark Canister⁺</div>
-      <div class="bc" id="_s472">Tritium</div>
-      <div class="bc" id="_s473">Unstable Plasma</div>
-      <div class="bc" id="_s474">Wiring Loom</div>
+      <div class="bc" id="_s356">Ammonia</div>
+      <div class="bc" id="_s357">Chlorine</div>
+      <div class="bc" id="_s358">Cobalt</div>
+      <div class="bc" id="_s359">Copper</div>
+      <div class="bc" id="_s360">Dioxite</div>
+      <div class="bc" id="_s361">Ferrite Dust</div>
+      <div class="bc" id="_s362">Hermetic Seal</div>
+      <div class="bc" id="_s363">Hydraulic Wiring</div>
+      <div class="bc" id="_s364">Industrial-Grade Battery⁺</div>
+      <div class="bc" id="_s365">Magnetic Resonator</div>
+      <div class="bc" id="_s366">Metal Plating</div>
+      <div class="bc" id="_s367">Microprocessor</div>
+      <div class="bc" id="_s368">Ohmic Gel⁺</div>
+      <div class="bc" id="_s369">Quantum Computer</div>
+      <div class="bc" id="_s370">Residual Goop</div>
+      <div class="bc" id="_s371">Rusted Metal</div>
+      <div class="bc" id="_s372">Silver</div>
+      <div class="bc" id="_s373">Spark Canister⁺</div>
+      <div class="bc" id="_s374">Tritium</div>
+      <div class="bc" id="_s375">Unstable Plasma</div>
+      <div class="bc" id="_s376">Wiring Loom</div>
   </div>
   <div class="p" id="Osalvian_H12"><a class="pl">Osalvian H12</a>
     <div>Planet Info
-      <div class="bc" id="_b475">Biome: Corrosive Planet</div>
+      <div class="bc" id="_b377">Biome: Corrosive Planet</div>
       <div>Weather: Passing Toxic Fronts</div>
       <div>Sentinels: Unwavering</div>
       <div>Flora: Full</div>
@@ -838,87 +853,87 @@ h3 {font-size:24px;}
       <div><blockquote>Reach the second rendezvous point</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r476">Fungal Mould</div>
-      <div class="bc" id="_r477">Magnetised Ferrite</div>
-      <div class="bc" id="_r478">Ammonia</div>
-      <div class="bc" id="_r479">Copper</div>
+      <div class="bc" id="_r378">Fungal Mould</div>
+      <div class="bc" id="_r379">Magnetised Ferrite</div>
+      <div class="bc" id="_r380">Ammonia</div>
+      <div class="bc" id="_r381">Copper</div>
     </div>
   </div>
   <div class="p" id="Cournt_XVI"><a class="pl">Cournt XVI</a>
     <div>Planet Info
-      <div class="bc" id="_b480">Biome: Abandoned Moon</div>
+      <div class="bc" id="_b382">Biome: Abandoned Moon</div>
       <div>Weather: <div class="poi rd">Billowing Dust Storms</div></div>
       <div>Sentinels: <div class="poi rd">Hateful</div></div>
       <div>Flora: Ample</div>
       <div>Fauna:8 Rich</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r481">Cactus Flesh</div>
-      <div class="bc" id="_r482">Salvageable Scrap</div>
-      <div class="bc" id="_r483">Cobalt</div>
-      <div class="bc" id="_r484">Pyrite</div>
-      <div class="bc" id="_r485">Activated Copper</div>
+      <div class="bc" id="_r383">Cactus Flesh</div>
+      <div class="bc" id="_r384">Salvageable Scrap</div>
+      <div class="bc" id="_r385">Cobalt</div>
+      <div class="bc" id="_r386">Pyrite</div>
+      <div class="bc" id="_r387">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Onzo_Sigma"><a class="pl">Onzo Sigma</a>
     <div>Planet Info
-      <div class="bc" id="_b486">Biome: Ruined Planet</div>
+      <div class="bc" id="_b388">Biome: Ruined Planet</div>
       <div>Weather: Gamma Dust</div>
       <div>Sentinels: Isolated</div>
       <div>Flora: Full</div>
       <div>Fauna:8 Typical</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r487">Gamma Root</div>
-      <div class="bc" id="_r488">Salvageable Scrap</div>
-      <div class="bc" id="_r489">Cobalt</div>
-      <div class="bc" id="_r490">Uranium</div>
-      <div class="bc" id="_r491">Copper</div>
+      <div class="bc" id="_r389">Gamma Root</div>
+      <div class="bc" id="_r390">Salvageable Scrap</div>
+      <div class="bc" id="_r391">Cobalt</div>
+      <div class="bc" id="_r392">Uranium</div>
+      <div class="bc" id="_r393">Copper</div>
     </div>
   </div>
   <div class="p" id="Uncel_XVI"><a class="pl">Uncel XVI</a>
     <div>Planet Info
-      <div class="bc" id="_b492">Biome: Desolate Planet</div>
+      <div class="bc" id="_b394">Biome: Desolate Planet</div>
       <div>Weather: Inert</div>
       <div>Sentinels: Require Orthodoxy</div>
       <div>Flora: Undetected</div>
       <div>Fauna: Devoid</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r493">Ancient Bones</div>
-      <div class="bc" id="_r494">Magnetised Ferrite</div>
-      <div class="bc" id="_r495">Rusted Metal</div>
-      <div class="bc" id="_r496">Copper</div>
+      <div class="bc" id="_r395">Ancient Bones</div>
+      <div class="bc" id="_r396">Magnetised Ferrite</div>
+      <div class="bc" id="_r397">Rusted Metal</div>
+      <div class="bc" id="_r398">Copper</div>
     </div>
   </div>
   <div class="p" id="Irskij_M50"><a class="pl">Irskij M50</a>
     <div>Planet Info
-      <div class="bc" id="_b497">Biome: Temperate Planet</div>
+      <div class="bc" id="_b399">Biome: Temperate Planet</div>
       <div>Weather: Mostly Calm</div>
       <div>Sentinels: Intermittent</div>
       <div>Flora: Copious</div>
       <div>Fauna:10 Generous</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r498">Star Bulb</div>
-      <div class="bc" id="_r499">Silver</div>
-      <div class="bc" id="_r500">Paraffinium</div>
-      <div class="bc" id="_r501">Copper</div>
+      <div class="bc" id="_r400">Star Bulb</div>
+      <div class="bc" id="_r401">Silver</div>
+      <div class="bc" id="_r402">Paraffinium</div>
+      <div class="bc" id="_r403">Copper</div>
     </div>
   </div>
   <div class="p" id="Euci"><a class="pl">Euci</a>
     <div>Planet Info
-      <div class="bc" id="_b502">Biome: Scorched Planet</div>
+      <div class="bc" id="_b404">Biome: Scorched Planet</div>
       <div>Weather: Scalding Heat</div>
       <div>Sentinels: Require Obedience</div>
       <div>Flora: High</div>
       <div>Fauna:10 Frequent</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r503">Solanium</div>
-      <div class="bc" id="_r504">Silver</div>
-      <div class="bc" id="_r505">Phosphorus</div>
-      <div class="bc" id="_r506">Copper</div>
+      <div class="bc" id="_r405">Solanium</div>
+      <div class="bc" id="_r406">Silver</div>
+      <div class="bc" id="_r407">Phosphorus</div>
+      <div class="bc" id="_r408">Copper</div>
     </div>
   </div>
 </div>
@@ -931,49 +946,57 @@ h3 {font-size:24px;}
     <div>Glyphs: <div class=gl>1026f8&nbsp;08f6d2</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t507"><div class="tcs">S</div>&hairsp;Blaze Javelin</div>
-    <div class="tc" id="_t508"><div class="tcs">S</div>&hairsp;Boltcaster</div>
-    <div class="tc" id="_t509"><div class="tcs">S</div>&hairsp;Cold Protection</div>
-    <div class="tc" id="_t510"><div class="tcs">S</div>&hairsp;Exocraft Boost</div>
-    <div class="tc" id="_t511"><div class="tcs">S</div>&hairsp;Hyperdrive</div>
-    <div class="tc" id="_t512"><div class="tcs">S</div>&hairsp;Life Support</div>
-    <div class="tc" id="_t513"><div class="tcs">S</div>&hairsp;Minotaur Cannon</div>
-    <div class="tc" id="_t514"><div class="tcs">S</div>&hairsp;Minotaur Engine</div>
-    <div class="tc" id="_t515"><div class="tcs">S</div>&hairsp;Minotaur Flamethrower</div>
-    <div class="tc" id="_t516"><div class="tcs">S</div>&hairsp;Phase Beam</div>
-    <div class="tc" id="_t517"><div class="tcs">S</div>&hairsp;Photon Cannon</div>
-    <div class="tc" id="_t518"><div class="tcs">S</div>&hairsp;Positron</div>
-    <div class="tc" id="_t519"><div class="tcs">S</div>&hairsp;Pulse Engine</div>
-    <div class="tc" id="_t520"><div class="tcs">S</div>&hairsp;Pulse Spitter</div>
-    <div class="tc" id="_t521"><div class="tcs">S</div>&hairsp;Radiation Protection</div>
-    <div class="tc" id="_t522"><div class="tcs">S</div>&hairsp;Shield</div>
-    <div class="tc" id="_t523"><div class="tcs">S</div>&hairsp;Starship Shield</div>
+    <div class="tc" id="_t409"><div class="tcs">S</div>Blaze Javelin</div>
+    <div class="tc" id="_t410"><div class="tcs">S</div>Boltcaster</div>
+    <div class="tc" id="_t411"><div class="tcs">S</div>Cold Protection</div>
+    <div class="tc" id="_t412"><div class="tca">A</div>Cold Protection</div>
+    <div class="tc" id="_t413"><div class="tcs">S</div>Exocraft Boost</div>
+    <div class="tc" id="_t414"><div class="tcs">S</div>Hyperdrive</div>
+    <div class="tc" id="_t415"><div class="tcs">S</div>Life Support</div>
+    <div class="tc" id="_t416"><div class="tcs">S</div>Minotaur Cannon</div>
+    <div class="tc" id="_t417"><div class="tcs">S</div>Minotaur Engine</div>
+    <div class="tc" id="_t418"><div class="tcs">S</div>Minotaur Flamethrower</div>
+    <div class="tc" id="_t419"><div class="tcs">S</div>Phase Beam</div>
+    <div class="tc" id="_t420"><div class="tca">A</div>Phase Beam</div>
+    <div class="tc" id="_t421"><div class="tcs">S</div>Photon Cannon</div>
+    <div class="tc" id="_t422"><div class="tca">A</div>Photon Cannon</div>
+    <div class="tc" id="_t423"><div class="tcs">S</div>Positron</div>
+    <div class="tc" id="_t424"><div class="tca">A</div>Positron</div>
+    <div class="tc" id="_t425"><div class="tcs">S</div>Pulse Engine</div>
+    <div class="tc" id="_t426"><div class="tcs">S</div>Pulse Spitter</div>
+    <div class="tc" id="_t427"><div class="tca">A</div>Pulse Spitter</div>
+    <div class="tc" id="_t428"><div class="tcs">S</div>Radiation Protection</div>
+    <div class="tc" id="_t429"><div class="tca">A</div>Radiation Protection</div>
+    <div class="tc" id="_t430"><div class="tcs">S</div>Shield</div>
+    <div class="tc" id="_t431"><div class="tca">A</div>Shield</div>
+    <div class="tc" id="_t432"><div class="tcs">S</div>Starship Shield</div>
+    <div class="tc" id="_t433"><div class="tca">A</div>Starship Shield</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s524">Chromatic Metal</div>
-      <div class="bc" id="_s525">Cobalt</div>
-      <div class="bc" id="_s526">Copper</div>
-      <div class="bc" id="_s527">Dirty Bronzeˢ</div>
-      <div class="bc" id="_s528">Experimental Power Fluid⁺</div>
-      <div class="bc" id="_s529">Ferrite Dust</div>
-      <div class="bc" id="_s530">Gold</div>
-      <div class="bc" id="_s531">Hermetic Seal</div>
-      <div class="bc" id="_s532">Industrial-Grade Battery⁺</div>
-      <div class="bc" id="_s533">Metal Plating</div>
-      <div class="bc" id="_s534">Microprocessor</div>
-      <div class="bc" id="_s535">Ohmic Gel⁺</div>
-      <div class="bc" id="_s536">Platinum</div>
-      <div class="bc" id="_s537">Salt</div>
-      <div class="bc" id="_s538">Silver</div>
-      <div class="bc" id="_s539">Solar Mirror</div>
-      <div class="bc" id="_s540">Spark Canister⁺</div>
-      <div class="bc" id="_s541">Tritium</div>
-      <div class="bc" id="_s542">Unstable Plasma</div>
-      <div class="bc" id="_s543">Wiring Loom</div>
+      <div class="bc" id="_s434">Chromatic Metal</div>
+      <div class="bc" id="_s435">Cobalt</div>
+      <div class="bc" id="_s436">Copper</div>
+      <div class="bc" id="_s437">Dirty Bronze</div>
+      <div class="bc" id="_s438">Experimental Power Fluid⁺</div>
+      <div class="bc" id="_s439">Ferrite Dust</div>
+      <div class="bc" id="_s440">Gold</div>
+      <div class="bc" id="_s441">Hermetic Seal</div>
+      <div class="bc" id="_s442">Industrial-Grade Battery⁺</div>
+      <div class="bc" id="_s443">Metal Plating</div>
+      <div class="bc" id="_s444">Microprocessor</div>
+      <div class="bc" id="_s445">Ohmic Gel⁺</div>
+      <div class="bc" id="_s446">Platinum</div>
+      <div class="bc" id="_s447">Salt</div>
+      <div class="bc" id="_s448">Silver</div>
+      <div class="bc" id="_s449">Solar Mirror</div>
+      <div class="bc" id="_s450">Spark Canister⁺</div>
+      <div class="bc" id="_s451">Tritium</div>
+      <div class="bc" id="_s452">Unstable Plasma</div>
+      <div class="bc" id="_s453">Wiring Loom</div>
   </div>
   <div class="p" id="Lottersh_Sado"><a class="pl">Lottersh Sado</a>
     <div>Planet Info
-      <div class="bc" id="_b544">Biome: Tainted Planet</div>
+      <div class="bc" id="_b454">Biome: Tainted Planet</div>
       <div>Weather: Burning Air</div>
       <div>Sentinels: Observant</div>
       <div>Flora: Twisted</div>
@@ -982,87 +1005,87 @@ h3 {font-size:24px;}
       <div><blockquote>Deploy the Myth Beacon</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r545">Ancient Bones</div>
-      <div class="bc" id="_r546">Cactus Flesh</div>
-      <div class="bc" id="_r547">Silver</div>
-      <div class="bc" id="_r548">Pyrite</div>
-      <div class="bc" id="_r549">Copper</div>
+      <div class="bc" id="_r455">Ancient Bones</div>
+      <div class="bc" id="_r456">Cactus Flesh</div>
+      <div class="bc" id="_r457">Silver</div>
+      <div class="bc" id="_r458">Pyrite</div>
+      <div class="bc" id="_r459">Copper</div>
     </div>
   </div>
   <div class="p" id="Rihyper_XVII"><a class="pl">Rihyper XVII</a>
     <div>Planet Info
-      <div class="bc" id="_b550">Biome: Boiling Planet</div>
+      <div class="bc" id="_b460">Biome: Boiling Planet</div>
       <div>Weather: Direct Sunlight</div>
       <div>Sentinels: Enfercing</div>
       <div>Flora: Copious</div>
       <div>Fauna:13 Frequent</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r551">Solanium</div>
-      <div class="bc" id="_r552">Magnetised Ferrite</div>
-      <div class="bc" id="_r553">Phosphorus</div>
-      <div class="bc" id="_r554">Copper</div>
+      <div class="bc" id="_r461">Solanium</div>
+      <div class="bc" id="_r462">Magnetised Ferrite</div>
+      <div class="bc" id="_r463">Phosphorus</div>
+      <div class="bc" id="_r464">Copper</div>
     </div>
   </div>
   <div class="p" id="Alvanion_F45"><a class="pl">Alvanion F45</a>
     <div>Planet Info
-      <div class="bc" id="_b555">Biome: Sub-zero Planet</div>
+      <div class="bc" id="_b465">Biome: Sub-zero Planet</div>
       <div>Weather: Snowy</div>
       <div>Sentinels: Sparse</div>
       <div>Flora: Frequent</div>
       <div>Fauna:8 Typical</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r556">Frost Crystal</div>
-      <div class="bc" id="_r557">Salvageable Scrap</div>
-      <div class="bc" id="_r558">Silver</div>
-      <div class="bc" id="_r559">Dioxite</div>
-      <div class="bc" id="_r560">Copper</div>
+      <div class="bc" id="_r466">Frost Crystal</div>
+      <div class="bc" id="_r467">Salvageable Scrap</div>
+      <div class="bc" id="_r468">Silver</div>
+      <div class="bc" id="_r469">Dioxite</div>
+      <div class="bc" id="_r470">Copper</div>
     </div>
   </div>
   <div class="p" id="Nehea_Beta"><a class="pl">Nehea Beta</a>
     <div>Planet Info
-      <div class="bc" id="_b561">Biome: Erupting Planet</div>
+      <div class="bc" id="_b471">Biome: Erupting Planet</div>
       <div>Weather: Sulfur Fumes</div>
       <div>Sentinels: Remote</div>
       <div>Flora: Uncommon</div>
       <div>Fauna:16 Generous</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r562">Magnetised Ferrite</div>
-      <div class="bc" id="_r563">Basalt</div>
-      <div class="bc" id="_r564">Copper</div>
+      <div class="bc" id="_r472">Magnetised Ferrite</div>
+      <div class="bc" id="_r473">Basalt</div>
+      <div class="bc" id="_r474">Copper</div>
     </div>
   </div>
   <div class="p" id="Barno_Gamma"><a class="pl">Barno Gamma</a>
     <div>Planet Info
-      <div class="bc" id="_b565">Biome: Miasmatic Planet</div>
+      <div class="bc" id="_b475">Biome: Miasmatic Planet</div>
       <div>Weather: Toxic Outbreaks</div>
       <div>Sentinels: <div class="poi rd">Inescapable</div></div>
       <div>Flora: Infrequent</div>
       <div>Fauna:5 Abundant</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r566">Fungal Mould</div>
-      <div class="bc" id="_r567">Salvageable Scrap</div>
-      <div class="bc" id="_r568">Cobalt</div>
-      <div class="bc" id="_r569">Ammonia</div>
-      <div class="bc" id="_r570">Copper</div>
+      <div class="bc" id="_r476">Fungal Mould</div>
+      <div class="bc" id="_r477">Salvageable Scrap</div>
+      <div class="bc" id="_r478">Cobalt</div>
+      <div class="bc" id="_r479">Ammonia</div>
+      <div class="bc" id="_r480">Copper</div>
     </div>
   </div>
   <div class="p" id="Jarriscu_lihac"><a class="pl">Jarriscu lihac</a>
     <div>Planet Info
-      <div class="bc" id="_b571">Biome: Glacial Planet</div>
+      <div class="bc" id="_b481">Biome: Glacial Planet</div>
       <div>Weather: Infrequent Blizzards</div>
       <div>Sentinels: Infrequent</div>
       <div>Flora: Low</div>
       <div>Fauna:14 Abundant</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r572">Frost Crystal</div>
-      <div class="bc" id="_r573">Silver</div>
-      <div class="bc" id="_r574">Dioxite</div>
-      <div class="bc" id="_r575">Copper</div>
+      <div class="bc" id="_r482">Frost Crystal</div>
+      <div class="bc" id="_r483">Silver</div>
+      <div class="bc" id="_r484">Dioxite</div>
+      <div class="bc" id="_r485">Copper</div>
     </div>
   </div>
 </div>
@@ -1075,46 +1098,52 @@ h3 {font-size:24px;}
     <div>Glyphs: <div class=gl>101ef8&nbsp;08f6d2</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t576"><div class="tcs">S</div>&hairsp;Blaze Javelin</div>
-    <div class="tc" id="_t577"><div class="tcs">S</div>&hairsp;Cyclotron</div>
-    <div class="tc" id="_t578"><div class="tcs">S</div>&hairsp;Exocraft Cannon</div>
-    <div class="tc" id="_t579"><div class="tcs">S</div>&hairsp;Geology Cannon</div>
-    <div class="tc" id="_t580"><div class="tca">A</div>&hairsp;Launch Thrusters</div>
-    <div class="tc" id="_t581"><div class="tcs">S</div>&hairsp;Minotaur Laser</div>
-    <div class="tc" id="_t582"><div class="tcs">S</div>&hairsp;Photon Cannon</div>
-    <div class="tc" id="_t583"><div class="tcs">S</div>&hairsp;Pulse Engine</div>
-    <div class="tc" id="_t584"><div class="tcs">S</div>&hairsp;Pulse Spitter</div>
-    <div class="tc" id="_t585"><div class="tcs">S</div>&hairsp;Scatter Blaster</div>
-    <div class="tc" id="_t586"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+    <div class="tc" id="_t486"><div class="tcs">S</div>Blaze Javelin</div>
+    <div class="tc" id="_t487"><div class="tcs">S</div>Cyclotron</div>
+    <div class="tc" id="_t488"><div class="tca">A</div>Cyclotron</div>
+    <div class="tc" id="_t489"><div class="tcs">S</div>Exocraft Cannon</div>
+    <div class="tc" id="_t490"><div class="tcs">S</div>Geology Cannon</div>
+    <div class="tc" id="_t491"><div class="tca">A</div>Geology Cannon</div>
+    <div class="tc" id="_t492"><div class="tca">A</div>Launch Thrusters</div>
+    <div class="tc" id="_t493"><div class="tcs">S</div>Minotaur Laser</div>
+    <div class="tc" id="_t494"><div class="tca">A</div>Minotaur Laser</div>
+    <div class="tc" id="_t495"><div class="tcs">S</div>Photon Cannon</div>
+    <div class="tc" id="_t496"><div class="tca">A</div>Photon Cannon</div>
+    <div class="tc" id="_t497"><div class="tcs">S</div>Pulse Engine</div>
+    <div class="tc" id="_t498"><div class="tcs">S</div>Pulse Spitter</div>
+    <div class="tc" id="_t499"><div class="tcs">S</div>Scatter Blaster</div>
+    <div class="tc" id="_t500"><div class="tca">A</div>Scatter Blaster</div>
+    <div class="tc" id="_t501"><div class="tcs">S</div>Underwater Protection</div>
+    <div class="tc" id="_t502"><div class="tca">A</div>Underwater Protection</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s587">Amino Chamber</div>
-      <div class="bc" id="_s588">Aroniumˢ</div>
-      <div class="bc" id="_s589">Chlorine</div>
-      <div class="bc" id="_s590">Cobalt</div>
-      <div class="bc" id="_s591">Dirty Bronzeˢ</div>
-      <div class="bc" id="_s592">Experimental Power Fluid⁺</div>
-      <div class="bc" id="_s593">Ferrite Dust</div>
-      <div class="bc" id="_s594">Gold</div>
-      <div class="bc" id="_s595">Industrial-Grade Battery⁺</div>
-      <div class="bc" id="_s596">Ionised Cobalt</div>
-      <div class="bc" id="_s597">Lemmiumᵍ</div>
-      <div class="bc" id="_s598">Magnetised Ferrite</div>
-      <div class="bc" id="_s599">Magno-Goldᵍ</div>
-      <div class="bc" id="_s600">Metal Plating</div>
-      <div class="bc" id="_s601">Microprocessor</div>
-      <div class="bc" id="_s602">Ohmic Gel⁺</div>
-      <div class="bc" id="_s603">Platinum</div>
-      <div class="bc" id="_s604">Pure Ferrite</div>
-      <div class="bc" id="_s605">Pyrite</div>
-      <div class="bc" id="_s606">Rusted Metal</div>
-      <div class="bc" id="_s607">Spark Canister⁺</div>
-      <div class="bc" id="_s608">Unstable Plasma</div>
-      <div class="bc" id="_s609">Wiring Loom</div>
+      <div class="bc" id="_s503">Amino Chamber</div>
+      <div class="bc" id="_s504">Aronium</div>
+      <div class="bc" id="_s505">Chlorine</div>
+      <div class="bc" id="_s506">Cobalt</div>
+      <div class="bc" id="_s507">Dirty Bronze</div>
+      <div class="bc" id="_s508">Experimental Power Fluid⁺</div>
+      <div class="bc" id="_s509">Ferrite Dust</div>
+      <div class="bc" id="_s510">Gold</div>
+      <div class="bc" id="_s511">Industrial-Grade Battery⁺</div>
+      <div class="bc" id="_s512">Lemmium</div>
+      <div class="bc" id="_s513">Magnetised Ferrite</div>
+      <div class="bc" id="_s514">Magno-Gold</div>
+      <div class="bc" id="_s515">Metal Plating</div>
+      <div class="bc" id="_s516">Microprocessor</div>
+      <div class="bc" id="_s517">Ohmic Gel⁺</div>
+      <div class="bc" id="_s518">Platinum</div>
+      <div class="bc" id="_s519">Pure Ferrite</div>
+      <div class="bc" id="_s520">Pyrite</div>
+      <div class="bc" id="_s521">Rusted Metal</div>
+      <div class="bc" id="_s522">Spark Canister⁺</div>
+      <div class="bc" id="_s523">Unstable Plasma</div>
+      <div class="bc" id="_s524">Wiring Loom</div>
+      <div class="bc" id="_s525">lonised Cobalt</div>
   </div>
   <div class="p" id="Eblintpa_B12"><a class="pl">Eblintpa B12</a>
     <div>Planet Info
-      <div class="bc" id="_b610">Biome: Tainted Planet</div>
+      <div class="bc" id="_b526">Biome: Tainted Planet</div>
       <div>Weather: <div class="poi rd">Choking Sandstorms</div></div>
       <div>Sentinels: Low Security</div>
       <div>Flora: Infected</div>
@@ -1123,86 +1152,86 @@ h3 {font-size:24px;}
       <div><blockquote>Reach the third rendezvous point</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r611">Cactus Flesh</div>
-      <div class="bc" id="_r612">Silver</div>
-      <div class="bc" id="_r613">Pyrite</div>
-      <div class="bc" id="_r614">Activated Copper</div>
+      <div class="bc" id="_r527">Cactus Flesh</div>
+      <div class="bc" id="_r528">Silver</div>
+      <div class="bc" id="_r529">Pyrite</div>
+      <div class="bc" id="_r530">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Mamin"><a class="pl">Mamin</a>
     <div>Planet Info
-      <div class="bc" id="_b615">Biome: Blighted Planet</div>
+      <div class="bc" id="_b531">Biome: Blighted Planet</div>
       <div>Weather: Toxic Damp</div>
       <div>Sentinels: Low</div>
       <div>Flora: High</div>
       <div>Fauna:7 Numerous</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r616">Fungal Mould</div>
-      <div class="bc" id="_r617">Silver</div>
-      <div class="bc" id="_r618">Ammonia</div>
-      <div class="bc" id="_r619">Copper</div>
+      <div class="bc" id="_r532">Fungal Mould</div>
+      <div class="bc" id="_r533">Silver</div>
+      <div class="bc" id="_r534">Ammonia</div>
+      <div class="bc" id="_r535">Copper</div>
     </div>
   </div>
   <div class="p" id="Laywoo_B42"><a class="pl">Laywoo B42</a>
     <div>Planet Info
-      <div class="bc" id="_b620">Biome: Arctic Moon</div>
+      <div class="bc" id="_b536">Biome: Arctic Moon</div>
       <div>Weather: <div class="poi rd">Supercooled Storms</div></div>
       <div>Sentinels: Require Obedience</div>
       <div>Flora: High</div>
       <div>Fauna:8 Abundant</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r621">Frost Crystal</div>
-      <div class="bc" id="_r622">Magnetised Ferrite</div>
-      <div class="bc" id="_r623">Dioxite</div>
-      <div class="bc" id="_r624">Activated Copper</div>
+      <div class="bc" id="_r537">Frost Crystal</div>
+      <div class="bc" id="_r538">Magnetised Ferrite</div>
+      <div class="bc" id="_r539">Dioxite</div>
+      <div class="bc" id="_r540">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Nitwickin_XIV"><a class="pl">Nitwickin XIV</a>
     <div>Planet Info
-      <div class="bc" id="_b625">Biome: Desolate Moon</div>
+      <div class="bc" id="_b541">Biome: Desolate Moon</div>
       <div>Weather: Absent</div>
       <div>Sentinels: Minimal</div>
       <div>Flora: Barren</div>
       <div>Fauna: None</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r626">Salt</div>
-      <div class="bc" id="_r627">Rusted Metal</div>
-      <div class="bc" id="_r628">Copper</div>
+      <div class="bc" id="_r542">Salt</div>
+      <div class="bc" id="_r543">Rusted Metal</div>
+      <div class="bc" id="_r544">Copper</div>
     </div>
   </div>
   <div class="p" id="Neilade_G41"><a class="pl">Neilade G41</a>
     <div>Planet Info
-      <div class="bc" id="_b629">Biome: Verdant Planet</div>
+      <div class="bc" id="_b545">Biome: Verdant Planet</div>
       <div>Weather: Humid</div>
       <div>Sentinels: <div class="poi rd">Threatening</div></div>
       <div>Flora: Rich</div>
       <div>Fauna:13 Abundant</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r630">Star Bulb</div>
-      <div class="bc" id="_r631">Salvageable Scrap</div>
-      <div class="bc" id="_r632">Sodium</div>
-      <div class="bc" id="_r633">Paraffinium</div>
-      <div class="bc" id="_r634">Copper</div>
+      <div class="bc" id="_r546">Star Bulb</div>
+      <div class="bc" id="_r547">Salvageable Scrap</div>
+      <div class="bc" id="_r548">Sodium</div>
+      <div class="bc" id="_r549">Paraffinium</div>
+      <div class="bc" id="_r550">Copper</div>
     </div>
   </div>
   <div class="p" id="Uzenot_XVI"><a class="pl">Uzenot XVI</a>
     <div>Planet Info
-      <div class="bc" id="_b635">Biome: Tropical Planet</div>
+      <div class="bc" id="_b551">Biome: Tropical Planet</div>
       <div>Weather: Dangerously Hot Fog</div>
       <div>Sentinels: <div class="poi rd">Inescapable</div></div>
       <div>Flora: Bountiful</div>
       <div>Fauna:10 Bountiful</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r636">Star Bulb</div>
-      <div class="bc" id="_r637">Salvageable Scrap</div>
-      <div class="bc" id="_r638">Magnetised Ferrite</div>
-      <div class="bc" id="_r639">Paraffinium</div>
-      <div class="bc" id="_r640">Copper</div>
+      <div class="bc" id="_r552">Star Bulb</div>
+      <div class="bc" id="_r553">Salvageable Scrap</div>
+      <div class="bc" id="_r554">Magnetised Ferrite</div>
+      <div class="bc" id="_r555">Paraffinium</div>
+      <div class="bc" id="_r556">Copper</div>
     </div>
   </div>
 </div>
@@ -1217,123 +1246,123 @@ h3 {font-size:24px;}
     <div><b>Distance:</b> <div class='poi px'> 36 ly South of Iryang</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t641"><div class="tcx">X</div>&hairsp;Geology Cannon</div>
-    <div class="tc" id="_t642"><div class="tcx">X</div>&hairsp;Mining Beam</div>
-    <div class="tc" id="_t643"><div class="tcx">X</div>&hairsp;Neutron Cannon</div>
-    <div class="tc" id="_t644"><div class="tcx">X</div>&hairsp;Phase Beam</div>
-    <div class="tc" id="_t645"><div class="tcx">X</div>&hairsp;Photon Cannon</div>
-    <div class="tc" id="_t646"><div class="tcx">X</div>&hairsp;Plasma Launcher</div>
-    <div class="tc" id="_t647"><div class="tcx">X</div>&hairsp;Positron</div>
-    <div class="tc" id="_t648"><div class="tcx">X</div>&hairsp;Pulse Spitter</div>
-    <div class="tc" id="_t649"><div class="tcx">X</div>&hairsp;Scanner</div>
-    <div class="tc" id="_t650"><div class="tcx">X</div>&hairsp;Scatter Blaster</div>
-    <div class="tc" id="_t651"><div class="tcx">X</div>&hairsp;Shield</div>
-    <div class="tc" id="_t652"><div class="tcx">X</div>&hairsp;Starship Shield</div>
+    <div class="tc" id="_t557"><div class="tcx">X</div>Geology Cannon</div>
+    <div class="tc" id="_t558"><div class="tcx">X</div>Mining Beam</div>
+    <div class="tc" id="_t559"><div class="tcx">X</div>Neutron Cannon</div>
+    <div class="tc" id="_t560"><div class="tcx">X</div>Phase Beam</div>
+    <div class="tc" id="_t561"><div class="tcx">X</div>Photon Cannon</div>
+    <div class="tc" id="_t562"><div class="tcx">X</div>Plasma Launcher</div>
+    <div class="tc" id="_t563"><div class="tcx">X</div>Positron</div>
+    <div class="tc" id="_t564"><div class="tcx">X</div>Pulse Spitter</div>
+    <div class="tc" id="_t565"><div class="tcx">X</div>Scanner</div>
+    <div class="tc" id="_t566"><div class="tcx">X</div>Scatter Blaster</div>
+    <div class="tc" id="_t567"><div class="tcx">X</div>Shield</div>
+    <div class="tc" id="_t568"><div class="tcx">X</div>Starship Shield</div>
   </div>
   <div>Buy Sell
-      <div><div class="scp" id="_s653">Banned Weapons</div></div>
-      <div class="bc" id="_s654">Chlorine</div>
-      <div class="bc" id="_s655">Di-hydrogen</div>
-      <div><div class="scp" id="_s656">GrahGrah</div></div>
-      <div class="bc" id="_s657">Hadal Core</div>
-      <div class="bc" id="_s658">Hexiteᵍ</div>
-      <div class="bc" id="_s659">Hypnotic Eye</div>
-      <div class="bc" id="_s660">Larval Core</div>
-      <div><div class="scp" id="_s661">NipNip Buds</div></div>
-      <div class="bc" id="_s662">Packet (Arms)</div>
-      <div class="bc" id="_s663">Packet (Goods)</div>
-      <div class="bc" id="_s664">Packet (Tech)</div>
-      <div class="bc" id="_s665">Starshield Battery</div>
-      <div class="bc" id="_s666">Tritium</div>
-      <div class="bc" id="_s667">Viscous Fluids</div>
+      <div><div class="scp" id="_s569">Banned Weapons</div></div>
+      <div class="bc" id="_s570">Chlorine</div>
+      <div class="bc" id="_s571">Di-hydrogen</div>
+      <div><div class="scp" id="_s572">GrahGrah</div></div>
+      <div class="bc" id="_s573">Hadal Core</div>
+      <div class="bc" id="_s574">Hexite</div>
+      <div class="bc" id="_s575">Hypnotic Eye</div>
+      <div class="bc" id="_s576">Larval Core</div>
+      <div><div class="scp" id="_s577">NipNip Buds</div></div>
+      <div class="bc" id="_s578">Packet (Arms)</div>
+      <div class="bc" id="_s579">Packet (Goods)</div>
+      <div class="bc" id="_s580">Packet (Tech)</div>
+      <div class="bc" id="_s581">Starshield Battery</div>
+      <div class="bc" id="_s582">Tritium</div>
+      <div class="bc" id="_s583">Viscous Fluids</div>
   </div>
   <div class="p" id="Amdushya"><a class="pl">Amdushya</a>
     <div>Planet Info
-      <div class="bc" id="_b668">Biome: Doomed Jade Moon</div>
+      <div class="bc" id="_b584">Biome: Doomed Jade Moon</div>
       <div>Weather: Corrupted Blood</div>
       <div>Sentinels: Attentive</div>
       <div>Flora: Rich</div>
       <div>Fauna:6 Full</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r669">Salt</div>
-      <div class="bc" id="_r670">Ammonia</div>
-      <div class="bc" id="_r671">Emeril</div>
+      <div class="bc" id="_r585">Salt</div>
+      <div class="bc" id="_r586">Ammonia</div>
+      <div class="bc" id="_r587">Emeril</div>
     </div>
   </div>
   <div class="p" id="Ortoneb_XI"><a class="pl">Ortoneb XI</a>
     <div>Planet Info
-      <div class="bc" id="_b672">Biome: Miasmatic Moon</div>
+      <div class="bc" id="_b588">Biome: Miasmatic Moon</div>
       <div>Weather: toxic Outbreaks</div>
       <div>Sentinels: Regular Patrols</div>
       <div>Flora: High</div>
       <div>Fauna:7 Full</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r673">Ancient Bones</div>
-      <div class="bc" id="_r674">Fungal Mould</div>
-      <div class="bc" id="_r675">Salt</div>
-      <div class="bc" id="_r676">Ammonia</div>
-      <div class="bc" id="_r677">Emeril</div>
+      <div class="bc" id="_r589">Ancient Bones</div>
+      <div class="bc" id="_r590">Fungal Mould</div>
+      <div class="bc" id="_r591">Salt</div>
+      <div class="bc" id="_r592">Ammonia</div>
+      <div class="bc" id="_r593">Emeril</div>
     </div>
   </div>
   <div class="p" id="Somthing_bad"><a class="pl">Somthing bad</a>
     <div>Planet Info
-      <div class="bc" id="_b678">Biome: Vile Anomaly</div>
+      <div class="bc" id="_b594">Biome: Vile Anomaly</div>
       <div>Weather: Infinite Toxic Mist</div>
       <div>Sentinels: lsolated</div>
       <div>Flora: High</div>
       <div>Fauna:11 Copious</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r679">Cobalt</div>
-      <div class="bc" id="_r680">Ammonia</div>
-      <div class="bc" id="_r681">Emeril</div>
+      <div class="bc" id="_r595">Cobalt</div>
+      <div class="bc" id="_r596">Ammonia</div>
+      <div class="bc" id="_r597">Emeril</div>
     </div>
   </div>
   <div class="p" id="Sosnowiec"><a class="pl">Sosnowiec</a>
     <div>Planet Info
-      <div class="bc" id="_b682">Biome: Abandoned Planet</div>
+      <div class="bc" id="_b598">Biome: Abandoned Planet</div>
       <div>Weather: Alrless</div>
       <div>Sentinels: Intermittent</div>
       <div>Flora: Absent</div>
       <div>Fauna: Not Present</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r683">Magnetised Ferrite</div>
-      <div class="bc" id="_r684">Rusted Metal</div>
-      <div class="bc" id="_r685">Emeril</div>
+      <div class="bc" id="_r599">Magnetised Ferrite</div>
+      <div class="bc" id="_r600">Rusted Metal</div>
+      <div class="bc" id="_r601">Emeril</div>
     </div>
   </div>
   <div class="p" id="Rymora_Sigma"><a class="pl">Rymora Sigma</a>
     <div>Planet Info
-      <div class="bc" id="_b686">Biome: High Energy Planet</div>
+      <div class="bc" id="_b602">Biome: High Energy Planet</div>
       <div>Weather: Unstable Fog</div>
       <div>Sentinels: Sparse</div>
       <div>Flora: Bountiful</div>
       <div>Fauna:13 Generous</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r687">Gamma Root</div>
-      <div class="bc" id="_r688">Magnetised Ferrite</div>
-      <div class="bc" id="_r689">Uranium</div>
-      <div class="bc" id="_r690">Emenil</div>
+      <div class="bc" id="_r603">Gamma Root</div>
+      <div class="bc" id="_r604">Magnetised Ferrite</div>
+      <div class="bc" id="_r605">Uranium</div>
+      <div class="bc" id="_r606">Emeril</div>
     </div>
   </div>
   <div class="p" id="Nudoloc_Nodat"><a class="pl">Nudoloc Nodat</a>
     <div>Planet Info
-      <div class="bc" id="_b691">Biome: Viridescent Planet</div>
+      <div class="bc" id="_b607">Biome: Viridescent Planet</div>
       <div>Weather: Blistering Damp</div>
       <div>Sentinels: <div class="poi rd">Aggressive</div></div>
       <div>Flora: Limited</div>
       <div>Fauna:4 Intermittent</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r692">Star Bulb</div>
-      <div class="bc" id="_r693">Salvageable Scrap</div>
-      <div class="bc" id="_r694">Magnetised Ferrite</div>
-      <div class="bc" id="_r695">Paraffinium</div>
-      <div class="bc" id="_r696">Emeril</div>
+      <div class="bc" id="_r608">Star Bulb</div>
+      <div class="bc" id="_r609">Salvageable Scrap</div>
+      <div class="bc" id="_r610">Magnetised Ferrite</div>
+      <div class="bc" id="_r611">Paraffinium</div>
+      <div class="bc" id="_r612">Emeril</div>
     </div>
   </div>
 </div>
@@ -1348,47 +1377,50 @@ h3 {font-size:24px;}
     <div><b>Distance:</b> <div class='poi px'> 47 ly South-West of Qarali-Cusse I</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t697"><div class="tcs">S</div>&hairsp;Cold Protection</div>
-    <div class="tc" id="_t698"><div class="tcs">S</div>&hairsp;Cyclotron</div>
-    <div class="tc" id="_t699"><div class="tcs">S</div>&hairsp;Exocraft Boost</div>
-    <div class="tc" id="_t700"><div class="tcs">S</div>&hairsp;Hot Protection</div>
-    <div class="tc" id="_t701"><div class="tcs">S</div>&hairsp;Humboldt Drive</div>
-    <div class="tc" id="_t702"><div class="tcs">S</div>&hairsp;Mining Beam</div>
-    <div class="tc" id="_t703"><div class="tcs">S</div>&hairsp;Movement</div>
-    <div class="tc" id="_t704"><div class="tcs">S</div>&hairsp;Photon Cannon</div>
-    <div class="tc" id="_t705"><div class="tcs">S</div>&hairsp;Scatter Blaster</div>
-    <div class="tc" id="_t706"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+    <div class="tc" id="_t613"><div class="tcs">S</div>Cold Protection</div>
+    <div class="tc" id="_t614"><div class="tcs">S</div>Cyclotron</div>
+    <div class="tc" id="_t615"><div class="tcs">S</div>Exocraft Boost</div>
+    <div class="tc" id="_t616"><div class="tcs">S</div>Hot Protection</div>
+    <div class="tc" id="_t617"><div class="tca">A</div>Hot Protection</div>
+    <div class="tc" id="_t618"><div class="tcs">S</div>Humboldt Drive</div>
+    <div class="tc" id="_t619"><div class="tca">A</div>Humboldt Drive</div>
+    <div class="tc" id="_t620"><div class="tcs">S</div>Mining Beam</div>
+    <div class="tc" id="_t621"><div class="tcs">S</div>Movement</div>
+    <div class="tc" id="_t622"><div class="tcs">S</div>Photon Cannon</div>
+    <div class="tc" id="_t623"><div class="tcs">S</div>Scatter Blaster</div>
+    <div class="tc" id="_t624"><div class="tca">A</div>Scatter Blaster</div>
+    <div class="tc" id="_t625"><div class="tcs">S</div>Underwater Protection</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s707">Ammonia</div>
-      <div class="bc" id="_s708">Bromide Salt⁺</div>
-      <div class="bc" id="_s709">Cobalt</div>
-      <div class="bc" id="_s710">Di-hydrogen Jelly</div>
-      <div class="bc" id="_s711">Dirty Bronzeˢ</div>
-      <div class="bc" id="_s712">Dirt⁺</div>
-      <div class="bc" id="_s713">Ferrite Dust</div>
-      <div class="bc" id="_s714">Gold</div>
-      <div class="bc" id="_s715">Ionised Cobalt</div>
-      <div class="bc" id="_s716">Lemmiumᵍ</div>
-      <div class="bc" id="_s717">Magnetic Resonator</div>
-      <div class="bc" id="_s718">Metal Plating</div>
-      <div class="bc" id="_s719">Microprocessor</div>
-      <div class="bc" id="_s720">Paraffinium</div>
-      <div class="bc" id="_s721">Polychromatic Zirconium⁺</div>
-      <div class="bc" id="_s722">Pugneum</div>
-      <div class="bc" id="_s723">Pure Ferrite</div>
-      <div class="bc" id="_s724">Pyrite</div>
-      <div class="bc" id="_s725">Quantum Computer</div>
-      <div class="bc" id="_s726">Re-latticed Arc Crystal⁺</div>
-      <div class="bc" id="_s727">Residual Goop</div>
-      <div class="bc" id="_s728">Tritium</div>
-      <div class="bc" id="_s729">Unrefined Pyrite Grease⁺</div>
-      <div class="bc" id="_s730">Unstable Plasma</div>
-      <div class="bc" id="_s731">Wiring Loom</div>
+      <div class="bc" id="_s626">Ammonia</div>
+      <div class="bc" id="_s627">Bromide Salt⁺</div>
+      <div class="bc" id="_s628">Cobalt</div>
+      <div class="bc" id="_s629">Di-hydrogen Jelly</div>
+      <div class="bc" id="_s630">Dirty Bronze</div>
+      <div class="bc" id="_s631">Dirt⁺</div>
+      <div class="bc" id="_s632">Ferrite Dust</div>
+      <div class="bc" id="_s633">Gold</div>
+      <div class="bc" id="_s634">Lemmium</div>
+      <div class="bc" id="_s635">Magnetic Resonator</div>
+      <div class="bc" id="_s636">Metal Plating</div>
+      <div class="bc" id="_s637">Microprocessor</div>
+      <div class="bc" id="_s638">Paraffinium</div>
+      <div class="bc" id="_s639">Polychromatic Zirconium⁺</div>
+      <div class="bc" id="_s640">Pugneum</div>
+      <div class="bc" id="_s641">Pure Ferrite</div>
+      <div class="bc" id="_s642">Pyrite</div>
+      <div class="bc" id="_s643">Quantum Computer</div>
+      <div class="bc" id="_s644">Re-latticed Arc Crystal⁺</div>
+      <div class="bc" id="_s645">Residual Goop</div>
+      <div class="bc" id="_s646">Tritium</div>
+      <div class="bc" id="_s647">Unrefined Pyrite Grease⁺</div>
+      <div class="bc" id="_s648">Unstable Plasma</div>
+      <div class="bc" id="_s649">Wiring Loom</div>
+      <div class="bc" id="_s650">lonised Cobalt</div>
   </div>
   <div class="p" id="Roine"><a class="pl">Roine</a>
     <div>Planet Info
-      <div class="bc" id="_b732">Biome: Hiemal Planet</div>
+      <div class="bc" id="_b651">Biome: Hiemal Planet</div>
       <div>Weather: Harsh, Icy Winds</div>
       <div>Sentinels: <div class="poi co">Corrupted</div></div>
       <div>Flora: Bountiful</div>
@@ -1398,86 +1430,86 @@ h3 {font-size:24px;}
       <div><blockquote>Meet the Autophage</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r733">Swarm Debris</div>
-      <div class="bc" id="_r734">Frost Crystal</div>
-      <div class="bc" id="_r735">Salvageable Scrap</div>
-      <div class="bc" id="_r736">Salt</div>
-      <div class="bc" id="_r737">Dioxite</div>
-      <div class="bc" id="_r738">Emeril</div>
-      <div><div class="scp" id="_r739">Dissonance detected</div></div>
+      <div class="bc" id="_r652">Swarm Debris</div>
+      <div class="bc" id="_r653">Frost Crystal</div>
+      <div class="bc" id="_r654">Salvageable Scrap</div>
+      <div class="bc" id="_r655">Salt</div>
+      <div class="bc" id="_r656">Dioxite</div>
+      <div class="bc" id="_r657">Emeril</div>
+      <div><div class="scp" id="_r658">Dissonance detected</div></div>
     </div>
   </div>
   <div class="p" id="Aeza_42/W4"><a class="pl">Aeza 42/W4</a>
     <div>Planet Info
-      <div class="bc" id="_b740">Biome: Hot Planet</div>
+      <div class="bc" id="_b659">Biome: Hot Planet</div>
       <div>Weather: Sunny</div>
       <div>Sentinels: Infrequent</div>
       <div>Flora: High</div>
       <div>Fauna:13 Bountiful</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r741">Solanium</div>
-      <div class="bc" id="_r742">Salt</div>
-      <div class="bc" id="_r743">Phosphorus</div>
-      <div class="bc" id="_r744">Emeril</div>
+      <div class="bc" id="_r660">Solanium</div>
+      <div class="bc" id="_r661">Salt</div>
+      <div class="bc" id="_r662">Phosphorus</div>
+      <div class="bc" id="_r663">Emeril</div>
     </div>
   </div>
   <div class="p" id="Lacissae_Prime"><a class="pl">Lacissae Prime</a>
     <div>Planet Info
-      <div class="bc" id="_b745">Biome: Airless Moon</div>
+      <div class="bc" id="_b664">Biome: Airless Moon</div>
       <div>Weather: Silent</div>
       <div>Sentinels: Regular Patrols</div>
       <div>Flora: Absent</div>
       <div>Fauna: Empty</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r746">Sodium</div>
-      <div class="bc" id="_r747">Rusted Metal</div>
-      <div class="bc" id="_r748">Emeril</div>
+      <div class="bc" id="_r665">Sodium</div>
+      <div class="bc" id="_r666">Rusted Metal</div>
+      <div class="bc" id="_r667">Emeril</div>
     </div>
   </div>
   <div class="p" id="Erfiel_Adoma"><a class="pl">Erfiel Adoma</a>
     <div>Planet Info
-      <div class="bc" id="_b749">Biome: Toxic Moon</div>
+      <div class="bc" id="_b668">Biome: Toxic Moon</div>
       <div>Weather: <div class="poi rd">Pouring Toxic Rain</div></div>
       <div>Sentinels: Remote</div>
       <div>Flora: Bountiful</div>
       <div>Fauna:7 High</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r750">Fungal Mould</div>
-      <div class="bc" id="_r751">Sodium</div>
-      <div class="bc" id="_r752">Ammonia</div>
-      <div class="bc" id="_r753">Activated Emeril</div>
+      <div class="bc" id="_r669">Fungal Mould</div>
+      <div class="bc" id="_r670">Sodium</div>
+      <div class="bc" id="_r671">Ammonia</div>
+      <div class="bc" id="_r672">Activated Emeril</div>
     </div>
   </div>
   <div class="p" id="Lask_VIII"><a class="pl">Lask VIII</a>
     <div>Planet Info
-      <div class="bc" id="_b754">Biome: Rainy Planet</div>
+      <div class="bc" id="_b673">Biome: Rainy Planet</div>
       <div>Weather: Pleasant</div>
       <div>Sentinels: Unwavering</div>
       <div>Flora: Infrequent</div>
       <div>Fauna:14 Copious</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r755">Star Bulb</div>
-      <div class="bc" id="_r756">Sodium</div>
-      <div class="bc" id="_r757">Paraffinium</div>
-      <div class="bc" id="_r758">Emeril</div>
+      <div class="bc" id="_r674">Star Bulb</div>
+      <div class="bc" id="_r675">Sodium</div>
+      <div class="bc" id="_r676">Paraffinium</div>
+      <div class="bc" id="_r677">Emeril</div>
     </div>
   </div>
   <div class="p" id="Bagelzone"><a class="pl">Bagelzone</a>
     <div>Planet Info
-      <div class="bc" id="_b759">Biome: Empty Planet</div>
+      <div class="bc" id="_b678">Biome: Empty Planet</div>
       <div>Weather: Silent</div>
       <div>Sentinels: Isolated</div>
       <div>Flora: Not Present</div>
       <div>Fauna: Devoid</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r760">Cobalt</div>
-      <div class="bc" id="_r761">Rusted Metal</div>
-      <div class="bc" id="_r762">Emeril</div>
+      <div class="bc" id="_r679">Cobalt</div>
+      <div class="bc" id="_r680">Rusted Metal</div>
+      <div class="bc" id="_r681">Emeril</div>
     </div>
   </div>
 </div>
@@ -1490,41 +1522,48 @@ h3 {font-size:24px;}
     <div>Glyphs: <div class=gl>1001f8&nbsp;08f6d2</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t763"><div class="tcs">S</div>&hairsp;Blaze Javelin</div>
-    <div class="tc" id="_t764"><div class="tcs">S</div>&hairsp;Cold Protection</div>
-    <div class="tc" id="_t765"><div class="tcs">S</div>&hairsp;Cyclotron</div>
-    <div class="tc" id="_t766"><div class="tcs">S</div>&hairsp;Exocraft Boost</div>
-    <div class="tc" id="_t767"><div class="tcs">S</div>&hairsp;Exocraft Cannon</div>
-    <div class="tc" id="_t768"><div class="tcs">S</div>&hairsp;Geology Cannon</div>
-    <div class="tc" id="_t769"><div class="tcs">S</div>&hairsp;Infra-Knife</div>
-    <div class="tc" id="_t770"><div class="tcs">S</div>&hairsp;Life Support</div>
-    <div class="tc" id="_t771"><div class="tcs">S</div>&hairsp;Minotaur Engine</div>
-    <div class="tc" id="_t772"><div class="tcs">S</div>&hairsp;Movement</div>
-    <div class="tc" id="_t773"><div class="tcs">S</div>&hairsp;Nautilon Cannon</div>
-    <div class="tc" id="_t774"><div class="tcs">S</div>&hairsp;Plasma Launcher</div>
-    <div class="tc" id="_t775"><div class="tcs">S</div>&hairsp;Positron</div>
-    <div class="tc" id="_t776"><div class="tcs">S</div>&hairsp;Scatter Blaster</div>
-    <div class="tc" id="_t777"><div class="tcs">S</div>&hairsp;Shield</div>
-    <div class="tc" id="_t778"><div class="tcs">S</div>&hairsp;Toxic Protection</div>
-    <div class="tc" id="_t779"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+    <div class="tc" id="_t682"><div class="tcs">S</div>Blaze Javelin</div>
+    <div class="tc" id="_t683"><div class="tcs">S</div>Cold Protection</div>
+    <div class="tc" id="_t684"><div class="tca">A</div>Cold Protection</div>
+    <div class="tc" id="_t685"><div class="tcs">S</div>Cyclotron</div>
+    <div class="tc" id="_t686"><div class="tcs">S</div>Exocraft Boost</div>
+    <div class="tc" id="_t687"><div class="tcs">S</div>Exocraft Cannon</div>
+    <div class="tc" id="_t688"><div class="tcs">S</div>Geology Cannon</div>
+    <div class="tc" id="_t689"><div class="tcs">S</div>Infra-Knife</div>
+    <div class="tc" id="_t690"><div class="tca">A</div>Infra-Knife</div>
+    <div class="tc" id="_t691"><div class="tcs">S</div>Life Support</div>
+    <div class="tc" id="_t692"><div class="tca">A</div>Life Support</div>
+    <div class="tc" id="_t693"><div class="tcs">S</div>Minotaur Engine</div>
+    <div class="tc" id="_t694"><div class="tca">A</div>Minotaur Engine</div>
+    <div class="tc" id="_t695"><div class="tcs">S</div>Movement</div>
+    <div class="tc" id="_t696"><div class="tca">A</div>Movement</div>
+    <div class="tc" id="_t697"><div class="tcs">S</div>Nautilon Cannon</div>
+    <div class="tc" id="_t698"><div class="tcs">S</div>Plasma Launcher</div>
+    <div class="tc" id="_t699"><div class="tcs">S</div>Positron</div>
+    <div class="tc" id="_t700"><div class="tcs">S</div>Scatter Blaster</div>
+    <div class="tc" id="_t701"><div class="tcs">S</div>Shield</div>
+    <div class="tc" id="_t702"><div class="tcs">S</div>Toxic Protection</div>
+    <div class="tc" id="_t703"><div class="tca">A</div>Toxic Protection</div>
+    <div class="tc" id="_t704"><div class="tcs">S</div>Underwater Protection</div>
+    <div class="tc" id="_t705"><div class="tca">A</div>Underwater Protection</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s780">Cobalt</div>
-      <div class="bc" id="_s781">Enormous Metal Cog⁺</div>
-      <div class="bc" id="_s782">Ferrite Dust</div>
-      <div class="bc" id="_s783">Hermetic Seal</div>
-      <div class="bc" id="_s784">Magnetic Resonator</div>
-      <div class="bc" id="_s785">Metai Plating</div>
-      <div class="bc" id="_s786">Microprocessor</div>
-      <div class="bc" id="_s787">Paraffinium</div>
-      <div class="bc" id="_s788">Pugneum</div>
-      <div class="bc" id="_s789">Unstable Plasma</div>
-      <div class="bc" id="_s790">Uranium</div>
-      <div class="bc" id="_s791">Wiring Loom</div>
+      <div class="bc" id="_s706">Cobalt</div>
+      <div class="bc" id="_s707">Enormous Metal Cog⁺</div>
+      <div class="bc" id="_s708">Ferrite Dust</div>
+      <div class="bc" id="_s709">Hermetic Seal</div>
+      <div class="bc" id="_s710">Magnetic Resonator</div>
+      <div class="bc" id="_s711">Metai Plating</div>
+      <div class="bc" id="_s712">Microprocessor</div>
+      <div class="bc" id="_s713">Paraffinium</div>
+      <div class="bc" id="_s714">Pugneum</div>
+      <div class="bc" id="_s715">Unstable Plasma</div>
+      <div class="bc" id="_s716">Uranium</div>
+      <div class="bc" id="_s717">Wiring Loom</div>
   </div>
   <div class="p" id="Hefleeto_E37"><a class="pl">Hefleeto E37</a>
     <div>Planet Info
-      <div class="bc" id="_b792">Biome: Viridescent Planet</div>
+      <div class="bc" id="_b718">Biome: Viridescent Planet</div>
       <div>Weather: <div class="poi rd">Broiling Humidity</div></div>
       <div>Sentinels: Intermittent</div>
       <div>Flora: Generous</div>
@@ -1533,86 +1572,86 @@ h3 {font-size:24px;}
       <div><blockquote>Reach the fourth rendezvous point</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r793">Star Bulb</div>
-      <div class="bc" id="_r794">Sodium</div>
-      <div class="bc" id="_r795">Paraffinium</div>
-      <div class="bc" id="_r796">Activated Copper</div>
+      <div class="bc" id="_r719">Star Bulb</div>
+      <div class="bc" id="_r720">Sodium</div>
+      <div class="bc" id="_r721">Paraffinium</div>
+      <div class="bc" id="_r722">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Esbur"><a class="pl">Esbur</a>
     <div>Planet Info
-      <div class="bc" id="_b797">Biome: Rainy Planet</div>
+      <div class="bc" id="_b723">Biome: Rainy Planet</div>
       <div>Weather: <div class="poi rd">Torrential Heat</div></div>
       <div>Sentinels: Intermittent</div>
       <div>Flora: Frequent</div>
       <div>Fauna:9 Sporadic</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r798">Star Bulb</div>
-      <div class="bc" id="_r799">Magnetised Ferrite</div>
-      <div class="bc" id="_r800">Paraffinium</div>
-      <div class="bc" id="_r801">Activated Copper</div>
+      <div class="bc" id="_r724">Star Bulb</div>
+      <div class="bc" id="_r725">Magnetised Ferrite</div>
+      <div class="bc" id="_r726">Paraffinium</div>
+      <div class="bc" id="_r727">Activated Copper</div>
     </div>
   </div>
   <div class="p" id="Yissallu_XIV"><a class="pl">Yissallu XIV</a>
     <div>Planet Info
-      <div class="bc" id="_b802">Biome: Corrosive Moon</div>
+      <div class="bc" id="_b728">Biome: Corrosive Moon</div>
       <div>Weather: Caustic Moisture</div>
       <div>Sentinels: <div class="poi rd">High Security</div></div>
       <div>Flora: Scarce</div>
       <div>Fauna:8 Bountiful</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r803">Fungal Mould</div>
-      <div class="bc" id="_r804">Salvageable Scrap</div>
-      <div class="bc" id="_r805">Silver</div>
-      <div class="bc" id="_r806">Ammonia</div>
-      <div class="bc" id="_r807">Copper</div>
+      <div class="bc" id="_r729">Fungal Mould</div>
+      <div class="bc" id="_r730">Salvageable Scrap</div>
+      <div class="bc" id="_r731">Silver</div>
+      <div class="bc" id="_r732">Ammonia</div>
+      <div class="bc" id="_r733">Copper</div>
     </div>
   </div>
   <div class="p" id="Funa_81/X4"><a class="pl">Funa 81/X4</a>
     <div>Planet Info
-      <div class="bc" id="_b808">Biome: Noxious Planet</div>
+      <div class="bc" id="_b734">Biome: Noxious Planet</div>
       <div>Weather: Poison Rain</div>
       <div>Sentinels: Frequent</div>
       <div>Flora: Copious</div>
       <div>Fauna:6 Occasional</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r809">Fungal Mould</div>
-      <div class="bc" id="_r810">Silver</div>
-      <div class="bc" id="_r811">Ammonia</div>
-      <div class="bc" id="_r812">Copper</div>
+      <div class="bc" id="_r735">Fungal Mould</div>
+      <div class="bc" id="_r736">Silver</div>
+      <div class="bc" id="_r737">Ammonia</div>
+      <div class="bc" id="_r738">Copper</div>
     </div>
   </div>
   <div class="p" id="Ausiu_XI"><a class="pl">Ausiu XI</a>
     <div>Planet Info
-      <div class="bc" id="_b813">Biome: High Energy Planet</div>
+      <div class="bc" id="_b739">Biome: High Energy Planet</div>
       <div>Weather: Occasional Radiation Outbursts</div>
       <div>Sentinels: Frequent</div>
       <div>Flora: Frequent</div>
       <div>Fauna:9 Rich</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r814">Gamma Root</div>
-      <div class="bc" id="_r815">Sodium</div>
-      <div class="bc" id="_r816">Uranium</div>
-      <div class="bc" id="_r817">Copper</div>
+      <div class="bc" id="_r740">Gamma Root</div>
+      <div class="bc" id="_r741">Sedium</div>
+      <div class="bc" id="_r742">Uranium</div>
+      <div class="bc" id="_r743">Copper</div>
     </div>
   </div>
   <div class="p" id="Keha_58/B1"><a class="pl">Keha 58/B1</a>
     <div>Planet Info
-      <div class="bc" id="_b818">Biome: Hiemal Planet</div>
+      <div class="bc" id="_b744">Biome: Hiemal Planet</div>
       <div>Weather: Icy Tempests</div>
       <div>Sentinels: Unwavering</div>
       <div>Flora: Ample</div>
       <div>Fauna:7 Copious</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r819">Frost Crystal</div>
-      <div class="bc" id="_r820">Cobalt</div>
-      <div class="bc" id="_r821">Dioxite</div>
-      <div class="bc" id="_r822">Copper</div>
+      <div class="bc" id="_r745">Frost Crystal</div>
+      <div class="bc" id="_r746">Cobalt</div>
+      <div class="bc" id="_r747">Dioxite</div>
+      <div class="bc" id="_r748">Copper</div>
     </div>
   </div>
 </div>
@@ -1627,51 +1666,57 @@ h3 {font-size:24px;}
     <div><b>Distance:</b> <div class='poi px'> 59 ly North-West of Gagqoid-Eymo</div></div>
   </div>
   <div>Technology
-    <div class="tc" id="_t823"><div class="tcs">S</div>&hairsp;Cold Protection</div>
-    <div class="tc" id="_t824"><div class="tcs">S</div>&hairsp;Cyclotron</div>
-    <div class="tc" id="_t825"><div class="tcs">S</div>&hairsp;Exocraft Cannon</div>
-    <div class="tc" id="_t826"><div class="tcs">S</div>&hairsp;Exocraft Engine</div>
-    <div class="tc" id="_t827"><div class="tcs">S</div>&hairsp;Exocraft Laser</div>
-    <div class="tc" id="_t828"><div class="tcs">S</div>&hairsp;Hot Protection</div>
-    <div class="tc" id="_t829"><div class="tca">A</div>&hairsp;Launch Thrusters</div>
-    <div class="tc" id="_t830"><div class="tcs">S</div>&hairsp;Life Support</div>
-    <div class="tc" id="_t831"><div class="tcs">S</div>&hairsp;Minotaur Cannon</div>
-    <div class="tc" id="_t832"><div class="tcs">S</div>&hairsp;Photon Cannon</div>
-    <div class="tc" id="_t833"><div class="tcs">S</div>&hairsp;Plasma Launcher</div>
-    <div class="tc" id="_t834"><div class="tcs">S</div>&hairsp;Positron</div>
-    <div class="tc" id="_t835"><div class="tcs">S</div>&hairsp;Pulse Engine</div>
-    <div class="tc" id="_t836"><div class="tcs">S</div>&hairsp;Pulse Spitter</div>
-    <div class="tc" id="_t837"><div class="tcs">S</div>&hairsp;Radiation Protection</div>
-    <div class="tc" id="_t838"><div class="tcs">S</div>&hairsp;Toxic Protection</div>
-    <div class="tc" id="_t839"><div class="tcs">S</div>&hairsp;Underwater Protection</div>
+    <div class="tc" id="_t749"><div class="tcs">S</div>Cold Protection</div>
+    <div class="tc" id="_t750"><div class="tcs">S</div>Cyclotron</div>
+    <div class="tc" id="_t751"><div class="tcs">S</div>Exocraft Cannon</div>
+    <div class="tc" id="_t752"><div class="tcs">S</div>Exocraft Engine</div>
+    <div class="tc" id="_t753"><div class="tca">A</div>Exocraft Engine</div>
+    <div class="tc" id="_t754"><div class="tcs">S</div>Exocraft Laser</div>
+    <div class="tc" id="_t755"><div class="tcs">S</div>Hot Protection</div>
+    <div class="tc" id="_t756"><div class="tca">A</div>Launch Thrusters</div>
+    <div class="tc" id="_t757"><div class="tcs">S</div>Life Support</div>
+    <div class="tc" id="_t758"><div class="tcs">S</div>Minotaur Cannon</div>
+    <div class="tc" id="_t759"><div class="tca">A</div>Minotaur Cannon</div>
+    <div class="tc" id="_t760"><div class="tcs">S</div>Photon Cannon</div>
+    <div class="tc" id="_t761"><div class="tcs">S</div>Plasma Launcher</div>
+    <div class="tc" id="_t762"><div class="tcs">S</div>Positron</div>
+    <div class="tc" id="_t763"><div class="tcs">S</div>Pulse Engine</div>
+    <div class="tc" id="_t764"><div class="tcs">S</div>Pulse Spitter</div>
+    <div class="tc" id="_t765"><div class="tca">A</div>Pulse Spitter</div>
+    <div class="tc" id="_t766"><div class="tcs">S</div>Radiation Protection</div>
+    <div class="tc" id="_t767"><div class="tca">A</div>Radiation Protection</div>
+    <div class="tc" id="_t768"><div class="tcs">S</div>Toxic Protection</div>
+    <div class="tc" id="_t769"><div class="tca">A</div>Toxic Protection</div>
+    <div class="tc" id="_t770"><div class="tcs">S</div>Underwater Protection</div>
+    <div class="tc" id="_t771"><div class="tca">A</div>Underwater Protection</div>
   </div>
   <div>Buy Sell
-      <div class="bc" id="_s840">5D Torus⁺</div>
-      <div class="bc" id="_s841">Ammonia</div>
-      <div class="bc" id="_s842">Chromatic Metal</div>
-      <div class="bc" id="_s843">Cobalt</div>
-      <div class="bc" id="_s844">Copper</div>
-      <div class="bc" id="_s845">Dirty Bronzeˢ</div>
-      <div class="bc" id="_s846">Ferrite Dust</div>
-      <div class="bc" id="_s847">Hydraulic Wiring</div>
-      <div class="bc" id="_s848">Ionised Cobalt</div>
-      <div class="bc" id="_s849">Lemmiumᵍ</div>
-      <div class="bc" id="_s850">Magnetised Ferrite</div>
-      <div class="bc" id="_s851">Magno-Goldᵍ</div>
-      <div class="bc" id="_s852">Metal Plating</div>
-      <div class="bc" id="_s853">Microprocessor</div>
-      <div class="bc" id="_s854">Nanotube Crate⁺</div>
-      <div class="bc" id="_s855">Optical Solvent⁺</div>
-      <div class="bc" id="_s856">Residual Goop</div>
-      <div class="bc" id="_s857">Self-Repairing Heridium⁺</div>
-      <div class="bc" id="_s858">Tritium</div>
-      <div class="bc" id="_s859">Unstable Plasma</div>
-      <div class="bc" id="_s860">Uranium</div>
-      <div class="bc" id="_s861">Wiring Loom</div>
+      <div class="bc" id="_s772">5D Torus⁺</div>
+      <div class="bc" id="_s773">Ammonia</div>
+      <div class="bc" id="_s774">Chromatic Metal</div>
+      <div class="bc" id="_s775">Cobalt</div>
+      <div class="bc" id="_s776">Copper</div>
+      <div class="bc" id="_s777">Dirty Bronze</div>
+      <div class="bc" id="_s778">Ferrite Dust</div>
+      <div class="bc" id="_s779">Hydraulic Wiring</div>
+      <div class="bc" id="_s780">Lemmium</div>
+      <div class="bc" id="_s781">Magnetised Ferrite</div>
+      <div class="bc" id="_s782">Magno-Gold</div>
+      <div class="bc" id="_s783">Metal Plating</div>
+      <div class="bc" id="_s784">Microprocessor</div>
+      <div class="bc" id="_s785">Nanotube Crate⁺</div>
+      <div class="bc" id="_s786">Optical Solvent⁺</div>
+      <div class="bc" id="_s787">Residual Goop</div>
+      <div class="bc" id="_s788">Self-Repairing Heridium⁺</div>
+      <div class="bc" id="_s789">Tritium</div>
+      <div class="bc" id="_s790">Unstable Plasma</div>
+      <div class="bc" id="_s791">Uranium</div>
+      <div class="bc" id="_s792">Wiring Loom</div>
+      <div class="bc" id="_s793">lonised Cobalt</div>
   </div>
   <div class="p" id="Itansha"><a class="pl">Itansha</a>
     <div>Planet Info
-      <div class="bc" id="_b862">Biome: Gas Giant</div>
+      <div class="bc" id="_b794">Biome: Gas Giant</div>
       <div>Weather: <div class="poi rd">Constant Pressure storms</div></div>
       <div>Sentinels: Irregular Patrols</div>
       <div>Flora: Infrequent</div>
@@ -1680,84 +1725,84 @@ h3 {font-size:24px;}
       <div><blockquote>Harvest Crystallised Helium</blockquote></div>
     </div>
     <div>Resources
-      <div class="bc" id="_r863">Magnetised Ferrite</div>
-      <div class="bc" id="_r864">Crystatlised Helium</div>
-      <div class="bc" id="_r865">Activated Quartzite</div>
+      <div class="bc" id="_r795">Magnetised Ferrite</div>
+      <div class="bc" id="_r796">Crystatlised Helium</div>
+      <div class="bc" id="_r797">Activated Quartzite</div>
     </div>
   </div>
   <div class="p" id="Ajja_Minor"><a class="pl">Ajja Minor</a>
     <div>Planet Info
-      <div class="bc" id="_b866">Biome: Noxious Moon</div>
+      <div class="bc" id="_b798">Biome: Noxious Moon</div>
       <div>Weather: Caustic Winds</div>
       <div>Sentinels: Infrequent</div>
       <div>Flora: High</div>
       <div>Fauna:9 Ample</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r867">Fungal Mould</div>
-      <div class="bc" id="_r868">Sodium</div>
-      <div class="bc" id="_r869">Ammonia</div>
-      <div class="bc" id="_r870">Quartzite</div>
+      <div class="bc" id="_r799">Fungal Mould</div>
+      <div class="bc" id="_r800">Sodium</div>
+      <div class="bc" id="_r801">Ammonia</div>
+      <div class="bc" id="_r802">Quartzite</div>
     </div>
   </div>
   <div class="p" id="Elton"><a class="pl">Elton</a>
     <div>Planet Info
-      <div class="bc" id="_b871">Biome: Frozen Anomaly</div>
+      <div class="bc" id="_b803">Biome: Frozen Anomaly</div>
       <div>Weather: Extreme Low Pressure</div>
       <div>Sentinels: Few</div>
       <div>Flora: Frequent</div>
       <div>Fauna:5 Generous</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r872">Salt</div>
-      <div class="bc" id="_r873">Dioxite</div>
-      <div class="bc" id="_r874">Quarizite</div>
+      <div class="bc" id="_r804">Salt</div>
+      <div class="bc" id="_r805">Dioxite</div>
+      <div class="bc" id="_r806">Quarizite</div>
     </div>
   </div>
   <div class="p" id="Gojosh_VIII"><a class="pl">Gojosh VIII</a>
     <div>Planet Info
-      <div class="bc" id="_b875">Biome: Poisonous Moon</div>
+      <div class="bc" id="_b807">Biome: Poisonous Moon</div>
       <div>Weather: Passing [oxic Fronts</div>
       <div>Sentinels: Regular Patrols</div>
       <div>Flora: Infrequent</div>
       <div>Fauna:9 Abundant</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r876">Fungat Mould</div>
-      <div class="bc" id="_r877">Sodium</div>
-      <div class="bc" id="_r878">Ammonia</div>
-      <div class="bc" id="_r879">Quarizite</div>
+      <div class="bc" id="_r808">Fungal Mould</div>
+      <div class="bc" id="_r809">Sodium</div>
+      <div class="bc" id="_r810">Ammonia</div>
+      <div class="bc" id="_r811">Quarizite</div>
     </div>
   </div>
   <div class="p" id="Hydesde_III"><a class="pl">Hydesde III</a>
     <div>Planet Info
-      <div class="bc" id="_b880">Biome: Desolate Moon</div>
+      <div class="bc" id="_b812">Biome: Desolate Moon</div>
       <div>Weather: Silent</div>
       <div>Sentinels: <div class="poi co">Forsaken</div></div>
       <div>Flora: Barren</div>
       <div>Fauna: Nonexistent</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r881">Cobalt</div>
-      <div class="bc" id="_r882">Rusted Metal</div>
-      <div class="bc" id="_r883">Quartzite</div>
-      <div><div class="scp" id="_r884">Dissonance detected</div></div>
+      <div class="bc" id="_r813">Cobalt</div>
+      <div class="bc" id="_r814">Rusted Metal</div>
+      <div class="bc" id="_r815">Quartzite</div>
+      <div><div class="scp" id="_r816">Dissonance detected</div></div>
     </div>
   </div>
   <div class="p" id="Tend_40/V5"><a class="pl">Tend 40/V5</a>
     <div>Planet Info
-      <div class="bc" id="_b885">Biome: Incandescent Moon</div>
+      <div class="bc" id="_b817">Biome: Incandescent Moon</div>
       <div>Weather: Incendiary Dust</div>
       <div>Sentinels: _dummy_</div>
       <div>Flora: Bountiful</div>
       <div>Fauna:4 Infrequent</div>
     </div>
     <div>Resources
-      <div class="bc" id="_r886">Ancient Bones</div>
-      <div class="bc" id="_r887">Solanium</div>
-      <div class="bc" id="_r888">Silver</div>
-      <div class="bc" id="_r889">Phosphorus</div>
-      <div class="bc" id="_r890">Quarizite</div>
+      <div class="bc" id="_r818">Ancient Bones</div>
+      <div class="bc" id="_r819">Solanium</div>
+      <div class="bc" id="_r820">Silver</div>
+      <div class="bc" id="_r821">Phosphorus</div>
+      <div class="bc" id="_r822">Quarizite</div>
     </div>
   </div>
 </div>
@@ -1770,11 +1815,11 @@ h3 {font-size:24px;}
 <a type="button" href="walkthru.html" target="_blank" style="background-color:#f8f8f8;">Walkthru</a>
 <a type="button" href="slideshow.html" target="_blank" style="background-color:#f8f8f8;">Slideshow</a>
 <a type="button" href="20261002172952_1.jpg" target="_blank" style="background-color:#f8f8f8;">Galaxy Map</a>
-<a type="button" href="class_a_tech.html" target="_blank" style="background-color:#f8f8f8;">Class A Tech</a>
-<!--a type="button" href="https://shirha.github.io/liquidators/dist/" value="3D Liquidators" target="_blank" style="background-color:#f8f8f8;">3D Liquidators</a-->
+<!--a type="button" href="class_a_tech.html" target="_blank" style="background-color:#f8f8f8;">Class A Tech</a>
+<a type="button" href="https://shirha.github.io/liquidators/dist/" value="3D Liquidators" target="_blank" style="background-color:#f8f8f8;">3D Liquidators</a-->
 <div style="margin-top: 500px;"></div>
 <script>
-const links={"_t001": ["<div class=\"tcs\">S</div>&hairsp;Blaze Javelin", ""], "_t002": ["<div class=\"tcs\">S</div>&hairsp;Boltcaster", ""], "_t003": ["<div class=\"tcs\">S</div>&hairsp;Cold Protection", ""], "_t004": ["<div class=\"tcs\">S</div>&hairsp;Cyclotron", ""], "_t005": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Boost", ""], "_t006": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Cannon", ""], "_t007": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Engine", ""], "_t008": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Laser", ""], "_t009": ["<div class=\"tcs\">S</div>&hairsp;Geology Cannon", ""], "_t010": ["<div class=\"tcs\">S</div>&hairsp;Hot Protection", ""], "_t011": ["<div class=\"tcs\">S</div>&hairsp;Humboldt Drive", ""], "_t012": ["<div class=\"tcs\">S</div>&hairsp;Hyperdrive", ""], "_t013": ["<div class=\"tcs\">S</div>&hairsp;Infra-Knife", ""], "_t014": ["<div class=\"tca\">A</div>&hairsp;Launch Thrusters", ""], "_t015": ["<div class=\"tcs\">S</div>&hairsp;Life Support", ""], "_t016": ["<div class=\"tcs\">S</div>&hairsp;Mining Beam", ""], "_t017": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Cannon", ""], "_t018": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Engine", ""], "_t019": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Flamethrower", ""], "_t020": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Laser", ""], "_t021": ["<div class=\"tcs\">S</div>&hairsp;Movement", ""], "_t022": ["<div class=\"tcs\">S</div>&hairsp;Nautilon Cannon", ""], "_t023": ["<div class=\"tcs\">S</div>&hairsp;Neutron Cannon", ""], "_t024": ["<div class=\"tcs\">S</div>&hairsp;Phase Beam", ""], "_t025": ["<div class=\"tcs\">S</div>&hairsp;Photon Cannon", ""], "_t026": ["<div class=\"tcs\">S</div>&hairsp;Plasma Launcher", ""], "_t027": ["<div class=\"tcs\">S</div>&hairsp;Positron", ""], "_t028": ["<div class=\"tcs\">S</div>&hairsp;Pulse Engine", ""], "_t029": ["<div class=\"tcs\">S</div>&hairsp;Pulse Spitter", ""], "_t030": ["<div class=\"tcs\">S</div>&hairsp;Radiation Protection", ""], "_t031": ["<div class=\"tcs\">S</div>&hairsp;Scanner", ""], "_t032": ["<div class=\"tcs\">S</div>&hairsp;Scatter Blaster", ""], "_t033": ["<div class=\"tcs\">S</div>&hairsp;Shield", ""], "_t034": ["<div class=\"tcs\">S</div>&hairsp;Starship Shield", ""], "_t035": ["<div class=\"tcs\">S</div>&hairsp;Toxic Protection", ""], "_t036": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", ""], "_s037": ["5D Torus⁺", ""], "_s039": ["Amino Chamber", ""], "_s041": ["Ammonia", ""], "_s043": ["Aroniumˢ", ""], "_s046": ["Banned Weapons", ""], "_s047": ["Bromide Salt⁺", ""], "_s049": ["Carbon Nanotubes", ""], "_s051": ["Chlorine", ""], "_s053": ["Chromatic Metal", ""], "_s055": ["Cobalt", ""], "_s057": ["Copper", ""], "_s059": ["Di-hydrogen", ""], "_s061": ["Di-hydrogen Jelly", ""], "_s063": ["Dioxite", ""], "_s065": ["Dirty Bronzeˢ", ""], "_s067": ["Dirt⁺", ""], "_s069": ["Enormous Metal Cog⁺", ""], "_s071": ["Experimental Power Fluid⁺", ""], "_s073": ["Ferrite Dust", ""], "_s075": ["Gold", ""], "_s078": ["GrahGrah", ""], "_s079": ["Hadal Core", ""], "_s081": ["Hermetic Seal", ""], "_s083": ["Hexiteᵍ", ""], "_s085": ["Holographic Crankshaft⁺", ""], "_s087": ["Hydraulic Wiring", ""], "_s089": ["Hypnotic Eye", ""], "_s091": ["Industrial-Grade Battery⁺", ""], "_s093": ["Ionised Cobalt", ""], "_s095": ["Larval Core", ""], "_s097": ["Lemmiumᵍ", ""], "_s099": ["Magnetic Resonator", ""], "_s101": ["Magnetised Ferrite", ""], "_s103": ["Magno-Goldᵍ", ""], "_s105": ["Mesh Decouplers⁺", ""], "_s107": ["Metai Plating", ""], "_s109": ["Metal Plating", ""], "_s111": ["Microprocessor", ""], "_s113": ["Nanotube Crate⁺", ""], "_s116": ["NipNip Buds", ""], "_s117": ["Non-Stick Piston⁺", ""], "_s119": ["Ohmic Gel⁺", ""], "_s121": ["Optical Solvent⁺", ""], "_s123": ["Packet (Arms)", ""], "_s125": ["Packet (Goods)", ""], "_s127": ["Packet (Tech)", ""], "_s129": ["Paraffinium", ""], "_s131": ["Phosphorus", ""], "_s133": ["Platinum", ""], "_s135": ["Polychromatic Zirconium⁺", ""], "_s137": ["Pugneum", ""], "_s139": ["Pure Ferrite", ""], "_s141": ["Pyrite", ""], "_s143": ["Quantum Computer", ""], "_s145": ["Re-latticed Arc Crystal⁺", ""], "_s147": ["Residual Goop", ""], "_s149": ["Rusted Metal", ""], "_s151": ["Salt", ""], "_s153": ["Self-Repairing Heridium⁺", ""], "_s155": ["Silver", ""], "_s157": ["Solar Mirror", ""], "_s159": ["Spark Canister⁺", ""], "_s161": ["Starshield Battery", ""], "_s163": ["Tritium", ""], "_s165": ["Unrefined Pyrite Grease⁺", ""], "_s167": ["Unstable Piasma", ""], "_s169": ["Unstable Plasma", ""], "_s171": ["Uranium", ""], "_s173": ["Viscous Fluids", ""], "_s175": ["Wiring Loom", ""], "_r177": ["Activated Copper", ""], "_r179": ["Activated Emeril", ""], "_r181": ["Activated Quartzite", ""], "_r183": ["Ammonia", ""], "_r185": ["Ancient Bones", ""], "_r187": ["Basalt", ""], "_r189": ["Cactus Flesh", ""], "_r191": ["Cadmium", ""], "_r193": ["Cobait", ""], "_r195": ["Cobalt", ""], "_r197": ["Copper", ""], "_r199": ["Crystatlised Helium", ""], "_r201": ["Dioxite", ""], "_r204": ["Dissonance detected", ""], "_r205": ["Emenil", ""], "_r207": ["Emeril", ""], "_r209": ["Frost Crystal", ""], "_r211": ["Fungal Mould", ""], "_r213": ["Fungat Mould", ""], "_r215": ["Gamma Root", ""], "_r217": ["Gold", ""], "_r219": ["Magnetised Ferrite", ""], "_r221": ["Paraffinium", ""], "_r223": ["Phosphorus", ""], "_r225": ["Pyrite", ""], "_r227": ["Quarizite", ""], "_r229": ["Quartzite", ""], "_r231": ["Rusted Metal", ""], "_r233": ["Salt", ""], "_r235": ["Salvageable Scrap", ""], "_r237": ["Silver", ""], "_r239": ["Sodium", ""], "_r241": ["Solanium", ""], "_r243": ["Star Bulb", ""], "_r245": ["Sulphurine", ""], "_r247": ["Swarm Debris", ""], "_r249": ["Uranium", ""], "_r251": ["Vile Brood Detected", ""], "_b253": ["Abandoned Moon", ""], "_b254": ["Abandoned Planet", ""], "_b255": ["Airless Moon", ""], "_b256": ["Airless Planet", ""], "_b257": ["Arctic Moon", ""], "_b258": ["Bladed Moon", ""], "_b259": ["Blighted Planet", ""], "_b260": ["Boiling Planet", ""], "_b261": ["Bubbling Moon", ""], "_b262": ["Charred Planet", ""], "_b263": ["Corrosive Moon", ""], "_b264": ["Corrosive Planet", ""], "_b265": ["Dead Planet", ""], "_b266": ["Decaying Nuclear Planet", ""], "_b267": ["Desolate Moon", ""], "_b268": ["Desolate Planet", ""], "_b269": ["Doomed Jade Moon", ""], "_b270": ["Empty Planet", ""], "_b271": ["Erupting Planet", ""], "_b272": ["Frothing Planet", ""], "_b273": ["Frozen Anomaly", ""], "_b274": ["Frozen Planet", ""], "_b275": ["Gas Giant", ""], "_b276": ["Glacial Planet", ""], "_b277": ["Hiemal Planet", ""], "_b278": ["High Energy Planet", ""], "_b279": ["Hot Planet", ""], "_b280": ["Incandescent Moon", ""], "_b281": ["Low Atmosphere Planet", ""], "_b282": ["Metallic Planet", ""], "_b283": ["Miasmatic Moon", ""], "_b284": ["Miasmatic Planet", ""], "_b285": ["Noxious Moon", ""], "_b286": ["Noxious Planet", ""], "_b287": ["Paradise Planet", ""], "_b288": ["Poisonous Moon", ""], "_b289": ["Rainy Planet", ""], "_b290": ["Ruined Planet", ""], "_b291": ["Scorched Planet", ""], "_b292": ["Sub-zero Planet", ""], "_b293": ["Tainted Planet", ""], "_b294": ["Temperate Planet", ""], "_b295": ["Terraforming Catastrophe", ""], "_b296": ["Toxic Moon", ""], "_b297": ["Tropical Planet", ""], "_b298": ["Vapour Planet", ""], "_b299": ["Verdant Planet", ""], "_b300": ["Vile Anomaly", ""], "_b301": ["Viridescent Planet", ""], "_b302": ["Wine Dark Planet", ""], "_t303": ["<div class=\"tcs\">S</div>&hairsp;Cold Protection", "Paroi_Major"], "_t304": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Boost", "Paroi_Major"], "_t305": ["<div class=\"tcs\">S</div>&hairsp;Hot Protection", "Paroi_Major"], "_t306": ["<div class=\"tcs\">S</div>&hairsp;Mining Beam", "Paroi_Major"], "_t307": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Engine", "Paroi_Major"], "_t308": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Flamethrower", "Paroi_Major"], "_t309": ["<div class=\"tcs\">S</div>&hairsp;Plasma Launcher", "Paroi_Major"], "_t310": ["<div class=\"tcs\">S</div>&hairsp;Pulse Engine", "Paroi_Major"], "_t311": ["<div class=\"tcs\">S</div>&hairsp;Shield", "Paroi_Major"], "_t312": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", "Paroi_Major"], "_s313": ["Ammonia", "Paroi_Major"], "_s314": ["Bromide Salt⁺", "Paroi_Major"], "_s315": ["Chlorine", "Paroi_Major"], "_s316": ["Cobalt", "Paroi_Major"], "_s317": ["Copper", "Paroi_Major"], "_s318": ["Dioxite", "Paroi_Major"], "_s319": ["Dirt⁺", "Paroi_Major"], "_s320": ["Ferrite Dust", "Paroi_Major"], "_s321": ["Ionised Cobalt", "Paroi_Major"], "_s322": ["Magnetic Resonator", "Paroi_Major"], "_s323": ["Magnetised Ferrite", "Paroi_Major"], "_s324": ["Magno-Goldᵍ", "Paroi_Major"], "_s325": ["Metal Plating", "Paroi_Major"], "_s326": ["Microprocessor", "Paroi_Major"], "_s327": ["Silver", "Paroi_Major"], "_s328": ["Solar Mirror", "Paroi_Major"], "_s329": ["Unrefined Pyrite Grease⁺", "Paroi_Major"], "_s330": ["Unstable Piasma", "Paroi_Major"], "_s331": ["Unstable Plasma", "Paroi_Major"], "_s332": ["Wiring Loom", "Paroi_Major"], "_b333": ["Paradise Planet", "Oria_V"], "_r334": ["Ancient Bones", "Oria_V"], "_r335": ["Star Bulb", "Oria_V"], "_r336": ["Salt", "Oria_V"], "_r337": ["Paraffinium", "Oria_V"], "_r338": ["Copper", "Oria_V"], "_b339": ["Charred Planet", "Anhoeb"], "_r340": ["Solanium", "Anhoeb"], "_r341": ["Salvageable Scrap", "Anhoeb"], "_r342": ["Sodium", "Anhoeb"], "_r343": ["Phosphorus", "Anhoeb"], "_r344": ["Copper", "Anhoeb"], "_b345": ["Terraforming Catastrophe", "Noder_XVI"], "_r346": ["Cobait", "Noder_XVI"], "_r347": ["Rusted Metal", "Noder_XVI"], "_r348": ["Copper", "Noder_XVI"], "_r349": ["Dissonance detected", "Noder_XVI"], "_b350": ["Vapour Planet", "Kileyto_IV"], "_r351": ["Ancient Bones", "Kileyto_IV"], "_r352": ["Vile Brood Detected", "Kileyto_IV"], "_r353": ["Salt", "Kileyto_IV"], "_r354": ["Sulphurine", "Kileyto_IV"], "_r355": ["Copper", "Kileyto_IV"], "_b356": ["Decaying Nuclear Planet", "Vide_Prime"], "_r357": ["Gamma Root", "Vide_Prime"], "_r358": ["Salvageable Scrap", "Vide_Prime"], "_r359": ["Silver", "Vide_Prime"], "_r360": ["Uranium", "Vide_Prime"], "_r361": ["Copper", "Vide_Prime"], "_b362": ["Frothing Planet", "A01"], "_r363": ["Silver", "A01"], "_r364": ["Gold", "A01"], "_r365": ["Cadmium", "A01"], "_b366": ["Wine Dark Planet", "A02"], "_r367": ["Ancient Bones", "A02"], "_r368": ["Cobalt", "A02"], "_r369": ["Phosphorus", "A02"], "_r370": ["Cadmium", "A02"], "_b371": ["Low Atmosphere Planet", "A03"], "_r372": ["Sodium", "A03"], "_r373": ["Rusted Metal", "A03"], "_r374": ["Cadmium", "A03"], "_b375": ["Bladed Moon", "A04"], "_r376": ["Sodium", "A04"], "_r377": ["Gold", "A04"], "_r378": ["Cadmium", "A04"], "_b379": ["Metallic Planet", "A05"], "_r380": ["Sodium", "A05"], "_r381": ["Gold", "A05"], "_r382": ["Cadmium", "A05"], "_t383": ["<div class=\"tcs\">S</div>&hairsp;Boltcaster", "Iryang"], "_t384": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Cannon", "Iryang"], "_t385": ["<div class=\"tcs\">S</div>&hairsp;Geology Cannon", "Iryang"], "_t386": ["<div class=\"tca\">A</div>&hairsp;Launch Thrusters", "Iryang"], "_t387": ["<div class=\"tcs\">S</div>&hairsp;Mining Beam", "Iryang"], "_t388": ["<div class=\"tcs\">S</div>&hairsp;Nautilon Cannon", "Iryang"], "_t389": ["<div class=\"tcs\">S</div>&hairsp;Neutron Cannon", "Iryang"], "_t390": ["<div class=\"tcs\">S</div>&hairsp;Photon Cannon", "Iryang"], "_t391": ["<div class=\"tcs\">S</div>&hairsp;Positron", "Iryang"], "_t392": ["<div class=\"tcs\">S</div>&hairsp;Pulse Engine", "Iryang"], "_t393": ["<div class=\"tcs\">S</div>&hairsp;Pulse Spitter", "Iryang"], "_s394": ["Carbon Nanotubes", "Iryang"], "_s395": ["Chlorine", "Iryang"], "_s396": ["Cobalt", "Iryang"], "_s397": ["Dioxite", "Iryang"], "_s398": ["Enormous Metal Cog⁺", "Iryang"], "_s399": ["Ferrite Dust", "Iryang"], "_s400": ["Holographic Crankshaft⁺", "Iryang"], "_s401": ["Magno-Goldᵍ", "Iryang"], "_s402": ["Mesh Decouplers⁺", "Iryang"], "_s403": ["Metal Plating", "Iryang"], "_s404": ["Microprocessor", "Iryang"], "_s405": ["Non-Stick Piston⁺", "Iryang"], "_s406": ["Phosphorus", "Iryang"], "_s407": ["Rusted Metal", "Iryang"], "_s408": ["Silver", "Iryang"], "_s409": ["Unstable Plasma", "Iryang"], "_s410": ["Uranium", "Iryang"], "_s411": ["Wiring Loom", "Iryang"], "_b412": ["Frozen Planet", "Court"], "_r413": ["Frost Crystal", "Court"], "_r414": ["Silver", "Court"], "_r415": ["Dioxite", "Court"], "_r416": ["Copper", "Court"], "_b417": ["Boiling Planet", "Oeotira"], "_r418": ["Solanium", "Oeotira"], "_r419": ["Sodium", "Oeotira"], "_r420": ["Phosphorus", "Oeotira"], "_r421": ["Activated Copper", "Oeotira"], "_b422": ["Bubbling Moon", "Sode_99/R5"], "_r423": ["Silver", "Sode_99/R5"], "_r424": ["Gold", "Sode_99/R5"], "_r425": ["Copper", "Sode_99/R5"], "_b426": ["Noxious Moon", "Utha"], "_r427": ["Fungal Mould", "Utha"], "_r428": ["Salvageable Scrap", "Utha"], "_r429": ["Silver", "Utha"], "_r430": ["Ammonia", "Utha"], "_r431": ["Activated Copper", "Utha"], "_b432": ["Airless Planet", "Mistin"], "_r433": ["Silver", "Mistin"], "_r434": ["Rusted Metal", "Mistin"], "_r435": ["Copper", "Mistin"], "_b436": ["Dead Planet", "Bansc"], "_r437": ["Ancient Bones", "Bansc"], "_r438": ["Silver", "Bansc"], "_r439": ["Rusted Metal", "Bansc"], "_r440": ["Copper", "Bansc"], "_t441": ["<div class=\"tcs\">S</div>&hairsp;Infra-Knife", "Etianl-Ivp"], "_t442": ["<div class=\"tca\">A</div>&hairsp;Launch Thrusters", "Etianl-Ivp"], "_t443": ["<div class=\"tcs\">S</div>&hairsp;Life Support", "Etianl-Ivp"], "_t444": ["<div class=\"tcs\">S</div>&hairsp;Mining Beam", "Etianl-Ivp"], "_t445": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Flamethrower", "Etianl-Ivp"], "_t446": ["<div class=\"tcs\">S</div>&hairsp;Nautilon Cannon", "Etianl-Ivp"], "_t447": ["<div class=\"tcs\">S</div>&hairsp;Neutron Cannon", "Etianl-Ivp"], "_t448": ["<div class=\"tcs\">S</div>&hairsp;Phase Beam", "Etianl-Ivp"], "_t449": ["<div class=\"tcs\">S</div>&hairsp;Plasma Launcher", "Etianl-Ivp"], "_t450": ["<div class=\"tcs\">S</div>&hairsp;Radiation Protection", "Etianl-Ivp"], "_t451": ["<div class=\"tcs\">S</div>&hairsp;Scanner", "Etianl-Ivp"], "_t452": ["<div class=\"tcs\">S</div>&hairsp;Toxic Protection", "Etianl-Ivp"], "_t453": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", "Etianl-Ivp"], "_s454": ["Ammonia", "Etianl-Ivp"], "_s455": ["Chlorine", "Etianl-Ivp"], "_s456": ["Cobalt", "Etianl-Ivp"], "_s457": ["Copper", "Etianl-Ivp"], "_s458": ["Dioxite", "Etianl-Ivp"], "_s459": ["Ferrite Dust", "Etianl-Ivp"], "_s460": ["Hermetic Seal", "Etianl-Ivp"], "_s461": ["Hydraulic Wiring", "Etianl-Ivp"], "_s462": ["Industrial-Grade Battery⁺", "Etianl-Ivp"], "_s463": ["Magnetic Resonator", "Etianl-Ivp"], "_s464": ["Metal Plating", "Etianl-Ivp"], "_s465": ["Microprocessor", "Etianl-Ivp"], "_s466": ["Ohmic Gel⁺", "Etianl-Ivp"], "_s467": ["Quantum Computer", "Etianl-Ivp"], "_s468": ["Residual Goop", "Etianl-Ivp"], "_s469": ["Rusted Metal", "Etianl-Ivp"], "_s470": ["Silver", "Etianl-Ivp"], "_s471": ["Spark Canister⁺", "Etianl-Ivp"], "_s472": ["Tritium", "Etianl-Ivp"], "_s473": ["Unstable Plasma", "Etianl-Ivp"], "_s474": ["Wiring Loom", "Etianl-Ivp"], "_b475": ["Corrosive Planet", "Osalvian_H12"], "_r476": ["Fungal Mould", "Osalvian_H12"], "_r477": ["Magnetised Ferrite", "Osalvian_H12"], "_r478": ["Ammonia", "Osalvian_H12"], "_r479": ["Copper", "Osalvian_H12"], "_b480": ["Abandoned Moon", "Cournt_XVI"], "_r481": ["Cactus Flesh", "Cournt_XVI"], "_r482": ["Salvageable Scrap", "Cournt_XVI"], "_r483": ["Cobalt", "Cournt_XVI"], "_r484": ["Pyrite", "Cournt_XVI"], "_r485": ["Activated Copper", "Cournt_XVI"], "_b486": ["Ruined Planet", "Onzo_Sigma"], "_r487": ["Gamma Root", "Onzo_Sigma"], "_r488": ["Salvageable Scrap", "Onzo_Sigma"], "_r489": ["Cobalt", "Onzo_Sigma"], "_r490": ["Uranium", "Onzo_Sigma"], "_r491": ["Copper", "Onzo_Sigma"], "_b492": ["Desolate Planet", "Uncel_XVI"], "_r493": ["Ancient Bones", "Uncel_XVI"], "_r494": ["Magnetised Ferrite", "Uncel_XVI"], "_r495": ["Rusted Metal", "Uncel_XVI"], "_r496": ["Copper", "Uncel_XVI"], "_b497": ["Temperate Planet", "Irskij_M50"], "_r498": ["Star Bulb", "Irskij_M50"], "_r499": ["Silver", "Irskij_M50"], "_r500": ["Paraffinium", "Irskij_M50"], "_r501": ["Copper", "Irskij_M50"], "_b502": ["Scorched Planet", "Euci"], "_r503": ["Solanium", "Euci"], "_r504": ["Silver", "Euci"], "_r505": ["Phosphorus", "Euci"], "_r506": ["Copper", "Euci"], "_t507": ["<div class=\"tcs\">S</div>&hairsp;Blaze Javelin", "Onjukuy-Chnym"], "_t508": ["<div class=\"tcs\">S</div>&hairsp;Boltcaster", "Onjukuy-Chnym"], "_t509": ["<div class=\"tcs\">S</div>&hairsp;Cold Protection", "Onjukuy-Chnym"], "_t510": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Boost", "Onjukuy-Chnym"], "_t511": ["<div class=\"tcs\">S</div>&hairsp;Hyperdrive", "Onjukuy-Chnym"], "_t512": ["<div class=\"tcs\">S</div>&hairsp;Life Support", "Onjukuy-Chnym"], "_t513": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Cannon", "Onjukuy-Chnym"], "_t514": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Engine", "Onjukuy-Chnym"], "_t515": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Flamethrower", "Onjukuy-Chnym"], "_t516": ["<div class=\"tcs\">S</div>&hairsp;Phase Beam", "Onjukuy-Chnym"], "_t517": ["<div class=\"tcs\">S</div>&hairsp;Photon Cannon", "Onjukuy-Chnym"], "_t518": ["<div class=\"tcs\">S</div>&hairsp;Positron", "Onjukuy-Chnym"], "_t519": ["<div class=\"tcs\">S</div>&hairsp;Pulse Engine", "Onjukuy-Chnym"], "_t520": ["<div class=\"tcs\">S</div>&hairsp;Pulse Spitter", "Onjukuy-Chnym"], "_t521": ["<div class=\"tcs\">S</div>&hairsp;Radiation Protection", "Onjukuy-Chnym"], "_t522": ["<div class=\"tcs\">S</div>&hairsp;Shield", "Onjukuy-Chnym"], "_t523": ["<div class=\"tcs\">S</div>&hairsp;Starship Shield", "Onjukuy-Chnym"], "_s524": ["Chromatic Metal", "Onjukuy-Chnym"], "_s525": ["Cobalt", "Onjukuy-Chnym"], "_s526": ["Copper", "Onjukuy-Chnym"], "_s527": ["Dirty Bronzeˢ", "Onjukuy-Chnym"], "_s528": ["Experimental Power Fluid⁺", "Onjukuy-Chnym"], "_s529": ["Ferrite Dust", "Onjukuy-Chnym"], "_s530": ["Gold", "Onjukuy-Chnym"], "_s531": ["Hermetic Seal", "Onjukuy-Chnym"], "_s532": ["Industrial-Grade Battery⁺", "Onjukuy-Chnym"], "_s533": ["Metal Plating", "Onjukuy-Chnym"], "_s534": ["Microprocessor", "Onjukuy-Chnym"], "_s535": ["Ohmic Gel⁺", "Onjukuy-Chnym"], "_s536": ["Platinum", "Onjukuy-Chnym"], "_s537": ["Salt", "Onjukuy-Chnym"], "_s538": ["Silver", "Onjukuy-Chnym"], "_s539": ["Solar Mirror", "Onjukuy-Chnym"], "_s540": ["Spark Canister⁺", "Onjukuy-Chnym"], "_s541": ["Tritium", "Onjukuy-Chnym"], "_s542": ["Unstable Plasma", "Onjukuy-Chnym"], "_s543": ["Wiring Loom", "Onjukuy-Chnym"], "_b544": ["Tainted Planet", "Lottersh_Sado"], "_r545": ["Ancient Bones", "Lottersh_Sado"], "_r546": ["Cactus Flesh", "Lottersh_Sado"], "_r547": ["Silver", "Lottersh_Sado"], "_r548": ["Pyrite", "Lottersh_Sado"], "_r549": ["Copper", "Lottersh_Sado"], "_b550": ["Boiling Planet", "Rihyper_XVII"], "_r551": ["Solanium", "Rihyper_XVII"], "_r552": ["Magnetised Ferrite", "Rihyper_XVII"], "_r553": ["Phosphorus", "Rihyper_XVII"], "_r554": ["Copper", "Rihyper_XVII"], "_b555": ["Sub-zero Planet", "Alvanion_F45"], "_r556": ["Frost Crystal", "Alvanion_F45"], "_r557": ["Salvageable Scrap", "Alvanion_F45"], "_r558": ["Silver", "Alvanion_F45"], "_r559": ["Dioxite", "Alvanion_F45"], "_r560": ["Copper", "Alvanion_F45"], "_b561": ["Erupting Planet", "Nehea_Beta"], "_r562": ["Magnetised Ferrite", "Nehea_Beta"], "_r563": ["Basalt", "Nehea_Beta"], "_r564": ["Copper", "Nehea_Beta"], "_b565": ["Miasmatic Planet", "Barno_Gamma"], "_r566": ["Fungal Mould", "Barno_Gamma"], "_r567": ["Salvageable Scrap", "Barno_Gamma"], "_r568": ["Cobalt", "Barno_Gamma"], "_r569": ["Ammonia", "Barno_Gamma"], "_r570": ["Copper", "Barno_Gamma"], "_b571": ["Glacial Planet", "Jarriscu_lihac"], "_r572": ["Frost Crystal", "Jarriscu_lihac"], "_r573": ["Silver", "Jarriscu_lihac"], "_r574": ["Dioxite", "Jarriscu_lihac"], "_r575": ["Copper", "Jarriscu_lihac"], "_t576": ["<div class=\"tcs\">S</div>&hairsp;Blaze Javelin", "Qarali-Cusse_I"], "_t577": ["<div class=\"tcs\">S</div>&hairsp;Cyclotron", "Qarali-Cusse_I"], "_t578": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Cannon", "Qarali-Cusse_I"], "_t579": ["<div class=\"tcs\">S</div>&hairsp;Geology Cannon", "Qarali-Cusse_I"], "_t580": ["<div class=\"tca\">A</div>&hairsp;Launch Thrusters", "Qarali-Cusse_I"], "_t581": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Laser", "Qarali-Cusse_I"], "_t582": ["<div class=\"tcs\">S</div>&hairsp;Photon Cannon", "Qarali-Cusse_I"], "_t583": ["<div class=\"tcs\">S</div>&hairsp;Pulse Engine", "Qarali-Cusse_I"], "_t584": ["<div class=\"tcs\">S</div>&hairsp;Pulse Spitter", "Qarali-Cusse_I"], "_t585": ["<div class=\"tcs\">S</div>&hairsp;Scatter Blaster", "Qarali-Cusse_I"], "_t586": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", "Qarali-Cusse_I"], "_s587": ["Amino Chamber", "Qarali-Cusse_I"], "_s588": ["Aroniumˢ", "Qarali-Cusse_I"], "_s589": ["Chlorine", "Qarali-Cusse_I"], "_s590": ["Cobalt", "Qarali-Cusse_I"], "_s591": ["Dirty Bronzeˢ", "Qarali-Cusse_I"], "_s592": ["Experimental Power Fluid⁺", "Qarali-Cusse_I"], "_s593": ["Ferrite Dust", "Qarali-Cusse_I"], "_s594": ["Gold", "Qarali-Cusse_I"], "_s595": ["Industrial-Grade Battery⁺", "Qarali-Cusse_I"], "_s596": ["Ionised Cobalt", "Qarali-Cusse_I"], "_s597": ["Lemmiumᵍ", "Qarali-Cusse_I"], "_s598": ["Magnetised Ferrite", "Qarali-Cusse_I"], "_s599": ["Magno-Goldᵍ", "Qarali-Cusse_I"], "_s600": ["Metal Plating", "Qarali-Cusse_I"], "_s601": ["Microprocessor", "Qarali-Cusse_I"], "_s602": ["Ohmic Gel⁺", "Qarali-Cusse_I"], "_s603": ["Platinum", "Qarali-Cusse_I"], "_s604": ["Pure Ferrite", "Qarali-Cusse_I"], "_s605": ["Pyrite", "Qarali-Cusse_I"], "_s606": ["Rusted Metal", "Qarali-Cusse_I"], "_s607": ["Spark Canister⁺", "Qarali-Cusse_I"], "_s608": ["Unstable Plasma", "Qarali-Cusse_I"], "_s609": ["Wiring Loom", "Qarali-Cusse_I"], "_b610": ["Tainted Planet", "Eblintpa_B12"], "_r611": ["Cactus Flesh", "Eblintpa_B12"], "_r612": ["Silver", "Eblintpa_B12"], "_r613": ["Pyrite", "Eblintpa_B12"], "_r614": ["Activated Copper", "Eblintpa_B12"], "_b615": ["Blighted Planet", "Mamin"], "_r616": ["Fungal Mould", "Mamin"], "_r617": ["Silver", "Mamin"], "_r618": ["Ammonia", "Mamin"], "_r619": ["Copper", "Mamin"], "_b620": ["Arctic Moon", "Laywoo_B42"], "_r621": ["Frost Crystal", "Laywoo_B42"], "_r622": ["Magnetised Ferrite", "Laywoo_B42"], "_r623": ["Dioxite", "Laywoo_B42"], "_r624": ["Activated Copper", "Laywoo_B42"], "_b625": ["Desolate Moon", "Nitwickin_XIV"], "_r626": ["Salt", "Nitwickin_XIV"], "_r627": ["Rusted Metal", "Nitwickin_XIV"], "_r628": ["Copper", "Nitwickin_XIV"], "_b629": ["Verdant Planet", "Neilade_G41"], "_r630": ["Star Bulb", "Neilade_G41"], "_r631": ["Salvageable Scrap", "Neilade_G41"], "_r632": ["Sodium", "Neilade_G41"], "_r633": ["Paraffinium", "Neilade_G41"], "_r634": ["Copper", "Neilade_G41"], "_b635": ["Tropical Planet", "Uzenot_XVI"], "_r636": ["Star Bulb", "Uzenot_XVI"], "_r637": ["Salvageable Scrap", "Uzenot_XVI"], "_r638": ["Magnetised Ferrite", "Uzenot_XVI"], "_r639": ["Paraffinium", "Uzenot_XVI"], "_r640": ["Copper", "Uzenot_XVI"], "_t641": ["<div class=\"tcx\">X</div>&hairsp;Geology Cannon", "Guxoisair"], "_t642": ["<div class=\"tcx\">X</div>&hairsp;Mining Beam", "Guxoisair"], "_t643": ["<div class=\"tcx\">X</div>&hairsp;Neutron Cannon", "Guxoisair"], "_t644": ["<div class=\"tcx\">X</div>&hairsp;Phase Beam", "Guxoisair"], "_t645": ["<div class=\"tcx\">X</div>&hairsp;Photon Cannon", "Guxoisair"], "_t646": ["<div class=\"tcx\">X</div>&hairsp;Plasma Launcher", "Guxoisair"], "_t647": ["<div class=\"tcx\">X</div>&hairsp;Positron", "Guxoisair"], "_t648": ["<div class=\"tcx\">X</div>&hairsp;Pulse Spitter", "Guxoisair"], "_t649": ["<div class=\"tcx\">X</div>&hairsp;Scanner", "Guxoisair"], "_t650": ["<div class=\"tcx\">X</div>&hairsp;Scatter Blaster", "Guxoisair"], "_t651": ["<div class=\"tcx\">X</div>&hairsp;Shield", "Guxoisair"], "_t652": ["<div class=\"tcx\">X</div>&hairsp;Starship Shield", "Guxoisair"], "_s653": ["Banned Weapons", "Guxoisair"], "_s654": ["Chlorine", "Guxoisair"], "_s655": ["Di-hydrogen", "Guxoisair"], "_s656": ["GrahGrah", "Guxoisair"], "_s657": ["Hadal Core", "Guxoisair"], "_s658": ["Hexiteᵍ", "Guxoisair"], "_s659": ["Hypnotic Eye", "Guxoisair"], "_s660": ["Larval Core", "Guxoisair"], "_s661": ["NipNip Buds", "Guxoisair"], "_s662": ["Packet (Arms)", "Guxoisair"], "_s663": ["Packet (Goods)", "Guxoisair"], "_s664": ["Packet (Tech)", "Guxoisair"], "_s665": ["Starshield Battery", "Guxoisair"], "_s666": ["Tritium", "Guxoisair"], "_s667": ["Viscous Fluids", "Guxoisair"], "_b668": ["Doomed Jade Moon", "Amdushya"], "_r669": ["Salt", "Amdushya"], "_r670": ["Ammonia", "Amdushya"], "_r671": ["Emeril", "Amdushya"], "_b672": ["Miasmatic Moon", "Ortoneb_XI"], "_r673": ["Ancient Bones", "Ortoneb_XI"], "_r674": ["Fungal Mould", "Ortoneb_XI"], "_r675": ["Salt", "Ortoneb_XI"], "_r676": ["Ammonia", "Ortoneb_XI"], "_r677": ["Emeril", "Ortoneb_XI"], "_b678": ["Vile Anomaly", "Somthing_bad"], "_r679": ["Cobalt", "Somthing_bad"], "_r680": ["Ammonia", "Somthing_bad"], "_r681": ["Emeril", "Somthing_bad"], "_b682": ["Abandoned Planet", "Sosnowiec"], "_r683": ["Magnetised Ferrite", "Sosnowiec"], "_r684": ["Rusted Metal", "Sosnowiec"], "_r685": ["Emeril", "Sosnowiec"], "_b686": ["High Energy Planet", "Rymora_Sigma"], "_r687": ["Gamma Root", "Rymora_Sigma"], "_r688": ["Magnetised Ferrite", "Rymora_Sigma"], "_r689": ["Uranium", "Rymora_Sigma"], "_r690": ["Emenil", "Rymora_Sigma"], "_b691": ["Viridescent Planet", "Nudoloc_Nodat"], "_r692": ["Star Bulb", "Nudoloc_Nodat"], "_r693": ["Salvageable Scrap", "Nudoloc_Nodat"], "_r694": ["Magnetised Ferrite", "Nudoloc_Nodat"], "_r695": ["Paraffinium", "Nudoloc_Nodat"], "_r696": ["Emeril", "Nudoloc_Nodat"], "_t697": ["<div class=\"tcs\">S</div>&hairsp;Cold Protection", "Ercangyai"], "_t698": ["<div class=\"tcs\">S</div>&hairsp;Cyclotron", "Ercangyai"], "_t699": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Boost", "Ercangyai"], "_t700": ["<div class=\"tcs\">S</div>&hairsp;Hot Protection", "Ercangyai"], "_t701": ["<div class=\"tcs\">S</div>&hairsp;Humboldt Drive", "Ercangyai"], "_t702": ["<div class=\"tcs\">S</div>&hairsp;Mining Beam", "Ercangyai"], "_t703": ["<div class=\"tcs\">S</div>&hairsp;Movement", "Ercangyai"], "_t704": ["<div class=\"tcs\">S</div>&hairsp;Photon Cannon", "Ercangyai"], "_t705": ["<div class=\"tcs\">S</div>&hairsp;Scatter Blaster", "Ercangyai"], "_t706": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", "Ercangyai"], "_s707": ["Ammonia", "Ercangyai"], "_s708": ["Bromide Salt⁺", "Ercangyai"], "_s709": ["Cobalt", "Ercangyai"], "_s710": ["Di-hydrogen Jelly", "Ercangyai"], "_s711": ["Dirty Bronzeˢ", "Ercangyai"], "_s712": ["Dirt⁺", "Ercangyai"], "_s713": ["Ferrite Dust", "Ercangyai"], "_s714": ["Gold", "Ercangyai"], "_s715": ["Ionised Cobalt", "Ercangyai"], "_s716": ["Lemmiumᵍ", "Ercangyai"], "_s717": ["Magnetic Resonator", "Ercangyai"], "_s718": ["Metal Plating", "Ercangyai"], "_s719": ["Microprocessor", "Ercangyai"], "_s720": ["Paraffinium", "Ercangyai"], "_s721": ["Polychromatic Zirconium⁺", "Ercangyai"], "_s722": ["Pugneum", "Ercangyai"], "_s723": ["Pure Ferrite", "Ercangyai"], "_s724": ["Pyrite", "Ercangyai"], "_s725": ["Quantum Computer", "Ercangyai"], "_s726": ["Re-latticed Arc Crystal⁺", "Ercangyai"], "_s727": ["Residual Goop", "Ercangyai"], "_s728": ["Tritium", "Ercangyai"], "_s729": ["Unrefined Pyrite Grease⁺", "Ercangyai"], "_s730": ["Unstable Plasma", "Ercangyai"], "_s731": ["Wiring Loom", "Ercangyai"], "_b732": ["Hiemal Planet", "Roine"], "_r733": ["Swarm Debris", "Roine"], "_r734": ["Frost Crystal", "Roine"], "_r735": ["Salvageable Scrap", "Roine"], "_r736": ["Salt", "Roine"], "_r737": ["Dioxite", "Roine"], "_r738": ["Emeril", "Roine"], "_r739": ["Dissonance detected", "Roine"], "_b740": ["Hot Planet", "Aeza_42/W4"], "_r741": ["Solanium", "Aeza_42/W4"], "_r742": ["Salt", "Aeza_42/W4"], "_r743": ["Phosphorus", "Aeza_42/W4"], "_r744": ["Emeril", "Aeza_42/W4"], "_b745": ["Airless Moon", "Lacissae_Prime"], "_r746": ["Sodium", "Lacissae_Prime"], "_r747": ["Rusted Metal", "Lacissae_Prime"], "_r748": ["Emeril", "Lacissae_Prime"], "_b749": ["Toxic Moon", "Erfiel_Adoma"], "_r750": ["Fungal Mould", "Erfiel_Adoma"], "_r751": ["Sodium", "Erfiel_Adoma"], "_r752": ["Ammonia", "Erfiel_Adoma"], "_r753": ["Activated Emeril", "Erfiel_Adoma"], "_b754": ["Rainy Planet", "Lask_VIII"], "_r755": ["Star Bulb", "Lask_VIII"], "_r756": ["Sodium", "Lask_VIII"], "_r757": ["Paraffinium", "Lask_VIII"], "_r758": ["Emeril", "Lask_VIII"], "_b759": ["Empty Planet", "Bagelzone"], "_r760": ["Cobalt", "Bagelzone"], "_r761": ["Rusted Metal", "Bagelzone"], "_r762": ["Emeril", "Bagelzone"], "_t763": ["<div class=\"tcs\">S</div>&hairsp;Blaze Javelin", "Gagqoid-Eymo"], "_t764": ["<div class=\"tcs\">S</div>&hairsp;Cold Protection", "Gagqoid-Eymo"], "_t765": ["<div class=\"tcs\">S</div>&hairsp;Cyclotron", "Gagqoid-Eymo"], "_t766": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Boost", "Gagqoid-Eymo"], "_t767": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Cannon", "Gagqoid-Eymo"], "_t768": ["<div class=\"tcs\">S</div>&hairsp;Geology Cannon", "Gagqoid-Eymo"], "_t769": ["<div class=\"tcs\">S</div>&hairsp;Infra-Knife", "Gagqoid-Eymo"], "_t770": ["<div class=\"tcs\">S</div>&hairsp;Life Support", "Gagqoid-Eymo"], "_t771": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Engine", "Gagqoid-Eymo"], "_t772": ["<div class=\"tcs\">S</div>&hairsp;Movement", "Gagqoid-Eymo"], "_t773": ["<div class=\"tcs\">S</div>&hairsp;Nautilon Cannon", "Gagqoid-Eymo"], "_t774": ["<div class=\"tcs\">S</div>&hairsp;Plasma Launcher", "Gagqoid-Eymo"], "_t775": ["<div class=\"tcs\">S</div>&hairsp;Positron", "Gagqoid-Eymo"], "_t776": ["<div class=\"tcs\">S</div>&hairsp;Scatter Blaster", "Gagqoid-Eymo"], "_t777": ["<div class=\"tcs\">S</div>&hairsp;Shield", "Gagqoid-Eymo"], "_t778": ["<div class=\"tcs\">S</div>&hairsp;Toxic Protection", "Gagqoid-Eymo"], "_t779": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", "Gagqoid-Eymo"], "_s780": ["Cobalt", "Gagqoid-Eymo"], "_s781": ["Enormous Metal Cog⁺", "Gagqoid-Eymo"], "_s782": ["Ferrite Dust", "Gagqoid-Eymo"], "_s783": ["Hermetic Seal", "Gagqoid-Eymo"], "_s784": ["Magnetic Resonator", "Gagqoid-Eymo"], "_s785": ["Metai Plating", "Gagqoid-Eymo"], "_s786": ["Microprocessor", "Gagqoid-Eymo"], "_s787": ["Paraffinium", "Gagqoid-Eymo"], "_s788": ["Pugneum", "Gagqoid-Eymo"], "_s789": ["Unstable Plasma", "Gagqoid-Eymo"], "_s790": ["Uranium", "Gagqoid-Eymo"], "_s791": ["Wiring Loom", "Gagqoid-Eymo"], "_b792": ["Viridescent Planet", "Hefleeto_E37"], "_r793": ["Star Bulb", "Hefleeto_E37"], "_r794": ["Sodium", "Hefleeto_E37"], "_r795": ["Paraffinium", "Hefleeto_E37"], "_r796": ["Activated Copper", "Hefleeto_E37"], "_b797": ["Rainy Planet", "Esbur"], "_r798": ["Star Bulb", "Esbur"], "_r799": ["Magnetised Ferrite", "Esbur"], "_r800": ["Paraffinium", "Esbur"], "_r801": ["Activated Copper", "Esbur"], "_b802": ["Corrosive Moon", "Yissallu_XIV"], "_r803": ["Fungal Mould", "Yissallu_XIV"], "_r804": ["Salvageable Scrap", "Yissallu_XIV"], "_r805": ["Silver", "Yissallu_XIV"], "_r806": ["Ammonia", "Yissallu_XIV"], "_r807": ["Copper", "Yissallu_XIV"], "_b808": ["Noxious Planet", "Funa_81/X4"], "_r809": ["Fungal Mould", "Funa_81/X4"], "_r810": ["Silver", "Funa_81/X4"], "_r811": ["Ammonia", "Funa_81/X4"], "_r812": ["Copper", "Funa_81/X4"], "_b813": ["High Energy Planet", "Ausiu_XI"], "_r814": ["Gamma Root", "Ausiu_XI"], "_r815": ["Sodium", "Ausiu_XI"], "_r816": ["Uranium", "Ausiu_XI"], "_r817": ["Copper", "Ausiu_XI"], "_b818": ["Hiemal Planet", "Keha_58/B1"], "_r819": ["Frost Crystal", "Keha_58/B1"], "_r820": ["Cobalt", "Keha_58/B1"], "_r821": ["Dioxite", "Keha_58/B1"], "_r822": ["Copper", "Keha_58/B1"], "_t823": ["<div class=\"tcs\">S</div>&hairsp;Cold Protection", "Tizariqi"], "_t824": ["<div class=\"tcs\">S</div>&hairsp;Cyclotron", "Tizariqi"], "_t825": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Cannon", "Tizariqi"], "_t826": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Engine", "Tizariqi"], "_t827": ["<div class=\"tcs\">S</div>&hairsp;Exocraft Laser", "Tizariqi"], "_t828": ["<div class=\"tcs\">S</div>&hairsp;Hot Protection", "Tizariqi"], "_t829": ["<div class=\"tca\">A</div>&hairsp;Launch Thrusters", "Tizariqi"], "_t830": ["<div class=\"tcs\">S</div>&hairsp;Life Support", "Tizariqi"], "_t831": ["<div class=\"tcs\">S</div>&hairsp;Minotaur Cannon", "Tizariqi"], "_t832": ["<div class=\"tcs\">S</div>&hairsp;Photon Cannon", "Tizariqi"], "_t833": ["<div class=\"tcs\">S</div>&hairsp;Plasma Launcher", "Tizariqi"], "_t834": ["<div class=\"tcs\">S</div>&hairsp;Positron", "Tizariqi"], "_t835": ["<div class=\"tcs\">S</div>&hairsp;Pulse Engine", "Tizariqi"], "_t836": ["<div class=\"tcs\">S</div>&hairsp;Pulse Spitter", "Tizariqi"], "_t837": ["<div class=\"tcs\">S</div>&hairsp;Radiation Protection", "Tizariqi"], "_t838": ["<div class=\"tcs\">S</div>&hairsp;Toxic Protection", "Tizariqi"], "_t839": ["<div class=\"tcs\">S</div>&hairsp;Underwater Protection", "Tizariqi"], "_s840": ["5D Torus⁺", "Tizariqi"], "_s841": ["Ammonia", "Tizariqi"], "_s842": ["Chromatic Metal", "Tizariqi"], "_s843": ["Cobalt", "Tizariqi"], "_s844": ["Copper", "Tizariqi"], "_s845": ["Dirty Bronzeˢ", "Tizariqi"], "_s846": ["Ferrite Dust", "Tizariqi"], "_s847": ["Hydraulic Wiring", "Tizariqi"], "_s848": ["Ionised Cobalt", "Tizariqi"], "_s849": ["Lemmiumᵍ", "Tizariqi"], "_s850": ["Magnetised Ferrite", "Tizariqi"], "_s851": ["Magno-Goldᵍ", "Tizariqi"], "_s852": ["Metal Plating", "Tizariqi"], "_s853": ["Microprocessor", "Tizariqi"], "_s854": ["Nanotube Crate⁺", "Tizariqi"], "_s855": ["Optical Solvent⁺", "Tizariqi"], "_s856": ["Residual Goop", "Tizariqi"], "_s857": ["Self-Repairing Heridium⁺", "Tizariqi"], "_s858": ["Tritium", "Tizariqi"], "_s859": ["Unstable Plasma", "Tizariqi"], "_s860": ["Uranium", "Tizariqi"], "_s861": ["Wiring Loom", "Tizariqi"], "_b862": ["Gas Giant", "Itansha"], "_r863": ["Magnetised Ferrite", "Itansha"], "_r864": ["Crystatlised Helium", "Itansha"], "_r865": ["Activated Quartzite", "Itansha"], "_b866": ["Noxious Moon", "Ajja_Minor"], "_r867": ["Fungal Mould", "Ajja_Minor"], "_r868": ["Sodium", "Ajja_Minor"], "_r869": ["Ammonia", "Ajja_Minor"], "_r870": ["Quartzite", "Ajja_Minor"], "_b871": ["Frozen Anomaly", "Elton"], "_r872": ["Salt", "Elton"], "_r873": ["Dioxite", "Elton"], "_r874": ["Quarizite", "Elton"], "_b875": ["Poisonous Moon", "Gojosh_VIII"], "_r876": ["Fungat Mould", "Gojosh_VIII"], "_r877": ["Sodium", "Gojosh_VIII"], "_r878": ["Ammonia", "Gojosh_VIII"], "_r879": ["Quarizite", "Gojosh_VIII"], "_b880": ["Desolate Moon", "Hydesde_III"], "_r881": ["Cobalt", "Hydesde_III"], "_r882": ["Rusted Metal", "Hydesde_III"], "_r883": ["Quartzite", "Hydesde_III"], "_r884": ["Dissonance detected", "Hydesde_III"], "_b885": ["Incandescent Moon", "Tend_40/V5"], "_r886": ["Ancient Bones", "Tend_40/V5"], "_r887": ["Solanium", "Tend_40/V5"], "_r888": ["Silver", "Tend_40/V5"], "_r889": ["Phosphorus", "Tend_40/V5"], "_r890": ["Quarizite", "Tend_40/V5"]}
+const links={"_t001": ["Blaze Javelin", ""], "_t002": ["Boltcaster", ""], "_t003": ["Cold Protection", ""], "_t004": ["Cyclotron", ""], "_t005": ["Exocraft Boost", ""], "_t006": ["Exocraft Cannon", ""], "_t007": ["Exocraft Engine", ""], "_t008": ["Exocraft Laser", ""], "_t009": ["Geology Cannon", ""], "_t010": ["Hot Protection", ""], "_t011": ["Humboldt Drive", ""], "_t012": ["Hyperdrive", ""], "_t013": ["Infra-Knife", ""], "_t014": ["Launch Thrusters", ""], "_t015": ["Life Support", ""], "_t016": ["Mining Beam", ""], "_t017": ["Minotaur Cannon", ""], "_t018": ["Minotaur Engine", ""], "_t019": ["Minotaur Flamethrower", ""], "_t020": ["Minotaur Laser", ""], "_t021": ["Movement", ""], "_t022": ["Nautilon Cannon", ""], "_t023": ["Neutron Cannon", ""], "_t024": ["Phase Beam", ""], "_t025": ["Photon Cannon", ""], "_t026": ["Plasma Launcher", ""], "_t027": ["Positron", ""], "_t028": ["Pulse Engine", ""], "_t029": ["Pulse Spitter", ""], "_t030": ["Radiation Protection", ""], "_t031": ["Scanner", ""], "_t032": ["Scatter Blaster", ""], "_t033": ["Shield", ""], "_t034": ["Starship Shield", ""], "_t035": ["Toxic Protection", ""], "_t036": ["Underwater Protection", ""], "_s037": ["5D Torus⁺", ""], "_s038": ["Amino Chamber", ""], "_s039": ["Ammonia", ""], "_s040": ["Aronium", ""], "_s041": ["Banned Weapons", ""], "_s042": ["Bromide Salt⁺", ""], "_s043": ["Carbon Nanotubes", ""], "_s044": ["Chlorine", ""], "_s045": ["Chromatic Metal", ""], "_s046": ["Cobalt", ""], "_s047": ["Copper", ""], "_s048": ["Di-hydrogen", ""], "_s049": ["Di-hydrogen Jelly", ""], "_s050": ["Dioxite", ""], "_s051": ["Dirty Bronze", ""], "_s052": ["Dirt⁺", ""], "_s053": ["Enormous Metal Cog⁺", ""], "_s054": ["Experimental Power Fluid⁺", ""], "_s055": ["Ferrite Dust", ""], "_s056": ["Gold", ""], "_s057": ["GrahGrah", ""], "_s058": ["Hadal Core", ""], "_s059": ["Hermetic Seal", ""], "_s060": ["Hexite", ""], "_s061": ["Holographic Crankshaft⁺", ""], "_s062": ["Hydraulic Wiring", ""], "_s063": ["Hypnotic Eye", ""], "_s064": ["Industrial-Grade Battery⁺", ""], "_s065": ["Larval Core", ""], "_s066": ["Lemmium", ""], "_s067": ["Magnetic Resonator", ""], "_s068": ["Magnetised Ferrite", ""], "_s069": ["Magno-Gold", ""], "_s070": ["Mesh Decouplers⁺", ""], "_s071": ["Metai Plating", ""], "_s072": ["Metal Plating", ""], "_s073": ["Microprocessor", ""], "_s074": ["Nanotube Crate⁺", ""], "_s075": ["NipNip Buds", ""], "_s076": ["Non-Stick Piston⁺", ""], "_s077": ["Ohmic Gel⁺", ""], "_s078": ["Optical Solvent⁺", ""], "_s079": ["Packet (Arms)", ""], "_s080": ["Packet (Goods)", ""], "_s081": ["Packet (Tech)", ""], "_s082": ["Paraffinium", ""], "_s083": ["Phosphorus", ""], "_s084": ["Platinum", ""], "_s085": ["Polychromatic Zirconium⁺", ""], "_s086": ["Pugneum", ""], "_s087": ["Pure Ferrite", ""], "_s088": ["Pyrite", ""], "_s089": ["Quantum Computer", ""], "_s090": ["Re-latticed Arc Crystal⁺", ""], "_s091": ["Residual Goop", ""], "_s092": ["Rusted Metal", ""], "_s093": ["Salt", ""], "_s094": ["Self-Repairing Heridium⁺", ""], "_s095": ["Silver", ""], "_s096": ["Solar Mirror", ""], "_s097": ["Spark Canister⁺", ""], "_s098": ["Starshield Battery", ""], "_s099": ["Tritium", ""], "_s100": ["Unrefined Pyrite Grease⁺", ""], "_s101": ["Unstable Piasma", ""], "_s102": ["Unstable Plasma", ""], "_s103": ["Uranium", ""], "_s104": ["Viscous Fluids", ""], "_s105": ["Wiring Loom", ""], "_s106": ["lonised Cobalt", ""], "_r107": ["Activated Copper", ""], "_r108": ["Activated Emeril", ""], "_r109": ["Activated Quartzite", ""], "_r110": ["Ammonia", ""], "_r111": ["Ancient Bones", ""], "_r112": ["Basalt", ""], "_r113": ["Cactus Flesh", ""], "_r114": ["Cadmium", ""], "_r115": ["Cobalt", ""], "_r116": ["Copper", ""], "_r117": ["Crystatlised Helium", ""], "_r118": ["Dioxite", ""], "_r119": ["Dissonance detected", ""], "_r120": ["Emeril", ""], "_r121": ["Frost Crystal", ""], "_r122": ["Fungal Mould", ""], "_r123": ["Gamma Root", ""], "_r124": ["Gold", ""], "_r125": ["Magnetised Ferrite", ""], "_r126": ["Paraffinium", ""], "_r127": ["Phosphorus", ""], "_r128": ["Pyrite", ""], "_r129": ["Quarizite", ""], "_r130": ["Quartzite", ""], "_r131": ["Rusted Metal", ""], "_r132": ["Salt", ""], "_r133": ["Salvageable Scrap", ""], "_r134": ["Sedium", ""], "_r135": ["Silver", ""], "_r136": ["Sodium", ""], "_r137": ["Solanium", ""], "_r138": ["Star Bulb", ""], "_r139": ["Sulphurine", ""], "_r140": ["Swarm Debris", ""], "_r141": ["Uranium", ""], "_r142": ["Vile Brood Detectec", ""], "_b143": ["Abandoned Moon", ""], "_b144": ["Abandoned Planet", ""], "_b145": ["Airless Moon", ""], "_b146": ["Airless Planet", ""], "_b147": ["Arctic Moon", ""], "_b148": ["Bladed Moon", ""], "_b149": ["Blighted Planet", ""], "_b150": ["Boiling Planet", ""], "_b151": ["Bubbling Moon", ""], "_b152": ["Charred Planet", ""], "_b153": ["Corrosive Moon", ""], "_b154": ["Corrosive Planet", ""], "_b155": ["Dead Planet", ""], "_b156": ["Decaying Nuclear Planet", ""], "_b157": ["Desolate Moon", ""], "_b158": ["Desolate Planet", ""], "_b159": ["Doomed Jade Moon", ""], "_b160": ["Empty Planet", ""], "_b161": ["Erupting Planet", ""], "_b162": ["Frothing Planet", ""], "_b163": ["Frozen Anomaly", ""], "_b164": ["Frozen Planet", ""], "_b165": ["Gas Giant", ""], "_b166": ["Glacial Planet", ""], "_b167": ["Hiemal Planet", ""], "_b168": ["High Energy Planet", ""], "_b169": ["Hot Planet", ""], "_b170": ["Incandescent Moon", ""], "_b171": ["Low Atmosphere Planet", ""], "_b172": ["Metallic Planet", ""], "_b173": ["Miasmatic Moon", ""], "_b174": ["Miasmatic Planet", ""], "_b175": ["Noxious Moon", ""], "_b176": ["Noxious Planet", ""], "_b177": ["Paradise Planet", ""], "_b178": ["Poisonous Moon", ""], "_b179": ["Rainy Planet", ""], "_b180": ["Ruined Planet", ""], "_b181": ["Scorched Planet", ""], "_b182": ["Sub-zero Planet", ""], "_b183": ["Tainted Planet", ""], "_b184": ["Temperate Planet", ""], "_b185": ["Terraforming Catastrophe", ""], "_b186": ["Toxic Moon", ""], "_b187": ["Tropical Planet", ""], "_b188": ["Vapour Planet", ""], "_b189": ["Verdant Planet", ""], "_b190": ["Vile Anomaly", ""], "_b191": ["Viridescent Planet", ""], "_b192": ["Wine Dark Planet", ""], "_t193": ["Cold Protection", "Paroi_Major"], "_t194": ["Exocraft Boost", "Paroi_Major"], "_t195": ["Exocraft Boost", "Paroi_Major"], "_t196": ["Hot Protection", "Paroi_Major"], "_t197": ["Hot Protection", "Paroi_Major"], "_t198": ["Mining Beam", "Paroi_Major"], "_t199": ["Minotaur Engine", "Paroi_Major"], "_t200": ["Minotaur Flamethrower", "Paroi_Major"], "_t201": ["Plasma Launcher", "Paroi_Major"], "_t202": ["Plasma Launcher", "Paroi_Major"], "_t203": ["Pulse Engine", "Paroi_Major"], "_t204": ["Pulse Engine", "Paroi_Major"], "_t205": ["Shield", "Paroi_Major"], "_t206": ["Shield", "Paroi_Major"], "_t207": ["Underwater Protection", "Paroi_Major"], "_s208": ["Ammonia", "Paroi_Major"], "_s209": ["Bromide Salt⁺", "Paroi_Major"], "_s210": ["Chlorine", "Paroi_Major"], "_s211": ["Cobalt", "Paroi_Major"], "_s212": ["Copper", "Paroi_Major"], "_s213": ["Dioxite", "Paroi_Major"], "_s214": ["Dirt⁺", "Paroi_Major"], "_s215": ["Ferrite Dust", "Paroi_Major"], "_s216": ["Magnetic Resonator", "Paroi_Major"], "_s217": ["Magnetised Ferrite", "Paroi_Major"], "_s218": ["Magno-Gold", "Paroi_Major"], "_s219": ["Metal Plating", "Paroi_Major"], "_s220": ["Microprocessor", "Paroi_Major"], "_s221": ["Silver", "Paroi_Major"], "_s222": ["Solar Mirror", "Paroi_Major"], "_s223": ["Unrefined Pyrite Grease⁺", "Paroi_Major"], "_s224": ["Unstable Piasma", "Paroi_Major"], "_s225": ["Unstable Plasma", "Paroi_Major"], "_s226": ["Wiring Loom", "Paroi_Major"], "_s227": ["lonised Cobalt", "Paroi_Major"], "_b228": ["Paradise Planet", "Oria_V"], "_r229": ["Ancient Bones", "Oria_V"], "_r230": ["Star Bulb", "Oria_V"], "_r231": ["Salt", "Oria_V"], "_r232": ["Paraffinium", "Oria_V"], "_r233": ["Copper", "Oria_V"], "_b234": ["Charred Planet", "Anhoeb"], "_r235": ["Solanium", "Anhoeb"], "_r236": ["Salvageable Scrap", "Anhoeb"], "_r237": ["Sedium", "Anhoeb"], "_r238": ["Phosphorus", "Anhoeb"], "_r239": ["Copper", "Anhoeb"], "_b240": ["Terraforming Catastrophe", "Noder_XVI"], "_r241": ["Cobalt", "Noder_XVI"], "_r242": ["Rusted Metal", "Noder_XVI"], "_r243": ["Copper", "Noder_XVI"], "_r244": ["Dissonance detected", "Noder_XVI"], "_b245": ["Vapour Planet", "Kileyto_IV"], "_r246": ["Ancient Bones", "Kileyto_IV"], "_r247": ["Vile Brood Detectec", "Kileyto_IV"], "_r248": ["Salt", "Kileyto_IV"], "_r249": ["Sulphurine", "Kileyto_IV"], "_r250": ["Copper", "Kileyto_IV"], "_b251": ["Decaying Nuclear Planet", "Vide_Prime"], "_r252": ["Gamma Root", "Vide_Prime"], "_r253": ["Salvageable Scrap", "Vide_Prime"], "_r254": ["Silver", "Vide_Prime"], "_r255": ["Uranium", "Vide_Prime"], "_r256": ["Copper", "Vide_Prime"], "_b257": ["Frothing Planet", "A01"], "_r258": ["Silver", "A01"], "_r259": ["Gold", "A01"], "_r260": ["Cadmium", "A01"], "_b261": ["Wine Dark Planet", "A02"], "_r262": ["Ancient Bones", "A02"], "_r263": ["Cobalt", "A02"], "_r264": ["Phosphorus", "A02"], "_r265": ["Cadmium", "A02"], "_b266": ["Low Atmosphere Planet", "A03"], "_r267": ["Sodium", "A03"], "_r268": ["Rusted Metal", "A03"], "_r269": ["Cadmium", "A03"], "_b270": ["Bladed Moon", "A04"], "_r271": ["Sodium", "A04"], "_r272": ["Gold", "A04"], "_r273": ["Cadmium", "A04"], "_b274": ["Metallic Planet", "A05"], "_r275": ["Sodium", "A05"], "_r276": ["Gold", "A05"], "_r277": ["Cadmium", "A05"], "_t278": ["Boltcaster", "Iryang"], "_t279": ["Boltcaster", "Iryang"], "_t280": ["Exocraft Cannon", "Iryang"], "_t281": ["Geology Cannon", "Iryang"], "_t282": ["Geology Cannon", "Iryang"], "_t283": ["Launch Thrusters", "Iryang"], "_t284": ["Mining Beam", "Iryang"], "_t285": ["Nautilon Cannon", "Iryang"], "_t286": ["Nautilon Cannon", "Iryang"], "_t287": ["Neutron Cannon", "Iryang"], "_t288": ["Photon Cannon", "Iryang"], "_t289": ["Positron", "Iryang"], "_t290": ["Pulse Engine", "Iryang"], "_t291": ["Pulse Spitter", "Iryang"], "_s292": ["Carbon Nanotubes", "Iryang"], "_s293": ["Chlorine", "Iryang"], "_s294": ["Cobalt", "Iryang"], "_s295": ["Dioxite", "Iryang"], "_s296": ["Enormous Metal Cog⁺", "Iryang"], "_s297": ["Ferrite Dust", "Iryang"], "_s298": ["Holographic Crankshaft⁺", "Iryang"], "_s299": ["Magno-Gold", "Iryang"], "_s300": ["Mesh Decouplers⁺", "Iryang"], "_s301": ["Metal Plating", "Iryang"], "_s302": ["Microprocessor", "Iryang"], "_s303": ["Non-Stick Piston⁺", "Iryang"], "_s304": ["Phosphorus", "Iryang"], "_s305": ["Rusted Metal", "Iryang"], "_s306": ["Silver", "Iryang"], "_s307": ["Unstable Plasma", "Iryang"], "_s308": ["Uranium", "Iryang"], "_s309": ["Wiring Loom", "Iryang"], "_b310": ["Frozen Planet", "Court"], "_r311": ["Frost Crystal", "Court"], "_r312": ["Silver", "Court"], "_r313": ["Dioxite", "Court"], "_r314": ["Copper", "Court"], "_b315": ["Boiling Planet", "Oeotira"], "_r316": ["Solanium", "Oeotira"], "_r317": ["Sodium", "Oeotira"], "_r318": ["Phosphorus", "Oeotira"], "_r319": ["Activated Copper", "Oeotira"], "_b320": ["Bubbling Moon", "Sode_99/R5"], "_r321": ["Silver", "Sode_99/R5"], "_r322": ["Gold", "Sode_99/R5"], "_r323": ["Copper", "Sode_99/R5"], "_b324": ["Noxious Moon", "Utha"], "_r325": ["Fungal Mould", "Utha"], "_r326": ["Salvageable Scrap", "Utha"], "_r327": ["Silver", "Utha"], "_r328": ["Ammonia", "Utha"], "_r329": ["Activated Copper", "Utha"], "_b330": ["Airless Planet", "Mistin"], "_r331": ["Silver", "Mistin"], "_r332": ["Rusted Metal", "Mistin"], "_r333": ["Copper", "Mistin"], "_b334": ["Dead Planet", "Bansc"], "_r335": ["Ancient Bones", "Bansc"], "_r336": ["Silver", "Bansc"], "_r337": ["Rusted Metal", "Bansc"], "_r338": ["Copper", "Bansc"], "_t339": ["Infra-Knife", "Etianl-Ivp"], "_t340": ["Infra-Knife", "Etianl-Ivp"], "_t341": ["Launch Thrusters", "Etianl-Ivp"], "_t342": ["Life Support", "Etianl-Ivp"], "_t343": ["Life Support", "Etianl-Ivp"], "_t344": ["Mining Beam", "Etianl-Ivp"], "_t345": ["Minotaur Flamethrower", "Etianl-Ivp"], "_t346": ["Nautilon Cannon", "Etianl-Ivp"], "_t347": ["Neutron Cannon", "Etianl-Ivp"], "_t348": ["Phase Beam", "Etianl-Ivp"], "_t349": ["Plasma Launcher", "Etianl-Ivp"], "_t350": ["Radiation Protection", "Etianl-Ivp"], "_t351": ["Radiation Protection", "Etianl-Ivp"], "_t352": ["Scanner", "Etianl-Ivp"], "_t353": ["Toxic Protection", "Etianl-Ivp"], "_t354": ["Toxic Protection", "Etianl-Ivp"], "_t355": ["Underwater Protection", "Etianl-Ivp"], "_s356": ["Ammonia", "Etianl-Ivp"], "_s357": ["Chlorine", "Etianl-Ivp"], "_s358": ["Cobalt", "Etianl-Ivp"], "_s359": ["Copper", "Etianl-Ivp"], "_s360": ["Dioxite", "Etianl-Ivp"], "_s361": ["Ferrite Dust", "Etianl-Ivp"], "_s362": ["Hermetic Seal", "Etianl-Ivp"], "_s363": ["Hydraulic Wiring", "Etianl-Ivp"], "_s364": ["Industrial-Grade Battery⁺", "Etianl-Ivp"], "_s365": ["Magnetic Resonator", "Etianl-Ivp"], "_s366": ["Metal Plating", "Etianl-Ivp"], "_s367": ["Microprocessor", "Etianl-Ivp"], "_s368": ["Ohmic Gel⁺", "Etianl-Ivp"], "_s369": ["Quantum Computer", "Etianl-Ivp"], "_s370": ["Residual Goop", "Etianl-Ivp"], "_s371": ["Rusted Metal", "Etianl-Ivp"], "_s372": ["Silver", "Etianl-Ivp"], "_s373": ["Spark Canister⁺", "Etianl-Ivp"], "_s374": ["Tritium", "Etianl-Ivp"], "_s375": ["Unstable Plasma", "Etianl-Ivp"], "_s376": ["Wiring Loom", "Etianl-Ivp"], "_b377": ["Corrosive Planet", "Osalvian_H12"], "_r378": ["Fungal Mould", "Osalvian_H12"], "_r379": ["Magnetised Ferrite", "Osalvian_H12"], "_r380": ["Ammonia", "Osalvian_H12"], "_r381": ["Copper", "Osalvian_H12"], "_b382": ["Abandoned Moon", "Cournt_XVI"], "_r383": ["Cactus Flesh", "Cournt_XVI"], "_r384": ["Salvageable Scrap", "Cournt_XVI"], "_r385": ["Cobalt", "Cournt_XVI"], "_r386": ["Pyrite", "Cournt_XVI"], "_r387": ["Activated Copper", "Cournt_XVI"], "_b388": ["Ruined Planet", "Onzo_Sigma"], "_r389": ["Gamma Root", "Onzo_Sigma"], "_r390": ["Salvageable Scrap", "Onzo_Sigma"], "_r391": ["Cobalt", "Onzo_Sigma"], "_r392": ["Uranium", "Onzo_Sigma"], "_r393": ["Copper", "Onzo_Sigma"], "_b394": ["Desolate Planet", "Uncel_XVI"], "_r395": ["Ancient Bones", "Uncel_XVI"], "_r396": ["Magnetised Ferrite", "Uncel_XVI"], "_r397": ["Rusted Metal", "Uncel_XVI"], "_r398": ["Copper", "Uncel_XVI"], "_b399": ["Temperate Planet", "Irskij_M50"], "_r400": ["Star Bulb", "Irskij_M50"], "_r401": ["Silver", "Irskij_M50"], "_r402": ["Paraffinium", "Irskij_M50"], "_r403": ["Copper", "Irskij_M50"], "_b404": ["Scorched Planet", "Euci"], "_r405": ["Solanium", "Euci"], "_r406": ["Silver", "Euci"], "_r407": ["Phosphorus", "Euci"], "_r408": ["Copper", "Euci"], "_t409": ["Blaze Javelin", "Onjukuy-Chnym"], "_t410": ["Boltcaster", "Onjukuy-Chnym"], "_t411": ["Cold Protection", "Onjukuy-Chnym"], "_t412": ["Cold Protection", "Onjukuy-Chnym"], "_t413": ["Exocraft Boost", "Onjukuy-Chnym"], "_t414": ["Hyperdrive", "Onjukuy-Chnym"], "_t415": ["Life Support", "Onjukuy-Chnym"], "_t416": ["Minotaur Cannon", "Onjukuy-Chnym"], "_t417": ["Minotaur Engine", "Onjukuy-Chnym"], "_t418": ["Minotaur Flamethrower", "Onjukuy-Chnym"], "_t419": ["Phase Beam", "Onjukuy-Chnym"], "_t420": ["Phase Beam", "Onjukuy-Chnym"], "_t421": ["Photon Cannon", "Onjukuy-Chnym"], "_t422": ["Photon Cannon", "Onjukuy-Chnym"], "_t423": ["Positron", "Onjukuy-Chnym"], "_t424": ["Positron", "Onjukuy-Chnym"], "_t425": ["Pulse Engine", "Onjukuy-Chnym"], "_t426": ["Pulse Spitter", "Onjukuy-Chnym"], "_t427": ["Pulse Spitter", "Onjukuy-Chnym"], "_t428": ["Radiation Protection", "Onjukuy-Chnym"], "_t429": ["Radiation Protection", "Onjukuy-Chnym"], "_t430": ["Shield", "Onjukuy-Chnym"], "_t431": ["Shield", "Onjukuy-Chnym"], "_t432": ["Starship Shield", "Onjukuy-Chnym"], "_t433": ["Starship Shield", "Onjukuy-Chnym"], "_s434": ["Chromatic Metal", "Onjukuy-Chnym"], "_s435": ["Cobalt", "Onjukuy-Chnym"], "_s436": ["Copper", "Onjukuy-Chnym"], "_s437": ["Dirty Bronze", "Onjukuy-Chnym"], "_s438": ["Experimental Power Fluid⁺", "Onjukuy-Chnym"], "_s439": ["Ferrite Dust", "Onjukuy-Chnym"], "_s440": ["Gold", "Onjukuy-Chnym"], "_s441": ["Hermetic Seal", "Onjukuy-Chnym"], "_s442": ["Industrial-Grade Battery⁺", "Onjukuy-Chnym"], "_s443": ["Metal Plating", "Onjukuy-Chnym"], "_s444": ["Microprocessor", "Onjukuy-Chnym"], "_s445": ["Ohmic Gel⁺", "Onjukuy-Chnym"], "_s446": ["Platinum", "Onjukuy-Chnym"], "_s447": ["Salt", "Onjukuy-Chnym"], "_s448": ["Silver", "Onjukuy-Chnym"], "_s449": ["Solar Mirror", "Onjukuy-Chnym"], "_s450": ["Spark Canister⁺", "Onjukuy-Chnym"], "_s451": ["Tritium", "Onjukuy-Chnym"], "_s452": ["Unstable Plasma", "Onjukuy-Chnym"], "_s453": ["Wiring Loom", "Onjukuy-Chnym"], "_b454": ["Tainted Planet", "Lottersh_Sado"], "_r455": ["Ancient Bones", "Lottersh_Sado"], "_r456": ["Cactus Flesh", "Lottersh_Sado"], "_r457": ["Silver", "Lottersh_Sado"], "_r458": ["Pyrite", "Lottersh_Sado"], "_r459": ["Copper", "Lottersh_Sado"], "_b460": ["Boiling Planet", "Rihyper_XVII"], "_r461": ["Solanium", "Rihyper_XVII"], "_r462": ["Magnetised Ferrite", "Rihyper_XVII"], "_r463": ["Phosphorus", "Rihyper_XVII"], "_r464": ["Copper", "Rihyper_XVII"], "_b465": ["Sub-zero Planet", "Alvanion_F45"], "_r466": ["Frost Crystal", "Alvanion_F45"], "_r467": ["Salvageable Scrap", "Alvanion_F45"], "_r468": ["Silver", "Alvanion_F45"], "_r469": ["Dioxite", "Alvanion_F45"], "_r470": ["Copper", "Alvanion_F45"], "_b471": ["Erupting Planet", "Nehea_Beta"], "_r472": ["Magnetised Ferrite", "Nehea_Beta"], "_r473": ["Basalt", "Nehea_Beta"], "_r474": ["Copper", "Nehea_Beta"], "_b475": ["Miasmatic Planet", "Barno_Gamma"], "_r476": ["Fungal Mould", "Barno_Gamma"], "_r477": ["Salvageable Scrap", "Barno_Gamma"], "_r478": ["Cobalt", "Barno_Gamma"], "_r479": ["Ammonia", "Barno_Gamma"], "_r480": ["Copper", "Barno_Gamma"], "_b481": ["Glacial Planet", "Jarriscu_lihac"], "_r482": ["Frost Crystal", "Jarriscu_lihac"], "_r483": ["Silver", "Jarriscu_lihac"], "_r484": ["Dioxite", "Jarriscu_lihac"], "_r485": ["Copper", "Jarriscu_lihac"], "_t486": ["Blaze Javelin", "Qarali-Cusse_I"], "_t487": ["Cyclotron", "Qarali-Cusse_I"], "_t488": ["Cyclotron", "Qarali-Cusse_I"], "_t489": ["Exocraft Cannon", "Qarali-Cusse_I"], "_t490": ["Geology Cannon", "Qarali-Cusse_I"], "_t491": ["Geology Cannon", "Qarali-Cusse_I"], "_t492": ["Launch Thrusters", "Qarali-Cusse_I"], "_t493": ["Minotaur Laser", "Qarali-Cusse_I"], "_t494": ["Minotaur Laser", "Qarali-Cusse_I"], "_t495": ["Photon Cannon", "Qarali-Cusse_I"], "_t496": ["Photon Cannon", "Qarali-Cusse_I"], "_t497": ["Pulse Engine", "Qarali-Cusse_I"], "_t498": ["Pulse Spitter", "Qarali-Cusse_I"], "_t499": ["Scatter Blaster", "Qarali-Cusse_I"], "_t500": ["Scatter Blaster", "Qarali-Cusse_I"], "_t501": ["Underwater Protection", "Qarali-Cusse_I"], "_t502": ["Underwater Protection", "Qarali-Cusse_I"], "_s503": ["Amino Chamber", "Qarali-Cusse_I"], "_s504": ["Aronium", "Qarali-Cusse_I"], "_s505": ["Chlorine", "Qarali-Cusse_I"], "_s506": ["Cobalt", "Qarali-Cusse_I"], "_s507": ["Dirty Bronze", "Qarali-Cusse_I"], "_s508": ["Experimental Power Fluid⁺", "Qarali-Cusse_I"], "_s509": ["Ferrite Dust", "Qarali-Cusse_I"], "_s510": ["Gold", "Qarali-Cusse_I"], "_s511": ["Industrial-Grade Battery⁺", "Qarali-Cusse_I"], "_s512": ["Lemmium", "Qarali-Cusse_I"], "_s513": ["Magnetised Ferrite", "Qarali-Cusse_I"], "_s514": ["Magno-Gold", "Qarali-Cusse_I"], "_s515": ["Metal Plating", "Qarali-Cusse_I"], "_s516": ["Microprocessor", "Qarali-Cusse_I"], "_s517": ["Ohmic Gel⁺", "Qarali-Cusse_I"], "_s518": ["Platinum", "Qarali-Cusse_I"], "_s519": ["Pure Ferrite", "Qarali-Cusse_I"], "_s520": ["Pyrite", "Qarali-Cusse_I"], "_s521": ["Rusted Metal", "Qarali-Cusse_I"], "_s522": ["Spark Canister⁺", "Qarali-Cusse_I"], "_s523": ["Unstable Plasma", "Qarali-Cusse_I"], "_s524": ["Wiring Loom", "Qarali-Cusse_I"], "_s525": ["lonised Cobalt", "Qarali-Cusse_I"], "_b526": ["Tainted Planet", "Eblintpa_B12"], "_r527": ["Cactus Flesh", "Eblintpa_B12"], "_r528": ["Silver", "Eblintpa_B12"], "_r529": ["Pyrite", "Eblintpa_B12"], "_r530": ["Activated Copper", "Eblintpa_B12"], "_b531": ["Blighted Planet", "Mamin"], "_r532": ["Fungal Mould", "Mamin"], "_r533": ["Silver", "Mamin"], "_r534": ["Ammonia", "Mamin"], "_r535": ["Copper", "Mamin"], "_b536": ["Arctic Moon", "Laywoo_B42"], "_r537": ["Frost Crystal", "Laywoo_B42"], "_r538": ["Magnetised Ferrite", "Laywoo_B42"], "_r539": ["Dioxite", "Laywoo_B42"], "_r540": ["Activated Copper", "Laywoo_B42"], "_b541": ["Desolate Moon", "Nitwickin_XIV"], "_r542": ["Salt", "Nitwickin_XIV"], "_r543": ["Rusted Metal", "Nitwickin_XIV"], "_r544": ["Copper", "Nitwickin_XIV"], "_b545": ["Verdant Planet", "Neilade_G41"], "_r546": ["Star Bulb", "Neilade_G41"], "_r547": ["Salvageable Scrap", "Neilade_G41"], "_r548": ["Sodium", "Neilade_G41"], "_r549": ["Paraffinium", "Neilade_G41"], "_r550": ["Copper", "Neilade_G41"], "_b551": ["Tropical Planet", "Uzenot_XVI"], "_r552": ["Star Bulb", "Uzenot_XVI"], "_r553": ["Salvageable Scrap", "Uzenot_XVI"], "_r554": ["Magnetised Ferrite", "Uzenot_XVI"], "_r555": ["Paraffinium", "Uzenot_XVI"], "_r556": ["Copper", "Uzenot_XVI"], "_t557": ["Geology Cannon", "Guxoisair"], "_t558": ["Mining Beam", "Guxoisair"], "_t559": ["Neutron Cannon", "Guxoisair"], "_t560": ["Phase Beam", "Guxoisair"], "_t561": ["Photon Cannon", "Guxoisair"], "_t562": ["Plasma Launcher", "Guxoisair"], "_t563": ["Positron", "Guxoisair"], "_t564": ["Pulse Spitter", "Guxoisair"], "_t565": ["Scanner", "Guxoisair"], "_t566": ["Scatter Blaster", "Guxoisair"], "_t567": ["Shield", "Guxoisair"], "_t568": ["Starship Shield", "Guxoisair"], "_s569": ["Banned Weapons", "Guxoisair"], "_s570": ["Chlorine", "Guxoisair"], "_s571": ["Di-hydrogen", "Guxoisair"], "_s572": ["GrahGrah", "Guxoisair"], "_s573": ["Hadal Core", "Guxoisair"], "_s574": ["Hexite", "Guxoisair"], "_s575": ["Hypnotic Eye", "Guxoisair"], "_s576": ["Larval Core", "Guxoisair"], "_s577": ["NipNip Buds", "Guxoisair"], "_s578": ["Packet (Arms)", "Guxoisair"], "_s579": ["Packet (Goods)", "Guxoisair"], "_s580": ["Packet (Tech)", "Guxoisair"], "_s581": ["Starshield Battery", "Guxoisair"], "_s582": ["Tritium", "Guxoisair"], "_s583": ["Viscous Fluids", "Guxoisair"], "_b584": ["Doomed Jade Moon", "Amdushya"], "_r585": ["Salt", "Amdushya"], "_r586": ["Ammonia", "Amdushya"], "_r587": ["Emeril", "Amdushya"], "_b588": ["Miasmatic Moon", "Ortoneb_XI"], "_r589": ["Ancient Bones", "Ortoneb_XI"], "_r590": ["Fungal Mould", "Ortoneb_XI"], "_r591": ["Salt", "Ortoneb_XI"], "_r592": ["Ammonia", "Ortoneb_XI"], "_r593": ["Emeril", "Ortoneb_XI"], "_b594": ["Vile Anomaly", "Somthing_bad"], "_r595": ["Cobalt", "Somthing_bad"], "_r596": ["Ammonia", "Somthing_bad"], "_r597": ["Emeril", "Somthing_bad"], "_b598": ["Abandoned Planet", "Sosnowiec"], "_r599": ["Magnetised Ferrite", "Sosnowiec"], "_r600": ["Rusted Metal", "Sosnowiec"], "_r601": ["Emeril", "Sosnowiec"], "_b602": ["High Energy Planet", "Rymora_Sigma"], "_r603": ["Gamma Root", "Rymora_Sigma"], "_r604": ["Magnetised Ferrite", "Rymora_Sigma"], "_r605": ["Uranium", "Rymora_Sigma"], "_r606": ["Emeril", "Rymora_Sigma"], "_b607": ["Viridescent Planet", "Nudoloc_Nodat"], "_r608": ["Star Bulb", "Nudoloc_Nodat"], "_r609": ["Salvageable Scrap", "Nudoloc_Nodat"], "_r610": ["Magnetised Ferrite", "Nudoloc_Nodat"], "_r611": ["Paraffinium", "Nudoloc_Nodat"], "_r612": ["Emeril", "Nudoloc_Nodat"], "_t613": ["Cold Protection", "Ercangyai"], "_t614": ["Cyclotron", "Ercangyai"], "_t615": ["Exocraft Boost", "Ercangyai"], "_t616": ["Hot Protection", "Ercangyai"], "_t617": ["Hot Protection", "Ercangyai"], "_t618": ["Humboldt Drive", "Ercangyai"], "_t619": ["Humboldt Drive", "Ercangyai"], "_t620": ["Mining Beam", "Ercangyai"], "_t621": ["Movement", "Ercangyai"], "_t622": ["Photon Cannon", "Ercangyai"], "_t623": ["Scatter Blaster", "Ercangyai"], "_t624": ["Scatter Blaster", "Ercangyai"], "_t625": ["Underwater Protection", "Ercangyai"], "_s626": ["Ammonia", "Ercangyai"], "_s627": ["Bromide Salt⁺", "Ercangyai"], "_s628": ["Cobalt", "Ercangyai"], "_s629": ["Di-hydrogen Jelly", "Ercangyai"], "_s630": ["Dirty Bronze", "Ercangyai"], "_s631": ["Dirt⁺", "Ercangyai"], "_s632": ["Ferrite Dust", "Ercangyai"], "_s633": ["Gold", "Ercangyai"], "_s634": ["Lemmium", "Ercangyai"], "_s635": ["Magnetic Resonator", "Ercangyai"], "_s636": ["Metal Plating", "Ercangyai"], "_s637": ["Microprocessor", "Ercangyai"], "_s638": ["Paraffinium", "Ercangyai"], "_s639": ["Polychromatic Zirconium⁺", "Ercangyai"], "_s640": ["Pugneum", "Ercangyai"], "_s641": ["Pure Ferrite", "Ercangyai"], "_s642": ["Pyrite", "Ercangyai"], "_s643": ["Quantum Computer", "Ercangyai"], "_s644": ["Re-latticed Arc Crystal⁺", "Ercangyai"], "_s645": ["Residual Goop", "Ercangyai"], "_s646": ["Tritium", "Ercangyai"], "_s647": ["Unrefined Pyrite Grease⁺", "Ercangyai"], "_s648": ["Unstable Plasma", "Ercangyai"], "_s649": ["Wiring Loom", "Ercangyai"], "_s650": ["lonised Cobalt", "Ercangyai"], "_b651": ["Hiemal Planet", "Roine"], "_r652": ["Swarm Debris", "Roine"], "_r653": ["Frost Crystal", "Roine"], "_r654": ["Salvageable Scrap", "Roine"], "_r655": ["Salt", "Roine"], "_r656": ["Dioxite", "Roine"], "_r657": ["Emeril", "Roine"], "_r658": ["Dissonance detected", "Roine"], "_b659": ["Hot Planet", "Aeza_42/W4"], "_r660": ["Solanium", "Aeza_42/W4"], "_r661": ["Salt", "Aeza_42/W4"], "_r662": ["Phosphorus", "Aeza_42/W4"], "_r663": ["Emeril", "Aeza_42/W4"], "_b664": ["Airless Moon", "Lacissae_Prime"], "_r665": ["Sodium", "Lacissae_Prime"], "_r666": ["Rusted Metal", "Lacissae_Prime"], "_r667": ["Emeril", "Lacissae_Prime"], "_b668": ["Toxic Moon", "Erfiel_Adoma"], "_r669": ["Fungal Mould", "Erfiel_Adoma"], "_r670": ["Sodium", "Erfiel_Adoma"], "_r671": ["Ammonia", "Erfiel_Adoma"], "_r672": ["Activated Emeril", "Erfiel_Adoma"], "_b673": ["Rainy Planet", "Lask_VIII"], "_r674": ["Star Bulb", "Lask_VIII"], "_r675": ["Sodium", "Lask_VIII"], "_r676": ["Paraffinium", "Lask_VIII"], "_r677": ["Emeril", "Lask_VIII"], "_b678": ["Empty Planet", "Bagelzone"], "_r679": ["Cobalt", "Bagelzone"], "_r680": ["Rusted Metal", "Bagelzone"], "_r681": ["Emeril", "Bagelzone"], "_t682": ["Blaze Javelin", "Gagqoid-Eymo"], "_t683": ["Cold Protection", "Gagqoid-Eymo"], "_t684": ["Cold Protection", "Gagqoid-Eymo"], "_t685": ["Cyclotron", "Gagqoid-Eymo"], "_t686": ["Exocraft Boost", "Gagqoid-Eymo"], "_t687": ["Exocraft Cannon", "Gagqoid-Eymo"], "_t688": ["Geology Cannon", "Gagqoid-Eymo"], "_t689": ["Infra-Knife", "Gagqoid-Eymo"], "_t690": ["Infra-Knife", "Gagqoid-Eymo"], "_t691": ["Life Support", "Gagqoid-Eymo"], "_t692": ["Life Support", "Gagqoid-Eymo"], "_t693": ["Minotaur Engine", "Gagqoid-Eymo"], "_t694": ["Minotaur Engine", "Gagqoid-Eymo"], "_t695": ["Movement", "Gagqoid-Eymo"], "_t696": ["Movement", "Gagqoid-Eymo"], "_t697": ["Nautilon Cannon", "Gagqoid-Eymo"], "_t698": ["Plasma Launcher", "Gagqoid-Eymo"], "_t699": ["Positron", "Gagqoid-Eymo"], "_t700": ["Scatter Blaster", "Gagqoid-Eymo"], "_t701": ["Shield", "Gagqoid-Eymo"], "_t702": ["Toxic Protection", "Gagqoid-Eymo"], "_t703": ["Toxic Protection", "Gagqoid-Eymo"], "_t704": ["Underwater Protection", "Gagqoid-Eymo"], "_t705": ["Underwater Protection", "Gagqoid-Eymo"], "_s706": ["Cobalt", "Gagqoid-Eymo"], "_s707": ["Enormous Metal Cog⁺", "Gagqoid-Eymo"], "_s708": ["Ferrite Dust", "Gagqoid-Eymo"], "_s709": ["Hermetic Seal", "Gagqoid-Eymo"], "_s710": ["Magnetic Resonator", "Gagqoid-Eymo"], "_s711": ["Metai Plating", "Gagqoid-Eymo"], "_s712": ["Microprocessor", "Gagqoid-Eymo"], "_s713": ["Paraffinium", "Gagqoid-Eymo"], "_s714": ["Pugneum", "Gagqoid-Eymo"], "_s715": ["Unstable Plasma", "Gagqoid-Eymo"], "_s716": ["Uranium", "Gagqoid-Eymo"], "_s717": ["Wiring Loom", "Gagqoid-Eymo"], "_b718": ["Viridescent Planet", "Hefleeto_E37"], "_r719": ["Star Bulb", "Hefleeto_E37"], "_r720": ["Sodium", "Hefleeto_E37"], "_r721": ["Paraffinium", "Hefleeto_E37"], "_r722": ["Activated Copper", "Hefleeto_E37"], "_b723": ["Rainy Planet", "Esbur"], "_r724": ["Star Bulb", "Esbur"], "_r725": ["Magnetised Ferrite", "Esbur"], "_r726": ["Paraffinium", "Esbur"], "_r727": ["Activated Copper", "Esbur"], "_b728": ["Corrosive Moon", "Yissallu_XIV"], "_r729": ["Fungal Mould", "Yissallu_XIV"], "_r730": ["Salvageable Scrap", "Yissallu_XIV"], "_r731": ["Silver", "Yissallu_XIV"], "_r732": ["Ammonia", "Yissallu_XIV"], "_r733": ["Copper", "Yissallu_XIV"], "_b734": ["Noxious Planet", "Funa_81/X4"], "_r735": ["Fungal Mould", "Funa_81/X4"], "_r736": ["Silver", "Funa_81/X4"], "_r737": ["Ammonia", "Funa_81/X4"], "_r738": ["Copper", "Funa_81/X4"], "_b739": ["High Energy Planet", "Ausiu_XI"], "_r740": ["Gamma Root", "Ausiu_XI"], "_r741": ["Sedium", "Ausiu_XI"], "_r742": ["Uranium", "Ausiu_XI"], "_r743": ["Copper", "Ausiu_XI"], "_b744": ["Hiemal Planet", "Keha_58/B1"], "_r745": ["Frost Crystal", "Keha_58/B1"], "_r746": ["Cobalt", "Keha_58/B1"], "_r747": ["Dioxite", "Keha_58/B1"], "_r748": ["Copper", "Keha_58/B1"], "_t749": ["Cold Protection", "Tizariqi"], "_t750": ["Cyclotron", "Tizariqi"], "_t751": ["Exocraft Cannon", "Tizariqi"], "_t752": ["Exocraft Engine", "Tizariqi"], "_t753": ["Exocraft Engine", "Tizariqi"], "_t754": ["Exocraft Laser", "Tizariqi"], "_t755": ["Hot Protection", "Tizariqi"], "_t756": ["Launch Thrusters", "Tizariqi"], "_t757": ["Life Support", "Tizariqi"], "_t758": ["Minotaur Cannon", "Tizariqi"], "_t759": ["Minotaur Cannon", "Tizariqi"], "_t760": ["Photon Cannon", "Tizariqi"], "_t761": ["Plasma Launcher", "Tizariqi"], "_t762": ["Positron", "Tizariqi"], "_t763": ["Pulse Engine", "Tizariqi"], "_t764": ["Pulse Spitter", "Tizariqi"], "_t765": ["Pulse Spitter", "Tizariqi"], "_t766": ["Radiation Protection", "Tizariqi"], "_t767": ["Radiation Protection", "Tizariqi"], "_t768": ["Toxic Protection", "Tizariqi"], "_t769": ["Toxic Protection", "Tizariqi"], "_t770": ["Underwater Protection", "Tizariqi"], "_t771": ["Underwater Protection", "Tizariqi"], "_s772": ["5D Torus⁺", "Tizariqi"], "_s773": ["Ammonia", "Tizariqi"], "_s774": ["Chromatic Metal", "Tizariqi"], "_s775": ["Cobalt", "Tizariqi"], "_s776": ["Copper", "Tizariqi"], "_s777": ["Dirty Bronze", "Tizariqi"], "_s778": ["Ferrite Dust", "Tizariqi"], "_s779": ["Hydraulic Wiring", "Tizariqi"], "_s780": ["Lemmium", "Tizariqi"], "_s781": ["Magnetised Ferrite", "Tizariqi"], "_s782": ["Magno-Gold", "Tizariqi"], "_s783": ["Metal Plating", "Tizariqi"], "_s784": ["Microprocessor", "Tizariqi"], "_s785": ["Nanotube Crate⁺", "Tizariqi"], "_s786": ["Optical Solvent⁺", "Tizariqi"], "_s787": ["Residual Goop", "Tizariqi"], "_s788": ["Self-Repairing Heridium⁺", "Tizariqi"], "_s789": ["Tritium", "Tizariqi"], "_s790": ["Unstable Plasma", "Tizariqi"], "_s791": ["Uranium", "Tizariqi"], "_s792": ["Wiring Loom", "Tizariqi"], "_s793": ["lonised Cobalt", "Tizariqi"], "_b794": ["Gas Giant", "Itansha"], "_r795": ["Magnetised Ferrite", "Itansha"], "_r796": ["Crystatlised Helium", "Itansha"], "_r797": ["Activated Quartzite", "Itansha"], "_b798": ["Noxious Moon", "Ajja_Minor"], "_r799": ["Fungal Mould", "Ajja_Minor"], "_r800": ["Sodium", "Ajja_Minor"], "_r801": ["Ammonia", "Ajja_Minor"], "_r802": ["Quartzite", "Ajja_Minor"], "_b803": ["Frozen Anomaly", "Elton"], "_r804": ["Salt", "Elton"], "_r805": ["Dioxite", "Elton"], "_r806": ["Quarizite", "Elton"], "_b807": ["Poisonous Moon", "Gojosh_VIII"], "_r808": ["Fungal Mould", "Gojosh_VIII"], "_r809": ["Sodium", "Gojosh_VIII"], "_r810": ["Ammonia", "Gojosh_VIII"], "_r811": ["Quarizite", "Gojosh_VIII"], "_b812": ["Desolate Moon", "Hydesde_III"], "_r813": ["Cobalt", "Hydesde_III"], "_r814": ["Rusted Metal", "Hydesde_III"], "_r815": ["Quartzite", "Hydesde_III"], "_r816": ["Dissonance detected", "Hydesde_III"], "_b817": ["Incandescent Moon", "Tend_40/V5"], "_r818": ["Ancient Bones", "Tend_40/V5"], "_r819": ["Solanium", "Tend_40/V5"], "_r820": ["Silver", "Tend_40/V5"], "_r821": ["Phosphorus", "Tend_40/V5"], "_r822": ["Quarizite", "Tend_40/V5"]}
 
 function toggle_trade_routes() {
   let tr = document.getElementById('Trade_Routes');
@@ -1782,14 +1827,32 @@ function toggle_trade_routes() {
 }
 
 function findLinks(links, key) {
+  const firstItem = links[key][0];          // now a clean name
+  const matchingKeys = [];
+  for (const k in links) {
+    if (links.hasOwnProperty(k) &&
+        links[k][0] === firstItem &&
+        k[1] === key[1]) {                  // still same category (_t)
+      matchingKeys.push(k);
+    }
+  }
+  return matchingKeys;
+}
+
+/*
+function findLinks(links, key) {
+  console.log(Object.keys(links).length,{ key });
   const firstItem = links[key][0];
   const matchingKeys = [];
   for (const k in links) {
     if (links.hasOwnProperty(k) && links[k][0] === firstItem && k[1] == key[1]) {
+    console.log({ k })
       matchingKeys.push(k);
   } }
+  console.log(matchingKeys);
   return matchingKeys;
 }
+*/
 
 const id01 = document.getElementById('id01'),
   id02 = document.getElementById('id02'),
@@ -1813,6 +1876,7 @@ const id01 = document.getElementById('id01'),
     docs.push('</table>');
     id02.innerHTML = docs.join("\n");
     id02.style.display='block';
+    console.log({ docs })
     e.stopPropagation();
   };
 
