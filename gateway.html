@@ -11,6 +11,11 @@
     src: url("NMS-Glyphs-Mono.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: Lora;
+    src: url("Lora-Regular.ttf") format("truetype");
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 10px;
@@ -86,11 +91,12 @@ a:hover {
     margin: 20px 0;
 }
 
-#core {
-    padding:1px 20px; background: #e6cce6; border-radius: 8px; margin: 0 0 100px 20px; display: inline-block;
-}
-
+#core {padding:1px 20px; background: #e6cce6; border-radius: 8px; display: inline-block;}
 small {font-size: 12px; transform: translate(20px, -5px); display: inline-block;}
+p {font-family: Lora; width: 800px;}
+h1, h2 {font-family: Arial, sans-serif;}
+/*p .glyph {width: 2em; height: ; font-size: 2em; }*/
+span {font-family: "NMS Glyphs", monospace;}
 
 @media print {
     tbody.gateway {
@@ -4341,6 +4347,18 @@ small {font-size: 12px; transform: translate(20px, -5px); display: inline-block;
 </tbody>
 </table>
 <div class="warning">❌ Unable to core jump from here - dead end</div>
-<a id=core href="https://shirha.github.io/galactic-core/dist/" target="_blank">Gateway Candidates </a><small>three.js</snall>
+<div><a id=core href="https://shirha.github.io/galactic-core/dist/" target="_blank">Gateway Candidates</a><small>three.js</small></div>
+<p>
+I generated a list of 210 gateway candidates using a range(0,9,2) with ± permutations. If you use a step of 1, it generates 720. Of the 21 real gateways tested so far 3 of them are dead ends. You're not allowed to make a core jump from the gateway 🙁
+</p>
+<p>
+All the Gateway Systems are 3000 lys from the core. A Gateway System is the only one in the region (myTheory). Each region is <a href="https://nomanssky.fandom.com/wiki/Module:DistanceCalc">400</a> lys apart. That puts each Gateway System at eight clicks (<span>8</span>) away from the core. Circle packing suggest <a href="https://mathworld.wolfram.com/CirclePacking.html">900</a> Gateway Systems in Euclid. I believe it is about 500.
+</p>
+<p>
+Surface area of core sphere. A = 4π×3000²<br>
+Region circle area on sphere. R = π×200²<br>
+Number of Gateway Systems. N = A / R = 4*3000^2/200^2 = 900
+</p>
+
 </body>
 </html>
